@@ -58,7 +58,7 @@
 #include "monitor.h"
 #include "ram.h"
 #include "reu.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sid-resources.h"
 #include "types.h"
 #include "vdc-mem.h"

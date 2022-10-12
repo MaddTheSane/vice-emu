@@ -35,7 +35,7 @@
 #include "c64meminit.h"
 #include "c64memrom.h"
 #include "cartio.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "vicii-mem.h"
 
 /*

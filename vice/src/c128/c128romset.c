@@ -30,7 +30,7 @@
 
 #include "romset.h"
 
-const char *machine_romset_resources_list[] = {
+static const char *machine_romset_resources_list[] = {
     "ChargenIntName",
     "ChargenDEName",
     "ChargenFRName",

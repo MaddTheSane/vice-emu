@@ -92,9 +92,9 @@ VICEMachine *theVICEMachine = nil;
     pool = myPool;
     
     // get command line args
-    int argc = [args count];
+    NSInteger argc = [args count];
     char **argv = (char **)malloc(sizeof(char *) * argc);
-    int i;
+    NSInteger i;
     for (i=0;i<argc;i++) {
         NSString *str = [args objectAtIndex:i];
         argv[i] = strdup([str cStringUsingEncoding:NSUTF8StringEncoding]);
@@ -116,7 +116,7 @@ VICEMachine *theVICEMachine = nil;
             selector: @selector(receiveWakeNote:) name: NSWorkspaceDidWakeNotification object: NULL];
     
     // enter VICE main program and main loop
-    main_program(argc,argv);
+    main_program((int)argc,argv);
     
     // never reach this point...
 }

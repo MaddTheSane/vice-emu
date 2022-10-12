@@ -37,7 +37,7 @@
 #include "log.h"
 #include "mem.h"
 #include "resources.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sysfile.h"
 #include "types.h"
 #include "vdc-mem.h"

@@ -29,7 +29,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "sid.h"
+#include "sid/sid.h"
 #include "sound.h"
 #include "types.h"
 

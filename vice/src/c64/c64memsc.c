@@ -56,7 +56,7 @@
 #include "plus60k.h"
 #include "ram.h"
 #include "reu.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "tpi.h"
 #include "vicii-cycle.h"
 #include "vicii-mem.h"

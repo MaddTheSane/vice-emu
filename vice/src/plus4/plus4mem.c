@@ -50,7 +50,7 @@
 #include "ram.h"
 #include "resources.h"
 #include "sid-resources.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sidcart.h"
 #include "ted.h"
 #include "ted-mem.h"

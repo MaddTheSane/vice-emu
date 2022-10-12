@@ -30,7 +30,11 @@
 #include "kbdbuf.h"
 #include "ui.h"
 #include "vsyncapi.h"
+#ifdef MACOSX_SUPPORT
+#include "macosx/cocoa/videoarch.h"
+#else
 #include "videoarch.h"
+#endif
 
 #ifdef HAS_JOYSTICK
 #include "joy.h"

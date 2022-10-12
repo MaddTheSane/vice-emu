@@ -35,7 +35,7 @@
 #include "c64dtvmem.h"
 #include "c64dtvmeminit.h"
 #include "c64memrom.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "vicii-mem.h"
 
 

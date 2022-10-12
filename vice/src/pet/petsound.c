@@ -33,7 +33,7 @@
 
 #include "lib.h"
 #include "petsound.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sidcart.h"
 #include "sid-resources.h"
 #include "sound.h"

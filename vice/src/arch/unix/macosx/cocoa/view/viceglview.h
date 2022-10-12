@@ -66,7 +66,7 @@ typedef struct texture_s texture_t;
     int         canvasId;               /* the canvas id assigned to this view */
     
     // Keyboard
-    unsigned int lastKeyModifierFlags;
+    NSEventModifierFlags lastKeyModifierFlags;
     unsigned int modifierKeyCode[NUM_KEY_MODIFIERS];
     
     // Mouse
@@ -154,6 +154,8 @@ typedef struct texture_s texture_t;
 
 // return the current canvas id assigned to this view
 - (int)canvasId;
+
+@property int canvasId;
 
 // set the pixel aspect ratio for this view
 - (void)setPixelAspectRatio:(float)par;

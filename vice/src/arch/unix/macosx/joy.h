@@ -144,6 +144,8 @@ extern void joystick(void);
 
 extern void joy_reload_device_list(void);
 extern void joy_calc_threshold(int min, int max, int threshold, int *min_t, int *max_t);
+extern int joystick_arch_init_resources(void);
+extern int joystick_init_cmdline_options(void);
 
 #endif /* HAS_JOYSTICK */
 

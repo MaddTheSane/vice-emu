@@ -411,15 +411,7 @@ extern log_t video_log;
     return 32;
 }
 
-- (void)setCanvasId:(int)c
-{
-    canvasId = c;
-}
-
-- (int)canvasId
-{
-    return canvasId;
-}
+@synthesize canvasId;
 
 - (void)setPixelAspectRatio:(float)par
 {
@@ -471,6 +463,7 @@ extern log_t video_log;
     if(postponedReconfigure) {
         [self reconfigureCanvas:NULL];
     }
+    [super prepareOpenGL];
 }
 
 - (void)toggleBlending:(BOOL)on
@@ -519,6 +512,7 @@ extern log_t video_log;
     mouseYScale = textureSize.height / viewSize.height;
 
     CGLUnlockContext(cglContext);
+    [super reshape];
 }
 
 - (void)drawQuad:(float)alpha
@@ -1151,12 +1145,12 @@ extern log_t video_log;
 
 - (void)flagsChanged:(NSEvent *)theEvent
 {
-    unsigned int modifierFlags = [theEvent modifierFlags] &
-        (NSAlphaShiftKeyMask | NSShiftKeyMask | NSControlKeyMask | NSAlternateKeyMask);
+    NSEventModifierFlags modifierFlags = [theEvent modifierFlags] &
+    (NSEventModifierFlagCapsLock | NSEventModifierFlagShift | NSEventModifierFlagControl | NSEventModifierFlagOption);
 
     if (modifierFlags != lastKeyModifierFlags) {
         unsigned int code = [theEvent keyCode];
-        unsigned int changedFlags = modifierFlags ^ lastKeyModifierFlags;
+        NSEventModifierFlags changedFlags = modifierFlags ^ lastKeyModifierFlags;
         int i;
         for (i=0;i<NUM_KEY_MODIFIERS;i++) {
             unsigned int flag = 1<<i;
@@ -1176,13 +1170,13 @@ extern log_t video_log;
 
 - (void)keyDown:(NSEvent *)theEvent
 {
-    unsigned int modifierFlags = [theEvent modifierFlags] &
-        (NSAlphaShiftKeyMask | NSShiftKeyMask | NSControlKeyMask | NSAlternateKeyMask);
+    NSEventModifierFlags modifierFlags = [theEvent modifierFlags] &
+    (NSEventModifierFlagCapsLock | NSEventModifierFlagShift | NSEventModifierFlagControl | NSEventModifierFlagOption);
 
     // modifiers have changed, too!
     /* this happens if e.g. a context menu was activated by Ctrl-click */
     if (modifierFlags != lastKeyModifierFlags) {
-        unsigned int changedFlags = modifierFlags ^ lastKeyModifierFlags;
+        NSEventModifierFlags changedFlags = modifierFlags ^ lastKeyModifierFlags;
         int i;
         for (i=0;i<NUM_KEY_MODIFIERS;i++) {
             unsigned int flag = 1<<i;
@@ -1199,7 +1193,7 @@ extern log_t video_log;
     }
 
     if (![theEvent isARepeat] &&
-        !([theEvent modifierFlags] & NSCommandKeyMask)) {
+        !([theEvent modifierFlags] & NSEventModifierFlagCommand)) {
         unsigned int code = [theEvent keyCode];
         [[VICEApplication theMachineController] keyPressed:code];
     }
@@ -1350,18 +1344,18 @@ extern log_t video_log;
 {
     if (trackMouse) {
         if(mouseEmuEnabled) {
-            if ([theEvent type]==NSLeftMouseDown) {
+            if ([theEvent type]==NSEventTypeLeftMouseDown) {
                 [[VICEApplication theMachineController] mouseButton:YES withState:YES];
             }
-            else if ([theEvent type]==NSRightMouseDown) {
+            else if ([theEvent type]==NSEventTypeRightMouseDown) {
                 [[VICEApplication theMachineController] mouseButton:NO withState:YES];
             }
         }
         if(lightpenEmuEnabled) {
-            if ([theEvent type]==NSLeftMouseDown) {
+            if ([theEvent type]==NSEventTypeLeftMouseDown) {
                 mouseLeftButtonPressed = YES;
             }
-            else if ([theEvent type]==NSRightMouseDown) {
+            else if ([theEvent type]==NSEventTypeRightMouseDown) {
                 mouseRightButtonPressed = YES;
             }
             [[VICEApplication theMachineController]
@@ -1378,18 +1372,18 @@ extern log_t video_log;
 {
     if (trackMouse) {
         if(mouseEmuEnabled) {
-            if ([theEvent type]==NSLeftMouseUp) {
+            if ([theEvent type]==NSEventTypeLeftMouseUp) {
                 [[VICEApplication theMachineController] mouseButton:YES withState:NO];
             }
-            else if ([theEvent type]==NSRightMouseUp) {
+            else if ([theEvent type]==NSEventTypeRightMouseUp) {
                 [[VICEApplication theMachineController] mouseButton:NO withState:NO];
             }
         }
         if(lightpenEmuEnabled) {
-            if ([theEvent type]==NSLeftMouseUp) {
+            if ([theEvent type]==NSEventTypeLeftMouseUp) {
                 mouseLeftButtonPressed = NO;
             }
-            else if ([theEvent type]==NSRightMouseUp) {
+            else if ([theEvent type]==NSEventTypeRightMouseUp) {
                 mouseRightButtonPressed = NO;
             }
             [[VICEApplication theMachineController]

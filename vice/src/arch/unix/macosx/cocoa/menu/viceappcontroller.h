@@ -198,7 +198,7 @@
 - (void)updateVideo1Resources;
 - (void)updateCRTResources;
 
-- (BOOL)updateSubMenuCheckState:(NSMenu *)menu withTag:(int)tagValue;
+- (BOOL)updateSubMenuCheckState:(NSMenu *)menu withTag:(NSInteger)tagValue;
 
 - (BOOL)setIntResource:(NSString *)name toValue:(int)value;
 - (int)getIntResource:(NSString *)name;

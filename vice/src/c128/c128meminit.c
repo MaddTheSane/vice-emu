@@ -35,7 +35,7 @@
 #include "c64cia.h"
 #include "cartio.h"
 #include "functionrom.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "vdc-mem.h"
 #include "vicii-mem.h"
 

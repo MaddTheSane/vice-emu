@@ -33,7 +33,7 @@
 #include "config.h"
 #include "joy.h"
 
-enum {
+enum JoystickKeyset {
     KEYSET_NORTH = 0,
     KEYSET_SOUTH = 1,
     KEYSET_WEST = 2,
@@ -44,7 +44,7 @@ enum {
     KEYSET_SOUTHEAST = 7,
     KEYSET_FIRE = 8,
     KEYSET_SIZE = 9
-} JoystickKeyset;
+} ;
 
 @interface JoystickSettingsWindowController : VICEResourceWindowController
 {

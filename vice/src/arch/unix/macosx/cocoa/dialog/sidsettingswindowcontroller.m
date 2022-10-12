@@ -26,7 +26,7 @@
 
 #include "vice.h"
 #include "machine.h"
-#include "sid.h"
+#include "sid/sid.h"
 
 #import "sidsettingswindowcontroller.h"
 #import "viceapplication.h"

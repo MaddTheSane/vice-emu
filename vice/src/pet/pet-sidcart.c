@@ -28,7 +28,7 @@
 
 #include "cmdline.h"
 #include "resources.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sidcart.h"
 #include "sid-cmdline-options.h"
 #include "sid-resources.h"

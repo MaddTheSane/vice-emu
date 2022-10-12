@@ -26,3 +26,6 @@ lib*.a
 vice/src/c1541
 vice/src/infocontrib.h
 vice/src/translate.h
+vice/po/POTFILES
+vice/po/intl2po
+*.dSYM/

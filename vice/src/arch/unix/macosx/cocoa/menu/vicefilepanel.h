@@ -26,7 +26,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface VICEFilePanel : NSObject
+@interface VICEFilePanel : NSObject <NSOpenSavePanelDelegate>
 {
     NSDictionary *extensionMap;
 
@@ -42,15 +42,15 @@
     int  selectedProgNum;
 }
 
-- (NSString *)pickOpenFileWithPreviewAndType:(NSString *)type allowRun:(BOOL)allowRun; 
-- (int)selectedProgNum;
-- (BOOL)selectedAutostart;
+- (NSString *)pickOpenFileWithPreviewAndType:(NSString *)type allowRun:(BOOL)allowRun;
+@property (readonly) int selectedProgNum;
+@property (readonly) BOOL selectedAutostart;
 
 - (NSString *)pickOpenFileWithType:(NSString *)type;
 - (NSString *)pickSaveFileWithType:(NSString *)type;
 
-- (NSString *)pickOpenFileWithTitle:(NSString *)title types:(NSArray *)types;
-- (NSString *)pickSaveFileWithTitle:(NSString *)title types:(NSArray *)types;
+- (NSString *)pickOpenFileWithTitle:(NSString *)title types:(NSArray<NSString*> *)types;
+- (NSString *)pickSaveFileWithTitle:(NSString *)title types:(NSArray<NSString*> *)types;
 - (NSString *)pickDirectoryWithTitle:(NSString *)title;
 
 - (NSArray *)pickAttachFileWithTitle:(NSString *)title andTypeDictionary:(NSDictionary *)types defaultType:(NSString *)defaultType;

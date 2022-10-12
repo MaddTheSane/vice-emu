@@ -60,7 +60,7 @@
 #include "rsuser.h"
 #include "screenshot.h"
 #include "serial.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sidcart.h"
 #include "sid-cmdline-options.h"
 #include "sid-resources.h"

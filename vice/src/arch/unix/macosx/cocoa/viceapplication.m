@@ -110,8 +110,8 @@ const float control_win_width = 200;
 
     // find my z order
     NSArray *wins = [[NSApplication sharedApplication] orderedWindows];
-    int i;
-    int num = [wins count];
+    NSInteger i;
+    NSInteger num = [wins count];
     for(i=0;i<num;i++) {
         VICEWindow *win = (VICEWindow *)[wins objectAtIndex:i];
         NSString *title = [win title];
@@ -119,8 +119,8 @@ const float control_win_width = 200;
         int winId = [win canvasId];
         
         // find canvas with lover id that sits right above us
-        int j;
-        int foundWinId = 0;
+        NSInteger j;
+        NSInteger foundWinId = 0;
         for(j=0;j<i;j++) {
             VICEWindow *preWin = (VICEWindow *)[wins objectAtIndex:j];
             int preWinId = [preWin canvasId];
@@ -141,7 +141,7 @@ const float control_win_width = 200;
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     NSString *title = [window title];
     NSString *tag = [title stringByAppendingString:@"OrderBelow"];
-    int belowId = [def integerForKey:tag];
+    NSInteger belowId = [def integerForKey:tag];
     
     if(belowId == 0) {
         // order myself front and make me key window
@@ -151,8 +151,8 @@ const float control_win_width = 200;
         belowId --;
         // find canvas to 
         NSArray *wins = [[NSApplication sharedApplication] orderedWindows];
-        int i;
-        int num = [wins count];
+        NSInteger i;
+        NSInteger num = [wins count];
         VICEWindow *aboveWin = nil;
         for(i=0;i<num;i++) {
             VICEWindow *preWin = (VICEWindow *)[wins objectAtIndex:i];
@@ -384,9 +384,9 @@ const float control_win_width = 200;
     // ask only if user query is enabled
     NSNumber *confirmOnExit = [controller getIntResource:@"ConfirmOnExit"];
     if ([confirmOnExit intValue]) {
-        int result = NSRunAlertPanel(@"Quit Application",
-                                     @"Do you really want to exit?",
-                                     @"Yes",@"No",nil);
+        NSInteger result = NSRunAlertPanel(@"Quit Application",
+                                           @"Do you really want to exit?",
+                                           @"Yes",@"No",nil);
         if (result==NSAlertAlternateReturn)
             return NSTerminateCancel;
     }
@@ -753,7 +753,7 @@ const float control_win_width = 200;
 
 - (void)toggleDebuggerWindow:(id)sender
 {
-    int tag = [sender tag];
+    NSInteger tag = [sender tag];
     switch(tag) {
         case TAG_CPU_REGISTERS:
             [cpuRegisterWC toggleWindow:sender];
@@ -832,7 +832,7 @@ const float control_win_width = 200;
     [alert addButtonWithTitle:@"Close"];
     [alert setMessageText:@"VICE Warning!"];
     [alert setInformativeText:message];
-    [alert setAlertStyle:NSWarningAlertStyle];
+    [alert setAlertStyle:NSAlertStyleWarning];
     [alert runModal];
     [alert release];
 }
@@ -845,7 +845,7 @@ const float control_win_width = 200;
     [alert addButtonWithTitle:@"Hard Reset"];
     [alert setMessageText:@"VICE CPU JAM!"];
     [alert setInformativeText:message];
-    int result = [alert runModal];
+    NSModalResponse result = [alert runModal];
     [alert release];
     
     if (result==NSAlertFirstButtonReturn)
@@ -863,7 +863,7 @@ const float control_win_width = 200;
     [alert addButtonWithTitle:@"No"];
     [alert setMessageText:@"VICE Extend Image"];
     [alert setInformativeText:@"Extend image to 40 Tracks?"];
-    int result = [alert runModal];
+    NSModalResponse result = [alert runModal];
     [alert release];
     return result == NSAlertFirstButtonReturn;
 }

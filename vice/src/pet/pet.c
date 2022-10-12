@@ -75,7 +75,7 @@
 #include "resources.h"
 #include "rs232drv.h"
 #include "screenshot.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sid-cmdline-options.h"
 #include "sid-resources.h"
 #include "sidcart.h"

@@ -84,7 +84,7 @@
 #include "serial.h"
 #include "sid-cmdline-options.h"
 #include "sid-resources.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sound.h"
 #include "tape.h"
 #include "tpi.h"

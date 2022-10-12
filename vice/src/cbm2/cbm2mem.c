@@ -48,7 +48,7 @@
 #include "monitor.h"
 #include "ram.h"
 #include "resources.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sid-resources.h"
 #include "tpi.h"
 #include "types.h"

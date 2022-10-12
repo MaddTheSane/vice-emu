@@ -34,7 +34,7 @@
 #include "keyboard.h"
 #include "plus4.h"
 #include "resources.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sid-cmdline-options.h"
 #include "sid-resources.h"
 #include "sidcart.h"

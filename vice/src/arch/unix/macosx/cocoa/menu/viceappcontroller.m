@@ -138,19 +138,16 @@
     [accessories autorelease];
 
     NSTextField * name_label = [[NSTextField alloc] initWithFrame:NSMakeRect(4, 46, 80, 17)];
-    [name_label autorelease];
-    [name_label setAlignment:NSRightTextAlignment];
+    [name_label setAlignment:NSTextAlignmentRight];
     [name_label setEditable:NO];
     [name_label setBordered:NO];
     [name_label setDrawsBackground:NO];
     [name_label setStringValue:@"Name:"];
 
     NSTextField * name_entry = [[NSTextField alloc] initWithFrame:NSMakeRect(89, 44, 180, 22)];
-    [name_entry autorelease];
 
     NSTextField * type_label = [[NSTextField alloc] initWithFrame:NSMakeRect(4, 18, 80, 17)];
-    [type_label autorelease];
-    [type_label setAlignment:NSRightTextAlignment];
+    [type_label setAlignment:NSTextAlignmentRight];
     [type_label setEditable:NO];
     [type_label setBordered:NO];
     [type_label setDrawsBackground:NO];
@@ -158,23 +155,22 @@
 
     NSPopUpButton * type_button = [[NSPopUpButton alloc] initWithFrame:NSMakeRect(86, 12, 98, 26)];
     [type_button addItemsWithTitles:labels];
-    [type_button autorelease];
 
-    [accessories addSubview:name_label];
-    [accessories addSubview:name_entry];
-    [accessories addSubview:type_button];
-    [accessories addSubview:type_label];
+    [accessories addSubview:name_label]; [name_label release];
+    [accessories addSubview:name_entry]; [name_entry release];
+    [accessories addSubview:type_button]; [type_button release];
+    [accessories addSubview:type_label]; [type_label release];
 
     [panel setAccessoryView:accessories];
     [panel setTitle:@"Create Disk Image"];
     [panel setPrompt:@"Create"];
 
     if ([panel runModal] == NSFileHandlingPanelOKButton) {
-        int type = [type_button indexOfSelectedItem];
-        NSString * path = [[panel filename] stringByAppendingPathExtension:[extensions objectAtIndex:type]];
+        NSInteger type = [type_button indexOfSelectedItem];
+        NSString * path = [[panel URL] URLByAppendingPathExtension:[extensions objectAtIndex:type]].path;
 
         if (![[VICEApplication theMachineController] 
-                    createDiskImage:type
+                    createDiskImage:(int)type
                                path:path
                                name:[name_entry stringValue]]) {
             [VICEApplication runErrorMessage:@"Error creating image!"];
@@ -191,7 +187,7 @@
 
 - (IBAction)detachDiskImage:(id)sender
 {
-    int unit = [sender tag];
+    int unit = (int)[sender tag];
     [[VICEApplication theMachineController] detachDiskImage:unit];
 }
 
@@ -199,31 +195,31 @@
 
 - (IBAction)fliplistAddCurrentImage:(id)sender
 {
-    int unit = [sender tag];
+    int unit = (int)[sender tag];
     [[VICEApplication theMachineController] addCurrentToFliplist:unit];
 }
 
 - (IBAction)fliplistRemoveCurrentImage:(id)sender
 {
-    int unit = [sender tag];
+    int unit = (int)[sender tag];
     [[VICEApplication theMachineController] removeFromFliplist:unit path:nil];
 }
 
 - (IBAction)fliplistAttachNextImage:(id)sender
 {
-    int unit = [sender tag];
+    int unit = (int)[sender tag];
     [[VICEApplication theMachineController] attachNextInFliplist:unit direction:TRUE];
 }
 
 - (IBAction)fliplistAttachPrevImage:(id)sender
 {
-    int unit = [sender tag];
+    int unit = (int)[sender tag];
     [[VICEApplication theMachineController] attachNextInFliplist:unit direction:TRUE];
 }
 
 - (IBAction)fliplistLoad:(id)sender
 {
-    int unit = [sender tag];
+    int unit = (int)[sender tag];
     NSString *path = [[self getFilePanel] pickOpenFileWithType:@"FlipList"];
     if (path!=nil) {
         if (![[VICEApplication theMachineController] loadFliplist:unit path:path autoAttach:TRUE])
@@ -233,7 +229,7 @@
 
 - (IBAction)fliplistSave:(id)sender
 {
-    int unit = [sender tag];
+    int unit = (int)[sender tag];
     NSString *path = [[self getFilePanel] pickSaveFileWithType:@"FlipList"];
     if (path!=nil) {
         if (![[VICEApplication theMachineController] saveFliplist:unit path:path])
@@ -295,7 +291,7 @@
     if ([panel runModal] == NSFileHandlingPanelOKButton) {
         BOOL saveRoms  = ([saveRomsCheck state] == NSOnState);
         BOOL saveDisks = ([saveDisksCheck state] == NSOnState);
-        NSString * path = [panel filename];
+        NSString * path = [panel URL].path;
         if (path!=nil) {
             [[VICEApplication theMachineController] saveSnapshot:path withROMS:saveRoms andDisks:saveDisks];
         }
@@ -640,10 +636,10 @@
 {
 }
 
-- (BOOL)updateSubMenuCheckState:(NSMenu *)menu withTag:(int)tagValue
+- (BOOL)updateSubMenuCheckState:(NSMenu *)menu withTag:(NSInteger)tagValue
 {
-    int numItems = [menu numberOfItems];
-    int i;
+    NSInteger numItems = [menu numberOfItems];
+    NSInteger i;
     BOOL foundTag = NO;
     for (i=0;i<numItems;i++) {
         NSMenuItem *item = [menu itemAtIndex:i];

@@ -107,18 +107,18 @@
 - (id)markDiff:(id)input bytes:(const BYTE *)bytes oldBytes:(const BYTE *)oldBytes scale:(int)scale
 {
     id theValue = [[NSMutableAttributedString alloc] initWithString:input];
-    int i;
-    int markBegin = -1;
-    int total = [theValue length];
+    NSInteger i;
+    NSInteger markBegin = -1;
+    NSInteger total = [theValue length];
     for(i=0;i<PER_LINE;i++) {
         if(oldBytes[i]!=bytes[i]) {
             if(markBegin == -1)
                 markBegin = i;
         } else {
             if(markBegin != -1) {
-                int markLen = i - markBegin;
-                int start = markBegin * scale;
-                int len = markLen * scale;
+                NSInteger markLen = i - markBegin;
+                NSInteger start = markBegin * scale;
+                NSInteger len = markLen * scale;
                 [theValue addAttribute:NSForegroundColorAttributeName
                             value:[NSColor blueColor]
                             range:NSMakeRange(start, len)];
@@ -127,9 +127,9 @@
         }
     }
     if(markBegin != -1) {
-        int markLen = i - markBegin;
-        int start = markBegin * scale;
-        int len = markLen * scale;
+        NSInteger markLen = i - markBegin;
+        NSInteger start = markBegin * scale;
+        NSInteger len = markLen * scale;
         [theValue addAttribute:NSForegroundColorAttributeName
                     value:[NSColor blueColor]
                     range:NSMakeRange(start, len)];
@@ -137,13 +137,9 @@
     return theValue;
 }
 
-@end
-
-@implementation MemoryWindowController (NSTableViewDataSource)
-
 - (id)tableView:(NSTableView *)aTableView
-    objectValueForTableColumn:(NSTableColumn *)aTableColumn
-    row:(int)rowIndex
+objectValueForTableColumn:(NSTableColumn *)aTableColumn
+            row:(NSInteger)rowIndex
 {
     if(data == nil)
         return nil;
@@ -238,7 +234,7 @@
     return theValue;
 }
 
-- (int)numberOfRowsInTableView:(NSTableView *)aTableView
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView
 {
     if(data == nil) {
         return 0;

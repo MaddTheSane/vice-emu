@@ -210,7 +210,7 @@
     }
 
     // run dialog
-    int result = [panel runModal];
+    NSModalResponse result = [panel runModal];
 
     // reset result state
     NSString *fileName = nil;
@@ -221,11 +221,11 @@
     if (result==NSFileHandlingPanelOKButton) {
 
         // fetch filename
-        fileName = [panel filename];
+        fileName = [panel URL].path;
 
         if(imageContentsView != nil) {
             // get selected program item
-            unsigned int contentsIndex = [imageContentsController selectionIndex];
+            NSInteger contentsIndex = [imageContentsController selectionIndex];
             if(contentsIndex != NSNotFound) {
                 selectedProgNum = (int)(contentsIndex + 1);
             }
@@ -243,15 +243,8 @@
     return fileName;
 }
 
-- (int)selectedProgNum
-{
-    return selectedProgNum;
-}
-
-- (BOOL)selectedAutostart
-{
-    return selectedAutostart;
-}
+@synthesize selectedProgNum;
+@synthesize selectedAutostart;
 
 - (NSString *)pickOpenFileWithType:(NSString *)type
 {
@@ -270,9 +263,9 @@
     [panel setAllowedFileTypes:extensions];
     [panel setTitle:title];    
     
-    int result = [panel runModal];
+    NSModalResponse result = [panel runModal];
     if (result==NSFileHandlingPanelOKButton) {
-        return [panel filename];
+        return [panel URL].path;
     }    
     return nil;
 }
@@ -286,9 +279,9 @@
     [panel setAllowedFileTypes:types];
     [panel setTitle:title];    
     
-    int result = [panel runModal];
+    NSModalResponse result = [panel runModal];
     if (result==NSFileHandlingPanelOKButton) {
-        return [panel filename];
+        return [panel URL].path;
     }    
     return nil;
 }
@@ -307,9 +300,9 @@
     [panel setTitle:title];    
     [panel setAllowedFileTypes:extensions];
     
-    int result = [panel runModal];
+    NSModalResponse result = [panel runModal];
     if (result==NSFileHandlingPanelOKButton) {
-        return [panel filename];
+        return [[panel URL] path];
     }    
     return nil;
 }
@@ -325,9 +318,9 @@
         [panel setAllowsOtherFileTypes:YES];
     }
     
-    int result = [panel runModal];
+    NSModalResponse result = [panel runModal];
     if (result==NSFileHandlingPanelOKButton) {
-        return [panel filename];
+        return [[panel URL] path];
     }    
     return nil;
 }
@@ -340,9 +333,9 @@
     [panel setCanChooseDirectories:YES];
     [panel setTitle:title];    
     
-    int result = [panel runModal];
+    NSModalResponse result = [panel runModal];
     if (result==NSFileHandlingPanelOKButton) {
-        return [panel filename];
+        return [[panel URL] path];
     }    
     return nil;
 }
@@ -356,7 +349,7 @@
 
     NSTextField * type_label = [[NSTextField alloc] initWithFrame:NSMakeRect(4, 18, 80, 17)];
     [type_label autorelease];
-    [type_label setAlignment:NSRightTextAlignment];
+    [type_label setAlignment:NSTextAlignmentRight];
     [type_label setEditable:NO];
     [type_label setBordered:NO];
     [type_label setDrawsBackground:NO];
@@ -379,7 +372,7 @@
     if ([panel runModal] == NSFileHandlingPanelOKButton) {
         NSString *item = [type_button titleOfSelectedItem];
         NSNumber *number = [types valueForKey:item];
-        NSString *filename = [panel filename];
+        NSString *filename = [[panel URL] path];
         result = [NSArray arrayWithObjects:filename, number, nil];
     }
     return result;

@@ -32,7 +32,7 @@
 #include "cartio.h"
 #include "cartridge.h"
 #include "machine.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "sid-resources.h"
 #include "sound.h"
 #include "types.h"

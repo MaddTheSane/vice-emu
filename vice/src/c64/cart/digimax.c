@@ -39,7 +39,7 @@
 #include "machine.h"
 #include "maincpu.h"
 #include "resources.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "snapshot.h"
 #include "sound.h"
 #include "uiapi.h"

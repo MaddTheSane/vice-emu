@@ -32,7 +32,7 @@
 #include "cia.h"
 #include "machine.h"
 #include "resources.h"
-#include "sid.h"
+#include "sid/sid.h"
 #include "types.h"
 #include "vicii.h"
 

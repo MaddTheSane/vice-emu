@@ -36,7 +36,7 @@
 -(id)init
 {
     self = [super initWithContentRect:[[NSScreen mainScreen] frame]
-                            styleMask:NSBorderlessWindowMask
+                            styleMask:NSWindowStyleMaskBorderless
                               backing:NSBackingStoreBuffered
                                 defer:NO
                                screen:[NSScreen mainScreen]];

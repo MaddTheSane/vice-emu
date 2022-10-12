@@ -54,8 +54,8 @@
 
 - (id)initWithContentRect:(NSRect)rect title:(NSString *)title;
 {
-    unsigned int style = NSUtilityWindowMask | NSTitledWindowMask |
-        NSClosableWindowMask | NSMiniaturizableWindowMask | NSResizableWindowMask;
+    NSWindowStyleMask style = NSWindowStyleMaskUtilityWindow | NSWindowStyleMaskTitled |
+    NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable | NSWindowStyleMaskResizable;
     self = [super initWithContentRect:rect
                             styleMask:style
                               backing:NSBackingStoreBuffered

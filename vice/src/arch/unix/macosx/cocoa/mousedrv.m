@@ -45,11 +45,13 @@ static int  scaleY;
 static int set_scale_x(int val, void *param)
 {
     scaleX = val;
+    return 0;
 }
 
 static int set_scale_y(int val, void *param)
 {
     scaleY = val;
+    return 0;
 }
 
 static resource_int_t resources_int[] =

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,6 +40,10 @@
 		55C6551E28F66E9300D11E28 /* SIDSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550B28F66E9300D11E28 /* SIDSettings.nib */; };
 		55C6551F28F66E9300D11E28 /* IOTree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550D28F66E9300D11E28 /* IOTree.plist */; };
 		55C6552228F6716E00D11E28 /* vicefilepanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552128F6716E00D11E28 /* vicefilepanel.m */; };
+		55C6552528F679D300D11E28 /* sidsettingswindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552428F679D300D11E28 /* sidsettingswindowcontroller.m */; };
+		55C6552828F679EF00D11E28 /* recordhistorywindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552728F679EF00D11E28 /* recordhistorywindowcontroller.m */; };
+		55C6552B28F67A1100D11E28 /* netplaycontrolwindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552A28F67A1100D11E28 /* netplaycontrolwindowcontroller.m */; };
+		55C6552E28F67A6300D11E28 /* controlwindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552C28F67A6300D11E28 /* controlwindow.m */; };
 		83E499CD0DE4CA54001DE90F /* IECDriveSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4997B0DE4C8C8001DE90F /* IECDriveSettings.nib */; };
 		83E499CE0DE4CA54001DE90F /* SoundSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4998D0DE4C8C8001DE90F /* SoundSettings.nib */; };
 		83E499CF0DE4CA54001DE90F /* KeyboardSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4997F0DE4C8C8001DE90F /* KeyboardSettings.nib */; };
@@ -137,6 +141,14 @@
 		55C6550E28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/IOTree.plist; sourceTree = "<group>"; };
 		55C6552028F6716E00D11E28 /* vicefilepanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vicefilepanel.h; sourceTree = "<group>"; };
 		55C6552128F6716E00D11E28 /* vicefilepanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vicefilepanel.m; sourceTree = "<group>"; };
+		55C6552328F679D300D11E28 /* sidsettingswindowcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sidsettingswindowcontroller.h; sourceTree = "<group>"; };
+		55C6552428F679D300D11E28 /* sidsettingswindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sidsettingswindowcontroller.m; sourceTree = "<group>"; };
+		55C6552628F679EF00D11E28 /* recordhistorywindowcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recordhistorywindowcontroller.h; sourceTree = "<group>"; };
+		55C6552728F679EF00D11E28 /* recordhistorywindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recordhistorywindowcontroller.m; sourceTree = "<group>"; };
+		55C6552928F67A1100D11E28 /* netplaycontrolwindowcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netplaycontrolwindowcontroller.h; sourceTree = "<group>"; };
+		55C6552A28F67A1100D11E28 /* netplaycontrolwindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netplaycontrolwindowcontroller.m; sourceTree = "<group>"; };
+		55C6552C28F67A6300D11E28 /* controlwindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = controlwindow.m; sourceTree = "<group>"; };
+		55C6552D28F67A6300D11E28 /* controlwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = controlwindow.h; sourceTree = "<group>"; };
 		83E4997A0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/DriveSettings.nib; sourceTree = "<group>"; };
 		83E4997C0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/IECDriveSettings.nib; sourceTree = "<group>"; };
 		83E4997E0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/JoystickSettings.nib; sourceTree = "<group>"; };
@@ -303,6 +315,7 @@
 				83E499A60DE4C96B001DE90F /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		83E499A60DE4C96B001DE90F /* Products */ = {
 			isa = PBXGroup;
@@ -349,10 +362,6 @@
 		83E499E50DE4CCA9001DE90F /* dialog */ = {
 			isa = PBXGroup;
 			children = (
-				05204E4113D2ACE2008F2D7E /* videosettingswindowcontroller.h */,
-				05204E4213D2ACE2008F2D7E /* videosettingswindowcontroller.m */,
-				83E49A810DE6B688001DE90F /* recordmediawindowcontroller.h */,
-				83E49A820DE6B688001DE90F /* recordmediawindowcontroller.m */,
 				83E499E60DE4CCA9001DE90F /* drivesettingswindowcontroller.h */,
 				83E499E70DE4CCA9001DE90F /* drivesettingswindowcontroller.m */,
 				83E499E80DE4CCA9001DE90F /* iecdrivesettingswindowcontroller.h */,
@@ -362,18 +371,28 @@
 				83E499EC0DE4CCA9001DE90F /* keyboardsettingswindowcontroller.h */,
 				83E499ED0DE4CCA9001DE90F /* keyboardsettingswindowcontroller.m */,
 				83E499EE0DE4CCA9001DE90F /* Makefile.am */,
+				55C6552928F67A1100D11E28 /* netplaycontrolwindowcontroller.h */,
+				55C6552A28F67A1100D11E28 /* netplaycontrolwindowcontroller.m */,
 				83E499F00DE4CCA9001DE90F /* printersettingswindowcontroller.h */,
 				83E499F10DE4CCA9001DE90F /* printersettingswindowcontroller.m */,
+				55C6552628F679EF00D11E28 /* recordhistorywindowcontroller.h */,
+				55C6552728F679EF00D11E28 /* recordhistorywindowcontroller.m */,
+				83E49A810DE6B688001DE90F /* recordmediawindowcontroller.h */,
+				83E49A820DE6B688001DE90F /* recordmediawindowcontroller.m */,
 				83E499F20DE4CCA9001DE90F /* resourceeditorcontroller.h */,
 				83E499F30DE4CCA9001DE90F /* resourceeditorcontroller.m */,
 				83E499F40DE4CCA9001DE90F /* resourcetreeitem.h */,
 				83E499F50DE4CCA9001DE90F /* resourcetreeitem.m */,
+				55C6552328F679D300D11E28 /* sidsettingswindowcontroller.h */,
+				55C6552428F679D300D11E28 /* sidsettingswindowcontroller.m */,
 				83E499F60DE4CCA9001DE90F /* soundsettingswindowcontroller.h */,
 				83E499F70DE4CCA9001DE90F /* soundsettingswindowcontroller.m */,
 				83E499F80DE4CCA9001DE90F /* viceinformationwindowcontroller.h */,
 				83E499F90DE4CCA9001DE90F /* viceinformationwindowcontroller.m */,
 				83E499FA0DE4CCA9001DE90F /* viceresourcewindowcontroller.h */,
 				83E499FB0DE4CCA9001DE90F /* viceresourcewindowcontroller.m */,
+				05204E4113D2ACE2008F2D7E /* videosettingswindowcontroller.h */,
+				05204E4213D2ACE2008F2D7E /* videosettingswindowcontroller.m */,
 			);
 			path = dialog;
 			sourceTree = "<group>";
@@ -411,6 +430,8 @@
 			children = (
 				83E49A280DE4CCA9001DE90F /* consolewindow.h */,
 				83E49A290DE4CCA9001DE90F /* consolewindow.m */,
+				55C6552D28F67A6300D11E28 /* controlwindow.h */,
+				55C6552C28F67A6300D11E28 /* controlwindow.m */,
 				83E49A2A0DE4CCA9001DE90F /* driveview.h */,
 				83E49A2B0DE4CCA9001DE90F /* driveview.m */,
 				83E49A2C0DE4CCA9001DE90F /* fullscreenwindow.h */,
@@ -461,7 +482,7 @@
 				LastUpgradeCheck = 1400;
 			};
 			buildConfigurationList = 83E499610DE4C808001DE90F /* Build configuration list for PBXProject "VICE" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -544,6 +565,7 @@
 				83E49A490DE4CCA9001DE90F /* soundsettingswindowcontroller.m in Sources */,
 				83E49A4A0DE4CCA9001DE90F /* viceinformationwindowcontroller.m in Sources */,
 				83E49A4B0DE4CCA9001DE90F /* viceresourcewindowcontroller.m in Sources */,
+				55C6552528F679D300D11E28 /* sidsettingswindowcontroller.m in Sources */,
 				83E49A4C0DE4CCA9001DE90F /* fullscreen.m in Sources */,
 				83E49A4D0DE4CCA9001DE90F /* kbd.m in Sources */,
 				83E49A4E0DE4CCA9001DE90F /* main.m in Sources */,
@@ -561,8 +583,10 @@
 				83E49A5E0DE4CCA9001DE90F /* vicemachinecontroller.m in Sources */,
 				83E49A5F0DE4CCA9001DE90F /* mousedrv.m in Sources */,
 				83E49A600DE4CCA9001DE90F /* ui-cmdline-options.c in Sources */,
+				55C6552B28F67A1100D11E28 /* netplaycontrolwindowcontroller.m in Sources */,
 				83E49A610DE4CCA9001DE90F /* ui-resources.c in Sources */,
 				83E49A620DE4CCA9001DE90F /* ui.m in Sources */,
+				55C6552828F679EF00D11E28 /* recordhistorywindowcontroller.m in Sources */,
 				83E49A630DE4CCA9001DE90F /* uimon.m in Sources */,
 				83E49A640DE4CCA9001DE90F /* viceapplication.m in Sources */,
 				83E49A650DE4CCA9001DE90F /* vicemachine.m in Sources */,
@@ -573,6 +597,7 @@
 				83E49A690DE4CCA9001DE90F /* driveview.m in Sources */,
 				83E49A6A0DE4CCA9001DE90F /* fullscreenwindow.m in Sources */,
 				83E49A6B0DE4CCA9001DE90F /* joystickview.m in Sources */,
+				55C6552E28F67A6300D11E28 /* controlwindow.m in Sources */,
 				83E49A6C0DE4CCA9001DE90F /* keypressview.m in Sources */,
 				83E49A6D0DE4CCA9001DE90F /* logview.m in Sources */,
 				83E49A710DE4CCA9001DE90F /* tapeview.m in Sources */,
@@ -817,6 +842,7 @@
 		83E4995F0DE4C808001DE90F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -855,6 +881,7 @@
 		83E499600DE4C808001DE90F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;

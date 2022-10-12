@@ -181,7 +181,7 @@
     }
 
     NSTextStorage * text = [self textStorage];
-    unsigned int len = [text length];
+    NSUInteger len = [text length];
 
     [last_input release];
     if (len > input_pos)

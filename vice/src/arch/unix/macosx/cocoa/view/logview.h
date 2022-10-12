@@ -34,7 +34,7 @@
 
 @interface LogView : NSTextView
 {
-    unsigned int input_pos;
+    NSUInteger input_pos;
     NSString * last_input;
     id target;
     SEL action;

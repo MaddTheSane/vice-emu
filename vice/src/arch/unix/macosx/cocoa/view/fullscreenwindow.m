@@ -29,7 +29,7 @@
 #import "vicewindow.h"
 
 // for SetSystemUIMode:
-#include <QuickTime/QuickTime.h>
+#include <Carbon/Carbon.h>
 
 @implementation FullscreenWindow
 

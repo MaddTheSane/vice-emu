@@ -57,6 +57,9 @@
 #include "imagecontents/diskcontents.h"
 #include "imagecontents/tapecontents.h"
 #include "imagecontents.h"
+#include "lib.h"
+#include "charset.h"
+#include "kbdbuf.h"
 
 #import "vicemachinecontroller.h"
 #import "vicemachine.h"

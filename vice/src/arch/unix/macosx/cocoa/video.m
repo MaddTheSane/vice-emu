@@ -39,6 +39,8 @@
 // Mac Video Log
 log_t video_log = LOG_ERR;
 
+extern void video_render_setrawalpha(DWORD a);
+
 // video parameter struct
 static video_param_t video_param;
 
@@ -130,6 +132,7 @@ static int set_disable_filtering(int val, void *param) {
         video_param.disable_filtering = val;
         video_reconfigure(0);
     }
+    return 0;
 }
 
 static resource_int_t resources_int[] =
@@ -213,6 +216,7 @@ int video_init(void)
 {
     if (video_log == LOG_ERR)
   	    video_log = log_open("MacVideo");
+    return 0;
 }
 
 void video_shutdown(void)

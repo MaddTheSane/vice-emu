@@ -109,7 +109,7 @@
 - (void)postVolumeChangeNotification:(int)volume;
 
 // post a remote notification
-- (void)postNotificationName:(NSString *)notificationName 
+- (void)postNotificationName:(NSNotificationName)notificationName 
                     userInfo:(NSDictionary *)userInfo;
 
 // prepare new window and re-post necessary notifications

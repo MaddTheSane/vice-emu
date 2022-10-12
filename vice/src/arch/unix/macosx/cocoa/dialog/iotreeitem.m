@@ -127,22 +127,19 @@ static const char * vicii_colors[] = {
     [super dealloc];
 }
 
--(void)setParent:(IOTreeItem *)item
-{
-    parent = item;
-}
+@synthesize parent;
 
 -(BOOL)isLeaf
 {
     return children == nil;
 }
 
--(IOTreeItem *)childAtIndex:(int)index
+-(IOTreeItem *)childAtIndex:(NSInteger)index
 {
     return (IOTreeItem *)[children objectAtIndex:index];
 }
 
--(int)numChildren
+-(NSInteger)numChildren
 {
     if (children == nil) {
         return 0;
@@ -164,8 +161,8 @@ static const char * vicii_colors[] = {
     if(buildChildren == nil)
         return nil;
     
-    int numChilds = [buildChildren count];
-    int i;
+    NSInteger numChilds = [buildChildren count];
+    NSInteger i;
     for(i=0;i<numChilds;i++) {
         IOTreeItem *child = [buildChildren objectAtIndex:i];
         if([[child title] compare:name] == NSOrderedSame) {
@@ -254,8 +251,8 @@ static const char * vicii_colors[] = {
 
 -(void)finalizeChildren
 {
-    int numChilds = [buildChildren count];
-    int i;
+    NSInteger numChilds = [buildChildren count];
+    NSInteger i;
     for(i=0;i<numChilds;i++) {
         IOTreeItem *child = [buildChildren objectAtIndex:i];
         [child finalizeChildren];
@@ -274,10 +271,7 @@ static const char * vicii_colors[] = {
     return result;
 }
 
--(NSString *)title
-{
-    return title;
-}
+@synthesize title;
 
 -(id)getValue
 {
@@ -334,8 +328,8 @@ static const char * vicii_colors[] = {
 -(void)calcValue
 {
     value = 0;
-    int numSrc = [src count];
-    int i;
+    NSInteger numSrc = [src count];
+    NSInteger i;
     
     // create new reg value string
     if(regValue != nil) {
@@ -404,8 +398,8 @@ static const char * vicii_colors[] = {
     }
     
     // propagate
-    int numChilds = [children count];
-    int i;
+    NSInteger numChilds = [children count];
+    NSInteger i;
     for(i=0;i<numChilds;i++) {
         IOTreeItem *child = [children objectAtIndex:i];
         [child readMemory:memSpace];

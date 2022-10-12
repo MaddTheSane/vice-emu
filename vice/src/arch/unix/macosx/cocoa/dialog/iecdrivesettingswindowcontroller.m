@@ -73,7 +73,7 @@
 
 -(void)updateResources:(NSNotification *)notification
 {
-    int curDriveId = [driveChooser selectedSegment];
+    int curDriveId = (int)[driveChooser selectedSegment];
     int curDrive = curDriveId + driveOffset;
 
     // toggle IECDevice checkmark and selection
@@ -134,7 +134,7 @@
         "Disk Image"
     };
 
-    int curDriveId = [driveChooser selectedSegment];
+    int curDriveId = (int)[driveChooser selectedSegment];
     int curDrive = curDriveId + driveOffset;
 
     int isIecDrive = [self getIntResource:@"IECDevice%d" withNumber:curDrive];
@@ -153,7 +153,7 @@
 {
     NSDictionary * dict = [notification userInfo];
     int drive = [[dict objectForKey:@"drive"] intValue];
-    int curDrive = [driveChooser selectedSegment];
+    int curDrive = (int)[driveChooser selectedSegment];
     
     if (drive == curDrive) {
         NSString *image = [dict objectForKey:@"image"];
@@ -171,8 +171,8 @@
 
 -(IBAction)changeUseIECDrive:(id)sender
 {
-    int curDrive = [driveChooser selectedSegment] + driveOffset;
-    int on = [sender state];
+    int curDrive = (int)([driveChooser selectedSegment] + driveOffset);
+    int on = (int)[sender state];
     [self setIntResource:@"IECDevice%d"
               withNumber:curDrive
                  toValue:on];
@@ -183,8 +183,8 @@
 
 -(IBAction)changeAttachReadOnly:(id)sender
 {
-    int curDrive = [driveChooser selectedSegment] + driveOffset;
-    int on = [sender state];
+    int curDrive = (int)([driveChooser selectedSegment] + driveOffset);
+    int on = (int)[sender state];
     [self setIntResource:@"AttachDevice%dReadOnly"
               withNumber:curDrive
                  toValue:on];
@@ -192,7 +192,7 @@
 
 -(IBAction)attachImage:(id)sender
 {
-    int curDrive = [driveChooser selectedSegment] + driveOffset;
+    int curDrive = (int)([driveChooser selectedSegment] + driveOffset);
     [self setIntResource:@"FileSystemDevice%d"
               withNumber:curDrive
                  toValue:ATTACH_DEVICE_FS];
@@ -203,7 +203,7 @@
 
 -(IBAction)autostartImage:(id)sender
 {
-    int curDrive = [driveChooser selectedSegment] + driveOffset;
+    int curDrive = (int)([driveChooser selectedSegment] + driveOffset);
     [self setIntResource:@"FileSystemDevice%d"
               withNumber:curDrive
                  toValue:ATTACH_DEVICE_FS];
@@ -214,8 +214,8 @@
 
 -(IBAction)changeReadP00Files:(id)sender
 {
-    int curDrive = [driveChooser selectedSegment] + driveOffset;
-    int on = [sender state];
+    int curDrive = (int)([driveChooser selectedSegment] + driveOffset);
+    int on = (int)[sender state];
     [self setIntResource:@"FSDevice%dConvertP00"
               withNumber:curDrive
                  toValue:on];
@@ -223,8 +223,8 @@
 
 -(IBAction)changeWriteP00Files:(id)sender
 {
-    int curDrive = [driveChooser selectedSegment] + driveOffset;
-    int on = [sender state];
+    int curDrive = (int)([driveChooser selectedSegment] + driveOffset);
+    int on = (int)[sender state];
     [self setIntResource:@"FSDevice%dSaveP00"
               withNumber:curDrive
                  toValue:on];
@@ -232,8 +232,8 @@
 
 -(IBAction)changeHideNonP00Files:(id)sender
 {
-    int curDrive = [driveChooser selectedSegment] + driveOffset;
-    int on = [sender state];
+    int curDrive = (int)([driveChooser selectedSegment] + driveOffset);
+    int on = (int)[sender state];
     [self setIntResource:@"FSDevice%dHideCBMFiles"
               withNumber:curDrive
                  toValue:on];
@@ -241,7 +241,7 @@
 
 -(IBAction)mountDir:(id)sender
 {
-    int curDrive = [driveChooser selectedSegment] + driveOffset;
+    int curDrive = (int)([driveChooser selectedSegment] + driveOffset);
 
     // get directory
     NSString *dir = [[[VICEApplication theAppController] getFilePanel] pickDirectoryWithTitle:@"Pick Directory to Mount"];
@@ -264,7 +264,7 @@
 
 -(IBAction)activateOpenCMBDevice:(id)sender
 {
-    int curDrive = [driveChooser selectedSegment] + driveOffset;
+    int curDrive = (int)([driveChooser selectedSegment] + driveOffset);
     [self setIntResource:@"FileSystemDevice%d"
               withNumber:curDrive
                  toValue:ATTACH_DEVICE_REAL];
@@ -273,7 +273,7 @@
 
 -(IBAction)activateRawFloppyDevice:(id)sender
 {
-    int curDrive = [driveChooser selectedSegment] + driveOffset;
+    int curDrive = (int)([driveChooser selectedSegment] + driveOffset);
     [self setIntResource:@"FileSystemDevice%d"
               withNumber:curDrive
                  toValue:ATTACH_DEVICE_RAW];

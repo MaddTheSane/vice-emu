@@ -100,10 +100,7 @@
     [self setNeedsDisplay:YES];
 }
 
-- (int)keyCode
-{
-    return keyCode;
-}
+@synthesize keyCode;
 
 @end
 

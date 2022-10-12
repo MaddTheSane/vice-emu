@@ -83,7 +83,7 @@ VICEMachine *theVICEMachine = nil;
     [viceMachine startMachineWithArgs:args app:viceApp pool:pool];
 }
 
--(void)startMachineWithArgs:(NSArray *)args
+-(void)startMachineWithArgs:(NSArray<NSString*> * NS_RELEASES_ARGUMENT)args
                         app:(id<VICEApplicationProtocol>)myApp 
                        pool:(NSAutoreleasePool *)myPool
 {
@@ -96,7 +96,7 @@ VICEMachine *theVICEMachine = nil;
     char **argv = (char **)malloc(sizeof(char *) * argc);
     int i;
     for (i=0;i<argc;i++) {
-        NSString *str = (NSString *)[args objectAtIndex:i];
+        NSString *str = [args objectAtIndex:i];
         argv[i] = strdup([str cStringUsingEncoding:NSUTF8StringEncoding]);
     }
     
@@ -139,10 +139,7 @@ VICEMachine *theVICEMachine = nil;
     isPaused = NO;
 }
 
--(BOOL)isPaused
-{
-    return isPaused;
-}
+@synthesize paused=isPaused;
 
 -(BOOL)togglePause
 {
@@ -224,10 +221,7 @@ VICEMachine *theVICEMachine = nil;
     return result;
 }
 
--(BOOL)isWaitingForLineInput
-{
-    return isWaitingForLineInput;
-}
+@synthesize waitingForLineInput=isWaitingForLineInput;
 
 /* this is called by the UI thread to submit a line input */
 -(void)submitLineInput:(NSString *)line
@@ -289,7 +283,7 @@ VICEMachine *theVICEMachine = nil;
 @end
 
 // ui_dispatch_events: call the run loop of the machine thread
-void ui_dispatch_events()
+void ui_dispatch_events(void)
 {
     [theVICEMachine triggerRunLoop];
 }

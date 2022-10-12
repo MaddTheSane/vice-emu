@@ -75,8 +75,8 @@
 }
 
 - (NSCell *)outlineView:(NSOutlineView *)outlineView 
-            dataCellForTableColumn:(NSTableColumn *)tableColumn
-            item:(id)item
+ dataCellForTableColumn:(NSTableColumn *)tableColumn
+                   item:(id)item
 {
     if (item == nil) {
         return nil;
@@ -121,8 +121,8 @@
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView
-			child:(NSInteger)index
-		   ofItem:(id)item
+            child:(NSInteger)index
+           ofItem:(id)item
 {
     ResourceTreeItem *ritem;
     if (item == nil) {
@@ -139,7 +139,7 @@
 
 - (id)outlineView:(NSOutlineView *)outlineView
 objectValueForTableColumn:(NSTableColumn *)tableColumn
-		   byItem:(id)item
+           byItem:(id)item
 {
     if (item == nil) {
         return nil;
@@ -157,9 +157,9 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 }
 
 - (void)outlineView:(NSOutlineView *)outlineView 
-	 setObjectValue:(id)object
-	 forTableColumn:(NSTableColumn *)tableColumn
-			 byItem:(id)item
+     setObjectValue:(id)object
+     forTableColumn:(NSTableColumn *)tableColumn
+             byItem:(id)item
 {
     if (item == nil) {
         return;

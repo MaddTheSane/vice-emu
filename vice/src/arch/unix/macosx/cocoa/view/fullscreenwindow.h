@@ -27,7 +27,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@protocol FullscreenToggling
+@protocol FullscreenToggling <NSObject>
  - (void)toggleFullscreen:(id)sender;
 @end
 
@@ -44,10 +44,9 @@
 -(void)setAppNonActive:(id)data;
 
 -(void)toggleFullscreen:(id)sender;
--(void)setToggler:(id<FullscreenToggling>)toggler;
+@property (assign) id<FullscreenToggling> toggler;
 
--(void)setCanvasId:(int)id;
--(int)canvasId;
+@property int canvasId;
 
 @end
 

@@ -32,7 +32,7 @@
     int keyCode;
 }
 
-- (int)keyCode;
+@property (readonly) int keyCode;
 
 @end
 

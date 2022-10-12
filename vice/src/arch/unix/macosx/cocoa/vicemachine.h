@@ -54,7 +54,7 @@ struct video_canvas_s;
 +(void)startConnected:(NSArray *)portArray;
 
 // start the machine with established connection
--(void)startMachineWithArgs:(NSArray *)args
+-(void)startMachineWithArgs:(NSArray<NSString*> * NS_RELEASES_ARGUMENT)args
                         app:(id<VICEApplicationProtocol>)myApp 
                        pool:(NSAutoreleasePool *)myPool;
 

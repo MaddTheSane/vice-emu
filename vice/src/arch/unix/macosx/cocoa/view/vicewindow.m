@@ -30,7 +30,7 @@
 
 @implementation VICEWindow
 
-- (id)initWithContentRect:(NSRect)rect title:(NSString *)title canvasSize:(NSSize)size pixelAspectRatio:(float)par
+- (id)initWithContentRect:(NSRect)rect title:(NSString *)title canvasSize:(NSSize)size pixelAspectRatio:(CGFloat)par
 {    
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
 
@@ -40,11 +40,11 @@
     original_canvas_size = size;
 
     // set window style
-    unsigned int style =
-        NSTitledWindowMask | NSClosableWindowMask |
-        NSMiniaturizableWindowMask | NSResizableWindowMask;
+    NSWindowStyleMask style =
+    NSWindowStyleMaskTitled | NSWindowStyleMaskClosable |
+    NSWindowStyleMaskMiniaturizable | NSWindowStyleMaskResizable;
     if ([def boolForKey:@"Textured Windows"])
-        style |= NSTexturedBackgroundWindowMask;
+        style |= NSWindowStyleMaskTexturedBackground;
     
     // store pixel aspect ratio
     pixelAspectRatio = par;
@@ -66,16 +66,16 @@
     // now size could have changed due to prefences size
     // so determine current canvas size
     NSRect bounds = [[self contentView] bounds];
-    float cw = NSWidth(bounds);
-    float ch = NSHeight(bounds);
+    CGFloat cw = NSWidth(bounds);
+    CGFloat ch = NSHeight(bounds);
     
     // read scale from prefs
-    scale_x = [def floatForKey:[title stringByAppendingString:@"ScaleX"]];
-    scale_y = [def floatForKey:[title stringByAppendingString:@"ScaleY"]];
-    if(scale_x == 0.0f)
-        scale_x = 1.0f;
-    if(scale_y == 0.0f)
-        scale_y = 1.0f;
+    scale_x = [def doubleForKey:[title stringByAppendingString:@"ScaleX"]];
+    scale_y = [def doubleForKey:[title stringByAppendingString:@"ScaleY"]];
+    if(scale_x == 0.0)
+        scale_x = 1.0;
+    if(scale_y == 0.0)
+        scale_y = 1.0;
 
     //NSLog(@"%@: canvas %u x %u bounds %g x %g  scale %g x %g",title,
     //    canvas_width, canvas_height, cw,ch,scale_x,scale_y);
@@ -146,7 +146,7 @@
     [self setFrame:f display:YES];
 }
 
-- (void)resizeCanvas:(NSSize)size pixelAspectRatio:(float)par
+- (void)resizeCanvas:(NSSize)size pixelAspectRatio:(CGFloat)par
 {
     // do not resize if same size
     if ((original_canvas_size.width  == size.width) && 
@@ -162,14 +162,14 @@
     
     //NSLog(@"resize: canvas %g x %g scale %g x %g",size.width,size.height,scale_x,scale_y);
 
-    [self setContentMinSize:NSMakeSize(size.width * par / 2.0f, size.height / 2.0f)];
+    [self setContentMinSize:NSMakeSize(size.width * par / 2.0, size.height / 2.0)];
     [self resizeWindowToFactorX:scale_x andY:scale_y];
 }
 
 // Note: resize Window here... not Canvas!
 - (void)resizeCanvasToMultipleSize:(id)sender
 {
-    int factor = 1;
+    NSInteger factor = 1;
     if (sender!=nil)
         factor = [sender tag];
 
@@ -189,17 +189,17 @@
 // adjust resizing to be proportional
 - (NSSize)windowWillResize:(NSWindow *)sender toSize:(NSSize)proposedFrameSize
 {
-    UInt32 modifierMask = [[self currentEvent] modifierFlags];
+    NSEventModifierFlags modifierMask = [[self currentEvent] modifierFlags];
 
-    float titleHeight = NSHeight([self frame]) - NSHeight([[self contentView] bounds]);
-    float contentHeight = proposedFrameSize.height - titleHeight;
-    float contentWidth  = proposedFrameSize.width;
+    CGFloat titleHeight = NSHeight([self frame]) - NSHeight([[self contentView] bounds]);
+    CGFloat contentHeight = proposedFrameSize.height - titleHeight;
+    CGFloat contentWidth  = proposedFrameSize.width;
 
-    float canvasWidthPAR = original_canvas_size.width * pixelAspectRatio;
-    float canvasHeight = original_canvas_size.height;
+    CGFloat canvasWidthPAR = original_canvas_size.width * pixelAspectRatio;
+    CGFloat canvasHeight = original_canvas_size.height;
 
     // SHIFT allows all sizes unconstraint
-    if (modifierMask & NSShiftKeyMask ||
+    if (modifierMask & NSEventModifierFlagShift ||
         ![[self contentView] inLiveResize])
     {
         scale_x = contentWidth  / canvasWidthPAR;
@@ -209,9 +209,9 @@
     }
 
     // ALT locks to multiple size x1, x2, ...
-    if (modifierMask & NSAlternateKeyMask)
+    if (modifierMask & NSEventModifierFlagOption)
     {
-        float scale = floor(contentHeight / canvasHeight + 0.5);
+        CGFloat scale = floor(contentHeight / canvasHeight + 0.5);
         if (scale < 1.0)
             scale = 1.0;
         contentWidth  = scale * canvasWidthPAR;
@@ -224,7 +224,7 @@
     }
 
     // arbitrary but proportional scale
-    float scale = contentHeight / canvasHeight;
+    CGFloat scale = contentHeight / canvasHeight;
     contentWidth  = scale * canvasWidthPAR;
 
     scale_x = scale;

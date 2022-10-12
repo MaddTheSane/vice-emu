@@ -108,7 +108,7 @@ NSString *tags[3] = { @"KeymapSymFile", @"KeymapSymDeFile", @"KeymapPosFile" };
     VICEAppController *appCtrl = [VICEApplication theAppController];
     NSString *path = [[appCtrl getFilePanel] pickOpenFileWithType:@"KeyMap"];
     if (path != nil) {
-        int index = [sender tag];
+        NSInteger index = [sender tag];
         [self setStringResource:tags[index] toValue:path];
         [self updateResources:nil];
     }

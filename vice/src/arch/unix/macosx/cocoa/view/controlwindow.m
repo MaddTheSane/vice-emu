@@ -191,10 +191,10 @@
     total_height += 2;
     
     // adjust window frame to stay on same top
-    float old_top = NSMinY(frameRect) + NSHeight(frameRect);
-    float title_h = NSHeight(frameRect) - NSHeight(boundsRect); 
-    float hf = total_height + title_h;
-    float yf = old_top - hf;
+    CGFloat old_top = NSMinY(frameRect) + NSHeight(frameRect);
+    CGFloat title_h = NSHeight(frameRect) - NSHeight(boundsRect);
+    CGFloat hf = total_height + title_h;
+    CGFloat yf = old_top - hf;
     [self setFrame:NSMakeRect(NSMinX(frameRect),
                               yf,
                               NSWidth(frameRect),
@@ -217,9 +217,9 @@
         return proposedFrameSize;
     }
     
-    float height = NSHeight([self frame]);
-    float width  = proposedFrameSize.width;
-    float min_width = PERIPH_WIDTH + 2 * PERIPH_OFFSET;
+    CGFloat height = NSHeight([self frame]);
+    CGFloat width  = proposedFrameSize.width;
+    CGFloat min_width = PERIPH_WIDTH + 2 * PERIPH_OFFSET;
     if (width < min_width)
         width = min_width;
     return NSMakeSize(width,height);

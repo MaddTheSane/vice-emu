@@ -38,19 +38,19 @@
     BOOL isFullscreen;
     FullscreenWindow *fullscreenWindow;
     
-    float scale_x;
-    float scale_y;
+    CGFloat scale_x;
+    CGFloat scale_y;
     
-    float pixelAspectRatio;
+    CGFloat pixelAspectRatio;
 }
 
 // create the window and setup canvas structure
-- (id)initWithContentRect:(NSRect)rect title:(NSString *)title canvasSize:(NSSize)size pixelAspectRatio:(float)par;
+- (id)initWithContentRect:(NSRect)rect title:(NSString *)title canvasSize:(NSSize)size pixelAspectRatio:(CGFloat)par;
 
 // return the GLView for render access
 - (VICEGLView *)getVICEGLView;
 // resize canvas
-- (void)resizeCanvas:(NSSize)size pixelAspectRatio:(float)par;
+- (void)resizeCanvas:(NSSize)size pixelAspectRatio:(CGFloat)par;
 
 // return canvas id
 - (int)canvasId;

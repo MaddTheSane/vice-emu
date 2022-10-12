@@ -87,7 +87,7 @@ static NSString *help_texts[] = {
     [tape_image setAutoresizingMask:NSViewWidthSizable];
     [tape_image setEditable:NO];
     [tape_image setBordered:NO];
-    [tape_image setAlignment:NSLeftTextAlignment];
+    [tape_image setAlignment:NSTextAlignmentLeft];
     [[tape_image cell] setLineBreakMode:NSLineBreakByTruncatingHead];
     [self addSubview:tape_image];
 
@@ -95,7 +95,7 @@ static NSString *help_texts[] = {
     tape_counter = [[NSTextField alloc]
         initWithFrame:NSMakeRect(0 , h, cw, h)];
     [tape_counter setDrawsBackground:NO];
-    [tape_counter setAlignment:NSLeftTextAlignment];
+    [tape_counter setAlignment:NSTextAlignmentLeft];
     [tape_counter setEditable:NO];
     [tape_counter setBordered:NO];
     [self addSubview:tape_counter];
@@ -105,7 +105,7 @@ static NSString *help_texts[] = {
         initWithFrame:NSMakeRect(w-bw, h-4, sw, h)];
     [tape_status setFont:[NSFont fontWithName:@"Apple Symbols" size:16.0]];    
     [tape_status setDrawsBackground:NO];
-    [tape_status setAlignment:NSCenterTextAlignment];
+    [tape_status setAlignment:NSTextAlignmentCenter];
     [tape_status setEditable:NO];
     [tape_status setBordered:NO];
     [self addSubview:tape_status];
@@ -256,6 +256,11 @@ static NSString *help_texts[] = {
     }
 }
 
+- (BOOL)isEnabled
+{
+    return [buttons[8] isEnabled];
+}
+
 - (void)setEnabled:(BOOL)on
 {
     int i;
@@ -275,7 +280,7 @@ static NSString *help_texts[] = {
 
 - (void)controlDatasette:(id)sender
 {
-    int command = [sender tag];
+    NSInteger command = [sender tag];
     
     // attach tape image
     if (command==7) {

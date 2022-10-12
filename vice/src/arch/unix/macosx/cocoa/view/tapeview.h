@@ -27,7 +27,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface TapeView : NSView
+@interface TapeView : NSView <NSDraggingDestination>
 {
     /* text field for track display */
     NSTextField * tape_image;
@@ -53,6 +53,7 @@
 - (void)updateTapeStatus;
 - (void)updateCounter;
 
+@property (getter=isEnabled) BOOL enabled;
 - (void)setEnabled:(BOOL)on;
 - (void)setTapeControlEnabled:(BOOL)do_enable;
 

@@ -68,7 +68,7 @@
 
 -(int)getAddrForSelection
 {
-    int row = [memoryTable clickedRow];
+    NSInteger row = [memoryTable clickedRow];
     if(row == -1) {
         return -1;
     }
@@ -198,7 +198,7 @@
         return 0;
     }
     NSArray *oldLines = lines;
-    int newCount = [newLines count];
+    NSInteger newCount = [newLines count];
         
     NSMutableArray *myLines = [[NSMutableArray alloc] init];
     [myLines addObjectsFromArray:newLines];
@@ -223,7 +223,7 @@
         return 0;
     }
     NSArray *oldLines = lines;
-    int newCount = [newLines count];
+    NSInteger newCount = [newLines count];
         
     NSMutableArray *myLines = [[NSMutableArray alloc] init];
     [myLines addObjectsFromArray:oldLines];
@@ -279,13 +279,9 @@
     [memoryTable reloadData];
 }
 
-@end
-
-@implementation DisassemblyWindowController (NSTableViewDataSource)
-
 - (id)tableView:(NSTableView *)aTableView
-    objectValueForTableColumn:(NSTableColumn *)aTableColumn
-    row:(int)rowIndex
+objectValueForTableColumn:(NSTableColumn *)aTableColumn
+            row:(NSInteger)rowIndex
 {
     id theValue = nil;
     
@@ -301,7 +297,7 @@
         // ah trigger automatical extend
         if((rowIndex == 0) || (rowIndex == [lines count]-1)) {
             NSDictionary * dict =
-                 [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:rowIndex]
+                 [NSDictionary dictionaryWithObject:@(rowIndex)
                                              forKey:@"row"];
             [[NSNotificationCenter defaultCenter] postNotificationName:VICEDisassembleRealizeExtendNotification
                                                                 object:self
@@ -345,7 +341,7 @@
     return theValue;
 }
 
-- (int)numberOfRowsInTableView:(NSTableView *)aTableView
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView
 {
     return [lines count];
 }

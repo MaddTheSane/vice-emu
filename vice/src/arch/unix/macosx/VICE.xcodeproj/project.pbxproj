@@ -44,6 +44,11 @@
 		55C6552828F679EF00D11E28 /* recordhistorywindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552728F679EF00D11E28 /* recordhistorywindowcontroller.m */; };
 		55C6552B28F67A1100D11E28 /* netplaycontrolwindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552A28F67A1100D11E28 /* netplaycontrolwindowcontroller.m */; };
 		55C6552E28F67A6300D11E28 /* controlwindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552C28F67A6300D11E28 /* controlwindow.m */; };
+		55C6553128F67C7600D11E28 /* registerwindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552F28F67C7500D11E28 /* registerwindowcontroller.m */; };
+		55C6553428F67C8900D11E28 /* memorywindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6553228F67C8900D11E28 /* memorywindowcontroller.m */; };
+		55C6553728F67C9700D11E28 /* disassemblywindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6553528F67C9700D11E28 /* disassemblywindowcontroller.m */; };
+		55C6553C28F67CB200D11E28 /* iotreeitem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6553A28F67CB200D11E28 /* iotreeitem.m */; };
+		55C6553D28F67CB200D11E28 /* iotreewindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6553B28F67CB200D11E28 /* iotreewindowcontroller.m */; };
 		83E499CD0DE4CA54001DE90F /* IECDriveSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4997B0DE4C8C8001DE90F /* IECDriveSettings.nib */; };
 		83E499CE0DE4CA54001DE90F /* SoundSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4998D0DE4C8C8001DE90F /* SoundSettings.nib */; };
 		83E499CF0DE4CA54001DE90F /* KeyboardSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4997F0DE4C8C8001DE90F /* KeyboardSettings.nib */; };
@@ -149,6 +154,16 @@
 		55C6552A28F67A1100D11E28 /* netplaycontrolwindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = netplaycontrolwindowcontroller.m; sourceTree = "<group>"; };
 		55C6552C28F67A6300D11E28 /* controlwindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = controlwindow.m; sourceTree = "<group>"; };
 		55C6552D28F67A6300D11E28 /* controlwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = controlwindow.h; sourceTree = "<group>"; };
+		55C6552F28F67C7500D11E28 /* registerwindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registerwindowcontroller.m; sourceTree = "<group>"; };
+		55C6553028F67C7500D11E28 /* registerwindowcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registerwindowcontroller.h; sourceTree = "<group>"; };
+		55C6553228F67C8900D11E28 /* memorywindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memorywindowcontroller.m; sourceTree = "<group>"; };
+		55C6553328F67C8900D11E28 /* memorywindowcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memorywindowcontroller.h; sourceTree = "<group>"; };
+		55C6553528F67C9700D11E28 /* disassemblywindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = disassemblywindowcontroller.m; sourceTree = "<group>"; };
+		55C6553628F67C9700D11E28 /* disassemblywindowcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = disassemblywindowcontroller.h; sourceTree = "<group>"; };
+		55C6553828F67CB200D11E28 /* iotreewindowcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iotreewindowcontroller.h; sourceTree = "<group>"; };
+		55C6553928F67CB200D11E28 /* iotreeitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iotreeitem.h; sourceTree = "<group>"; };
+		55C6553A28F67CB200D11E28 /* iotreeitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iotreeitem.m; sourceTree = "<group>"; };
+		55C6553B28F67CB200D11E28 /* iotreewindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iotreewindowcontroller.m; sourceTree = "<group>"; };
 		83E4997A0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/DriveSettings.nib; sourceTree = "<group>"; };
 		83E4997C0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/IECDriveSettings.nib; sourceTree = "<group>"; };
 		83E4997E0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/JoystickSettings.nib; sourceTree = "<group>"; };
@@ -362,15 +377,23 @@
 		83E499E50DE4CCA9001DE90F /* dialog */ = {
 			isa = PBXGroup;
 			children = (
+				55C6553628F67C9700D11E28 /* disassemblywindowcontroller.h */,
+				55C6553528F67C9700D11E28 /* disassemblywindowcontroller.m */,
 				83E499E60DE4CCA9001DE90F /* drivesettingswindowcontroller.h */,
 				83E499E70DE4CCA9001DE90F /* drivesettingswindowcontroller.m */,
 				83E499E80DE4CCA9001DE90F /* iecdrivesettingswindowcontroller.h */,
 				83E499E90DE4CCA9001DE90F /* iecdrivesettingswindowcontroller.m */,
+				55C6553928F67CB200D11E28 /* iotreeitem.h */,
+				55C6553A28F67CB200D11E28 /* iotreeitem.m */,
+				55C6553828F67CB200D11E28 /* iotreewindowcontroller.h */,
+				55C6553B28F67CB200D11E28 /* iotreewindowcontroller.m */,
 				83E499EA0DE4CCA9001DE90F /* joysticksettingswindowcontroller.h */,
 				83E499EB0DE4CCA9001DE90F /* joysticksettingswindowcontroller.m */,
 				83E499EC0DE4CCA9001DE90F /* keyboardsettingswindowcontroller.h */,
 				83E499ED0DE4CCA9001DE90F /* keyboardsettingswindowcontroller.m */,
 				83E499EE0DE4CCA9001DE90F /* Makefile.am */,
+				55C6553328F67C8900D11E28 /* memorywindowcontroller.h */,
+				55C6553228F67C8900D11E28 /* memorywindowcontroller.m */,
 				55C6552928F67A1100D11E28 /* netplaycontrolwindowcontroller.h */,
 				55C6552A28F67A1100D11E28 /* netplaycontrolwindowcontroller.m */,
 				83E499F00DE4CCA9001DE90F /* printersettingswindowcontroller.h */,
@@ -379,6 +402,8 @@
 				55C6552728F679EF00D11E28 /* recordhistorywindowcontroller.m */,
 				83E49A810DE6B688001DE90F /* recordmediawindowcontroller.h */,
 				83E49A820DE6B688001DE90F /* recordmediawindowcontroller.m */,
+				55C6553028F67C7500D11E28 /* registerwindowcontroller.h */,
+				55C6552F28F67C7500D11E28 /* registerwindowcontroller.m */,
 				83E499F20DE4CCA9001DE90F /* resourceeditorcontroller.h */,
 				83E499F30DE4CCA9001DE90F /* resourceeditorcontroller.m */,
 				83E499F40DE4CCA9001DE90F /* resourcetreeitem.h */,
@@ -560,9 +585,11 @@
 				83E49A420DE4CCA9001DE90F /* joysticksettingswindowcontroller.m in Sources */,
 				83E49A430DE4CCA9001DE90F /* keyboardsettingswindowcontroller.m in Sources */,
 				83E49A460DE4CCA9001DE90F /* printersettingswindowcontroller.m in Sources */,
+				55C6553728F67C9700D11E28 /* disassemblywindowcontroller.m in Sources */,
 				83E49A470DE4CCA9001DE90F /* resourceeditorcontroller.m in Sources */,
 				83E49A480DE4CCA9001DE90F /* resourcetreeitem.m in Sources */,
 				83E49A490DE4CCA9001DE90F /* soundsettingswindowcontroller.m in Sources */,
+				55C6553D28F67CB200D11E28 /* iotreewindowcontroller.m in Sources */,
 				83E49A4A0DE4CCA9001DE90F /* viceinformationwindowcontroller.m in Sources */,
 				83E49A4B0DE4CCA9001DE90F /* viceresourcewindowcontroller.m in Sources */,
 				55C6552528F679D300D11E28 /* sidsettingswindowcontroller.m in Sources */,
@@ -574,6 +601,7 @@
 				83E49A530DE4CCA9001DE90F /* c128ui.m in Sources */,
 				83E49A540DE4CCA9001DE90F /* c64controller.m in Sources */,
 				83E49A550DE4CCA9001DE90F /* c64machinecontroller.m in Sources */,
+				55C6553128F67C7600D11E28 /* registerwindowcontroller.m in Sources */,
 				83E49A560DE4CCA9001DE90F /* c64ui.m in Sources */,
 				83E49A570DE4CCA9001DE90F /* cbm2ui.m in Sources */,
 				83E49A5A0DE4CCA9001DE90F /* petui.m in Sources */,
@@ -589,6 +617,7 @@
 				55C6552828F679EF00D11E28 /* recordhistorywindowcontroller.m in Sources */,
 				83E49A630DE4CCA9001DE90F /* uimon.m in Sources */,
 				83E49A640DE4CCA9001DE90F /* viceapplication.m in Sources */,
+				55C6553428F67C8900D11E28 /* memorywindowcontroller.m in Sources */,
 				83E49A650DE4CCA9001DE90F /* vicemachine.m in Sources */,
 				55C6552228F6716E00D11E28 /* vicefilepanel.m in Sources */,
 				83E49A660DE4CCA9001DE90F /* vicemachinenotifier.m in Sources */,
@@ -597,6 +626,7 @@
 				83E49A690DE4CCA9001DE90F /* driveview.m in Sources */,
 				83E49A6A0DE4CCA9001DE90F /* fullscreenwindow.m in Sources */,
 				83E49A6B0DE4CCA9001DE90F /* joystickview.m in Sources */,
+				55C6553C28F67CB200D11E28 /* iotreeitem.m in Sources */,
 				55C6552E28F67A6300D11E28 /* controlwindow.m in Sources */,
 				83E49A6C0DE4CCA9001DE90F /* keypressview.m in Sources */,
 				83E49A6D0DE4CCA9001DE90F /* logview.m in Sources */,

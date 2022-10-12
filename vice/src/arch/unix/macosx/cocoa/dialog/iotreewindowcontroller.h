@@ -27,7 +27,7 @@
 #import "debuggerwindowcontroller.h"
 #import "iotreeitem.h"
 
-@interface IOTreeWindowController : DebuggerWindowController
+@interface IOTreeWindowController : DebuggerWindowController <NSOutlineViewDelegate, NSOutlineViewDataSource>
 {
     IOTreeItem *rootItem;
     IBOutlet NSOutlineView *treeView;

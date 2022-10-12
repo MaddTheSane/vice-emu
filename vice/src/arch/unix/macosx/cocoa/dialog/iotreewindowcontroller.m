@@ -28,8 +28,8 @@
 
 @implementation IOTreeWindowController
 
- -(id)initWithMemSpace:(int)space
- {
+-(id)initWithMemSpace:(int)space
+{
     self = [super initWithWindowNibName:@"IOTreeWindow" title:@"IO Tree" memSpace:space];
     if (!self) {
         return self;
@@ -69,12 +69,8 @@
     [treeView reloadData];
 }
 
-@end
-
-@implementation IOTreeWindowController (NSOutlineViewDataSource)
-
-- (int)outlineView:(NSOutlineView *)outlineView
-       numberOfChildrenOfItem:(id)item
+- (NSInteger)outlineView:(NSOutlineView *)outlineView
+  numberOfChildrenOfItem:(id)item
 {
     if (item == nil) {
         return [rootItem numChildren];
@@ -84,7 +80,7 @@
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView
-        isItemExpandable:(id)item
+   isItemExpandable:(id)item
 {
     if (item == nil) {
         return TRUE;
@@ -94,8 +90,8 @@
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView
-      child:(int)index 
-      ofItem:(id)item 
+            child:(NSInteger)index
+           ofItem:(id)item
 {
     IOTreeItem *ritem;
     if (item == nil) {
@@ -103,7 +99,7 @@
     } else {
         ritem = (IOTreeItem *)item;
     }
-    int max = [ritem numChildren];
+    NSInteger max = [ritem numChildren];
     if (index >= max) {
         return nil;
     }
@@ -111,8 +107,8 @@
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView
-      objectValueForTableColumn:(NSTableColumn *)tableColumn
-      byItem:(id)item
+objectValueForTableColumn:(NSTableColumn *)tableColumn
+           byItem:(id)item
 {
     if (item == nil) {
         return nil;

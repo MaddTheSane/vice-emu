@@ -33,9 +33,9 @@
 {
     NSString *title;
 
-    NSArray *children;
-    NSMutableArray *buildChildren;
-    IOTreeItem *parent;
+    NSArray<IOTreeItem*> *children;
+    NSMutableArray<IOTreeItem*> *buildChildren;
+    __unsafe_unretained IOTreeItem *parent;
 
     NSString *format;
     NSArray *map;
@@ -52,17 +52,17 @@
 -(id)initWithTitle:(NSString *)t;
 -(id)initWithTitle:(NSString *)t rangeMinAddr:(int)minAddr maxAddr:(int)maxAddr;
 -(id)initWithTitle:(NSString *)t format:(NSString *)format src:(NSArray *)src map:(NSArray *)map;
--(void)setParent:(IOTreeItem *)item;
+@property (assign) IOTreeItem *parent;
 
 -(BOOL)addFromDictionary:(NSDictionary *)dict;
 -(BOOL)parseDictionary:(NSDictionary *)dict withTitle:(NSString *)title;
 
 -(id)getValue;
 -(id)getRegisterValue;
--(BOOL)isLeaf;
--(NSString *)title;
--(int)numChildren;
--(IOTreeItem *)childAtIndex:(int)index;
+@property (readonly, getter=isLeaf) BOOL leaf;
+@property (readonly, copy) NSString *title;
+@property (readonly) NSInteger numChildren;
+-(IOTreeItem *)childAtIndex:(NSInteger)index;
 
 -(NSComparisonResult)compare:(IOTreeItem *)item;
 

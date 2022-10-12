@@ -50,8 +50,7 @@ static NSString *help_texts[] = {
     
     driveNumber = drive;
     activeLedColor = nil;
-    inactiveLedColor = [NSColor blackColor];
-    [inactiveLedColor retain];
+    inactiveLedColor = [[NSColor blackColor] retain];
     ejectEnabled = NO;
     
     // calc layout
@@ -72,7 +71,7 @@ static NSString *help_texts[] = {
     [trackText setAutoresizingMask:NSViewWidthSizable];
     [trackText setEditable:NO];
     [trackText setBordered:NO];
-    [trackText setAlignment:NSLeftTextAlignment];
+    [trackText setAlignment:NSTextAlignmentLeft];
     [self addSubview:trackText];
     
     // color field for drive led
@@ -107,7 +106,7 @@ static NSString *help_texts[] = {
     [imageText setAutoresizingMask:NSViewWidthSizable];
     [imageText setEditable:NO];
     [imageText setBordered:NO];
-    [imageText setAlignment:NSLeftTextAlignment];
+    [imageText setAlignment:NSTextAlignmentLeft];
     [[imageText cell] setLineBreakMode:NSLineBreakByTruncatingHead];
     [self addSubview:imageText];
 
@@ -208,7 +207,7 @@ static NSString *help_texts[] = {
 
     if (drive == driveNumber)
     {
-        float track = [[dict objectForKey:@"track"] floatValue];
+        CGFloat track = [[dict objectForKey:@"track"] floatValue];
         NSString * s = [NSString stringWithFormat:@"%d: %.1f", drive + driveBase, track];
         [trackText setStringValue:s];
     }
@@ -216,7 +215,7 @@ static NSString *help_texts[] = {
 
 - (void)buttonPressed:(id)sender
 {
-    int command = [sender tag];
+    NSInteger command = [sender tag];
     if (command==0) {
         // eject disk image
         [[VICEApplication theAppController] detachDiskImage:self];
@@ -226,7 +225,7 @@ static NSString *help_texts[] = {
     }
 }
 
-- (int)tag
+- (NSInteger)tag
 {
     // callback from button pressed
     return driveNumber + driveBase;

@@ -106,7 +106,7 @@
 -(void)updateResources:(NSNotification *)notification
 {
     int trueEmu = [self getIntResource:@"DriveTrueEmulation"];
-    int driveId  = [driveChooser selectedSegment];
+    int driveId  = (int)[driveChooser selectedSegment];
     int driveNum = driveId + driveOffset;
     int driveEnabled;
     if(hasIEC) {
@@ -233,9 +233,9 @@
 
 -(void)changedDriveType:(id)sender
 {
-    int driveNum = [driveChooser selectedSegment] + driveOffset;
+    int driveNum = (int)([driveChooser selectedSegment] + driveOffset);
     id cell = [sender selectedCell];
-    int driveId = [cell tag];
+    int driveId = (int)[cell tag];
     int driveTypeVar = [self mapToDriveType:driveId];
         
     [self setIntResource:@"Drive%dType" 
@@ -246,9 +246,9 @@
 
 -(void)changedTrackHandling:(id)sender
 {
-    int driveNum = [driveChooser selectedSegment] + driveOffset;
+    int driveNum = (int)([driveChooser selectedSegment] + driveOffset);
     id cell = [sender selectedCell];
-    int type = [cell tag];
+    int type = (int)[cell tag];
     
     [self setIntResource:@"Drive%dExtendImagePolicy" 
               withNumber:driveNum 
@@ -257,9 +257,9 @@
 
 -(void)changedDriveExpansion2000:(id)sender
 {
-    int driveNum = [driveChooser selectedSegment] + driveOffset;
+    int driveNum = (int)([driveChooser selectedSegment] + driveOffset);
     id cell = [sender selectedCell];
-    int on = [cell state];
+    int on = (int)[cell state];
     
     [self setIntResource:@"Drive%dRAM2000"
               withNumber:driveNum
@@ -268,9 +268,9 @@
 
 -(void)changedDriveExpansion4000:(id)sender
 {
-    int driveNum = [driveChooser selectedSegment] + driveOffset;
+    int driveNum = (int)([driveChooser selectedSegment] + driveOffset);
     id cell = [sender selectedCell];
-    int on = [cell state];
+    int on = (int)[cell state];
 
     [self setIntResource:@"Drive%dRAM4000"
               withNumber:driveNum
@@ -279,9 +279,9 @@
 
 -(void)changedDriveExpansion6000:(id)sender
 {
-    int driveNum = [driveChooser selectedSegment] + driveOffset;
+    int driveNum = (int)([driveChooser selectedSegment] + driveOffset);
     id cell = [sender selectedCell];
-    int on = [cell state];
+    int on = (int)[cell state];
 
     [self setIntResource:@"Drive%dRAM6000"
               withNumber:driveNum
@@ -290,9 +290,9 @@
 
 -(void)changedDriveExpansion8000:(id)sender
 {
-    int driveNum = [driveChooser selectedSegment] + driveOffset;
+    int driveNum = (int)([driveChooser selectedSegment] + driveOffset);
     id cell = [sender selectedCell];
-    int on = [cell state];
+    int on = (int)[cell state];
     
     [self setIntResource:@"Drive%dRAM8000"
               withNumber:driveNum
@@ -301,9 +301,9 @@
 
 -(void)changedDriveExpansionA000:(id)sender
 {
-    int driveNum = [driveChooser selectedSegment] + driveOffset;
+    int driveNum = (int)([driveChooser selectedSegment] + driveOffset);
     id cell = [sender selectedCell];
-    int on = [cell state];
+    int on = (int)[cell state];
 
     [self setIntResource:@"Drive%dRAMA000"
               withNumber:driveNum
@@ -312,9 +312,9 @@
 
 -(void)changedIdleMethod:(id)sender
 {
-    int driveNum = [driveChooser selectedSegment] + driveOffset;
+    int driveNum = (int)([driveChooser selectedSegment] + driveOffset);
     id cell = [sender selectedCell];
-    int type = [cell tag];
+    int type = (int)[cell tag];
 
     [self setIntResource:@"Drive%dIdleMethod"
               withNumber:driveNum
@@ -323,8 +323,8 @@
 
 -(void)toggledParallelCable:(id)sender
 {
-    int driveNum = [driveChooser selectedSegment] + driveOffset;
-    int on = [sender state];
+    int driveNum = (int)([driveChooser selectedSegment] + driveOffset);
+    int on = (int)[sender state];
 
     [self setIntResource:@"Drive%dParallelCable"
               withNumber:driveNum

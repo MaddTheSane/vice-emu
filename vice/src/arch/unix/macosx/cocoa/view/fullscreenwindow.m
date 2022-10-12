@@ -113,19 +113,8 @@
     [toggler toggleFullscreen:self];
 }
 
--(void)setToggler:(id<FullscreenToggling>)t
-{
-    toggler = t;
-}
+@synthesize toggler;
 
--(void)setCanvasId:(int)id
-{
-    canvasId = id;
-}
-
--(int)canvasId
-{
-    return canvasId;
-}
+@synthesize canvasId;
 
 @end

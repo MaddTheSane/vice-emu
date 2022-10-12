@@ -62,7 +62,7 @@
     [log_view setAutoresizingMask: (NSViewWidthSizable | NSViewHeightSizable)];
     [log_view setEditable:NO];
     [log_view setHorizontallyResizable:YES];
-    [[log_view textContainer] setContainerSize:NSMakeSize(FLT_MAX, FLT_MAX)];
+    [[log_view textContainer] setContainerSize:NSMakeSize(CGFLOAT_MAX, CGFLOAT_MAX)];
     [[log_view textContainer] setWidthTracksTextView:YES];
 
     [scroll setDocumentView:log_view];
@@ -134,9 +134,8 @@
     NSData * data = [[notification userInfo]
         objectForKey:NSFileHandleNotificationDataItem];
 
-    [self appendText:[[[NSString alloc] initWithBytes:[data bytes] 
-                                              length:[data length]
-                                              encoding:NSUTF8StringEncoding] autorelease]];
+    [self appendText:[[[NSString alloc] initWithData:data
+                                            encoding:NSUTF8StringEncoding] autorelease]];
 
     [[notification object] readInBackgroundAndNotify];
 }

@@ -44,15 +44,15 @@
 {
     NSString *title;
     NSString *resource;
-    NSArray *children;
-    NSMutableArray *buildChildren;
+    NSArray<ResourceTreeItem*> *children;
+    NSMutableArray<ResourceTreeItem*> *buildChildren;
     int type;
     int hint;
     id cacheValue;
     NSCell *dataCell;
     NSCell *extraCell;
-    NSArray *args;
-    int numArgs;
+    NSArray<NSString*> *args;
+    NSInteger numArgs;
 }
 
 -(id)initWithTitle:(NSString *)t;
@@ -64,9 +64,9 @@
 -(void)setValueExtra:(id)controller;
 
 -(BOOL)isLeaf;
--(NSString *)title;
--(int)numChildren;
--(ResourceTreeItem *)childAtIndex:(int)index;
+@property (readonly, copy) NSString *title;
+@property (readonly) NSInteger numChildren;
+-(ResourceTreeItem *)childAtIndex:(NSInteger)index;
 
 -(BOOL)parseResourceString:(NSString *)string;
 

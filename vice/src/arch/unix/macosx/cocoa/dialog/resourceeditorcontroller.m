@@ -100,12 +100,8 @@
     [treeView reloadItem:item];
 }
 
-@end
-
-@implementation ResourceEditorController (NSOutlineViewDataSource)
-
-- (int)outlineView:(NSOutlineView *)outlineView
-       numberOfChildrenOfItem:(id)item
+- (NSInteger)outlineView:(NSOutlineView *)outlineView
+  numberOfChildrenOfItem:(id)item
 {
     if (item == nil) {
         return [rootItem numChildren];
@@ -115,7 +111,7 @@
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView
-        isItemExpandable:(id)item
+   isItemExpandable:(id)item
 {
     if (item == nil) {
         return TRUE;
@@ -125,8 +121,8 @@
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView
-      child:(int)index 
-      ofItem:(id)item 
+			child:(NSInteger)index
+		   ofItem:(id)item
 {
     ResourceTreeItem *ritem;
     if (item == nil) {
@@ -134,7 +130,7 @@
     } else {
         ritem = (ResourceTreeItem *)item;
     }
-    int max = [ritem numChildren];
+    NSInteger max = [ritem numChildren];
     if (index >= max) {
         return nil;
     }
@@ -142,8 +138,8 @@
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView
-      objectValueForTableColumn:(NSTableColumn *)tableColumn
-      byItem:(id)item
+objectValueForTableColumn:(NSTableColumn *)tableColumn
+		   byItem:(id)item
 {
     if (item == nil) {
         return nil;
@@ -161,9 +157,9 @@
 }
 
 - (void)outlineView:(NSOutlineView *)outlineView 
-        setObjectValue:(id)object
-        forTableColumn:(NSTableColumn *)tableColumn
-        byItem:(id)item
+	 setObjectValue:(id)object
+	 forTableColumn:(NSTableColumn *)tableColumn
+			 byItem:(id)item
 {
     if (item == nil) {
         return;

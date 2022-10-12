@@ -108,7 +108,7 @@ static inline void atomic_decrement(atomic_int_t * addr)
                           :"m" (*addr));
 }
 
-#else
+#elif (__ppc__)
 /* PowerPC Mac Implementation */
 
 static inline void atomic_add(atomic_int_t * addr, int val)
@@ -132,6 +132,21 @@ static inline void atomic_increment(atomic_int_t * addr)
 static inline void atomic_decrement(atomic_int_t * addr)
 {
     atomic_add(addr, -1);
+}
+
+#else
+/* Everything Else */
+
+#include <libkern/OSAtomic.h>
+
+static inline void atomic_increment(atomic_int_t * addr)
+{
+	OSAtomicIncrement32(addr);
+}
+
+static inline void atomic_decrement(atomic_int_t * addr)
+{
+	OSAtomicDecrement32(addr);
 }
 
 #endif

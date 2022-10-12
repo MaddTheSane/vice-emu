@@ -32,15 +32,15 @@
    The VICEMachineProtocol is implemented by the VICEMachine class.
 */
 
-@protocol VICEMachineProtocol
+@protocol VICEMachineProtocol <NSObject>
 
 // tell the running VICE machine to shutdown gracefully and stop its thread
 -(void)stopMachine;
 
 // ----- Pause -----
-// is the machine paused?
--(BOOL)isPaused;
-// toggle pause
+/// is the machine paused?
+@property (readonly, getter=isPaused) BOOL paused;
+/// toggle pause
 -(BOOL)togglePause;
 
 // ----- Monitor Input -----

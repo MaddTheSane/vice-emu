@@ -30,7 +30,7 @@ thread is passed through this protocol.
 
  The VICEApplicationProtocol is implemented by the VICEApplicaiton class. */
 
-@protocol VICEApplicationProtocol
+@protocol VICEApplicationProtocol <NSObject>
 
 // ----- setup -----
 // call back by machine object to report its own instance on stat up

@@ -66,12 +66,12 @@
     return children == nil;
 }
 
--(ResourceTreeItem *)childAtIndex:(int)index
+-(ResourceTreeItem *)childAtIndex:(NSInteger)index
 {
     return (ResourceTreeItem *)[children objectAtIndex:index];
 }
 
--(int)numChildren
+-(NSInteger)numChildren
 {
     if (children == nil) {
         return 0;
@@ -93,8 +93,8 @@
     if(buildChildren == nil)
         return nil;
     
-    int numChilds = [buildChildren count];
-    int i;
+    NSInteger numChilds = [buildChildren count];
+    NSInteger i;
     for(i=0;i<numChilds;i++) {
         ResourceTreeItem *child = [buildChildren objectAtIndex:i];
         if([[child title] compare:name] == NSOrderedSame) {
@@ -174,8 +174,8 @@
 
 -(void)finalizeChildren
 {
-    int numChilds = [buildChildren count];
-    int i;
+    NSInteger numChilds = [buildChildren count];
+    NSInteger i;
     for(i=0;i<numChilds;i++) {
         ResourceTreeItem *child = [buildChildren objectAtIndex:i];
         [child finalizeChildren];
@@ -270,14 +270,11 @@
     return TRUE;
 }
 
--(NSString *)title
-{
-    return title;
-}
+@synthesize title;
 
 -(int)parseIntFromString:(NSString *)string
 {
-    int len = [string length];
+    NSInteger len = [string length];
     if (len == 0) {
         return 0;
     }
@@ -561,8 +558,8 @@
         [cacheValue release];
         cacheValue = nil;
     } else {
-        int num = [children count];
-        int i;
+        NSInteger num = [children count];
+        NSInteger i;
         for (i = 0; i < num; i++) {
             [(ResourceTreeItem *)[children objectAtIndex:i] invalidateCache];
         }

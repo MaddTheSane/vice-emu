@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="IECDriveSettingsWindowController">
+            <connections>
+                <outlet property="attachImage" destination="461" id="481"/>
+                <outlet property="attachReadOnly" destination="463" id="483"/>
+                <outlet property="autostartImage" destination="462" id="482"/>
+                <outlet property="dirPath" destination="454" id="484"/>
+                <outlet property="driveChooser" destination="438" id="477"/>
+                <outlet property="enableIECDrive" destination="443" id="479"/>
+                <outlet property="hideNonP00Files" destination="451" id="488"/>
+                <outlet property="imagePath" destination="460" id="480"/>
+                <outlet property="mountDir" destination="450" id="485"/>
+                <outlet property="readP00Files" destination="453" id="486"/>
+                <outlet property="status" destination="475" id="491"/>
+                <outlet property="useOpenCBMDevice" destination="471" id="489"/>
+                <outlet property="useRawFloppy" destination="473" id="490"/>
+                <outlet property="window" destination="1" id="381"/>
+                <outlet property="writeP00Files" destination="452" id="487"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Peripheral Drive Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="1" userLabel="Panel (IECDrive Settings)" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="40" y="40" width="323" height="442"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
+            <value key="minSize" type="size" width="323" height="442"/>
+            <value key="maxSize" type="size" width="323" height="442"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="442"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="438">
+                        <rect key="frame" x="18" y="399" width="287" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <segmentedCell key="cell" borderStyle="border" alignment="left" segmentDistribution="fill" style="rounded" trackingMode="selectOne" id="527">
+                            <font key="font" metaFont="system"/>
+                            <segments>
+                                <segment label="Drive 8" imageScaling="none" selected="YES"/>
+                                <segment label="Drive 9" imageScaling="none" tag="1"/>
+                                <segment label="Drive 10" imageScaling="none"/>
+                                <segment label="Drive 11" imageScaling="none"/>
+                            </segments>
+                        </segmentedCell>
+                        <connections>
+                            <action selector="toggleDrive:" target="-2" id="511"/>
+                        </connections>
+                    </segmentedControl>
+                    <box fixedFrame="YES" borderType="line" title="Disk Image" translatesAutoresizingMaskIntoConstraints="NO" id="440">
+                        <rect key="frame" x="17" y="274" width="289" height="84"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView" id="khc-eW-pXw">
+                            <rect key="frame" x="3" y="3" width="283" height="66"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="463">
+                                    <rect key="frame" x="16" y="8" width="131" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="check" title="Attach Read Only" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="531">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="changeAttachReadOnly:" target="-2" id="515"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="462">
+                                    <rect key="frame" x="196" y="6" width="73" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="squareTextured" title="Autostart" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="530">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="autostartImage:" target="-2" id="514"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="461">
+                                    <rect key="frame" x="196" y="31" width="73" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="squareTextured" title="Attach" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="529">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="attachImage:" target="-2" id="513"/>
+                                    </connections>
+                                </button>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="460">
+                                    <rect key="frame" x="18" y="32" width="171" height="22"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="528">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                    </box>
+                    <box fixedFrame="YES" borderType="line" title="File System Directory" translatesAutoresizingMaskIntoConstraints="NO" id="441">
+                        <rect key="frame" x="17" y="137" width="289" height="133"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView" id="WlV-Cv-M2P">
+                            <rect key="frame" x="3" y="3" width="283" height="115"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="454">
+                                    <rect key="frame" x="18" y="72" width="172" height="22"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="536">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button fixedFrame="YES" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="453">
+                                    <rect key="frame" x="16" y="48" width="113" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="check" title="Read P00 Files" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="535">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="changeReadP00Files:" target="-2" id="517"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="452">
+                                    <rect key="frame" x="16" y="28" width="115" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="check" title="Write P00 Files" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="534">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="changeWriteP00Files:" target="-2" id="518"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="451">
+                                    <rect key="frame" x="16" y="8" width="143" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="check" title="Hide non-P00 Files" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="533">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="changeHideNonP00Files:" target="-2" id="519"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="450">
+                                    <rect key="frame" x="197" y="71" width="73" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="squareTextured" title="Mount" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="532">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="mountDir:" target="-2" id="516"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                    </box>
+                    <button fixedFrame="YES" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="443">
+                        <rect key="frame" x="26" y="364" width="125" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Enable IEC Drive" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="537">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="changeUseIECDrive:" target="-2" id="512"/>
+                        </connections>
+                    </button>
+                    <box fixedFrame="YES" borderType="line" title="Real Device" translatesAutoresizingMaskIntoConstraints="NO" id="470">
+                        <rect key="frame" x="17" y="41" width="289" height="92"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView" id="unh-SR-Lya">
+                            <rect key="frame" x="3" y="3" width="283" height="74"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="471">
+                                    <rect key="frame" x="18" y="39" width="154" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="squareTextured" title="Use OpenCBM Device" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="538">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="activateOpenCMBDevice:" target="-2" id="520"/>
+                                    </connections>
+                                </button>
+                                <button fixedFrame="YES" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="473">
+                                    <rect key="frame" x="18" y="9" width="154" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="squareTextured" title="Use Raw Floppy" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="539">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="activateRawFloppyDevice:" target="-2" id="521"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                    </box>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="475">
+                        <rect key="frame" x="17" y="20" width="289" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status" id="540">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="14" y="137"/>
+        </window>
+    </objects>
+</document>

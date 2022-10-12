@@ -1,4 +1,4 @@
-SUBDIRS = English.lproj
+SUBDIRS = en.lproj
 
 EXTRA_DIST = \
 	Credits.html \

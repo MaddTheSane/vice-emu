@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VICEApplication">
+            <connections>
+                <outlet property="appController" destination="328" id="613"/>
+                <outlet property="debuggerWindowsMenu" destination="765" id="768"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <menu title="x64" systemMenu="main" id="29" userLabel="MainMenu">
+            <items>
+                <menuItem title="x64" id="56">
+                    <menu key="submenu" title="x64" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About x64" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide x64" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-2" id="152"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-2" id="146"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-2" id="153"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit x64" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-2" id="139"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="267">
+                    <menu key="submenu" title="File" id="268">
+                        <items>
+                            <menuItem title="Smart attach Disk/Tape..." keyEquivalent="o" id="284">
+                                <connections>
+                                    <action selector="smartAttachImage:" target="328" id="330"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="285">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Attach Disk Image" id="286">
+                                <menu key="submenu" title="Attach Disk Image" id="287">
+                                    <items>
+                                        <menuItem title="Unit #8..." tag="8" keyEquivalent="8" id="288">
+                                            <connections>
+                                                <action selector="attachDiskImage:" target="328" id="331"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #9..." tag="9" keyEquivalent="9" id="291">
+                                            <connections>
+                                                <action selector="attachDiskImage:" target="328" id="332"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #10..." tag="10" id="290">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="attachDiskImage:" target="328" id="333"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #11..." tag="11" id="292">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="attachDiskImage:" target="328" id="334"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Create and attach Disk Image" id="293">
+                                <menu key="submenu" title="Create and attach Disk Image" id="294">
+                                    <items>
+                                        <menuItem title="Unit #8..." tag="8" keyEquivalent="8" id="296">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="createAndAttachDiskImage:" target="328" id="335"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #9..." tag="9" keyEquivalent="9" id="297">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="createAndAttachDiskImage:" target="328" id="336"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #10..." tag="10" id="298">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="createAndAttachDiskImage:" target="328" id="337"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #11..." tag="11" id="299">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="createAndAttachDiskImage:" target="328" id="338"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Detach Disk Image" id="300">
+                                <menu key="submenu" title="Detach Disk Image" id="301">
+                                    <items>
+                                        <menuItem title="Unit #8..." tag="8" keyEquivalent="8" id="303">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="detachDiskImage:" target="328" id="339"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #9..." tag="9" keyEquivalent="9" id="304">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="detachDiskImage:" target="328" id="340"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #10..." tag="10" id="305">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="detachDiskImage:" target="328" id="341"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #11..." tag="11" id="306">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="detachDiskImage:" target="328" id="342"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Fliplist" id="307">
+                                <menu key="submenu" title="Fliplist" id="308">
+                                    <items>
+                                        <menuItem title="Add current Image" tag="8" keyEquivalent="n" id="309">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="fliplistAddCurrentImage:" target="328" id="345"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Remove current Image" tag="8" keyEquivalent="N" id="310">
+                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="fliplistRemoveCurrentImage:" target="328" id="346"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="311">
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </menuItem>
+                                        <menuItem title="Attach next Image" tag="8" keyEquivalent="n" id="312">
+                                            <connections>
+                                                <action selector="fliplistAttachNextImage:" target="328" id="347"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Attach previous Image" tag="8" keyEquivalent="N" id="313">
+                                            <connections>
+                                                <action selector="fliplistAttachPrevImage:" target="328" id="348"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="314">
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </menuItem>
+                                        <menuItem title="Load Fliplist..." tag="8" id="349">
+                                            <connections>
+                                                <action selector="fliplistLoad:" target="328" id="350"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Save Fliplist..." tag="8" id="344">
+                                            <connections>
+                                                <action selector="fliplistSave:" target="328" id="351"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="318">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Attach Tape Image..." keyEquivalent="t" id="319">
+                                <connections>
+                                    <action selector="attachTapeImage:" target="328" id="352"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Detach Tape Image" keyEquivalent="t" id="320">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="detachTapeImage:" target="328" id="353"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="325">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Attach Cartridge Image..." id="447">
+                                <connections>
+                                    <action selector="attachCartridge:" target="328" id="528"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Detach Cartridge Image" id="448">
+                                <connections>
+                                    <action selector="detachCartridge:" target="328" id="530"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="664">
+                    <menu key="submenu" title="Edit" id="665">
+                        <items>
+                            <menuItem title="Cut" keyEquivalent="x" id="669">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="710"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="670">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="711"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="671">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="722"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete" id="673">
+                                <connections>
+                                    <action selector="delete:" target="-1" id="713"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="674">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="714"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Machine" id="386">
+                    <menu key="submenu" title="Machine" id="387">
+                        <items>
+                            <menuItem title="Reset" id="389">
+                                <menu key="submenu" title="Reset" id="390">
+                                    <items>
+                                        <menuItem title="Soft" keyEquivalent="r" id="391">
+                                            <connections>
+                                                <action selector="resetMachine:" target="328" id="407"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hard" tag="1" keyEquivalent="R" id="392">
+                                            <connections>
+                                                <action selector="resetMachine:" target="328" id="408"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="393">
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </menuItem>
+                                        <menuItem title="Unit #8" tag="8" id="394">
+                                            <connections>
+                                                <action selector="resetDrive:" target="328" id="409"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #9" tag="9" id="395">
+                                            <connections>
+                                                <action selector="resetDrive:" target="328" id="410"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #10" tag="10" id="396">
+                                            <connections>
+                                                <action selector="resetDrive:" target="328" id="411"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Unit #11" tag="11" id="397">
+                                            <connections>
+                                                <action selector="resetMachine:" target="328" id="412"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Pause" keyEquivalent="p" id="388">
+                                <connections>
+                                    <action selector="togglePause:" target="328" id="413"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Monitor" keyEquivalent="m" id="414">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="activateMonitor:" target="328" id="415"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="449">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Cartridge Freeze" keyEquivalent="z" id="450">
+                                <connections>
+                                    <action selector="freezeCartridge:" target="328" id="532"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Snapshot" id="398">
+                    <menu key="submenu" title="Snapshot" id="399">
+                        <items>
+                            <menuItem title="Load Snapshot Image..." keyEquivalent="o" id="400">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="loadSnapshot:" target="328" id="640"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save Snapshot Image..." keyEquivalent="s" id="426">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="saveSnapshot:" target="328" id="641"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Load Quick Snapshot Image" keyEquivalent="O" id="427">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="loadQuickSnapshot:" target="328" id="642"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save Quick Snapshot Image" keyEquivalent="S" id="428">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="saveQuickSnapshot:" target="328" id="643"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="429">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Record History..." id="440">
+                                <connections>
+                                    <action selector="showRecordHistory:" target="328" id="732"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Record Media..." id="442">
+                                <connections>
+                                    <action selector="showRecordMedia:" target="328" id="654"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="445">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Netplay (experimental)..." id="446">
+                                <connections>
+                                    <action selector="showNetplay:" target="328" id="653"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Options" id="401">
+                    <menu key="submenu" title="Options" id="402">
+                        <items>
+                            <menuItem title="Refresh Rate" id="451">
+                                <menu key="submenu" title="Refresh Rate" id="452">
+                                    <items>
+                                        <menuItem title="Auto" id="453">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="553"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="1/1" tag="1" id="533">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="554"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="1/2" tag="2" id="534">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="555"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="1/3" tag="3" id="535">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="556"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="1/4" tag="4" id="536">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="557"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="1/5" tag="5" id="537">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="558"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="1/6" tag="6" id="538">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="559"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="1/7" tag="7" id="539">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="560"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="1/8" tag="8" id="540">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="561"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="1/9" tag="9" id="541">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="562"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="1/10" tag="10" id="542">
+                                            <connections>
+                                                <action selector="pickRefreshRate:" target="328" id="563"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Maximum Speed" id="454">
+                                <menu key="submenu" title="Maximum Speed" id="455">
+                                    <items>
+                                        <menuItem title="200%" tag="200" id="456">
+                                            <connections>
+                                                <action selector="pickMaximumSpeed:" target="328" id="564"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="100%" tag="100" id="544">
+                                            <connections>
+                                                <action selector="pickMaximumSpeed:" target="328" id="565"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="50%" tag="50" id="545">
+                                            <connections>
+                                                <action selector="pickMaximumSpeed:" target="328" id="566"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="20%" tag="20" id="546">
+                                            <connections>
+                                                <action selector="pickMaximumSpeed:" target="328" id="567"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="10%" tag="10" id="547">
+                                            <connections>
+                                                <action selector="pickMaximumSpeed:" target="328" id="568"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="No Limit" id="550">
+                                            <connections>
+                                                <action selector="pickMaximumSpeed:" target="328" id="569"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="549">
+                                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                        </menuItem>
+                                        <menuItem title="Custom" id="548">
+                                            <connections>
+                                                <action selector="pickCustomMaximumSpeed:" target="328" id="570"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Warp Mode" state="on" keyEquivalent="w" id="403">
+                                <connections>
+                                    <action selector="toggleWarpMode:" target="328" id="571"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="469">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Model" id="769">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Model" id="770">
+                                    <items>
+                                        <menuItem title="C64 PAL" id="773">
+                                            <connections>
+                                                <action selector="selectModel:" target="328" id="782"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="C64C PAL" tag="1" id="774">
+                                            <connections>
+                                                <action selector="selectModel:" target="328" id="783"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="C64 old PAL" tag="2" id="775">
+                                            <connections>
+                                                <action selector="selectModel:" target="328" id="784"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="C64 NTSC" tag="3" id="776">
+                                            <connections>
+                                                <action selector="selectModel:" target="328" id="785"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="C64C NTSC" tag="4" id="777">
+                                            <connections>
+                                                <action selector="selectModel:" target="328" id="786"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="C64 old NTSC" tag="5" id="778">
+                                            <connections>
+                                                <action selector="selectModel:" target="328" id="787"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="C64 PAL N" tag="6" id="788">
+                                            <connections>
+                                                <action selector="selectModel:" target="328" id="793"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="772"/>
+                            <menuItem title="VICII" id="472">
+                                <menu key="submenu" title="VICII" id="473">
+                                    <items>
+                                        <menuItem title="Video Cache" id="474">
+                                            <connections>
+                                                <action selector="toggleVideo0VideoCache:" target="328" id="748"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Double Size" id="477">
+                                            <connections>
+                                                <action selector="toggleVideo0DoubleSize:" target="328" id="749"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Double Scan" id="478">
+                                            <connections>
+                                                <action selector="toggleVideo0DoubleScan:" target="328" id="750"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Scale 2x" id="480">
+                                            <connections>
+                                                <action selector="toggleVideo0Scale2x:" target="328" id="751"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Video Standard" id="466">
+                                <menu key="submenu" title="Video Standard" id="467">
+                                    <items>
+                                        <menuItem title="PAL-G" tag="-1" id="468">
+                                            <connections>
+                                                <action selector="toggleMachineVideoStandard:" target="328" id="620"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="NTSC-M" tag="-2" id="475">
+                                            <connections>
+                                                <action selector="toggleMachineVideoStandard:" target="328" id="621"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Old NTSC-M" tag="-3" id="476">
+                                            <connections>
+                                                <action selector="toggleMachineVideoStandard:" target="328" id="622"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="PAL-N" tag="-4" id="791">
+                                            <connections>
+                                                <action selector="toggleMachineVideoStandard:" target="328" id="792"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="CRT Emulation" id="794">
+                                <connections>
+                                    <action selector="toggleCRTEmulation:" target="328" id="796"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="457">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Sound Playback" id="459">
+                                <connections>
+                                    <action selector="toggleSoundPlayback:" target="328" id="578"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="464">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="True Drive Emulation" state="on" id="462">
+                                <connections>
+                                    <action selector="toggleTrueDriveEmulation:" target="328" id="579"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Virtual Devices" id="463">
+                                <connections>
+                                    <action selector="toggleVirtualDevices:" target="328" id="581"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="461">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Swap Joystick" keyEquivalent="j" id="458">
+                                <connections>
+                                    <action selector="swapJoysticks:" target="328" id="585"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Allow Keyset Joystick" keyEquivalent="k" id="659">
+                                <connections>
+                                    <action selector="toggleKeySetEnable:" target="328" id="660"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Mouse Emulation" keyEquivalent="m" id="471">
+                                <connections>
+                                    <action selector="toggleMouseEmulation:" target="328" id="586"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Lightpen Emulation" id="741">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="toggleLightPenEmulation:" target="328" id="746"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Settings" id="404">
+                    <menu key="submenu" title="Settings" id="405">
+                        <items>
+                            <menuItem title="Keyboard..." id="491">
+                                <connections>
+                                    <action selector="showKeyboardSettings:" target="328" id="610"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Joystick..." id="490">
+                                <connections>
+                                    <action selector="showJoystickSettings:" target="328" id="608"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Video..." id="406">
+                                <connections>
+                                    <action selector="showVideoSettings:" target="328" id="730"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Sound..." id="486">
+                                <connections>
+                                    <action selector="showSoundSettings:" target="328" id="638"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="SID Settings..." id="757">
+                                <connections>
+                                    <action selector="showSIDSettings:" target="328" id="759"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Peripheral Drives..." keyEquivalent="d" id="481">
+                                <connections>
+                                    <action selector="showIECDriveSettings:" target="328" id="602"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Peripheral Printers..." keyEquivalent="P" id="604">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showPrinterSettings:" target="328" id="607"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Drive Emulation..." keyEquivalent="D" id="482">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showDriveSettings:" target="328" id="522"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="485">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Resource Inspector..." keyEquivalent="i" id="645">
+                                <connections>
+                                    <action selector="showResourceEditor:" target="328" id="646"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="500">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Save current Settings" id="501">
+                                <connections>
+                                    <action selector="saveResources:" target="328" id="519"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Load saved Settings" id="502">
+                                <connections>
+                                    <action selector="loadResources:" target="328" id="520"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reset default Settings" id="503">
+                                <connections>
+                                    <action selector="resetResources:" target="328" id="521"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="504">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Save Settings on Exit" id="505">
+                                <connections>
+                                    <action selector="toggleSaveResourcesOnExit:" target="328" id="576"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Confirm on Exit" id="506">
+                                <connections>
+                                    <action selector="toggleConfirmOnExit:" target="328" id="573"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="View" id="692">
+                    <menu key="submenu" title="View" id="693">
+                        <items>
+                            <menuItem title="Canvas Size" tag="1" keyEquivalent="1" id="695">
+                                <connections>
+                                    <action selector="resizeCanvasToMultipleSize:" target="-1" id="721"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Scale x2" tag="2" keyEquivalent="2" id="699">
+                                <connections>
+                                    <action selector="resizeCanvasToMultipleSize:" target="-1" id="720"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Scale x3" tag="3" keyEquivalent="3" id="716">
+                                <connections>
+                                    <action selector="resizeCanvasToMultipleSize:" target="-1" id="719"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Scale x4" tag="4" keyEquivalent="4" id="700">
+                                <connections>
+                                    <action selector="resizeCanvasToMultipleSize:" target="-1" id="718"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="717">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Fullscreen" keyEquivalent="f" id="696">
+                                <connections>
+                                    <action selector="toggleFullscreen:" target="-1" id="705"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="354">
+                    <menu key="submenu" title="Window" systemMenu="window" id="355">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="358">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="362"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="357">
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="361"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="418">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Control Window" keyEquivalent="." id="725">
+                                <connections>
+                                    <action selector="toggleControlWindow:" target="-1" id="728"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Log Window" keyEquivalent="l" id="419">
+                                <connections>
+                                    <action selector="toggleConsoleWindow:" target="-1" id="420"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Monitor Window" keyEquivalent="L" id="421">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleMonitorWindow:" target="-1" id="422"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="359">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Debugger Windows" id="764">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Debugger Windows" id="765"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="763">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Bring All to Front" id="356">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="360"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="103">
+                    <menu key="submenu" title="Help" id="106">
+                        <items>
+                            <menuItem title="VICE Help" keyEquivalent="?" id="111">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="122"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="248">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="License" id="315">
+                                <connections>
+                                    <action selector="showInformation:" target="328" id="523"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Warranty" tag="1" id="316">
+                                <connections>
+                                    <action selector="showInformation:" target="328" id="524"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Contributors" tag="2" id="317">
+                                <connections>
+                                    <action selector="showInformation:" target="328" id="525"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="14" y="142"/>
+        </menu>
+        <customObject id="328" userLabel="C64Controller" customClass="C64CommonController">
+            <connections>
+                <outlet property="cartridgeFreezeMenuItem" destination="450" id="590"/>
+                <outlet property="confirmOnExitMenuItem" destination="506" id="575"/>
+                <outlet property="crtEmulationMenuItem" destination="794" id="797"/>
+                <outlet property="keySetEnableMenuItem" destination="659" id="661"/>
+                <outlet property="lightPenEmulationMenuItem" destination="741" id="744"/>
+                <outlet property="machineVideoStandardMenu" destination="467" id="623"/>
+                <outlet property="maximumSpeedMenu" destination="455" id="551"/>
+                <outlet property="modelMenu" destination="770" id="779"/>
+                <outlet property="mouseEmulationMenuItem" destination="471" id="587"/>
+                <outlet property="refreshRateMenu" destination="452" id="543"/>
+                <outlet property="saveResourcesOnExitMenuItem" destination="505" id="577"/>
+                <outlet property="soundPlaybackMenuItem" destination="459" id="582"/>
+                <outlet property="trueDriveEmulationMenuItem" destination="462" id="583"/>
+                <outlet property="vicIIDoubleScanMenuItem" destination="478" id="627"/>
+                <outlet property="vicIIDoubleSizeMenuItem" destination="477" id="628"/>
+                <outlet property="vicIIScale2xMenuItem" destination="480" id="629"/>
+                <outlet property="vicIIVideoCacheMenuItem" destination="474" id="630"/>
+                <outlet property="video0DoubleScanMenuItem" destination="478" id="736"/>
+                <outlet property="video0DoubleSizeMenuItem" destination="477" id="737"/>
+                <outlet property="video0Menu" destination="473" id="735"/>
+                <outlet property="video0Scale2xMenuItem" destination="480" id="738"/>
+                <outlet property="video0VideoCacheMenuItem" destination="474" id="745"/>
+                <outlet property="virtualDevicesMenuItem" destination="463" id="584"/>
+                <outlet property="warpModeMenuItem" destination="403" id="552"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>

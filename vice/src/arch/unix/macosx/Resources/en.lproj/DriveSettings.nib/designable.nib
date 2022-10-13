@@ -24,7 +24,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Drive Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="5" userLabel="Panel" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -36,9 +36,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="323" height="416"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="451">
+                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="451">
                         <rect key="frame" x="18" y="373" width="287" height="24"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <segmentedCell key="cell" state="on" borderStyle="border" alignment="left" segmentDistribution="fill" style="rounded" trackingMode="selectOne" id="525">
                             <font key="font" metaFont="system"/>
                             <segments>
@@ -52,9 +51,8 @@
                             <action selector="toggleDrive:" target="-2" id="506"/>
                         </connections>
                     </segmentedControl>
-                    <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="453">
-                        <rect key="frame" x="122" y="18" width="107" height="18"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="453">
+                        <rect key="frame" x="119" y="18" width="109" height="18"/>
                         <buttonCell key="cell" type="check" title="Parallel Cable" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="526">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -63,16 +61,14 @@
                             <action selector="toggledParallelCable:" target="-2" id="516"/>
                         </connections>
                     </button>
-                    <box fixedFrame="YES" title="Drive Expansion" translatesAutoresizingMaskIntoConstraints="NO" id="454">
-                        <rect key="frame" x="121" y="38" width="185" height="134"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <box title="Drive Expansion" translatesAutoresizingMaskIntoConstraints="NO" id="454">
+                        <rect key="frame" x="118" y="38" width="188" height="134"/>
                         <view key="contentView" id="7xu-gc-NHE">
-                            <rect key="frame" x="3" y="3" width="179" height="116"/>
+                            <rect key="frame" x="3" y="3" width="182" height="116"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="489">
-                                    <rect key="frame" x="14" y="90" width="141" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="489">
+                                    <rect key="frame" x="14" y="90" width="144" height="18"/>
                                     <buttonCell key="cell" type="check" title="$2000-$3FFF RAM" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="531">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -81,9 +77,8 @@
                                         <action selector="changedDriveExpansion2000:" target="-2" id="511"/>
                                     </connections>
                                 </button>
-                                <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="488">
-                                    <rect key="frame" x="14" y="70" width="141" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="488">
+                                    <rect key="frame" x="14" y="70" width="144" height="18"/>
                                     <buttonCell key="cell" type="check" title="$4000-$5FFF RAM" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="530">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -92,9 +87,8 @@
                                         <action selector="changedDriveExpansion4000:" target="-2" id="512"/>
                                     </connections>
                                 </button>
-                                <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="487">
-                                    <rect key="frame" x="14" y="50" width="141" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="487">
+                                    <rect key="frame" x="14" y="50" width="144" height="18"/>
                                     <buttonCell key="cell" type="check" title="$6000-$7FFF RAM" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="529">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -103,9 +97,8 @@
                                         <action selector="changedDriveExpansion6000:" target="-2" id="513"/>
                                     </connections>
                                 </button>
-                                <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="486">
-                                    <rect key="frame" x="14" y="30" width="141" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="486">
+                                    <rect key="frame" x="14" y="30" width="144" height="18"/>
                                     <buttonCell key="cell" type="check" title="$8000-$9FFF RAM" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="528">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -114,9 +107,8 @@
                                         <action selector="changedDriveExpansion8000:" target="-2" id="514"/>
                                     </connections>
                                 </button>
-                                <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="485">
-                                    <rect key="frame" x="14" y="10" width="141" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="485">
+                                    <rect key="frame" x="14" y="10" width="144" height="18"/>
                                     <buttonCell key="cell" type="check" title="$A000-$BFFF RAM" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="527">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -126,18 +118,34 @@
                                     </connections>
                                 </button>
                             </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="489" secondAttribute="trailing" constant="24" id="00k-I8-lN4"/>
+                                <constraint firstItem="487" firstAttribute="top" secondItem="488" secondAttribute="bottom" constant="4" id="53s-6f-715"/>
+                                <constraint firstItem="486" firstAttribute="trailing" secondItem="485" secondAttribute="trailing" id="DO4-Yr-A1Z"/>
+                                <constraint firstItem="488" firstAttribute="top" secondItem="489" secondAttribute="bottom" constant="4" id="FbY-LK-bUb"/>
+                                <constraint firstItem="488" firstAttribute="trailing" secondItem="487" secondAttribute="trailing" id="M8o-Fj-yT7"/>
+                                <constraint firstAttribute="bottom" secondItem="485" secondAttribute="bottom" constant="11" id="PgJ-oX-3ea"/>
+                                <constraint firstItem="486" firstAttribute="leading" secondItem="485" secondAttribute="leading" id="TMx-Qs-agb"/>
+                                <constraint firstItem="487" firstAttribute="leading" secondItem="486" secondAttribute="leading" id="TVD-YL-di1"/>
+                                <constraint firstItem="489" firstAttribute="top" secondItem="7xu-gc-NHE" secondAttribute="top" constant="9" id="TWs-RJ-RhZ"/>
+                                <constraint firstItem="488" firstAttribute="leading" secondItem="487" secondAttribute="leading" id="Ybz-tR-Va5"/>
+                                <constraint firstItem="489" firstAttribute="trailing" secondItem="488" secondAttribute="trailing" id="d1N-jN-Eba"/>
+                                <constraint firstItem="489" firstAttribute="leading" secondItem="7xu-gc-NHE" secondAttribute="leading" constant="16" id="fq0-sN-oEw"/>
+                                <constraint firstItem="486" firstAttribute="top" secondItem="487" secondAttribute="bottom" constant="4" id="hTM-dT-Tqa"/>
+                                <constraint firstItem="487" firstAttribute="trailing" secondItem="486" secondAttribute="trailing" id="m21-2g-YXz"/>
+                                <constraint firstItem="489" firstAttribute="leading" secondItem="488" secondAttribute="leading" id="p7O-vv-xAo"/>
+                                <constraint firstItem="485" firstAttribute="top" secondItem="486" secondAttribute="bottom" constant="4" id="z5R-Wt-Gub"/>
+                            </constraints>
                         </view>
                     </box>
-                    <box fixedFrame="YES" title="Idle Method" translatesAutoresizingMaskIntoConstraints="NO" id="455">
-                        <rect key="frame" x="121" y="176" width="185" height="94"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <box title="Idle Method" translatesAutoresizingMaskIntoConstraints="NO" id="455">
+                        <rect key="frame" x="118" y="176" width="188" height="94"/>
                         <view key="contentView" id="K0X-3F-Abx">
-                            <rect key="frame" x="3" y="3" width="179" height="76"/>
+                            <rect key="frame" x="3" y="3" width="182" height="76"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <matrix verticalHuggingPriority="750" fixedFrame="YES" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="480">
+                                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="480">
                                     <rect key="frame" x="14" y="9" width="93" height="58"/>
-                                    <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     <size key="cellSize" width="93" height="18"/>
                                     <size key="intercellSpacing" width="4" height="2"/>
@@ -166,18 +174,21 @@
                                     </connections>
                                 </matrix>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="480" firstAttribute="top" secondItem="K0X-3F-Abx" secondAttribute="top" constant="9" id="HTh-jk-Fk4"/>
+                                <constraint firstItem="480" firstAttribute="leading" secondItem="K0X-3F-Abx" secondAttribute="leading" constant="14" id="YB2-ng-aUX"/>
+                                <constraint firstItem="480" firstAttribute="centerY" secondItem="K0X-3F-Abx" secondAttribute="centerY" id="laK-L7-F1r"/>
+                            </constraints>
                         </view>
                     </box>
-                    <box fixedFrame="YES" title="40 Track Handling" translatesAutoresizingMaskIntoConstraints="NO" id="456">
-                        <rect key="frame" x="121" y="274" width="185" height="94"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <box title="40 Track Handling" translatesAutoresizingMaskIntoConstraints="NO" id="456">
+                        <rect key="frame" x="118" y="274" width="188" height="94"/>
                         <view key="contentView" id="Jdk-2H-tgl">
-                            <rect key="frame" x="3" y="3" width="179" height="76"/>
+                            <rect key="frame" x="3" y="3" width="182" height="76"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <matrix verticalHuggingPriority="750" fixedFrame="YES" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="475">
+                                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="475">
                                     <rect key="frame" x="14" y="9" width="131" height="58"/>
-                                    <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     <size key="cellSize" width="131" height="18"/>
                                     <size key="intercellSpacing" width="4" height="2"/>
@@ -206,18 +217,21 @@
                                     </connections>
                                 </matrix>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="475" firstAttribute="leading" secondItem="Jdk-2H-tgl" secondAttribute="leading" constant="14" id="Cvq-pZ-3B6"/>
+                                <constraint firstItem="475" firstAttribute="centerY" secondItem="Jdk-2H-tgl" secondAttribute="centerY" id="bfn-rG-Zj0"/>
+                                <constraint firstItem="475" firstAttribute="top" secondItem="Jdk-2H-tgl" secondAttribute="top" constant="9" id="xxk-hm-Ep3"/>
+                            </constraints>
                         </view>
                     </box>
-                    <box fixedFrame="YES" title="Drive Type" translatesAutoresizingMaskIntoConstraints="NO" id="457">
-                        <rect key="frame" x="17" y="34" width="102" height="334"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <box title="Drive Type" translatesAutoresizingMaskIntoConstraints="NO" id="457">
+                        <rect key="frame" x="17" y="34" width="99" height="334"/>
                         <view key="contentView" id="aBv-MA-7go">
-                            <rect key="frame" x="3" y="3" width="96" height="316"/>
+                            <rect key="frame" x="3" y="3" width="93" height="316"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <matrix verticalHuggingPriority="750" fixedFrame="YES" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="458">
+                                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="458">
                                     <rect key="frame" x="14" y="9" width="70" height="298"/>
-                                    <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     <size key="cellSize" width="70" height="18"/>
                                     <size key="intercellSpacing" width="4" height="2"/>
@@ -294,9 +308,34 @@
                                     </connections>
                                 </matrix>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="458" firstAttribute="centerY" secondItem="aBv-MA-7go" secondAttribute="centerY" id="AmR-sn-qn4"/>
+                                <constraint firstItem="458" firstAttribute="leading" secondItem="aBv-MA-7go" secondAttribute="leading" constant="14" id="eBK-qB-GB1"/>
+                            </constraints>
                         </view>
                     </box>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="457" firstAttribute="top" secondItem="451" secondAttribute="bottom" constant="6" id="BK6-Iq-L0Z"/>
+                    <constraint firstItem="456" firstAttribute="trailing" secondItem="455" secondAttribute="trailing" id="BuO-ff-Q49"/>
+                    <constraint firstItem="451" firstAttribute="centerX" secondItem="6" secondAttribute="centerX" id="Fiu-Xg-iA1"/>
+                    <constraint firstAttribute="trailing" secondItem="451" secondAttribute="trailing" constant="20" symbolic="YES" id="HyC-C6-xUE"/>
+                    <constraint firstItem="455" firstAttribute="trailing" secondItem="454" secondAttribute="trailing" id="Q6L-re-h4S"/>
+                    <constraint firstItem="451" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="20" symbolic="YES" id="VMc-H0-ThX"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="453" secondAttribute="trailing" constant="20" symbolic="YES" id="W6E-Bg-fzL"/>
+                    <constraint firstItem="455" firstAttribute="top" secondItem="456" secondAttribute="bottom" constant="8" symbolic="YES" id="XrL-xI-Kdq"/>
+                    <constraint firstItem="454" firstAttribute="leading" secondItem="453" secondAttribute="leading" id="ZS3-wd-iOs"/>
+                    <constraint firstItem="456" firstAttribute="leading" secondItem="457" secondAttribute="trailing" constant="8" symbolic="YES" id="a5j-zP-6os"/>
+                    <constraint firstItem="456" firstAttribute="leading" secondItem="455" secondAttribute="leading" id="aMa-Xg-HzO"/>
+                    <constraint firstItem="451" firstAttribute="top" secondItem="6" secondAttribute="top" constant="20" symbolic="YES" id="bwN-qU-j5z"/>
+                    <constraint firstItem="451" firstAttribute="leading" secondItem="457" secondAttribute="leading" id="cyr-dF-cpU"/>
+                    <constraint firstItem="455" firstAttribute="leading" secondItem="454" secondAttribute="leading" id="eIe-Jq-RjX"/>
+                    <constraint firstItem="453" firstAttribute="top" secondItem="454" secondAttribute="bottom" constant="7" id="eLD-ch-0DC"/>
+                    <constraint firstItem="451" firstAttribute="trailing" secondItem="456" secondAttribute="trailing" id="h3x-wB-eSz"/>
+                    <constraint firstItem="454" firstAttribute="top" secondItem="455" secondAttribute="bottom" constant="8" symbolic="YES" id="kFq-t8-K5v"/>
+                    <constraint firstAttribute="bottom" secondItem="457" secondAttribute="bottom" constant="38" id="ubV-wT-WEy"/>
+                    <constraint firstItem="457" firstAttribute="top" secondItem="456" secondAttribute="top" id="z9O-Kk-OtX"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="14" y="137"/>
         </window>

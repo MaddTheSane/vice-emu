@@ -362,7 +362,7 @@ for bundle in $BUNDLES ; do
       done
       
       # rename emu nib
-      RES_LANGUAGES="English"
+      RES_LANGUAGES="en"
       for lang in $RES_LANGUAGES ; do
         echo -n "[lang:$lang"
 

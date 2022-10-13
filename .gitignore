@@ -32,3 +32,15 @@ vice/po/intl2po
 vice/src/c64/psiddrv.o65
 vice/src/cartconv
 vice/src/petcat
+
+vice/src/x128
+vice/src/x64
+vice/src/x64dtv
+vice/src/x64sc
+vice/src/xcbm2
+vice/src/xpet
+vice/src/xplus4
+vice/src/xvic
+
+vice/doc/html/vice_*.html
+vice/doc/vice.info

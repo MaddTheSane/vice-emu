@@ -81,8 +81,12 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="3" secondAttribute="trailing" constant="-1" id="DN1-W9-d6J"/>
                     <constraint firstAttribute="bottom" secondItem="3" secondAttribute="bottom" constant="-1" id="EZF-4E-8LD"/>
+                    <constraint firstAttribute="bottom" secondItem="3" secondAttribute="bottom" constant="-1" id="JLj-zz-9VR"/>
+                    <constraint firstAttribute="trailing" secondItem="3" secondAttribute="trailing" constant="-1" id="cQb-Pd-tZy"/>
                     <constraint firstItem="3" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="-1" id="k8J-4Q-h2O"/>
+                    <constraint firstItem="3" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="-1" id="uw8-Sb-H4K"/>
                     <constraint firstItem="3" firstAttribute="top" secondItem="2" secondAttribute="top" constant="-1" id="xBh-NZ-fnd"/>
+                    <constraint firstItem="3" firstAttribute="top" secondItem="2" secondAttribute="top" constant="-1" id="y1z-Ex-cxy"/>
                 </constraints>
             </view>
             <point key="canvasLocation" x="14" y="137"/>

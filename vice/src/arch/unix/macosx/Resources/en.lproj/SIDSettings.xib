@@ -57,7 +57,7 @@
                                 <popUpButton verticalHuggingPriority="249" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="103">
                                     <rect key="frame" x="155" y="30" width="106" height="29"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="99" id="g22-R4-WAc"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="g22-R4-WAc"/>
                                     </constraints>
                                     <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" id="104">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -99,6 +99,7 @@
                                 <constraint firstItem="87" firstAttribute="centerY" secondItem="88" secondAttribute="centerY" id="KgL-RT-hIk"/>
                                 <constraint firstItem="88" firstAttribute="top" secondItem="FEZ-Jt-0cq" secondAttribute="top" constant="11" id="Oo9-da-jpP"/>
                                 <constraint firstItem="99" firstAttribute="leading" secondItem="101" secondAttribute="leading" id="OzK-82-VTg"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="103" secondAttribute="trailing" constant="111" id="TfO-jy-VLj"/>
                                 <constraint firstItem="88" firstAttribute="leading" secondItem="103" secondAttribute="leading" id="V9c-TN-Vhd"/>
                                 <constraint firstItem="99" firstAttribute="top" secondItem="87" secondAttribute="bottom" constant="14" id="YJG-YW-xRE"/>
                                 <constraint firstItem="87" firstAttribute="leading" secondItem="FEZ-Jt-0cq" secondAttribute="leading" constant="17" id="kTe-Gi-Bky"/>

@@ -29,3 +29,6 @@ vice/src/translate.h
 vice/po/POTFILES
 vice/po/intl2po
 *.dSYM/
+vice/src/c64/psiddrv.o65
+vice/src/cartconv
+vice/src/petcat

@@ -44,6 +44,8 @@
 /* ----- Static Data ------------------------------------------------------ */
 
 static int joy_done_init = 0;
+int userport_joystick_enable;
+int userport_joystick_type;
 
 /* number of joyports and extra joyports */
 int joy_num_ports;

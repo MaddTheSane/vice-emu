@@ -78,7 +78,7 @@ do
 	esac
 done
 
-echo "Generating Mac OSX binary distribution."
+echo "Generating macOS binary distribution."
 
 echo "Top directory: $TOP_DIR"
 echo "Strip: $STRIP"
@@ -100,6 +100,7 @@ if [ ! -x $TEST_BIN ]; then
   exit 1
 fi
 if [ x"$BIN_FORMAT" = "x" ]; then
+  #TODO: Update for Apple Silicon!
   BIN_TYPE=`file $TEST_BIN | grep "$TEST_BIN:" | cut -f3,4 -d" "`
   if [ x"$BIN_TYPE" = "xexecutable i386" ]; then
     BIN_FORMAT=i386
@@ -210,10 +211,16 @@ else
 fi
 
 copy_tree () {
-  (cd "$1" && tar --exclude 'Makefile*' --exclude .svn -c -f - .) | (cd "$2" && tar xf -)
+  (cd "$1" && tar --exclude 'Makefile*' --exclude .svn --exclude '.DS_Store' --exclude '*.xib' -c -f - .) | (cd "$2" && tar xf -)
 }
 
 ALL_ICONS="VICEFile floppy525 tape cartridge"
+
+compile_xibs() {
+  SRC="$1"
+  DST="$2"
+  xcrun ibtool --module VICE --auto-activate-custom-fonts --target-device mac --minimum-deployment-target 10.12 --output-format human-readable-text "$SRC" --compile "$DST"
+}
 
 create_info_plist () {
   SRC="$1"
@@ -370,12 +377,18 @@ for bundle in $BUNDLES ; do
         mkdir -p "$RES_DIR"
         copy_tree "$LOC_RESOURCES/${lang}.lproj" "$RES_DIR"
         
+        for i in "$LOC_RESOURCES/${lang}.lproj/"*.xib
+        do
+          # TODO: Ignore xib files starting with x
+          compile_xibs "$i" "${RES_DIR}/$(basename ${i%.xib}).nib"
+        done
+        
         # make emu nib the MainMenu.nib
-        EMU_NIB="$RES_DIR/$bundle.nib"
+        EMU_NIB="$LOC_RESOURCES/${lang}.lproj/$bundle.xib"
         if [ -e "$EMU_NIB" ]; then
           echo -n " nib"
           MAIN_NIB="$RES_DIR/MainMenu.nib"
-          mv "$EMU_NIB" "$MAIN_NIB"
+          compile_xibs "$EMU_NIB" "$MAIN_NIB"
         else 
           echo -n " **MISSING:nib"
         fi
@@ -384,10 +397,6 @@ for bundle in $BUNDLES ; do
                 
         echo -n "]"
       done
-      
-      # clean up nibs and remove developer files
-      echo -n "[clean nib] "
-      find "$APP_RESOURCES" \( -name "info.nib" -o -name "classes.nib" -o -name "designable.nib" \) -exec rm {} \;
       
     fi
   fi

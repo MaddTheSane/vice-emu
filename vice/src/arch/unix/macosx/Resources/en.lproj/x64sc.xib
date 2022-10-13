@@ -8,17 +8,17 @@
         <customObject id="-2" userLabel="File's Owner" customClass="VICEApplication">
             <connections>
                 <outlet property="appController" destination="328" id="613"/>
-                <outlet property="debuggerWindowsMenu" destination="767" id="769"/>
+                <outlet property="debuggerWindowsMenu" destination="786" id="788"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="x64" systemMenu="main" id="29" userLabel="MainMenu">
             <items>
-                <menuItem title="xcbm2" id="56">
-                    <menu key="submenu" title="xcbm2" systemMenu="apple" id="57">
+                <menuItem title="x64sc" id="56">
+                    <menu key="submenu" title="x64sc" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About xcbm2" id="58">
+                            <menuItem title="About x64sc" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
@@ -33,7 +33,7 @@
                             <menuItem isSeparatorItem="YES" id="144">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Hide xcbm2" keyEquivalent="h" id="134">
+                            <menuItem title="Hide x64sc" keyEquivalent="h" id="134">
                                 <connections>
                                     <action selector="hide:" target="-2" id="152"/>
                                 </connections>
@@ -52,7 +52,7 @@
                             <menuItem isSeparatorItem="YES" id="149">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Quit xcbm2" keyEquivalent="q" id="136">
+                            <menuItem title="Quit x64sc" keyEquivalent="q" id="136">
                                 <connections>
                                     <action selector="terminate:" target="-2" id="139"/>
                                 </connections>
@@ -220,8 +220,16 @@
                             <menuItem isSeparatorItem="YES" id="325">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Attach Cartridge Image..." id="447"/>
-                            <menuItem title="Detach Cartridge Image" id="448"/>
+                            <menuItem title="Attach Cartridge Image..." id="447">
+                                <connections>
+                                    <action selector="attachCartridge:" target="328" id="528"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Detach Cartridge Image" id="448">
+                                <connections>
+                                    <action selector="detachCartridge:" target="328" id="530"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
@@ -312,7 +320,11 @@
                             <menuItem isSeparatorItem="YES" id="449">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Cartridge Freeze" keyEquivalent="z" id="450"/>
+                            <menuItem title="Cartridge Freeze" keyEquivalent="z" id="450">
+                                <connections>
+                                    <action selector="freezeCartridge:" target="328" id="532"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
@@ -483,66 +495,53 @@
                             <menuItem isSeparatorItem="YES" id="469">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Crtc" id="472">
-                                <menu key="submenu" title="Crtc" id="473">
+                            <menuItem title="Model" id="472">
+                                <menu key="submenu" title="Model" id="473">
                                     <items>
-                                        <menuItem title="Video Cache" id="474">
+                                        <menuItem title="C64 PAL" id="474">
                                             <connections>
-                                                <action selector="toggleVideo0VideoCache:" target="328" id="742"/>
+                                                <action selector="selectModel:" target="328" id="776"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Double Size" id="477">
+                                        <menuItem title="C64C PAL" tag="1" id="477">
                                             <connections>
-                                                <action selector="toggleVideo0DoubleSize:" target="328" id="740"/>
+                                                <action selector="selectModel:" target="328" id="777"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Double Scan" id="478">
+                                        <menuItem title="C64 old PAL" tag="2" id="478">
                                             <connections>
-                                                <action selector="toggleVideo0DoubleScan:" target="328" id="739"/>
+                                                <action selector="selectModel:" target="328" id="778"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Scale 2x" id="480">
+                                        <menuItem title="C64 NTSC" tag="3" id="480">
                                             <connections>
-                                                <action selector="toggleVideo0Scale2x:" target="328" id="741"/>
+                                                <action selector="selectModel:" target="328" id="779"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="C64C NTSC" tag="4" id="479">
+                                            <connections>
+                                                <action selector="selectModel:" target="328" id="780"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="C64 old NTSC" tag="5" id="773">
+                                            <connections>
+                                                <action selector="selectModel:" target="328" id="781"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="C64 PAL N" tag="6" id="789">
+                                            <connections>
+                                                <action selector="selectModel:" target="328" id="791"/>
                                             </connections>
                                         </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="VICII" id="747">
-                                <menu key="submenu" title="VICII" id="748">
-                                    <items>
-                                        <menuItem title="Video Cache" id="753">
-                                            <connections>
-                                                <action selector="toggleVideo0VideoCache:" target="328" id="754"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Double Size" id="752">
-                                            <connections>
-                                                <action selector="toggleVideo0DoubleSize:" target="328" id="756"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Double Scan" id="751">
-                                            <connections>
-                                                <action selector="toggleVideo0DoubleScan:" target="328" id="757"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Scale 2x" id="749">
-                                            <connections>
-                                                <action selector="toggleVideo0Scale2x:" target="328" id="755"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="PAL Emulation" id="750">
-                                            <connections>
-                                                <action selector="togglePALEmulation:" target="328" id="758"/>
-                                            </connections>
-                                        </menuItem>
-                                    </items>
-                                </menu>
+                            <menuItem isSeparatorItem="YES" id="772">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="CRT Emulation" id="770">
+                            <menuItem title="CRT Emulation" id="782">
                                 <connections>
-                                    <action selector="toggleCRTEmulation:" target="328" id="772"/>
+                                    <action selector="toggleCRTEmulation:" target="328" id="792"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="457">
@@ -579,12 +578,12 @@
                                     <action selector="toggleKeySetEnable:" target="328" id="660"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Paddle Emulation" keyEquivalent="m" id="471">
+                            <menuItem title="Mouse Emulation" keyEquivalent="m" id="471">
                                 <connections>
                                     <action selector="toggleMouseEmulation:" target="328" id="586"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Lightpen Emulation" id="743">
+                            <menuItem title="Lightpen Emulation" id="741">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="toggleLightPenEmulation:" target="328" id="746"/>
@@ -596,6 +595,11 @@
                 <menuItem title="Settings" id="404">
                     <menu key="submenu" title="Settings" id="405">
                         <items>
+                            <menuItem title="Keyboard..." id="491">
+                                <connections>
+                                    <action selector="showKeyboardSettings:" target="328" id="610"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Joystick..." id="490">
                                 <connections>
                                     <action selector="showJoystickSettings:" target="328" id="608"/>
@@ -611,9 +615,14 @@
                                     <action selector="showSoundSettings:" target="328" id="638"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="SID Settings..." id="764">
+                            <menuItem title="SID Settings..." id="757">
                                 <connections>
-                                    <action selector="showSIDSettings:" target="328" id="765"/>
+                                    <action selector="showSIDSettings:" target="328" id="759"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Peripheral Drives..." keyEquivalent="d" id="481">
+                                <connections>
+                                    <action selector="showIECDriveSettings:" target="328" id="602"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Peripheral Printers..." keyEquivalent="P" id="604">
@@ -736,12 +745,12 @@
                                     <action selector="toggleMonitorWindow:" target="-1" id="422"/>
                                 </connections>
                             </menuItem>
-                            <menuItem isSeparatorItem="YES" id="768">
+                            <menuItem isSeparatorItem="YES" id="787">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Debugger Windows" id="766">
+                            <menuItem title="Debugger Windows" id="785">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Debugger Windows" id="767"/>
+                                <menu key="submenu" title="Debugger Windows" id="786"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="359">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
@@ -786,28 +795,21 @@
             </items>
             <point key="canvasLocation" x="14" y="142"/>
         </menu>
-        <customObject id="328" userLabel="CBM2Controller" customClass="CBM2Controller">
+        <customObject id="328" userLabel="C64SCController" customClass="C64CommonController">
             <connections>
+                <outlet property="cartridgeFreezeMenuItem" destination="450" id="590"/>
                 <outlet property="confirmOnExitMenuItem" destination="506" id="575"/>
-                <outlet property="crtEmulationMenuItem" destination="770" id="773"/>
+                <outlet property="crtEmulationMenuItem" destination="782" id="793"/>
                 <outlet property="keySetEnableMenuItem" destination="659" id="661"/>
-                <outlet property="lightPenEmulationMenuItem" destination="743" id="745"/>
+                <outlet property="lightPenEmulationMenuItem" destination="741" id="744"/>
                 <outlet property="maximumSpeedMenu" destination="455" id="551"/>
+                <outlet property="modelMenu" destination="473" id="775"/>
                 <outlet property="mouseEmulationMenuItem" destination="471" id="587"/>
+                <outlet property="palEmulationMenuItem" destination="782" id="784"/>
                 <outlet property="refreshRateMenu" destination="452" id="543"/>
                 <outlet property="saveResourcesOnExitMenuItem" destination="505" id="577"/>
                 <outlet property="soundPlaybackMenuItem" destination="459" id="582"/>
                 <outlet property="trueDriveEmulationMenuItem" destination="462" id="583"/>
-                <outlet property="video0DoubleScanMenuItem" destination="478" id="734"/>
-                <outlet property="video0DoubleSizeMenuItem" destination="477" id="735"/>
-                <outlet property="video0Menu" destination="473" id="736"/>
-                <outlet property="video0Scale2xMenuItem" destination="480" id="737"/>
-                <outlet property="video0VideoCacheMenuItem" destination="474" id="738"/>
-                <outlet property="video1DoubleScanMenuItem" destination="751" id="759"/>
-                <outlet property="video1DoubleSizeMenuItem" destination="752" id="760"/>
-                <outlet property="video1Menu" destination="748" id="761"/>
-                <outlet property="video1Scale2xMenuItem" destination="749" id="762"/>
-                <outlet property="video1VideoCacheMenuItem" destination="753" id="763"/>
                 <outlet property="virtualDevicesMenuItem" destination="463" id="584"/>
                 <outlet property="warpModeMenuItem" destination="403" id="552"/>
             </connections>

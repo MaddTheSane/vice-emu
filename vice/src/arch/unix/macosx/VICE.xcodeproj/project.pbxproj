@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05204E3F13D2AC73008F2D7E /* VideoSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 05204E3D13D2AC73008F2D7E /* VideoSettings.nib */; };
+		05204E3F13D2AC73008F2D7E /* VideoSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05204E3D13D2AC73008F2D7E /* VideoSettings.xib */; };
 		05204E4313D2ACE2008F2D7E /* videosettingswindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 05204E4213D2ACE2008F2D7E /* videosettingswindowcontroller.m */; };
 		05204E4C13D2BA42008F2D7E /* ResourceTree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05204E4A13D2BA42008F2D7E /* ResourceTree.plist */; };
 		55467A5828F75D99007F3693 /* crtc.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F1028F75D8B007F3693 /* crtc.c */; };
@@ -560,21 +560,21 @@
 		55C654DC28F6602000D11E28 /* cartridge.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654C028F6602000D11E28 /* cartridge.icns */; };
 		55C654DD28F6602000D11E28 /* floppy525.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654C128F6602000D11E28 /* floppy525.icns */; };
 		55C654DE28F6602000D11E28 /* xcbm2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654C228F6602000D11E28 /* xcbm2.icns */; };
-		55C6550F28F66E9300D11E28 /* xpet.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654ED28F66E9300D11E28 /* xpet.nib */; };
-		55C6551028F66E9300D11E28 /* FilePanelImageContents.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654EF28F66E9300D11E28 /* FilePanelImageContents.nib */; };
-		55C6551128F66E9300D11E28 /* x64dtv.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F128F66E9300D11E28 /* x64dtv.nib */; };
-		55C6551228F66E9300D11E28 /* MemoryWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F328F66E9300D11E28 /* MemoryWindow.nib */; };
-		55C6551328F66E9300D11E28 /* RegisterWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F528F66E9300D11E28 /* RegisterWindow.nib */; };
-		55C6551428F66E9300D11E28 /* DisassemblyWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F728F66E9300D11E28 /* DisassemblyWindow.nib */; };
-		55C6551528F66E9300D11E28 /* IOTreeWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F928F66E9300D11E28 /* IOTreeWindow.nib */; };
-		55C6551628F66E9300D11E28 /* x64sc.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654FB28F66E9300D11E28 /* x64sc.nib */; };
-		55C6551728F66E9300D11E28 /* xplus4.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654FD28F66E9300D11E28 /* xplus4.nib */; };
-		55C6551828F66E9300D11E28 /* RecordHistory.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654FF28F66E9300D11E28 /* RecordHistory.nib */; };
-		55C6551928F66E9300D11E28 /* x128.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550128F66E9300D11E28 /* x128.nib */; };
-		55C6551A28F66E9300D11E28 /* xvic.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550328F66E9300D11E28 /* xvic.nib */; };
-		55C6551B28F66E9300D11E28 /* xcbm2.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550528F66E9300D11E28 /* xcbm2.nib */; };
-		55C6551D28F66E9300D11E28 /* NetplayControl.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550928F66E9300D11E28 /* NetplayControl.nib */; };
-		55C6551E28F66E9300D11E28 /* SIDSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550B28F66E9300D11E28 /* SIDSettings.nib */; };
+		55C6550F28F66E9300D11E28 /* xpet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654ED28F66E9300D11E28 /* xpet.xib */; };
+		55C6551028F66E9300D11E28 /* FilePanelImageContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654EF28F66E9300D11E28 /* FilePanelImageContents.xib */; };
+		55C6551128F66E9300D11E28 /* x64dtv.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F128F66E9300D11E28 /* x64dtv.xib */; };
+		55C6551228F66E9300D11E28 /* MemoryWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F328F66E9300D11E28 /* MemoryWindow.xib */; };
+		55C6551328F66E9300D11E28 /* RegisterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F528F66E9300D11E28 /* RegisterWindow.xib */; };
+		55C6551428F66E9300D11E28 /* DisassemblyWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F728F66E9300D11E28 /* DisassemblyWindow.xib */; };
+		55C6551528F66E9300D11E28 /* IOTreeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F928F66E9300D11E28 /* IOTreeWindow.xib */; };
+		55C6551628F66E9300D11E28 /* x64sc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654FB28F66E9300D11E28 /* x64sc.xib */; };
+		55C6551728F66E9300D11E28 /* xplus4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654FD28F66E9300D11E28 /* xplus4.xib */; };
+		55C6551828F66E9300D11E28 /* RecordHistory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654FF28F66E9300D11E28 /* RecordHistory.xib */; };
+		55C6551928F66E9300D11E28 /* x128.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550128F66E9300D11E28 /* x128.xib */; };
+		55C6551A28F66E9300D11E28 /* xvic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550328F66E9300D11E28 /* xvic.xib */; };
+		55C6551B28F66E9300D11E28 /* xcbm2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550528F66E9300D11E28 /* xcbm2.xib */; };
+		55C6551D28F66E9300D11E28 /* NetplayControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550928F66E9300D11E28 /* NetplayControl.xib */; };
+		55C6551E28F66E9300D11E28 /* SIDSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550B28F66E9300D11E28 /* SIDSettings.xib */; };
 		55C6551F28F66E9300D11E28 /* IOTree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550D28F66E9300D11E28 /* IOTree.plist */; };
 		55C6552228F6716E00D11E28 /* vicefilepanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552128F6716E00D11E28 /* vicefilepanel.m */; };
 		55C6552528F679D300D11E28 /* sidsettingswindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6552428F679D300D11E28 /* sidsettingswindowcontroller.m */; };
@@ -586,15 +586,15 @@
 		55C6553728F67C9700D11E28 /* disassemblywindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6553528F67C9700D11E28 /* disassemblywindowcontroller.m */; };
 		55C6553C28F67CB200D11E28 /* iotreeitem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6553A28F67CB200D11E28 /* iotreeitem.m */; };
 		55C6553D28F67CB200D11E28 /* iotreewindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6553B28F67CB200D11E28 /* iotreewindowcontroller.m */; };
-		83E499CD0DE4CA54001DE90F /* IECDriveSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4997B0DE4C8C8001DE90F /* IECDriveSettings.nib */; };
-		83E499CE0DE4CA54001DE90F /* SoundSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4998D0DE4C8C8001DE90F /* SoundSettings.nib */; };
-		83E499CF0DE4CA54001DE90F /* KeyboardSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4997F0DE4C8C8001DE90F /* KeyboardSettings.nib */; };
-		83E499D00DE4CA54001DE90F /* DriveSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E499790DE4C8C8001DE90F /* DriveSettings.nib */; };
-		83E499D20DE4CA54001DE90F /* PrinterSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E499850DE4C8C8001DE90F /* PrinterSettings.nib */; };
-		83E499D30DE4CA54001DE90F /* VICEInformation.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4998F0DE4C8C8001DE90F /* VICEInformation.nib */; };
-		83E499D40DE4CA54001DE90F /* ResourceEditor.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E499890DE4C8C8001DE90F /* ResourceEditor.nib */; };
-		83E499D50DE4CA54001DE90F /* x64.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E499910DE4C8C8001DE90F /* x64.nib */; };
-		83E499D60DE4CA54001DE90F /* JoystickSettings.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4997D0DE4C8C8001DE90F /* JoystickSettings.nib */; };
+		83E499CD0DE4CA54001DE90F /* IECDriveSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4997B0DE4C8C8001DE90F /* IECDriveSettings.xib */; };
+		83E499CE0DE4CA54001DE90F /* SoundSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4998D0DE4C8C8001DE90F /* SoundSettings.xib */; };
+		83E499CF0DE4CA54001DE90F /* KeyboardSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4997F0DE4C8C8001DE90F /* KeyboardSettings.xib */; };
+		83E499D00DE4CA54001DE90F /* DriveSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E499790DE4C8C8001DE90F /* DriveSettings.xib */; };
+		83E499D20DE4CA54001DE90F /* PrinterSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E499850DE4C8C8001DE90F /* PrinterSettings.xib */; };
+		83E499D30DE4CA54001DE90F /* VICEInformation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4998F0DE4C8C8001DE90F /* VICEInformation.xib */; };
+		83E499D40DE4CA54001DE90F /* ResourceEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E499890DE4C8C8001DE90F /* ResourceEditor.xib */; };
+		83E499D50DE4CA54001DE90F /* x64.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E499910DE4C8C8001DE90F /* x64.xib */; };
+		83E499D60DE4CA54001DE90F /* JoystickSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E4997D0DE4C8C8001DE90F /* JoystickSettings.xib */; };
 		83E49A3F0DE4CCA9001DE90F /* console.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E499E40DE4CCA9001DE90F /* console.m */; };
 		83E49A400DE4CCA9001DE90F /* drivesettingswindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E499E70DE4CCA9001DE90F /* drivesettingswindowcontroller.m */; };
 		83E49A410DE4CCA9001DE90F /* iecdrivesettingswindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E499E90DE4CCA9001DE90F /* iecdrivesettingswindowcontroller.m */; };
@@ -641,11 +641,11 @@
 		83E49A730DE4CCA9001DE90F /* vicewindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E49A3D0DE4CCA9001DE90F /* vicewindow.m */; };
 		83E49A740DE4CCA9001DE90F /* vsidui.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E49A3E0DE4CCA9001DE90F /* vsidui.m */; };
 		83E49A830DE6B688001DE90F /* recordmediawindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E49A820DE6B688001DE90F /* recordmediawindowcontroller.m */; };
-		83E49A880DE6B6AA001DE90F /* RecordMedia.nib in Resources */ = {isa = PBXBuildFile; fileRef = 83E49A860DE6B6AA001DE90F /* RecordMedia.nib */; };
+		83E49A880DE6B6AA001DE90F /* RecordMedia.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83E49A860DE6B6AA001DE90F /* RecordMedia.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05204E3E13D2AC73008F2D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/VideoSettings.nib; sourceTree = "<group>"; };
+		05204E3E13D2AC73008F2D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VideoSettings.xib; sourceTree = "<group>"; };
 		05204E4113D2ACE2008F2D7E /* videosettingswindowcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videosettingswindowcontroller.h; sourceTree = "<group>"; };
 		05204E4213D2ACE2008F2D7E /* videosettingswindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videosettingswindowcontroller.m; sourceTree = "<group>"; };
 		05204E4813D2B56D008F2D7E /* videoparam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoparam.h; sourceTree = "<group>"; };
@@ -1805,21 +1805,21 @@
 		55C654C028F6602000D11E28 /* cartridge.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = cartridge.icns; sourceTree = "<group>"; };
 		55C654C128F6602000D11E28 /* floppy525.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = floppy525.icns; sourceTree = "<group>"; };
 		55C654C228F6602000D11E28 /* xcbm2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = xcbm2.icns; sourceTree = "<group>"; };
-		55C654EE28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/xpet.nib; sourceTree = "<group>"; };
-		55C654F028F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/FilePanelImageContents.nib; sourceTree = "<group>"; };
-		55C654F228F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/x64dtv.nib; sourceTree = "<group>"; };
-		55C654F428F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/MemoryWindow.nib; sourceTree = "<group>"; };
-		55C654F628F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/RegisterWindow.nib; sourceTree = "<group>"; };
-		55C654F828F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/DisassemblyWindow.nib; sourceTree = "<group>"; };
-		55C654FA28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/IOTreeWindow.nib; sourceTree = "<group>"; };
-		55C654FC28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/x64sc.nib; sourceTree = "<group>"; };
-		55C654FE28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/xplus4.nib; sourceTree = "<group>"; };
-		55C6550028F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/RecordHistory.nib; sourceTree = "<group>"; };
-		55C6550228F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/x128.nib; sourceTree = "<group>"; };
-		55C6550428F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/xvic.nib; sourceTree = "<group>"; };
-		55C6550628F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/xcbm2.nib; sourceTree = "<group>"; };
-		55C6550A28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/NetplayControl.nib; sourceTree = "<group>"; };
-		55C6550C28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/SIDSettings.nib; sourceTree = "<group>"; };
+		55C654EE28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/xpet.xib; sourceTree = "<group>"; };
+		55C654F028F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FilePanelImageContents.xib; sourceTree = "<group>"; };
+		55C654F228F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/x64dtv.xib; sourceTree = "<group>"; };
+		55C654F428F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MemoryWindow.xib; sourceTree = "<group>"; };
+		55C654F628F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RegisterWindow.xib; sourceTree = "<group>"; };
+		55C654F828F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DisassemblyWindow.xib; sourceTree = "<group>"; };
+		55C654FA28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IOTreeWindow.xib; sourceTree = "<group>"; };
+		55C654FC28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/x64sc.xib; sourceTree = "<group>"; };
+		55C654FE28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/xplus4.xib; sourceTree = "<group>"; };
+		55C6550028F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RecordHistory.xib; sourceTree = "<group>"; };
+		55C6550228F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/x128.xib; sourceTree = "<group>"; };
+		55C6550428F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/xvic.xib; sourceTree = "<group>"; };
+		55C6550628F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/xcbm2.xib; sourceTree = "<group>"; };
+		55C6550A28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NetplayControl.xib; sourceTree = "<group>"; };
+		55C6550C28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SIDSettings.xib; sourceTree = "<group>"; };
 		55C6550E28F66E9300D11E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/IOTree.plist; sourceTree = "<group>"; };
 		55C6552028F6716E00D11E28 /* vicefilepanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vicefilepanel.h; sourceTree = "<group>"; };
 		55C6552128F6716E00D11E28 /* vicefilepanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vicefilepanel.m; sourceTree = "<group>"; };
@@ -1841,15 +1841,15 @@
 		55C6553928F67CB200D11E28 /* iotreeitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iotreeitem.h; sourceTree = "<group>"; };
 		55C6553A28F67CB200D11E28 /* iotreeitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iotreeitem.m; sourceTree = "<group>"; };
 		55C6553B28F67CB200D11E28 /* iotreewindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iotreewindowcontroller.m; sourceTree = "<group>"; };
-		83E4997A0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/DriveSettings.nib; sourceTree = "<group>"; };
-		83E4997C0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/IECDriveSettings.nib; sourceTree = "<group>"; };
-		83E4997E0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/JoystickSettings.nib; sourceTree = "<group>"; };
-		83E499800DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/KeyboardSettings.nib; sourceTree = "<group>"; };
-		83E499860DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/PrinterSettings.nib; sourceTree = "<group>"; };
-		83E4998A0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/ResourceEditor.nib; sourceTree = "<group>"; };
-		83E4998E0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/SoundSettings.nib; sourceTree = "<group>"; };
-		83E499900DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/VICEInformation.nib; sourceTree = "<group>"; };
-		83E499920DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/x64.nib; sourceTree = "<group>"; };
+		83E4997A0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DriveSettings.xib; sourceTree = "<group>"; };
+		83E4997C0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IECDriveSettings.xib; sourceTree = "<group>"; };
+		83E4997E0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JoystickSettings.xib; sourceTree = "<group>"; };
+		83E499800DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KeyboardSettings.xib; sourceTree = "<group>"; };
+		83E499860DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PrinterSettings.xib; sourceTree = "<group>"; };
+		83E4998A0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ResourceEditor.xib; sourceTree = "<group>"; };
+		83E4998E0DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SoundSettings.xib; sourceTree = "<group>"; };
+		83E499900DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VICEInformation.xib; sourceTree = "<group>"; };
+		83E499920DE4C8C8001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/x64.xib; sourceTree = "<group>"; };
 		83E499C70DE4CA1B001DE90F /* VICE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VICE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E499E40DE4CCA9001DE90F /* console.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = console.m; sourceTree = "<group>"; };
 		83E499E60DE4CCA9001DE90F /* drivesettingswindowcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drivesettingswindowcontroller.h; sourceTree = "<group>"; };
@@ -1934,7 +1934,7 @@
 		83E49A3E0DE4CCA9001DE90F /* vsidui.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vsidui.m; sourceTree = "<group>"; };
 		83E49A810DE6B688001DE90F /* recordmediawindowcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recordmediawindowcontroller.h; sourceTree = "<group>"; };
 		83E49A820DE6B688001DE90F /* recordmediawindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recordmediawindowcontroller.m; sourceTree = "<group>"; };
-		83E49A870DE6B6AA001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = en; path = en.lproj/RecordMedia.nib; sourceTree = "<group>"; };
+		83E49A870DE6B6AA001DE90F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RecordMedia.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3425,47 +3425,47 @@
 			children = (
 				55C654C028F6602000D11E28 /* cartridge.icns */,
 				55C654BF28F6602000D11E28 /* Credits.html */,
-				55C654F728F66E9300D11E28 /* DisassemblyWindow.nib */,
-				83E499790DE4C8C8001DE90F /* DriveSettings.nib */,
-				55C654EF28F66E9300D11E28 /* FilePanelImageContents.nib */,
+				55C654F728F66E9300D11E28 /* DisassemblyWindow.xib */,
+				83E499790DE4C8C8001DE90F /* DriveSettings.xib */,
+				55C654EF28F66E9300D11E28 /* FilePanelImageContents.xib */,
 				55C654C128F6602000D11E28 /* floppy525.icns */,
-				83E4997B0DE4C8C8001DE90F /* IECDriveSettings.nib */,
+				83E4997B0DE4C8C8001DE90F /* IECDriveSettings.xib */,
 				55C6550D28F66E9300D11E28 /* IOTree.plist */,
-				55C654F928F66E9300D11E28 /* IOTreeWindow.nib */,
-				83E4997D0DE4C8C8001DE90F /* JoystickSettings.nib */,
-				83E4997F0DE4C8C8001DE90F /* KeyboardSettings.nib */,
-				55C654F328F66E9300D11E28 /* MemoryWindow.nib */,
-				55C6550928F66E9300D11E28 /* NetplayControl.nib */,
-				83E499850DE4C8C8001DE90F /* PrinterSettings.nib */,
-				55C654FF28F66E9300D11E28 /* RecordHistory.nib */,
-				83E49A860DE6B6AA001DE90F /* RecordMedia.nib */,
-				55C654F528F66E9300D11E28 /* RegisterWindow.nib */,
-				83E499890DE4C8C8001DE90F /* ResourceEditor.nib */,
+				55C654F928F66E9300D11E28 /* IOTreeWindow.xib */,
+				83E4997D0DE4C8C8001DE90F /* JoystickSettings.xib */,
+				83E4997F0DE4C8C8001DE90F /* KeyboardSettings.xib */,
+				55C654F328F66E9300D11E28 /* MemoryWindow.xib */,
+				55C6550928F66E9300D11E28 /* NetplayControl.xib */,
+				83E499850DE4C8C8001DE90F /* PrinterSettings.xib */,
+				55C654FF28F66E9300D11E28 /* RecordHistory.xib */,
+				83E49A860DE6B6AA001DE90F /* RecordMedia.xib */,
+				55C654F528F66E9300D11E28 /* RegisterWindow.xib */,
+				83E499890DE4C8C8001DE90F /* ResourceEditor.xib */,
 				05204E4A13D2BA42008F2D7E /* ResourceTree.plist */,
-				55C6550B28F66E9300D11E28 /* SIDSettings.nib */,
-				83E4998D0DE4C8C8001DE90F /* SoundSettings.nib */,
+				55C6550B28F66E9300D11E28 /* SIDSettings.xib */,
+				83E4998D0DE4C8C8001DE90F /* SoundSettings.xib */,
 				55C654AD28F6601F00D11E28 /* tape.icns */,
 				55C654AE28F6601F00D11E28 /* VICE.icns */,
 				55C654BC28F6602000D11E28 /* VICEFile.icns */,
-				83E4998F0DE4C8C8001DE90F /* VICEInformation.nib */,
-				05204E3D13D2AC73008F2D7E /* VideoSettings.nib */,
+				83E4998F0DE4C8C8001DE90F /* VICEInformation.xib */,
+				05204E3D13D2AC73008F2D7E /* VideoSettings.xib */,
 				55C654BB28F6602000D11E28 /* x64.icns */,
-				83E499910DE4C8C8001DE90F /* x64.nib */,
+				83E499910DE4C8C8001DE90F /* x64.xib */,
 				55C654BE28F6602000D11E28 /* x64dtv.icns */,
-				55C654F128F66E9300D11E28 /* x64dtv.nib */,
+				55C654F128F66E9300D11E28 /* x64dtv.xib */,
 				55C654B128F6601F00D11E28 /* x64sc.icns */,
-				55C654FB28F66E9300D11E28 /* x64sc.nib */,
+				55C654FB28F66E9300D11E28 /* x64sc.xib */,
 				55C654B228F6601F00D11E28 /* x65.icns */,
 				55C654B928F6602000D11E28 /* x128.icns */,
-				55C6550128F66E9300D11E28 /* x128.nib */,
+				55C6550128F66E9300D11E28 /* x128.xib */,
 				55C654C228F6602000D11E28 /* xcbm2.icns */,
-				55C6550528F66E9300D11E28 /* xcbm2.nib */,
+				55C6550528F66E9300D11E28 /* xcbm2.xib */,
 				55C654B628F6601F00D11E28 /* xpet.icns */,
-				55C654ED28F66E9300D11E28 /* xpet.nib */,
+				55C654ED28F66E9300D11E28 /* xpet.xib */,
 				55C654AF28F6601F00D11E28 /* xplus4.icns */,
-				55C654FD28F66E9300D11E28 /* xplus4.nib */,
+				55C654FD28F66E9300D11E28 /* xplus4.xib */,
 				55C654B428F6601F00D11E28 /* xvic.icns */,
-				55C6550328F66E9300D11E28 /* xvic.nib */,
+				55C6550328F66E9300D11E28 /* xvic.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -3705,47 +3705,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83E499CD0DE4CA54001DE90F /* IECDriveSettings.nib in Resources */,
-				83E499CE0DE4CA54001DE90F /* SoundSettings.nib in Resources */,
-				83E499CF0DE4CA54001DE90F /* KeyboardSettings.nib in Resources */,
-				83E499D00DE4CA54001DE90F /* DriveSettings.nib in Resources */,
-				83E499D20DE4CA54001DE90F /* PrinterSettings.nib in Resources */,
-				83E499D30DE4CA54001DE90F /* VICEInformation.nib in Resources */,
-				83E499D40DE4CA54001DE90F /* ResourceEditor.nib in Resources */,
-				83E499D50DE4CA54001DE90F /* x64.nib in Resources */,
-				83E499D60DE4CA54001DE90F /* JoystickSettings.nib in Resources */,
-				83E49A880DE6B6AA001DE90F /* RecordMedia.nib in Resources */,
+				83E499CD0DE4CA54001DE90F /* IECDriveSettings.xib in Resources */,
+				83E499CE0DE4CA54001DE90F /* SoundSettings.xib in Resources */,
+				83E499CF0DE4CA54001DE90F /* KeyboardSettings.xib in Resources */,
+				83E499D00DE4CA54001DE90F /* DriveSettings.xib in Resources */,
+				83E499D20DE4CA54001DE90F /* PrinterSettings.xib in Resources */,
+				83E499D30DE4CA54001DE90F /* VICEInformation.xib in Resources */,
+				83E499D40DE4CA54001DE90F /* ResourceEditor.xib in Resources */,
+				83E499D50DE4CA54001DE90F /* x64.xib in Resources */,
+				83E499D60DE4CA54001DE90F /* JoystickSettings.xib in Resources */,
+				83E49A880DE6B6AA001DE90F /* RecordMedia.xib in Resources */,
 				55C654DE28F6602000D11E28 /* xcbm2.icns in Resources */,
 				55C654DA28F6602000D11E28 /* x64dtv.icns in Resources */,
-				55C6551B28F66E9300D11E28 /* xcbm2.nib in Resources */,
-				55C6550F28F66E9300D11E28 /* xpet.nib in Resources */,
+				55C6551B28F66E9300D11E28 /* xcbm2.xib in Resources */,
+				55C6550F28F66E9300D11E28 /* xpet.xib in Resources */,
 				55C654D728F6602000D11E28 /* x64.icns in Resources */,
 				55C654C928F6602000D11E28 /* tape.icns in Resources */,
 				55C654CD28F6602000D11E28 /* x64sc.icns in Resources */,
-				55C6551828F66E9300D11E28 /* RecordHistory.nib in Resources */,
+				55C6551828F66E9300D11E28 /* RecordHistory.xib in Resources */,
 				55C654CB28F6602000D11E28 /* xplus4.icns in Resources */,
 				55C6551F28F66E9300D11E28 /* IOTree.plist in Resources */,
-				55C6551028F66E9300D11E28 /* FilePanelImageContents.nib in Resources */,
-				55C6551328F66E9300D11E28 /* RegisterWindow.nib in Resources */,
+				55C6551028F66E9300D11E28 /* FilePanelImageContents.xib in Resources */,
+				55C6551328F66E9300D11E28 /* RegisterWindow.xib in Resources */,
 				55C654D528F6602000D11E28 /* x128.icns in Resources */,
 				55C654DB28F6602000D11E28 /* Credits.html in Resources */,
-				55C6551428F66E9300D11E28 /* DisassemblyWindow.nib in Resources */,
-				55C6551628F66E9300D11E28 /* x64sc.nib in Resources */,
-				55C6551728F66E9300D11E28 /* xplus4.nib in Resources */,
-				55C6551E28F66E9300D11E28 /* SIDSettings.nib in Resources */,
+				55C6551428F66E9300D11E28 /* DisassemblyWindow.xib in Resources */,
+				55C6551628F66E9300D11E28 /* x64sc.xib in Resources */,
+				55C6551728F66E9300D11E28 /* xplus4.xib in Resources */,
+				55C6551E28F66E9300D11E28 /* SIDSettings.xib in Resources */,
 				55C654DD28F6602000D11E28 /* floppy525.icns in Resources */,
-				55C6551528F66E9300D11E28 /* IOTreeWindow.nib in Resources */,
-				55C6551128F66E9300D11E28 /* x64dtv.nib in Resources */,
+				55C6551528F66E9300D11E28 /* IOTreeWindow.xib in Resources */,
+				55C6551128F66E9300D11E28 /* x64dtv.xib in Resources */,
 				55C654CA28F6602000D11E28 /* VICE.icns in Resources */,
-				55C6551D28F66E9300D11E28 /* NetplayControl.nib in Resources */,
+				55C6551D28F66E9300D11E28 /* NetplayControl.xib in Resources */,
 				55C654CE28F6602000D11E28 /* x65.icns in Resources */,
 				55C654DC28F6602000D11E28 /* cartridge.icns in Resources */,
 				55C654D828F6602000D11E28 /* VICEFile.icns in Resources */,
-				55C6551228F66E9300D11E28 /* MemoryWindow.nib in Resources */,
+				55C6551228F66E9300D11E28 /* MemoryWindow.xib in Resources */,
 				55467FF028F75D9B007F3693 /* samp2src.pl in Resources */,
-				55C6551A28F66E9300D11E28 /* xvic.nib in Resources */,
-				05204E3F13D2AC73008F2D7E /* VideoSettings.nib in Resources */,
-				55C6551928F66E9300D11E28 /* x128.nib in Resources */,
+				55C6551A28F66E9300D11E28 /* xvic.xib in Resources */,
+				05204E3F13D2AC73008F2D7E /* VideoSettings.xib in Resources */,
+				55C6551928F66E9300D11E28 /* x128.xib in Resources */,
 				05204E4C13D2BA42008F2D7E /* ResourceTree.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4355,12 +4355,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		05204E3D13D2AC73008F2D7E /* VideoSettings.nib */ = {
+		05204E3D13D2AC73008F2D7E /* VideoSettings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				05204E3E13D2AC73008F2D7E /* en */,
 			);
-			name = VideoSettings.nib;
+			name = VideoSettings.xib;
 			sourceTree = "<group>";
 		};
 		05204E4A13D2BA42008F2D7E /* ResourceTree.plist */ = {
@@ -4371,124 +4371,124 @@
 			name = ResourceTree.plist;
 			sourceTree = "<group>";
 		};
-		55C654ED28F66E9300D11E28 /* xpet.nib */ = {
+		55C654ED28F66E9300D11E28 /* xpet.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C654EE28F66E9300D11E28 /* en */,
 			);
-			name = xpet.nib;
+			name = xpet.xib;
 			sourceTree = "<group>";
 		};
-		55C654EF28F66E9300D11E28 /* FilePanelImageContents.nib */ = {
+		55C654EF28F66E9300D11E28 /* FilePanelImageContents.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C654F028F66E9300D11E28 /* en */,
 			);
-			name = FilePanelImageContents.nib;
+			name = FilePanelImageContents.xib;
 			sourceTree = "<group>";
 		};
-		55C654F128F66E9300D11E28 /* x64dtv.nib */ = {
+		55C654F128F66E9300D11E28 /* x64dtv.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C654F228F66E9300D11E28 /* en */,
 			);
-			name = x64dtv.nib;
+			name = x64dtv.xib;
 			sourceTree = "<group>";
 		};
-		55C654F328F66E9300D11E28 /* MemoryWindow.nib */ = {
+		55C654F328F66E9300D11E28 /* MemoryWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C654F428F66E9300D11E28 /* en */,
 			);
-			name = MemoryWindow.nib;
+			name = MemoryWindow.xib;
 			sourceTree = "<group>";
 		};
-		55C654F528F66E9300D11E28 /* RegisterWindow.nib */ = {
+		55C654F528F66E9300D11E28 /* RegisterWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C654F628F66E9300D11E28 /* en */,
 			);
-			name = RegisterWindow.nib;
+			name = RegisterWindow.xib;
 			sourceTree = "<group>";
 		};
-		55C654F728F66E9300D11E28 /* DisassemblyWindow.nib */ = {
+		55C654F728F66E9300D11E28 /* DisassemblyWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C654F828F66E9300D11E28 /* en */,
 			);
-			name = DisassemblyWindow.nib;
+			name = DisassemblyWindow.xib;
 			sourceTree = "<group>";
 		};
-		55C654F928F66E9300D11E28 /* IOTreeWindow.nib */ = {
+		55C654F928F66E9300D11E28 /* IOTreeWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C654FA28F66E9300D11E28 /* en */,
 			);
-			name = IOTreeWindow.nib;
+			name = IOTreeWindow.xib;
 			sourceTree = "<group>";
 		};
-		55C654FB28F66E9300D11E28 /* x64sc.nib */ = {
+		55C654FB28F66E9300D11E28 /* x64sc.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C654FC28F66E9300D11E28 /* en */,
 			);
-			name = x64sc.nib;
+			name = x64sc.xib;
 			sourceTree = "<group>";
 		};
-		55C654FD28F66E9300D11E28 /* xplus4.nib */ = {
+		55C654FD28F66E9300D11E28 /* xplus4.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C654FE28F66E9300D11E28 /* en */,
 			);
-			name = xplus4.nib;
+			name = xplus4.xib;
 			sourceTree = "<group>";
 		};
-		55C654FF28F66E9300D11E28 /* RecordHistory.nib */ = {
+		55C654FF28F66E9300D11E28 /* RecordHistory.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C6550028F66E9300D11E28 /* en */,
 			);
-			name = RecordHistory.nib;
+			name = RecordHistory.xib;
 			sourceTree = "<group>";
 		};
-		55C6550128F66E9300D11E28 /* x128.nib */ = {
+		55C6550128F66E9300D11E28 /* x128.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C6550228F66E9300D11E28 /* en */,
 			);
-			name = x128.nib;
+			name = x128.xib;
 			sourceTree = "<group>";
 		};
-		55C6550328F66E9300D11E28 /* xvic.nib */ = {
+		55C6550328F66E9300D11E28 /* xvic.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C6550428F66E9300D11E28 /* en */,
 			);
-			name = xvic.nib;
+			name = xvic.xib;
 			sourceTree = "<group>";
 		};
-		55C6550528F66E9300D11E28 /* xcbm2.nib */ = {
+		55C6550528F66E9300D11E28 /* xcbm2.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C6550628F66E9300D11E28 /* en */,
 			);
-			name = xcbm2.nib;
+			name = xcbm2.xib;
 			sourceTree = "<group>";
 		};
-		55C6550928F66E9300D11E28 /* NetplayControl.nib */ = {
+		55C6550928F66E9300D11E28 /* NetplayControl.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C6550A28F66E9300D11E28 /* en */,
 			);
-			name = NetplayControl.nib;
+			name = NetplayControl.xib;
 			sourceTree = "<group>";
 		};
-		55C6550B28F66E9300D11E28 /* SIDSettings.nib */ = {
+		55C6550B28F66E9300D11E28 /* SIDSettings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C6550C28F66E9300D11E28 /* en */,
 			);
-			name = SIDSettings.nib;
+			name = SIDSettings.xib;
 			sourceTree = "<group>";
 		};
 		55C6550D28F66E9300D11E28 /* IOTree.plist */ = {
@@ -4499,84 +4499,84 @@
 			name = IOTree.plist;
 			sourceTree = "<group>";
 		};
-		83E499790DE4C8C8001DE90F /* DriveSettings.nib */ = {
+		83E499790DE4C8C8001DE90F /* DriveSettings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E4997A0DE4C8C8001DE90F /* en */,
 			);
-			name = DriveSettings.nib;
+			name = DriveSettings.xib;
 			sourceTree = "<group>";
 		};
-		83E4997B0DE4C8C8001DE90F /* IECDriveSettings.nib */ = {
+		83E4997B0DE4C8C8001DE90F /* IECDriveSettings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E4997C0DE4C8C8001DE90F /* en */,
 			);
-			name = IECDriveSettings.nib;
+			name = IECDriveSettings.xib;
 			sourceTree = "<group>";
 		};
-		83E4997D0DE4C8C8001DE90F /* JoystickSettings.nib */ = {
+		83E4997D0DE4C8C8001DE90F /* JoystickSettings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E4997E0DE4C8C8001DE90F /* en */,
 			);
-			name = JoystickSettings.nib;
+			name = JoystickSettings.xib;
 			sourceTree = "<group>";
 		};
-		83E4997F0DE4C8C8001DE90F /* KeyboardSettings.nib */ = {
+		83E4997F0DE4C8C8001DE90F /* KeyboardSettings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E499800DE4C8C8001DE90F /* en */,
 			);
-			name = KeyboardSettings.nib;
+			name = KeyboardSettings.xib;
 			sourceTree = "<group>";
 		};
-		83E499850DE4C8C8001DE90F /* PrinterSettings.nib */ = {
+		83E499850DE4C8C8001DE90F /* PrinterSettings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E499860DE4C8C8001DE90F /* en */,
 			);
-			name = PrinterSettings.nib;
+			name = PrinterSettings.xib;
 			sourceTree = "<group>";
 		};
-		83E499890DE4C8C8001DE90F /* ResourceEditor.nib */ = {
+		83E499890DE4C8C8001DE90F /* ResourceEditor.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E4998A0DE4C8C8001DE90F /* en */,
 			);
-			name = ResourceEditor.nib;
+			name = ResourceEditor.xib;
 			sourceTree = "<group>";
 		};
-		83E4998D0DE4C8C8001DE90F /* SoundSettings.nib */ = {
+		83E4998D0DE4C8C8001DE90F /* SoundSettings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E4998E0DE4C8C8001DE90F /* en */,
 			);
-			name = SoundSettings.nib;
+			name = SoundSettings.xib;
 			sourceTree = "<group>";
 		};
-		83E4998F0DE4C8C8001DE90F /* VICEInformation.nib */ = {
+		83E4998F0DE4C8C8001DE90F /* VICEInformation.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E499900DE4C8C8001DE90F /* en */,
 			);
-			name = VICEInformation.nib;
+			name = VICEInformation.xib;
 			sourceTree = "<group>";
 		};
-		83E499910DE4C8C8001DE90F /* x64.nib */ = {
+		83E499910DE4C8C8001DE90F /* x64.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E499920DE4C8C8001DE90F /* en */,
 			);
-			name = x64.nib;
+			name = x64.xib;
 			sourceTree = "<group>";
 		};
-		83E49A860DE6B6AA001DE90F /* RecordMedia.nib */ = {
+		83E49A860DE6B6AA001DE90F /* RecordMedia.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83E49A870DE6B6AA001DE90F /* en */,
 			);
-			name = RecordMedia.nib;
+			name = RecordMedia.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

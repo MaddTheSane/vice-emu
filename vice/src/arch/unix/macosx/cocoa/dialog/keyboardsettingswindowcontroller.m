@@ -81,13 +81,13 @@ NSString *tags[3] = { @"KeymapSymFile", @"KeymapSymDeFile", @"KeymapPosFile" };
 
 -(IBAction)selectKeymap:(id)sender
 {
-    int index = [[sender selectedCell] tag];
-    [self setIntResource:@"KeymapIndex" toValue:index];
+    NSInteger index = [[sender selectedCell] tag];
+    [self setIntResource:@"KeymapIndex" toValue:(int)index];
 }
 
 -(IBAction)changedKeymapFile:(id)sender
 {
-    int index = [sender tag];
+    NSInteger index = [sender tag];
     [self setStringResource:tags[index] toValue:[sender stringValue]];
 }
 

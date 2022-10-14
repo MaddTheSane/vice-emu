@@ -10,28 +10,6 @@
 		05204E3F13D2AC73008F2D7E /* VideoSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05204E3D13D2AC73008F2D7E /* VideoSettings.xib */; };
 		05204E4313D2ACE2008F2D7E /* videosettingswindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 05204E4213D2ACE2008F2D7E /* videosettingswindowcontroller.m */; };
 		05204E4C13D2BA42008F2D7E /* ResourceTree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05204E4A13D2BA42008F2D7E /* ResourceTree.plist */; };
-		55467A5828F75D99007F3693 /* crtc.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F1028F75D8B007F3693 /* crtc.c */; };
-		55467A5D28F75D99007F3693 /* crtc-snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F1828F75D8B007F3693 /* crtc-snapshot.c */; };
-		55467A6228F75D99007F3693 /* crtc-color.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F2128F75D8B007F3693 /* crtc-color.c */; };
-		55467A6328F75D99007F3693 /* crtc-draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F2228F75D8B007F3693 /* crtc-draw.c */; };
-		55467A6428F75D99007F3693 /* crtc-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F2328F75D8B007F3693 /* crtc-resources.c */; };
-		55467A6D28F75D99007F3693 /* crtc-cmdline-options.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F2D28F75D8B007F3693 /* crtc-cmdline-options.c */; };
-		55467A7028F75D99007F3693 /* crtc-mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F3028F75D8B007F3693 /* crtc-mem.c */; };
-		55467A7228F75D99007F3693 /* vicii.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F3B28F75D8B007F3693 /* vicii.c */; };
-		55467A7428F75D99007F3693 /* vicii-irq.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F3D28F75D8B007F3693 /* vicii-irq.c */; };
-		55467A7528F75D99007F3693 /* vicii-lightpen.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F3E28F75D8B007F3693 /* vicii-lightpen.c */; };
-		55467A7B28F75D99007F3693 /* vicii-cmdline-options.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F4928F75D8B007F3693 /* vicii-cmdline-options.c */; };
-		55467A7C28F75D99007F3693 /* vicii-cycle.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F4A28F75D8B007F3693 /* vicii-cycle.c */; };
-		55467A7E28F75D99007F3693 /* vicii-color.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F4C28F75D8B007F3693 /* vicii-color.c */; };
-		55467A8228F75D99007F3693 /* vicii-mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5328F75D8C007F3693 /* vicii-mem.c */; };
-		55467A8728F75D99007F3693 /* vicii-fetch.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5B28F75D8C007F3693 /* vicii-fetch.c */; };
-		55467A8828F75D99007F3693 /* vicii-draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5C28F75D8C007F3693 /* vicii-draw.c */; };
-		55467A8928F75D99007F3693 /* vicii-timing.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5D28F75D8C007F3693 /* vicii-timing.c */; };
-		55467A8A28F75D99007F3693 /* vicii-chip-model.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5E28F75D8C007F3693 /* vicii-chip-model.c */; };
-		55467A8B28F75D99007F3693 /* vicii-draw-cycle.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5F28F75D8C007F3693 /* vicii-draw-cycle.c */; };
-		55467A8C28F75D99007F3693 /* vicii-snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F6028F75D8C007F3693 /* vicii-snapshot.c */; };
-		55467AA128F75D99007F3693 /* vicii-phi1.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F7A28F75D8C007F3693 /* vicii-phi1.c */; };
-		55467AA228F75D99007F3693 /* vicii-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F7B28F75D8C007F3693 /* vicii-resources.c */; };
 		55467AA428F75D99007F3693 /* fsdevice-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F7F28F75D8C007F3693 /* fsdevice-resources.c */; };
 		55467AA628F75D99007F3693 /* fsdevice.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F8228F75D8C007F3693 /* fsdevice.c */; };
 		55467AA828F75D99007F3693 /* fsdevice-read.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F8528F75D8C007F3693 /* fsdevice-read.c */; };
@@ -42,9 +20,6 @@
 		55467AB328F75D99007F3693 /* fsdevice-open.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F9328F75D8C007F3693 /* fsdevice-open.c */; };
 		55467AC128F75D99007F3693 /* tcbm-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466FA828F75D8C007F3693 /* tcbm-resources.c */; };
 		55467AC728F75D99007F3693 /* tcbm-cmdline-options.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466FB128F75D8C007F3693 /* tcbm-cmdline-options.c */; };
-		55467ACA28F75D99007F3693 /* mem1551.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466FB428F75D8C007F3693 /* mem1551.c */; };
-		55467ACB28F75D99007F3693 /* tpid.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466FB528F75D8C007F3693 /* tpid.c */; };
-		55467ACC28F75D99007F3693 /* tcbm.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466FB628F75D8C007F3693 /* tcbm.c */; };
 		55467ACE28F75D99007F3693 /* tcbmrom.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466FB928F75D8C007F3693 /* tcbmrom.c */; };
 		55467AD728F75D99007F3693 /* glue1551.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466FC428F75D8C007F3693 /* glue1551.c */; };
 		55467AD928F75D99007F3693 /* drive-cmdline-options.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466FC728F75D8C007F3693 /* drive-cmdline-options.c */; };
@@ -93,7 +68,6 @@
 		55467B7A28F75D99007F3693 /* drive-writeprotect.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546709E28F75D8C007F3693 /* drive-writeprotect.c */; };
 		55467B7C28F75D99007F3693 /* drive.c in Sources */ = {isa = PBXBuildFile; fileRef = 554670A128F75D8C007F3693 /* drive.c */; };
 		55467B7D28F75D99007F3693 /* driveimage.c in Sources */ = {isa = PBXBuildFile; fileRef = 554670A328F75D8C007F3693 /* driveimage.c */; };
-		55467B7F28F75D99007F3693 /* maincpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 554670A628F75D8C007F3693 /* maincpu.c */; };
 		55467BCC28F75D99007F3693 /* findpath.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546710A28F75D8D007F3693 /* findpath.c */; };
 		55467BCD28F75D99007F3693 /* interrupt.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546710C28F75D8D007F3693 /* interrupt.c */; };
 		55467BCE28F75D99007F3693 /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546710E28F75D8D007F3693 /* log.c */; };
@@ -112,11 +86,9 @@
 		55467C7328F75D99007F3693 /* zfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 554671E628F75D8E007F3693 /* zfile.c */; };
 		55467C7428F75D99007F3693 /* fixpoint.c in Sources */ = {isa = PBXBuildFile; fileRef = 554671E728F75D8E007F3693 /* fixpoint.c */; };
 		55467C7528F75D99007F3693 /* sysfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 554671E828F75D8E007F3693 /* sysfile.c */; };
-		55467C7728F75D99007F3693 /* bin2c.c in Sources */ = {isa = PBXBuildFile; fileRef = 554671EB28F75D8E007F3693 /* bin2c.c */; };
 		55467C7828F75D99007F3693 /* machine.c in Sources */ = {isa = PBXBuildFile; fileRef = 554671EF28F75D8E007F3693 /* machine.c */; };
 		55467C7928F75D99007F3693 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 554671F128F75D8E007F3693 /* crc32.c */; };
 		55467C7D28F75D99007F3693 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 554671F928F75D8E007F3693 /* debug.c */; };
-		55467C7F28F75D99007F3693 /* ps2mouse.c in Sources */ = {isa = PBXBuildFile; fileRef = 554671FC28F75D8E007F3693 /* ps2mouse.c */; };
 		55467C8328F75D99007F3693 /* midi.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546722128F75D8E007F3693 /* midi.c */; };
 		55467C8528F75D99007F3693 /* ioutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546722728F75D8E007F3693 /* ioutil.c */; };
 		55467C8628F75D99007F3693 /* dma.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546722828F75D8E007F3693 /* dma.c */; };
@@ -180,7 +152,6 @@
 		55467D4728F75D99007F3693 /* vdc-color.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546733F28F75D91007F3693 /* vdc-color.c */; };
 		55467D5028F75D99007F3693 /* vdc-draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546734A28F75D91007F3693 /* vdc-draw.c */; };
 		55467D5428F75D99007F3693 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546735028F75D91007F3693 /* util.c */; };
-		55467D5828F75D99007F3693 /* cbmimage.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546735928F75D91007F3693 /* cbmimage.c */; };
 		55467D5928F75D99007F3693 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546735D28F75D91007F3693 /* main.c */; };
 		55467D5D28F75D9A007F3693 /* clipboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546736328F75D91007F3693 /* clipboard.c */; };
 		55467D5F28F75D9A007F3693 /* rawnet.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546736928F75D91007F3693 /* rawnet.c */; };
@@ -316,7 +287,6 @@
 		55467F7728F75D9A007F3693 /* c64carthooks.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546763428F75D93007F3693 /* c64carthooks.c */; };
 		55467F7B28F75D9A007F3693 /* stb.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546763B28F75D93007F3693 /* stb.c */; };
 		55467F7F28F75D9A007F3693 /* c64gluelogic.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546764028F75D93007F3693 /* c64gluelogic.c */; };
-		55467F8128F75D9A007F3693 /* c64scmodel.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546764228F75D93007F3693 /* c64scmodel.c */; };
 		55467F8228F75D9A007F3693 /* c64sound.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546764328F75D93007F3693 /* c64sound.c */; };
 		55467F8328F75D9A007F3693 /* c64meminit.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546764428F75D93007F3693 /* c64meminit.c */; };
 		55467F8428F75D9A007F3693 /* c64iec.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546764528F75D93007F3693 /* c64iec.c */; };
@@ -329,7 +299,6 @@
 		55467FB428F75D9B007F3693 /* patchrom.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546767828F75D94007F3693 /* patchrom.c */; };
 		55467FB828F75D9B007F3693 /* c64export.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546767C28F75D94007F3693 /* c64export.c */; };
 		55467FB928F75D9B007F3693 /* c64io.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546767E28F75D94007F3693 /* c64io.c */; };
-		55467FBC28F75D9B007F3693 /* c64mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546768228F75D94007F3693 /* c64mem.c */; };
 		55467FBF28F75D9B007F3693 /* plus256k.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546768628F75D94007F3693 /* plus256k.c */; };
 		55467FC128F75D9B007F3693 /* c64printer.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546768928F75D94007F3693 /* c64printer.c */; };
 		55467FC628F75D9B007F3693 /* envelope.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5546769428F75D94007F3693 /* envelope.cc */; };
@@ -352,7 +321,6 @@
 		5546801F28F75D9B007F3693 /* convolve.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5546770428F75D94007F3693 /* convolve.cc */; };
 		5546803628F75D9B007F3693 /* extfilt.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5546772428F75D94007F3693 /* extfilt.cc */; };
 		5546803828F75D9B007F3693 /* wave.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5546772628F75D94007F3693 /* wave.cc */; };
-		5546803C28F75D9B007F3693 /* cbmdos.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546772A28F75D94007F3693 /* cbmdos.c */; };
 		5546803F28F75D9B007F3693 /* resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546773028F75D95007F3693 /* resources.c */; };
 		5546804028F75D9B007F3693 /* render1x1ntsc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546773428F75D95007F3693 /* render1x1ntsc.c */; };
 		5546804428F75D9B007F3693 /* video-resources-pal.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546773A28F75D95007F3693 /* video-resources-pal.c */; };
@@ -404,39 +372,12 @@
 		554680DC28F75D9B007F3693 /* ds1216e.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546780628F75D96007F3693 /* ds1216e.c */; };
 		554680DD28F75D9B007F3693 /* snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546780728F75D96007F3693 /* snapshot.c */; };
 		554680DE28F75D9B007F3693 /* info.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546780828F75D96007F3693 /* info.c */; };
-		554680E228F75D9B007F3693 /* envelope.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5546780F28F75D96007F3693 /* envelope.cc */; };
-		554680F128F75D9B007F3693 /* voice.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5546782028F75D96007F3693 /* voice.cc */; };
-		554680F228F75D9B007F3693 /* sid.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5546782128F75D96007F3693 /* sid.cc */; };
-		554680F328F75D9B007F3693 /* filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5546782228F75D96007F3693 /* filter.cc */; };
-		5546810A28F75D9B007F3693 /* extfilt.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5546784128F75D96007F3693 /* extfilt.cc */; };
-		5546810C28F75D9B007F3693 /* wave.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5546784328F75D96007F3693 /* wave.cc */; };
 		5546811028F75D9B007F3693 /* opencbmlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546784728F75D96007F3693 /* opencbmlib.c */; };
 		5546811128F75D9B007F3693 /* keyboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546784828F75D96007F3693 /* keyboard.c */; };
 		5546811228F75D9B007F3693 /* embedded.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546784928F75D96007F3693 /* embedded.c */; };
 		5546811528F75D9B007F3693 /* color.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546784D28F75D96007F3693 /* color.c */; };
-		5546811828F75D9B007F3693 /* userport_joystick.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546785228F75D96007F3693 /* userport_joystick.c */; };
 		5546812328F75D9B007F3693 /* userport_dac.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546786128F75D97007F3693 /* userport_dac.c */; };
 		5546812428F75D9B007F3693 /* userport_digimax.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546786228F75D97007F3693 /* userport_digimax.c */; };
-		5546816F28F75D9B007F3693 /* cbm2tpi2.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678C428F75D97007F3693 /* cbm2tpi2.c */; };
-		5546817028F75D9B007F3693 /* cbm2rom.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678C528F75D97007F3693 /* cbm2rom.c */; };
-		5546817128F75D9B007F3693 /* cbm2-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678C628F75D97007F3693 /* cbm2-resources.c */; };
-		5546817528F75D9B007F3693 /* cbm2-cmdline-options.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678CA28F75D97007F3693 /* cbm2-cmdline-options.c */; };
-		5546817728F75D9B007F3693 /* cbm2memsnapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678CD28F75D97007F3693 /* cbm2memsnapshot.c */; };
-		5546817828F75D9B007F3693 /* cbm2video.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678CE28F75D97007F3693 /* cbm2video.c */; };
-		5546817928F75D9B007F3693 /* cbm2tpi1.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678CF28F75D97007F3693 /* cbm2tpi1.c */; };
-		5546817C28F75D9B007F3693 /* cbm2acia1.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678D228F75D97007F3693 /* cbm2acia1.c */; };
-		5546817D28F75D9B007F3693 /* cbm2bus.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678D428F75D97007F3693 /* cbm2bus.c */; };
-		5546818828F75D9B007F3693 /* cbm2sound.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678E328F75D97007F3693 /* cbm2sound.c */; };
-		5546818A28F75D9B007F3693 /* cbm2mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678E628F75D97007F3693 /* cbm2mem.c */; };
-		5546818D28F75D9B007F3693 /* cbm2embedded.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678EA28F75D97007F3693 /* cbm2embedded.c */; };
-		5546818F28F75D9B007F3693 /* cbm2iec.c in Sources */ = {isa = PBXBuildFile; fileRef = 554678EC28F75D97007F3693 /* cbm2iec.c */; };
-		554681A828F75D9C007F3693 /* cbm2printer.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546790828F75D97007F3693 /* cbm2printer.c */; };
-		554681A928F75D9C007F3693 /* cbm2cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546790928F75D97007F3693 /* cbm2cpu.c */; };
-		554681AA28F75D9C007F3693 /* cbm2datasette.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546790A28F75D97007F3693 /* cbm2datasette.c */; };
-		554681AC28F75D9C007F3693 /* cbm2.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546790C28F75D97007F3693 /* cbm2.c */; };
-		554681AD28F75D9C007F3693 /* cbm2-snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546790D28F75D97007F3693 /* cbm2-snapshot.c */; };
-		554681AE28F75D9C007F3693 /* cbm2drive.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546790E28F75D97007F3693 /* cbm2drive.c */; };
-		554681AF28F75D9C007F3693 /* cbm2cia1.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546791028F75D97007F3693 /* cbm2cia1.c */; };
 		554681B028F75D9C007F3693 /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546791228F75D97007F3693 /* socket.c */; };
 		554681B128F75D9C007F3693 /* cs8900.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546791728F75D97007F3693 /* cs8900.c */; };
 		554681B228F75D9C007F3693 /* fmopl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546791828F75D97007F3693 /* fmopl.c */; };
@@ -450,25 +391,7 @@
 		554681C628F75D9C007F3693 /* spi-sdcard.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546793228F75D97007F3693 /* spi-sdcard.c */; };
 		554681D528F75D9C007F3693 /* flash040core.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546794228F75D98007F3693 /* flash040core.c */; };
 		554681D628F75D9C007F3693 /* attach.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546794428F75D98007F3693 /* attach.c */; };
-		554681D728F75D9C007F3693 /* petcat.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546794528F75D98007F3693 /* petcat.c */; };
 		554681D828F75D9C007F3693 /* screenshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546794628F75D98007F3693 /* screenshot.c */; };
-		554681D928F75D9C007F3693 /* vicii.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546794828F75D98007F3693 /* vicii.c */; };
-		554681DB28F75D9C007F3693 /* vicii-irq.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546794A28F75D98007F3693 /* vicii-irq.c */; };
-		554681DD28F75D9C007F3693 /* vicii-badline.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546794D28F75D98007F3693 /* vicii-badline.c */; };
-		554681E228F75D9C007F3693 /* vicii-cmdline-options.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546795528F75D98007F3693 /* vicii-cmdline-options.c */; };
-		554681E428F75D9C007F3693 /* vicii-color.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546795728F75D98007F3693 /* vicii-color.c */; };
-		554681EB28F75D9C007F3693 /* vicii-mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546796128F75D98007F3693 /* vicii-mem.c */; };
-		554681ED28F75D9C007F3693 /* vicii-sprites.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546796328F75D98007F3693 /* vicii-sprites.c */; };
-		554681F028F75D9C007F3693 /* vicii-stubs.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546796728F75D98007F3693 /* vicii-stubs.c */; };
-		554681F228F75D9C007F3693 /* vicii-fetch.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546796A28F75D98007F3693 /* vicii-fetch.c */; };
-		554681F328F75D9C007F3693 /* vicii-draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546796B28F75D98007F3693 /* vicii-draw.c */; };
-		554681F428F75D9C007F3693 /* viciidtv-snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546796C28F75D98007F3693 /* viciidtv-snapshot.c */; };
-		554681F528F75D9C007F3693 /* vicii-timing.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546796D28F75D98007F3693 /* vicii-timing.c */; };
-		554681F728F75D9C007F3693 /* viciidtv-draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546797028F75D98007F3693 /* viciidtv-draw.c */; };
-		554681F828F75D9C007F3693 /* vicii-snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546797128F75D98007F3693 /* vicii-snapshot.c */; };
-		5546821128F75D9C007F3693 /* viciidtv-color.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546798E28F75D98007F3693 /* viciidtv-color.c */; };
-		5546821228F75D9C007F3693 /* vicii-phi1.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546798F28F75D98007F3693 /* vicii-phi1.c */; };
-		5546821328F75D9C007F3693 /* vicii-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546799028F75D98007F3693 /* vicii-resources.c */; };
 		5546821728F75D9C007F3693 /* soundaiff.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546799728F75D98007F3693 /* soundaiff.c */; };
 		5546821928F75D9C007F3693 /* sounddump.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546799928F75D98007F3693 /* sounddump.c */; };
 		5546821B28F75D9C007F3693 /* soundfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546799B28F75D98007F3693 /* soundfs.c */; };
@@ -479,27 +402,6 @@
 		5546825528F75D9C007F3693 /* soundmovie.c in Sources */ = {isa = PBXBuildFile; fileRef = 554679D828F75D98007F3693 /* soundmovie.c */; };
 		5546825728F75D9C007F3693 /* soundmp3.c in Sources */ = {isa = PBXBuildFile; fileRef = 554679DA28F75D98007F3693 /* soundmp3.c */; };
 		5546825A28F75D9C007F3693 /* soundwav.c in Sources */ = {isa = PBXBuildFile; fileRef = 554679DD28F75D98007F3693 /* soundwav.c */; };
-		5546826028F75D9C007F3693 /* c64dtvembedded.c in Sources */ = {isa = PBXBuildFile; fileRef = 554679E628F75D98007F3693 /* c64dtvembedded.c */; };
-		5546826328F75D9C007F3693 /* c64dtvcpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 554679EB28F75D98007F3693 /* c64dtvcpu.c */; };
-		5546826428F75D9C007F3693 /* c64dtvmemsnapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 554679EC28F75D98007F3693 /* c64dtvmemsnapshot.c */; };
-		5546826728F75D9C007F3693 /* c64dtvmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 554679F028F75D98007F3693 /* c64dtvmem.c */; };
-		5546826A28F75D9C007F3693 /* c64dtvcart.c in Sources */ = {isa = PBXBuildFile; fileRef = 554679F628F75D98007F3693 /* c64dtvcart.c */; };
-		5546826D28F75D9C007F3693 /* c64dtvsound.c in Sources */ = {isa = PBXBuildFile; fileRef = 554679F928F75D98007F3693 /* c64dtvsound.c */; };
-		5546826E28F75D9C007F3693 /* c64dtviec.c in Sources */ = {isa = PBXBuildFile; fileRef = 554679FA28F75D98007F3693 /* c64dtviec.c */; };
-		5546827228F75D9C007F3693 /* c64dtvdma.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A0028F75D98007F3693 /* c64dtvdma.c */; };
-		5546827528F75D9C007F3693 /* c64dtvcia1.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A0328F75D98007F3693 /* c64dtvcia1.c */; };
-		5546827628F75D9C007F3693 /* c64dtv-snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A0428F75D98007F3693 /* c64dtv-snapshot.c */; };
-		5546827728F75D9C007F3693 /* hummeradc.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A0528F75D98007F3693 /* hummeradc.c */; };
-		5546827828F75D9C007F3693 /* c64dtvpla.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A0628F75D98007F3693 /* c64dtvpla.c */; };
-		5546827C28F75D9C007F3693 /* c64dtv-cmdline-options.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A0C28F75D98007F3693 /* c64dtv-cmdline-options.c */; };
-		5546827D28F75D9C007F3693 /* c64dtvflash.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A0E28F75D98007F3693 /* c64dtvflash.c */; };
-		5546827E28F75D9C007F3693 /* c64dtvcia2.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A0F28F75D98007F3693 /* c64dtvcia2.c */; };
-		5546829528F75D9C007F3693 /* flash-trap.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A2728F75D98007F3693 /* flash-trap.c */; };
-		5546829628F75D9C007F3693 /* c64dtv.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A2828F75D98007F3693 /* c64dtv.c */; };
-		5546829728F75D9C007F3693 /* c64dtvblitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A2928F75D98007F3693 /* c64dtvblitter.c */; };
-		5546829928F75D9C007F3693 /* c64dtvmemrom.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A2B28F75D98007F3693 /* c64dtvmemrom.c */; };
-		5546829A28F75D9C007F3693 /* c64dtvmeminit.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A2C28F75D98007F3693 /* c64dtvmeminit.c */; };
-		5546829B28F75D9C007F3693 /* c64dtv-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A2D28F75D98007F3693 /* c64dtv-resources.c */; };
 		554682A228F75D9C007F3693 /* vdrive-command.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A3828F75D98007F3693 /* vdrive-command.c */; };
 		554682A328F75D9C007F3693 /* vdrive-iec.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A3928F75D98007F3693 /* vdrive-iec.c */; };
 		554682A528F75D9C007F3693 /* vdrive-dir.c in Sources */ = {isa = PBXBuildFile; fileRef = 55467A3B28F75D98007F3693 /* vdrive-dir.c */; };
@@ -513,24 +415,19 @@
 		554682CB28F76453007F3693 /* mididrv.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C228F76453007F3693 /* mididrv.c */; };
 		554682CC28F76453007F3693 /* vsyncarch.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C328F76453007F3693 /* vsyncarch.c */; };
 		554682CD28F76453007F3693 /* platform_macosx.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C428F76453007F3693 /* platform_macosx.c */; };
-		554682CE28F76453007F3693 /* joy.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C628F76453007F3693 /* joy.c */; };
 		554682CF28F76453007F3693 /* joy-hid.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C728F76453007F3693 /* joy-hid.c */; };
 		554682F228F766E5007F3693 /* rawnetarch.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682D228F766E4007F3693 /* rawnetarch.c */; };
 		554682F328F766E5007F3693 /* vsyncarch.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682D428F766E4007F3693 /* vsyncarch.c */; };
-		554682F428F766E5007F3693 /* mididrv.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682D628F766E4007F3693 /* mididrv.c */; };
 		554682F528F766E5007F3693 /* rs232.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682D728F766E4007F3693 /* rs232.c */; };
 		554682F628F766E5007F3693 /* archdep.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682D828F766E4007F3693 /* archdep.c */; };
-		554682F728F766E5007F3693 /* unixmain.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682D928F766E4007F3693 /* unixmain.c */; };
 		554682F928F766E5007F3693 /* blockdev.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682DC28F766E4007F3693 /* blockdev.c */; };
 		554682FB28F766E5007F3693 /* hardsid.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682E328F766E5007F3693 /* hardsid.c */; };
 		554682FC28F766E5007F3693 /* dynlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682E428F766E5007F3693 /* dynlib.c */; };
 		554682FD28F766E5007F3693 /* signals.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682E628F766E5007F3693 /* signals.c */; };
-		554682FE28F766E5007F3693 /* console.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682E828F766E5007F3693 /* console.c */; };
 		554682FF28F766E5007F3693 /* parsid.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682EB28F766E5007F3693 /* parsid.c */; };
 		5546830028F766E5007F3693 /* coproc.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682ED28F766E5007F3693 /* coproc.c */; };
 		5546830128F766E5007F3693 /* catweaselmkiii.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682F028F766E5007F3693 /* catweaselmkiii.c */; };
 		5546830228F766E5007F3693 /* mousedrv.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682F128F766E5007F3693 /* mousedrv.c */; };
-		5546830328F76A06007F3693 /* joystick.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546722B28F75D8E007F3693 /* joystick.c */; };
 		5546830628F76A7C007F3693 /* c64commoncontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5546830428F76A7C007F3693 /* c64commoncontroller.m */; };
 		5546830928F76AA5007F3693 /* c64commonmachinecontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5546830828F76AA5007F3693 /* c64commonmachinecontroller.m */; };
 		5546830C28F76AE6007F3693 /* cbm2controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5546830A28F76AE6007F3693 /* cbm2controller.m */; };
@@ -547,6 +444,28 @@
 		5546832D28F76BBE007F3693 /* vic20machinecontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5546832928F76BBE007F3693 /* vic20machinecontroller.m */; };
 		5546832E28F76C17007F3693 /* pcxdrv.c in Sources */ = {isa = PBXBuildFile; fileRef = 554672D228F75D8F007F3693 /* pcxdrv.c */; };
 		5546833128F76D82007F3693 /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5546833028F76D82007F3693 /* libreadline.tbd */; };
+		5546833328F9280A007F3693 /* c64scui.m in Sources */ = {isa = PBXBuildFile; fileRef = 5546833228F9280A007F3693 /* c64scui.m */; };
+		5546833628F92926007F3693 /* cbmdos.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546772A28F75D94007F3693 /* cbmdos.c */; };
+		5546833728F9293C007F3693 /* cbmimage.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546735928F75D91007F3693 /* cbmimage.c */; };
+		5546833A28F92ABB007F3693 /* vicii-cycle.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F4A28F75D8B007F3693 /* vicii-cycle.c */; };
+		5546833B28F92AFF007F3693 /* vicii-chip-model.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5E28F75D8C007F3693 /* vicii-chip-model.c */; };
+		5546833C28F92AFF007F3693 /* vicii-phi1.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F7A28F75D8C007F3693 /* vicii-phi1.c */; };
+		5546833D28F92AFF007F3693 /* vicii-snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F6028F75D8C007F3693 /* vicii-snapshot.c */; };
+		5546833E28F92AFF007F3693 /* vicii.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F3B28F75D8B007F3693 /* vicii.c */; };
+		5546833F28F92AFF007F3693 /* vicii-fetch.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5B28F75D8C007F3693 /* vicii-fetch.c */; };
+		5546834028F92AFF007F3693 /* vicii-cmdline-options.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F4928F75D8B007F3693 /* vicii-cmdline-options.c */; };
+		5546834128F92AFF007F3693 /* vicii-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F7B28F75D8C007F3693 /* vicii-resources.c */; };
+		5546834228F92AFF007F3693 /* vicii-draw-cycle.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5F28F75D8C007F3693 /* vicii-draw-cycle.c */; };
+		5546834328F92AFF007F3693 /* vicii-lightpen.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F3E28F75D8B007F3693 /* vicii-lightpen.c */; };
+		5546834428F92AFF007F3693 /* vicii-mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5328F75D8C007F3693 /* vicii-mem.c */; };
+		5546834528F92AFF007F3693 /* vicii-irq.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F3D28F75D8B007F3693 /* vicii-irq.c */; };
+		5546834628F92AFF007F3693 /* vicii-color.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F4C28F75D8B007F3693 /* vicii-color.c */; };
+		5546834728F92AFF007F3693 /* vicii-timing.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5D28F75D8C007F3693 /* vicii-timing.c */; };
+		5546834828F92AFF007F3693 /* vicii-draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F5C28F75D8C007F3693 /* vicii-draw.c */; };
+		5546834F28F92CCA007F3693 /* userport_joystick.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546785228F75D96007F3693 /* userport_joystick.c */; };
+		5546835028F92D15007F3693 /* joystick.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546722B28F75D8E007F3693 /* joystick.c */; };
+		5546835328F92D84007F3693 /* joy.c in Sources */ = {isa = PBXBuildFile; fileRef = 5546835228F92D84007F3693 /* joy.c */; };
+		5546835428F92D9B007F3693 /* joy.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C628F76453007F3693 /* joy.c */; };
 		55C654C928F6602000D11E28 /* tape.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654AD28F6601F00D11E28 /* tape.icns */; };
 		55C654CA28F6602000D11E28 /* VICE.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654AE28F6601F00D11E28 /* VICE.icns */; };
 		55C654CB28F6602000D11E28 /* xplus4.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654AF28F6601F00D11E28 /* xplus4.icns */; };
@@ -560,19 +479,12 @@
 		55C654DC28F6602000D11E28 /* cartridge.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654C028F6602000D11E28 /* cartridge.icns */; };
 		55C654DD28F6602000D11E28 /* floppy525.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654C128F6602000D11E28 /* floppy525.icns */; };
 		55C654DE28F6602000D11E28 /* xcbm2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654C228F6602000D11E28 /* xcbm2.icns */; };
-		55C6550F28F66E9300D11E28 /* xpet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654ED28F66E9300D11E28 /* xpet.xib */; };
 		55C6551028F66E9300D11E28 /* FilePanelImageContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654EF28F66E9300D11E28 /* FilePanelImageContents.xib */; };
-		55C6551128F66E9300D11E28 /* x64dtv.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F128F66E9300D11E28 /* x64dtv.xib */; };
 		55C6551228F66E9300D11E28 /* MemoryWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F328F66E9300D11E28 /* MemoryWindow.xib */; };
 		55C6551328F66E9300D11E28 /* RegisterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F528F66E9300D11E28 /* RegisterWindow.xib */; };
 		55C6551428F66E9300D11E28 /* DisassemblyWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F728F66E9300D11E28 /* DisassemblyWindow.xib */; };
 		55C6551528F66E9300D11E28 /* IOTreeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F928F66E9300D11E28 /* IOTreeWindow.xib */; };
-		55C6551628F66E9300D11E28 /* x64sc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654FB28F66E9300D11E28 /* x64sc.xib */; };
-		55C6551728F66E9300D11E28 /* xplus4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654FD28F66E9300D11E28 /* xplus4.xib */; };
 		55C6551828F66E9300D11E28 /* RecordHistory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654FF28F66E9300D11E28 /* RecordHistory.xib */; };
-		55C6551928F66E9300D11E28 /* x128.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550128F66E9300D11E28 /* x128.xib */; };
-		55C6551A28F66E9300D11E28 /* xvic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550328F66E9300D11E28 /* xvic.xib */; };
-		55C6551B28F66E9300D11E28 /* xcbm2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550528F66E9300D11E28 /* xcbm2.xib */; };
 		55C6551D28F66E9300D11E28 /* NetplayControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550928F66E9300D11E28 /* NetplayControl.xib */; };
 		55C6551E28F66E9300D11E28 /* SIDSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550B28F66E9300D11E28 /* SIDSettings.xib */; };
 		55C6551F28F66E9300D11E28 /* IOTree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C6550D28F66E9300D11E28 /* IOTree.plist */; };
@@ -1737,7 +1649,6 @@
 		554682D328F766E4007F3693 /* openGL_sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openGL_sync.h; sourceTree = "<group>"; };
 		554682D428F766E4007F3693 /* vsyncarch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vsyncarch.c; sourceTree = "<group>"; };
 		554682D528F766E4007F3693 /* mousedrv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mousedrv.h; sourceTree = "<group>"; };
-		554682D628F766E4007F3693 /* mididrv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mididrv.c; sourceTree = "<group>"; };
 		554682D728F766E4007F3693 /* rs232.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rs232.c; sourceTree = "<group>"; };
 		554682D828F766E4007F3693 /* archdep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = archdep.c; sourceTree = "<group>"; };
 		554682D928F766E4007F3693 /* unixmain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unixmain.c; sourceTree = "<group>"; };
@@ -1790,6 +1701,9 @@
 		5546832A28F76BBE007F3693 /* vic20controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vic20controller.h; sourceTree = "<group>"; };
 		5546832B28F76BBE007F3693 /* vic20machinecontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vic20machinecontroller.h; sourceTree = "<group>"; };
 		5546833028F76D82007F3693 /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
+		5546833228F9280A007F3693 /* c64scui.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = c64scui.m; sourceTree = "<group>"; };
+		5546835128F92D84007F3693 /* joy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = joy.h; sourceTree = "<group>"; };
+		5546835228F92D84007F3693 /* joy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = joy.c; sourceTree = "<group>"; };
 		55C654AD28F6601F00D11E28 /* tape.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = tape.icns; sourceTree = "<group>"; };
 		55C654AE28F6601F00D11E28 /* VICE.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = VICE.icns; sourceTree = "<group>"; };
 		55C654AF28F6601F00D11E28 /* xplus4.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = xplus4.icns; sourceTree = "<group>"; };
@@ -1876,7 +1790,6 @@
 		83E499FD0DE4CCA9001DE90F /* kbd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kbd.h; sourceTree = "<group>"; };
 		83E499FE0DE4CCA9001DE90F /* kbd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kbd.m; sourceTree = "<group>"; };
 		83E499FF0DE4CCA9001DE90F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		83E49A000DE4CCA9001DE90F /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
 		83E49A030DE4CCA9001DE90F /* c128controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c128controller.h; sourceTree = "<group>"; };
 		83E49A040DE4CCA9001DE90F /* c128controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = c128controller.m; sourceTree = "<group>"; };
 		83E49A050DE4CCA9001DE90F /* c128machinecontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c128machinecontroller.h; sourceTree = "<group>"; };
@@ -1924,7 +1837,6 @@
 		83E49A310DE4CCA9001DE90F /* keypressview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keypressview.m; sourceTree = "<group>"; };
 		83E49A320DE4CCA9001DE90F /* logview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logview.h; sourceTree = "<group>"; };
 		83E49A330DE4CCA9001DE90F /* logview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logview.m; sourceTree = "<group>"; };
-		83E49A340DE4CCA9001DE90F /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
 		83E49A380DE4CCA9001DE90F /* tapeview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tapeview.h; sourceTree = "<group>"; };
 		83E49A390DE4CCA9001DE90F /* tapeview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tapeview.m; sourceTree = "<group>"; };
 		83E49A3A0DE4CCA9001DE90F /* viceglview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viceglview.h; sourceTree = "<group>"; };
@@ -2202,17 +2114,17 @@
 			isa = PBXGroup;
 			children = (
 				55466F2D28F75D8B007F3693 /* crtc-cmdline-options.c */,
-				55466F1C28F75D8B007F3693 /* crtc-cmdline-options.h */,
 				55466F2128F75D8B007F3693 /* crtc-color.c */,
-				55466F1428F75D8B007F3693 /* crtc-color.h */,
 				55466F2228F75D8B007F3693 /* crtc-draw.c */,
-				55466F1228F75D8B007F3693 /* crtc-draw.h */,
 				55466F3028F75D8B007F3693 /* crtc-mem.c */,
-				55466F1A28F75D8B007F3693 /* crtc-mem.h */,
 				55466F2328F75D8B007F3693 /* crtc-resources.c */,
-				55466F1628F75D8B007F3693 /* crtc-resources.h */,
 				55466F1828F75D8B007F3693 /* crtc-snapshot.c */,
 				55466F1028F75D8B007F3693 /* crtc.c */,
+				55466F1C28F75D8B007F3693 /* crtc-cmdline-options.h */,
+				55466F1428F75D8B007F3693 /* crtc-color.h */,
+				55466F1228F75D8B007F3693 /* crtc-draw.h */,
+				55466F1A28F75D8B007F3693 /* crtc-mem.h */,
+				55466F1628F75D8B007F3693 /* crtc-resources.h */,
 				55466F1F28F75D8B007F3693 /* crtc.h */,
 				55466F1E28F75D8B007F3693 /* crtctypes.h */,
 			);
@@ -2223,34 +2135,34 @@
 			isa = PBXGroup;
 			children = (
 				55466F5E28F75D8C007F3693 /* vicii-chip-model.c */,
-				55466F4228F75D8B007F3693 /* vicii-chip-model.h */,
 				55466F4928F75D8B007F3693 /* vicii-cmdline-options.c */,
-				55466F6328F75D8C007F3693 /* vicii-cmdline-options.h */,
 				55466F4C28F75D8B007F3693 /* vicii-color.c */,
-				55466F6228F75D8C007F3693 /* vicii-color.h */,
 				55466F4A28F75D8B007F3693 /* vicii-cycle.c */,
-				55466F6528F75D8C007F3693 /* vicii-cycle.h */,
 				55466F5F28F75D8C007F3693 /* vicii-draw-cycle.c */,
-				55466F3F28F75D8B007F3693 /* vicii-draw-cycle.h */,
 				55466F5C28F75D8C007F3693 /* vicii-draw.c */,
-				55466F4528F75D8B007F3693 /* vicii-draw.h */,
 				55466F5B28F75D8C007F3693 /* vicii-fetch.c */,
-				55466F4728F75D8B007F3693 /* vicii-fetch.h */,
 				55466F3D28F75D8B007F3693 /* vicii-irq.c */,
-				55466F5628F75D8C007F3693 /* vicii-irq.h */,
 				55466F3E28F75D8B007F3693 /* vicii-lightpen.c */,
-				55466F5828F75D8C007F3693 /* vicii-lightpen.h */,
 				55466F5328F75D8C007F3693 /* vicii-mem.c */,
-				55466F7928F75D8C007F3693 /* vicii-mem.h */,
 				55466F7A28F75D8C007F3693 /* vicii-phi1.c */,
-				55466F5228F75D8C007F3693 /* vicii-phi1.h */,
 				55466F7B28F75D8C007F3693 /* vicii-resources.c */,
-				55466F4F28F75D8B007F3693 /* vicii-resources.h */,
 				55466F6028F75D8C007F3693 /* vicii-snapshot.c */,
-				55466F4D28F75D8B007F3693 /* vicii-snapshot.h */,
 				55466F5D28F75D8C007F3693 /* vicii-timing.c */,
-				55466F4328F75D8B007F3693 /* vicii-timing.h */,
 				55466F3B28F75D8B007F3693 /* vicii.c */,
+				55466F4228F75D8B007F3693 /* vicii-chip-model.h */,
+				55466F6328F75D8C007F3693 /* vicii-cmdline-options.h */,
+				55466F6228F75D8C007F3693 /* vicii-color.h */,
+				55466F6528F75D8C007F3693 /* vicii-cycle.h */,
+				55466F3F28F75D8B007F3693 /* vicii-draw-cycle.h */,
+				55466F4528F75D8B007F3693 /* vicii-draw.h */,
+				55466F4728F75D8B007F3693 /* vicii-fetch.h */,
+				55466F5628F75D8C007F3693 /* vicii-irq.h */,
+				55466F5828F75D8C007F3693 /* vicii-lightpen.h */,
+				55466F7928F75D8C007F3693 /* vicii-mem.h */,
+				55466F5228F75D8C007F3693 /* vicii-phi1.h */,
+				55466F4F28F75D8B007F3693 /* vicii-resources.h */,
+				55466F4D28F75D8B007F3693 /* vicii-snapshot.h */,
+				55466F4328F75D8B007F3693 /* vicii-timing.h */,
 				55466F5928F75D8C007F3693 /* viciitypes.h */,
 			);
 			path = viciisc;
@@ -3111,21 +3023,21 @@
 		5546780B28F75D96007F3693 /* resid-dtv */ = {
 			isa = PBXGroup;
 			children = (
-				5546782B28F75D96007F3693 /* bittrain.h */,
 				5546780F28F75D96007F3693 /* envelope.cc */,
-				5546783028F75D96007F3693 /* envelope.h */,
 				5546784128F75D96007F3693 /* extfilt.cc */,
-				5546780D28F75D96007F3693 /* extfilt.h */,
 				5546782228F75D96007F3693 /* filter.cc */,
-				5546783F28F75D96007F3693 /* filter.h */,
-				5546781F28F75D96007F3693 /* residdtv-config.h */,
 				5546782128F75D96007F3693 /* sid.cc */,
-				5546783328F75D96007F3693 /* sid.h */,
-				5546782828F75D96007F3693 /* siddtvdefs.h */,
 				5546784528F75D96007F3693 /* version.cc */,
 				5546782028F75D96007F3693 /* voice.cc */,
-				5546782E28F75D96007F3693 /* voice.h */,
 				5546784328F75D96007F3693 /* wave.cc */,
+				5546782B28F75D96007F3693 /* bittrain.h */,
+				5546783028F75D96007F3693 /* envelope.h */,
+				5546780D28F75D96007F3693 /* extfilt.h */,
+				5546783F28F75D96007F3693 /* filter.h */,
+				5546781F28F75D96007F3693 /* residdtv-config.h */,
+				5546783328F75D96007F3693 /* sid.h */,
+				5546782828F75D96007F3693 /* siddtvdefs.h */,
+				5546782E28F75D96007F3693 /* voice.h */,
 				5546783228F75D96007F3693 /* wave.h */,
 			);
 			path = "resid-dtv";
@@ -3361,6 +3273,8 @@
 		554682BC28F763E7007F3693 /* unix */ = {
 			isa = PBXGroup;
 			children = (
+				5546835228F92D84007F3693 /* joy.c */,
+				5546835128F92D84007F3693 /* joy.h */,
 				554682D828F766E4007F3693 /* archdep.c */,
 				554682DF28F766E4007F3693 /* archdep.h */,
 				554682DC28F766E4007F3693 /* blockdev.c */,
@@ -3374,7 +3288,6 @@
 				554682E128F766E4007F3693 /* icon.h */,
 				554682E528F766E5007F3693 /* kbd.h */,
 				554682BD28F763FF007F3693 /* macosx */,
-				554682D628F766E4007F3693 /* mididrv.c */,
 				554682F128F766E5007F3693 /* mousedrv.c */,
 				554682D528F766E4007F3693 /* mousedrv.h */,
 				554682D328F766E4007F3693 /* openGL_sync.h */,
@@ -3499,7 +3412,6 @@
 				83E499FD0DE4CCA9001DE90F /* kbd.h */,
 				83E499FE0DE4CCA9001DE90F /* kbd.m */,
 				83E499FF0DE4CCA9001DE90F /* main.m */,
-				83E49A000DE4CCA9001DE90F /* Makefile.am */,
 				83E49A020DE4CCA9001DE90F /* menu */,
 				83E49A170DE4CCA9001DE90F /* mousedrv.m */,
 				83E49A180DE4CCA9001DE90F /* ui-cmdline-options.c */,
@@ -3578,6 +3490,7 @@
 		83E49A020DE4CCA9001DE90F /* menu */ = {
 			isa = PBXGroup;
 			children = (
+				5546833228F9280A007F3693 /* c64scui.m */,
 				5546832A28F76BBE007F3693 /* vic20controller.h */,
 				5546832828F76BBE007F3693 /* vic20controller.m */,
 				5546832B28F76BBE007F3693 /* vic20machinecontroller.h */,
@@ -3640,7 +3553,6 @@
 				83E49A310DE4CCA9001DE90F /* keypressview.m */,
 				83E49A320DE4CCA9001DE90F /* logview.h */,
 				83E49A330DE4CCA9001DE90F /* logview.m */,
-				83E49A340DE4CCA9001DE90F /* Makefile.am */,
 				5546832328F76B92007F3693 /* soundview.h */,
 				5546832228F76B92007F3693 /* soundview.m */,
 				5546832528F76BA0007F3693 /* statusview.h */,
@@ -3717,8 +3629,6 @@
 				83E49A880DE6B6AA001DE90F /* RecordMedia.xib in Resources */,
 				55C654DE28F6602000D11E28 /* xcbm2.icns in Resources */,
 				55C654DA28F6602000D11E28 /* x64dtv.icns in Resources */,
-				55C6551B28F66E9300D11E28 /* xcbm2.xib in Resources */,
-				55C6550F28F66E9300D11E28 /* xpet.xib in Resources */,
 				55C654D728F6602000D11E28 /* x64.icns in Resources */,
 				55C654C928F6602000D11E28 /* tape.icns in Resources */,
 				55C654CD28F6602000D11E28 /* x64sc.icns in Resources */,
@@ -3730,12 +3640,9 @@
 				55C654D528F6602000D11E28 /* x128.icns in Resources */,
 				55C654DB28F6602000D11E28 /* Credits.html in Resources */,
 				55C6551428F66E9300D11E28 /* DisassemblyWindow.xib in Resources */,
-				55C6551628F66E9300D11E28 /* x64sc.xib in Resources */,
-				55C6551728F66E9300D11E28 /* xplus4.xib in Resources */,
 				55C6551E28F66E9300D11E28 /* SIDSettings.xib in Resources */,
 				55C654DD28F6602000D11E28 /* floppy525.icns in Resources */,
 				55C6551528F66E9300D11E28 /* IOTreeWindow.xib in Resources */,
-				55C6551128F66E9300D11E28 /* x64dtv.xib in Resources */,
 				55C654CA28F6602000D11E28 /* VICE.icns in Resources */,
 				55C6551D28F66E9300D11E28 /* NetplayControl.xib in Resources */,
 				55C654CE28F6602000D11E28 /* x65.icns in Resources */,
@@ -3743,9 +3650,7 @@
 				55C654D828F6602000D11E28 /* VICEFile.icns in Resources */,
 				55C6551228F66E9300D11E28 /* MemoryWindow.xib in Resources */,
 				55467FF028F75D9B007F3693 /* samp2src.pl in Resources */,
-				55C6551A28F66E9300D11E28 /* xvic.xib in Resources */,
 				05204E3F13D2AC73008F2D7E /* VideoSettings.xib in Resources */,
-				55C6551928F66E9300D11E28 /* x128.xib in Resources */,
 				05204E4C13D2BA42008F2D7E /* ResourceTree.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3758,7 +3663,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55467D8928F75D9A007F3693 /* sid-resources.c in Sources */,
-				554681DB28F75D9C007F3693 /* vicii-irq.c in Sources */,
 				55467C7228F75D99007F3693 /* clkguard.c in Sources */,
 				55467E2528F75D9A007F3693 /* rsuser.c in Sources */,
 				554680B028F75D9B007F3693 /* raster-resources.c in Sources */,
@@ -3768,26 +3672,18 @@
 				55467AD728F75D99007F3693 /* glue1551.c in Sources */,
 				55467F0928F75D9A007F3693 /* mikroass.c in Sources */,
 				83E49A3F0DE4CCA9001DE90F /* console.m in Sources */,
-				5546810C28F75D9B007F3693 /* wave.cc in Sources */,
-				55467A6228F75D99007F3693 /* crtc-color.c in Sources */,
 				83E49A400DE4CCA9001DE90F /* drivesettingswindowcontroller.m in Sources */,
 				55467C9828F75D99007F3693 /* drv-raw.c in Sources */,
-				55467C7728F75D99007F3693 /* bin2c.c in Sources */,
-				5546829728F75D9C007F3693 /* c64dtvblitter.c in Sources */,
 				5546803F28F75D9B007F3693 /* resources.c in Sources */,
 				55467B3828F75D99007F3693 /* cia1571d.c in Sources */,
 				55467AB028F75D99007F3693 /* fsdevice-flush.c in Sources */,
-				5546817C28F75D9B007F3693 /* cbm2acia1.c in Sources */,
 				5546806128F75D9B007F3693 /* render2x2pal.c in Sources */,
 				83E49A410DE4CCA9001DE90F /* iecdrivesettingswindowcontroller.m in Sources */,
-				554681F528F75D9C007F3693 /* vicii-timing.c in Sources */,
-				5546829B28F75D9C007F3693 /* c64dtv-resources.c in Sources */,
 				55467B5828F75D99007F3693 /* profdos.c in Sources */,
 				55467F2028F75D9A007F3693 /* rexep256.c in Sources */,
 				55467CA028F75D99007F3693 /* printer.c in Sources */,
 				55467B6828F75D99007F3693 /* memiec.c in Sources */,
 				83E49A420DE4CCA9001DE90F /* joysticksettingswindowcontroller.m in Sources */,
-				5546817528F75D9B007F3693 /* cbm2-cmdline-options.c in Sources */,
 				83E49A430DE4CCA9001DE90F /* keyboardsettingswindowcontroller.m in Sources */,
 				554681B628F75D9C007F3693 /* ciatimer.c in Sources */,
 				55467B5228F75D99007F3693 /* iec-c64exp.c in Sources */,
@@ -3801,32 +3697,26 @@
 				55467AAF28F75D99007F3693 /* fsdevice-cmdline-options.c in Sources */,
 				55467B1428F75D99007F3693 /* memieee.c in Sources */,
 				55467D7228F75D9A007F3693 /* fsimage.c in Sources */,
-				55467A8228F75D99007F3693 /* vicii-mem.c in Sources */,
 				55467E2328F75D9A007F3693 /* romset.c in Sources */,
 				55467CC028F75D99007F3693 /* serial.c in Sources */,
 				5546803628F75D9B007F3693 /* extfilt.cc in Sources */,
 				55467E7D28F75D9A007F3693 /* c64cia1.c in Sources */,
-				554682FE28F766E5007F3693 /* console.c in Sources */,
 				55467B3628F75D99007F3693 /* iec-resources.c in Sources */,
 				55467E3F28F75D9A007F3693 /* asmz80.c in Sources */,
 				55467E8028F75D9A007F3693 /* c64rsuser.c in Sources */,
+				5546835328F92D84007F3693 /* joy.c in Sources */,
 				55467D3628F75D99007F3693 /* lightpen.c in Sources */,
-				5546826D28F75D9C007F3693 /* c64dtvsound.c in Sources */,
 				55467B6928F75D99007F3693 /* iecrom.c in Sources */,
 				55467B0328F75D99007F3693 /* drivecpu.c in Sources */,
 				83E49A460DE4CCA9001DE90F /* printersettingswindowcontroller.m in Sources */,
 				554682CF28F76453007F3693 /* joy-hid.c in Sources */,
-				5546827228F75D9C007F3693 /* c64dtvdma.c in Sources */,
 				55467C6F28F75D99007F3693 /* diskcontents.c in Sources */,
-				5546829928F75D9C007F3693 /* c64dtvmemrom.c in Sources */,
 				55467F8328F75D9A007F3693 /* c64meminit.c in Sources */,
 				55467E6B28F75D9A007F3693 /* mon_file.c in Sources */,
-				5546827628F75D9C007F3693 /* c64dtv-snapshot.c in Sources */,
 				55467ADE28F75D99007F3693 /* iec128dcr.c in Sources */,
 				554680A728F75D9B007F3693 /* raster-sprite-cache.c in Sources */,
 				55467FDA28F75D9B007F3693 /* filter.cc in Sources */,
 				554682AC28F75D9C007F3693 /* vdrive.c in Sources */,
-				5546817028F75D9B007F3693 /* cbm2rom.c in Sources */,
 				55C6553728F67C9700D11E28 /* disassemblywindowcontroller.m in Sources */,
 				55467D2828F75D99007F3693 /* t64.c in Sources */,
 				5546808F28F75D9B007F3693 /* parallel.c in Sources */,
@@ -3834,7 +3724,6 @@
 				5546821728F75D9C007F3693 /* soundaiff.c in Sources */,
 				55467D7328F75D9A007F3693 /* rawimage.c in Sources */,
 				55467EE928F75D9A007F3693 /* c64-generic.c in Sources */,
-				554681D928F75D9C007F3693 /* vicii.c in Sources */,
 				55467C8A28F75D99007F3693 /* ram.c in Sources */,
 				83E49A470DE4CCA9001DE90F /* resourceeditorcontroller.m in Sources */,
 				83E49A480DE4CCA9001DE90F /* resourcetreeitem.m in Sources */,
@@ -3847,24 +3736,20 @@
 				55467D4628F75D99007F3693 /* vdc-cmdline-options.c in Sources */,
 				55467E9428F75D9A007F3693 /* c64cia2.c in Sources */,
 				55C6553D28F67CB200D11E28 /* iotreewindowcontroller.m in Sources */,
+				5546834328F92AFF007F3693 /* vicii-lightpen.c in Sources */,
 				83E49A4A0DE4CCA9001DE90F /* viceinformationwindowcontroller.m in Sources */,
 				83E49A4B0DE4CCA9001DE90F /* viceresourcewindowcontroller.m in Sources */,
 				554680D128F75D9B007F3693 /* ds12c887.c in Sources */,
 				55467B3728F75D99007F3693 /* glue1571.c in Sources */,
-				554681E228F75D9C007F3693 /* vicii-cmdline-options.c in Sources */,
-				55467A5D28F75D99007F3693 /* crtc-snapshot.c in Sources */,
 				55467EE228F75D9A007F3693 /* mmc64.c in Sources */,
 				5546825528F75D9C007F3693 /* soundmovie.c in Sources */,
 				55467F0228F75D9A007F3693 /* actionreplay3.c in Sources */,
-				55467AA128F75D99007F3693 /* vicii-phi1.c in Sources */,
 				5546821928F75D9C007F3693 /* sounddump.c in Sources */,
-				55467A8928F75D99007F3693 /* vicii-timing.c in Sources */,
 				5546821B28F75D9C007F3693 /* soundfs.c in Sources */,
 				55467B7A28F75D99007F3693 /* drive-writeprotect.c in Sources */,
 				55467E8F28F75D9A007F3693 /* c64rom.c in Sources */,
 				554682A328F75D9C007F3693 /* vdrive-iec.c in Sources */,
 				55467E3128F75D9A007F3693 /* mon_register6502.c in Sources */,
-				55467A7C28F75D99007F3693 /* vicii-cycle.c in Sources */,
 				55467D6E28F75D9A007F3693 /* fsimage-create.c in Sources */,
 				55467D1C28F75D99007F3693 /* charset.c in Sources */,
 				55467C9428F75D99007F3693 /* output-select.c in Sources */,
@@ -3872,7 +3757,6 @@
 				5546806A28F75D9B007F3693 /* render1x1.c in Sources */,
 				55467F1828F75D9A007F3693 /* c64cart.c in Sources */,
 				55C6552528F679D300D11E28 /* sidsettingswindowcontroller.m in Sources */,
-				55467A8828F75D99007F3693 /* vicii-draw.c in Sources */,
 				55467CE528F75D99007F3693 /* ppmdrv.c in Sources */,
 				55467CDD28F75D99007F3693 /* serial-realdevice.c in Sources */,
 				55467E4B28F75D9A007F3693 /* mon_lex.c in Sources */,
@@ -3884,7 +3768,6 @@
 				5546805328F75D9B007F3693 /* renderscale2x.c in Sources */,
 				83E49A4D0DE4CCA9001DE90F /* kbd.m in Sources */,
 				554682F228F766E5007F3693 /* rawnetarch.c in Sources */,
-				5546826728F75D9C007F3693 /* c64dtvmem.c in Sources */,
 				55467EFC28F75D9A007F3693 /* epyxfastload.c in Sources */,
 				55467E9128F75D9A007F3693 /* c64fastiec.c in Sources */,
 				55467CA128F75D99007F3693 /* printer-userport.c in Sources */,
@@ -3895,23 +3778,19 @@
 				55467C7528F75D99007F3693 /* sysfile.c in Sources */,
 				5546806028F75D9B007F3693 /* video-viewport.c in Sources */,
 				55467E5128F75D9A007F3693 /* mon_breakpoint.c in Sources */,
-				5546826A28F75D9C007F3693 /* c64dtvcart.c in Sources */,
 				55467EDD28F75D9A007F3693 /* final3.c in Sources */,
 				55467E2428F75D9A007F3693 /* rs232drv.c in Sources */,
 				55467D7428F75D9A007F3693 /* diskimage.c in Sources */,
-				554682F728F766E5007F3693 /* unixmain.c in Sources */,
 				5546832D28F76BBE007F3693 /* vic20machinecontroller.m in Sources */,
 				55467F1D28F75D9A007F3693 /* exos.c in Sources */,
 				55467D5028F75D99007F3693 /* vdc-draw.c in Sources */,
 				83E49A4E0DE4CCA9001DE90F /* main.m in Sources */,
 				55467D0B28F75D99007F3693 /* init.c in Sources */,
-				554680F328F75D9B007F3693 /* filter.cc in Sources */,
 				55467D5D28F75D9A007F3693 /* clipboard.c in Sources */,
+				5546834628F92AFF007F3693 /* vicii-color.c in Sources */,
 				55467F0728F75D9A007F3693 /* magicvoice.c in Sources */,
 				5546805E28F75D9B007F3693 /* render1x2.c in Sources */,
-				55467B7F28F75D99007F3693 /* maincpu.c in Sources */,
 				554680DB28F75D9B007F3693 /* rtc-58321a.c in Sources */,
-				5546803C28F75D9B007F3693 /* cbmdos.c in Sources */,
 				55467AC128F75D99007F3693 /* tcbm-resources.c in Sources */,
 				5546804728F75D9B007F3693 /* render2x2ntsc.c in Sources */,
 				55467AE128F75D99007F3693 /* iec128dcrrom.c in Sources */,
@@ -3920,16 +3799,16 @@
 				55467AC728F75D99007F3693 /* tcbm-cmdline-options.c in Sources */,
 				554680CF28F75D9B007F3693 /* ds1202_1302.c in Sources */,
 				55467D4128F75D99007F3693 /* vdc-mem.c in Sources */,
+				5546833E28F92AFF007F3693 /* vicii.c in Sources */,
 				55467D6F28F75D9A007F3693 /* fsimage-gcr.c in Sources */,
 				83E49A510DE4CCA9001DE90F /* c128controller.m in Sources */,
 				5546812428F75D9B007F3693 /* userport_digimax.c in Sources */,
+				5546834128F92AFF007F3693 /* vicii-resources.c in Sources */,
 				55467E4D28F75D9A007F3693 /* mon_drive.c in Sources */,
 				55467CF128F75D99007F3693 /* gfxoutput.c in Sources */,
 				554681D828F75D9C007F3693 /* screenshot.c in Sources */,
 				5546811528F75D9B007F3693 /* color.c in Sources */,
 				5546804528F75D9B007F3693 /* render2x4.c in Sources */,
-				55467A6D28F75D99007F3693 /* crtc-cmdline-options.c in Sources */,
-				5546827D28F75D9C007F3693 /* c64dtvflash.c in Sources */,
 				55467AD928F75D99007F3693 /* drive-cmdline-options.c in Sources */,
 				55467B1028F75D99007F3693 /* riot1d.c in Sources */,
 				55467D3528F75D99007F3693 /* fliplist.c in Sources */,
@@ -3940,9 +3819,7 @@
 				55467AB328F75D99007F3693 /* fsdevice-open.c in Sources */,
 				5546805628F75D9B007F3693 /* video-canvas.c in Sources */,
 				554682A528F75D9C007F3693 /* vdrive-dir.c in Sources */,
-				554681F428F75D9C007F3693 /* viciidtv-snapshot.c in Sources */,
 				55467CC228F75D99007F3693 /* realdevice.c in Sources */,
-				554682F428F766E5007F3693 /* mididrv.c in Sources */,
 				5546808828F75D9B007F3693 /* render2x2crt.c in Sources */,
 				554682FB28F766E5007F3693 /* hardsid.c in Sources */,
 				55467EED28F75D9A007F3693 /* magicdesk.c in Sources */,
@@ -3960,60 +3837,53 @@
 				5546805528F75D9B007F3693 /* renderyuv.c in Sources */,
 				55467D8828F75D9A007F3693 /* fastsid.c in Sources */,
 				83E49A520DE4CCA9001DE90F /* c128machinecontroller.m in Sources */,
-				5546826E28F75D9C007F3693 /* c64dtviec.c in Sources */,
 				55467E7428F75D9A007F3693 /* plus60k.c in Sources */,
-				55467A6428F75D99007F3693 /* crtc-resources.c in Sources */,
 				5546805228F75D9B007F3693 /* video-render-crt.c in Sources */,
+				5546834228F92AFF007F3693 /* vicii-draw-cycle.c in Sources */,
 				83E49A530DE4CCA9001DE90F /* c128ui.m in Sources */,
-				554681ED28F75D9C007F3693 /* vicii-sprites.c in Sources */,
 				55467B6B28F75D99007F3693 /* cia1581d.c in Sources */,
 				55467F7B28F75D9A007F3693 /* stb.c in Sources */,
 				55467EE528F75D9A007F3693 /* expert.c in Sources */,
-				55467A8C28F75D99007F3693 /* vicii-snapshot.c in Sources */,
 				83E49A540DE4CCA9001DE90F /* c64controller.m in Sources */,
 				55467B3E28F75D99007F3693 /* wd1770.c in Sources */,
 				55467C8628F75D99007F3693 /* dma.c in Sources */,
-				5546826028F75D9C007F3693 /* c64dtvembedded.c in Sources */,
 				5546812328F75D9B007F3693 /* userport_dac.c in Sources */,
 				554680D228F75D9B007F3693 /* bq4830y.c in Sources */,
-				554681F328F75D9C007F3693 /* vicii-draw.c in Sources */,
 				5546809728F75D9B007F3693 /* palette.c in Sources */,
 				55467B4128F75D99007F3693 /* plus4exp-cmdline-options.c in Sources */,
 				83E49A550DE4CCA9001DE90F /* c64machinecontroller.m in Sources */,
-				55467A7B28F75D99007F3693 /* vicii-cmdline-options.c in Sources */,
 				55467E7828F75D9A007F3693 /* c64-cmdline-options.c in Sources */,
+				5546833728F9293C007F3693 /* cbmimage.c in Sources */,
 				55467FD828F75D9B007F3693 /* voice.cc in Sources */,
 				55467EFD28F75D9A007F3693 /* capture.c in Sources */,
 				55467EE328F75D9A007F3693 /* actionreplay2.c in Sources */,
 				55467ADA28F75D99007F3693 /* iec128dcr-cmdline-options.c in Sources */,
 				55C6553128F67C7600D11E28 /* registerwindowcontroller.m in Sources */,
+				5546833628F92926007F3693 /* cbmdos.c in Sources */,
+				5546834428F92AFF007F3693 /* vicii-mem.c in Sources */,
 				55467FD928F75D9B007F3693 /* sid.cc in Sources */,
 				5546801A28F75D9B007F3693 /* sid.cc in Sources */,
 				554682FC28F766E5007F3693 /* dynlib.c in Sources */,
 				55467F0128F75D9A007F3693 /* gamekiller.c in Sources */,
 				5546804928F75D9B007F3693 /* video-render-pal.c in Sources */,
 				83E49A560DE4CCA9001DE90F /* c64ui.m in Sources */,
-				5546829A28F75D9C007F3693 /* c64dtvmeminit.c in Sources */,
-				55467A7528F75D99007F3693 /* vicii-lightpen.c in Sources */,
 				5546805028F75D9B007F3693 /* render1x2crt.c in Sources */,
 				55467F1E28F75D9A007F3693 /* tfe.c in Sources */,
 				55467C7428F75D99007F3693 /* fixpoint.c in Sources */,
 				5546823728F75D9C007F3693 /* soundvoc.c in Sources */,
-				55467A7428F75D99007F3693 /* vicii-irq.c in Sources */,
 				5546830C28F76AE6007F3693 /* cbm2controller.m in Sources */,
 				5546809928F75D9B007F3693 /* raster-canvas.c in Sources */,
 				5546830228F766E5007F3693 /* mousedrv.c in Sources */,
 				5546804A28F75D9B007F3693 /* video-render-2x2.c in Sources */,
 				55467F1A28F75D9A007F3693 /* actionreplay.c in Sources */,
+				5546834728F92AFF007F3693 /* vicii-timing.c in Sources */,
 				5546808428F75D9B007F3693 /* video-resources.c in Sources */,
-				5546829528F75D9C007F3693 /* flash-trap.c in Sources */,
 				55467B0228F75D99007F3693 /* drive-check.c in Sources */,
 				55467E8828F75D9A007F3693 /* c64parallel.c in Sources */,
 				55467AE228F75D99007F3693 /* iec128dcr-resources.c in Sources */,
 				55467AFD28F75D99007F3693 /* drive-resources.c in Sources */,
 				55467C7928F75D99007F3693 /* crc32.c in Sources */,
 				55467B5128F75D99007F3693 /* c64exp-resources.c in Sources */,
-				554681AD28F75D9C007F3693 /* cbm2-snapshot.c in Sources */,
 				55467F8428F75D9A007F3693 /* c64iec.c in Sources */,
 				55467B2628F75D99007F3693 /* via1d2031.c in Sources */,
 				554682A228F75D9C007F3693 /* vdrive-command.c in Sources */,
@@ -4029,9 +3899,9 @@
 				55467ACE28F75D99007F3693 /* tcbmrom.c in Sources */,
 				55467F0E28F75D9A007F3693 /* pagefox.c in Sources */,
 				55467BD128F75D99007F3693 /* autostart.c in Sources */,
+				5546833D28F92AFF007F3693 /* vicii-snapshot.c in Sources */,
 				55467E9728F75D9A007F3693 /* c64model.c in Sources */,
 				55467EF928F75D9A007F3693 /* c64-midi.c in Sources */,
-				55467A7228F75D99007F3693 /* vicii.c in Sources */,
 				55467C6228F75D99007F3693 /* diskcontents-block.c in Sources */,
 				55467D3828F75D99007F3693 /* libm_math.c in Sources */,
 				55467C5F28F75D99007F3693 /* diskcontents-iec.c in Sources */,
@@ -4041,7 +3911,6 @@
 				55467B5528F75D99007F3693 /* mc6821.c in Sources */,
 				55467D0428F75D99007F3693 /* event.c in Sources */,
 				83E49A5A0DE4CCA9001DE90F /* petui.m in Sources */,
-				5546826328F75D9C007F3693 /* c64dtvcpu.c in Sources */,
 				55467D7028F75D9A007F3693 /* fsimage-check.c in Sources */,
 				55467E3A28F75D9A007F3693 /* mon_disassemble.c in Sources */,
 				83E49A5B0DE4CCA9001DE90F /* plus4ui.m in Sources */,
@@ -4053,38 +3922,29 @@
 				55467F8B28F75D9A007F3693 /* c64datasette.c in Sources */,
 				55467E7B28F75D9A007F3693 /* c64memrom.c in Sources */,
 				55467CDF28F75D99007F3693 /* mouse.c in Sources */,
-				5546827828F75D9C007F3693 /* c64dtvpla.c in Sources */,
 				83E49A5D0DE4CCA9001DE90F /* viceappcontroller.m in Sources */,
 				55467E4128F75D9A007F3693 /* mon_registerz80.c in Sources */,
 				55467EAB28F75D9A007F3693 /* magicformel.c in Sources */,
 				55467EB128F75D9A007F3693 /* ross.c in Sources */,
-				5546817D28F75D9B007F3693 /* cbm2bus.c in Sources */,
-				55467A8728F75D99007F3693 /* vicii-fetch.c in Sources */,
 				55467FB428F75D9B007F3693 /* patchrom.c in Sources */,
 				55467CEC28F75D99007F3693 /* iffdrv.c in Sources */,
 				55467EA028F75D9A007F3693 /* c64-resources.c in Sources */,
-				5546827C28F75D9C007F3693 /* c64dtv-cmdline-options.c in Sources */,
 				5546830128F766E5007F3693 /* catweaselmkiii.c in Sources */,
 				5546804D28F75D9B007F3693 /* video-render.c in Sources */,
 				55467ECE28F75D9A007F3693 /* snapshot64.c in Sources */,
 				55467F8628F75D9A007F3693 /* c64.c in Sources */,
 				5546825A28F75D9C007F3693 /* soundwav.c in Sources */,
 				83E49A5E0DE4CCA9001DE90F /* vicemachinecontroller.m in Sources */,
-				5546821328F75D9C007F3693 /* vicii-resources.c in Sources */,
 				554680AB28F75D9B007F3693 /* raster-cache.c in Sources */,
 				5546832128F76B69007F3693 /* plus4controller.m in Sources */,
 				55467D5428F75D99007F3693 /* util.c in Sources */,
-				55467A8A28F75D99007F3693 /* vicii-chip-model.c in Sources */,
 				55467D2328F75D99007F3693 /* tape.c in Sources */,
 				55467EB028F75D9A007F3693 /* delaep64.c in Sources */,
 				55467E4928F75D9A007F3693 /* asm6502dtv.c in Sources */,
 				55467F8928F75D9A007F3693 /* reloc65.c in Sources */,
-				55467F8128F75D9A007F3693 /* c64scmodel.c in Sources */,
-				55467ACB28F75D99007F3693 /* tpid.c in Sources */,
 				55467D1028F75D99007F3693 /* p00.c in Sources */,
 				55467EA228F75D9A007F3693 /* c64cpu.c in Sources */,
 				55467EB628F75D9A007F3693 /* diashowmaker.c in Sources */,
-				5546827528F75D9C007F3693 /* c64dtvcia1.c in Sources */,
 				55467D4728F75D99007F3693 /* vdc-color.c in Sources */,
 				554682CA28F76453007F3693 /* joy-hidutil.c in Sources */,
 				5546822628F75D9C007F3693 /* soundcoreaudio.c in Sources */,
@@ -4092,28 +3952,20 @@
 				55467EC328F75D9A007F3693 /* final.c in Sources */,
 				55467F7028F75D9A007F3693 /* c64cartmem.c in Sources */,
 				55467F8728F75D9A007F3693 /* c64-snapshot.c in Sources */,
-				55467AA228F75D99007F3693 /* vicii-resources.c in Sources */,
-				55467A7028F75D99007F3693 /* crtc-mem.c in Sources */,
 				55467ED328F75D9A007F3693 /* stardos.c in Sources */,
 				55467C9C28F75D99007F3693 /* output-text.c in Sources */,
-				55467D5828F75D99007F3693 /* cbmimage.c in Sources */,
 				55467CF028F75D99007F3693 /* bmpdrv.c in Sources */,
-				554681AC28F75D9C007F3693 /* cbm2.c in Sources */,
 				83E49A5F0DE4CCA9001DE90F /* mousedrv.m in Sources */,
 				55467CCF28F75D99007F3693 /* serial-iec-bus.c in Sources */,
-				554681F028F75D9C007F3693 /* vicii-stubs.c in Sources */,
 				55467E3828F75D9A007F3693 /* mon_register6502dtv.c in Sources */,
+				5546834028F92AFF007F3693 /* vicii-cmdline-options.c in Sources */,
 				55467FC128F75D9B007F3693 /* c64printer.c in Sources */,
 				554682A828F75D9C007F3693 /* vdrive-snapshot.c in Sources */,
 				5546811128F75D9B007F3693 /* keyboard.c in Sources */,
-				5546826428F75D9C007F3693 /* c64dtvmemsnapshot.c in Sources */,
-				5546821228F75D9C007F3693 /* vicii-phi1.c in Sources */,
 				55467E7028F75D9A007F3693 /* c64embedded.c in Sources */,
 				55467F1C28F75D9A007F3693 /* ide64.c in Sources */,
-				554681F828F75D9C007F3693 /* vicii-snapshot.c in Sources */,
 				83E49A600DE4CCA9001DE90F /* ui-cmdline-options.c in Sources */,
 				55467D9D28F75D9A007F3693 /* resid.cc in Sources */,
-				55467ACC28F75D99007F3693 /* tcbm.c in Sources */,
 				55467B5328F75D99007F3693 /* c64exp-cmdline-options.c in Sources */,
 				554682CC28F76453007F3693 /* vsyncarch.c in Sources */,
 				55467D3E28F75D99007F3693 /* vdc-snapshot.c in Sources */,
@@ -4123,13 +3975,10 @@
 				5546831B28F76B52007F3693 /* petcontroller.m in Sources */,
 				55467C7828F75D99007F3693 /* machine.c in Sources */,
 				55467ED428F75D9A007F3693 /* prophet64.c in Sources */,
-				55467FBC28F75D9B007F3693 /* c64mem.c in Sources */,
 				55C6552B28F67A1100D11E28 /* netplaycontrolwindowcontroller.m in Sources */,
-				5546810A28F75D9B007F3693 /* extfilt.cc in Sources */,
 				554682FF28F766E5007F3693 /* parsid.c in Sources */,
 				83E49A610DE4CCA9001DE90F /* ui-resources.c in Sources */,
 				5546804828F75D9B007F3693 /* video-render-1x2.c in Sources */,
-				55467A8B28F75D99007F3693 /* vicii-draw-cycle.c in Sources */,
 				554681D528F75D9C007F3693 /* flash040core.c in Sources */,
 				83E49A620DE4CCA9001DE90F /* ui.m in Sources */,
 				55467B1228F75D99007F3693 /* ieee.c in Sources */,
@@ -4137,7 +3986,6 @@
 				554681C628F75D9C007F3693 /* spi-sdcard.c in Sources */,
 				55C6552828F679EF00D11E28 /* recordhistorywindowcontroller.m in Sources */,
 				5546832428F76B92007F3693 /* soundview.m in Sources */,
-				5546818828F75D9B007F3693 /* cbm2sound.c in Sources */,
 				55467EFF28F75D9A007F3693 /* dinamic.c in Sources */,
 				55467E7928F75D9A007F3693 /* c64bus.c in Sources */,
 				55467D0F28F75D99007F3693 /* fileio.c in Sources */,
@@ -4145,13 +3993,12 @@
 				5546808C28F75D9B007F3693 /* parallel-trap.c in Sources */,
 				55467AAB28F75D99007F3693 /* fsdevice-close.c in Sources */,
 				83E49A630DE4CCA9001DE90F /* uimon.m in Sources */,
-				554681EB28F75D9C007F3693 /* vicii-mem.c in Sources */,
 				55467B7C28F75D99007F3693 /* drive.c in Sources */,
 				55467BD028F75D99007F3693 /* gcr.c in Sources */,
 				55467D2128F75D99007F3693 /* tape-internal.c in Sources */,
-				554681DD28F75D9C007F3693 /* vicii-badline.c in Sources */,
 				554681B828F75D9C007F3693 /* tpicore.c in Sources */,
 				55467B4328F75D99007F3693 /* iec-plus4exp.c in Sources */,
+				5546833B28F92AFF007F3693 /* vicii-chip-model.c in Sources */,
 				55467EBB28F75D9A007F3693 /* crt.c in Sources */,
 				83E49A640DE4CCA9001DE90F /* viceapplication.m in Sources */,
 				55467CC528F75D99007F3693 /* serial-iec-lib.c in Sources */,
@@ -4171,11 +4018,12 @@
 				5546806728F75D9B007F3693 /* render1x1pal.c in Sources */,
 				55467F0A28F75D9A007F3693 /* reu.c in Sources */,
 				5546800328F75D9B007F3693 /* machine-bus.c in Sources */,
+				5546833C28F92AFF007F3693 /* vicii-phi1.c in Sources */,
 				55467D3928F75D99007F3693 /* translate.c in Sources */,
+				5546835428F92D9B007F3693 /* joy.c in Sources */,
 				83E49A650DE4CCA9001DE90F /* vicemachine.m in Sources */,
 				5546830028F766E5007F3693 /* coproc.c in Sources */,
 				55467BCD28F75D99007F3693 /* interrupt.c in Sources */,
-				5546817728F75D9B007F3693 /* cbm2memsnapshot.c in Sources */,
 				55467E9328F75D9A007F3693 /* c64memsc.c in Sources */,
 				55467F0528F75D9A007F3693 /* simonsbasic.c in Sources */,
 				55467C5C28F75D99007F3693 /* vsync.c in Sources */,
@@ -4183,52 +4031,36 @@
 				55467B3928F75D99007F3693 /* iec-cmdline-options.c in Sources */,
 				55467FB928F75D9B007F3693 /* c64io.c in Sources */,
 				55467CD128F75D99007F3693 /* serial-iec-device.c in Sources */,
-				554681AA28F75D9C007F3693 /* cbm2datasette.c in Sources */,
 				554681B428F75D9C007F3693 /* ciacore.c in Sources */,
 				55467E6C28F75D9A007F3693 /* monitor_network.c in Sources */,
 				55467F2328F75D9A007F3693 /* delaep256.c in Sources */,
-				554681D728F75D9C007F3693 /* petcat.c in Sources */,
 				554681B228F75D9C007F3693 /* fmopl.c in Sources */,
 				5546821F28F75D9C007F3693 /* sounddummy.c in Sources */,
 				55467C5928F75D99007F3693 /* datasette.c in Sources */,
 				5546800428F75D9B007F3693 /* traps.c in Sources */,
 				55467EEC28F75D9A007F3693 /* digimax.c in Sources */,
 				55467D3728F75D99007F3693 /* network.c in Sources */,
-				5546827E28F75D9C007F3693 /* c64dtvcia2.c in Sources */,
-				5546817928F75D9B007F3693 /* cbm2tpi1.c in Sources */,
-				554680F228F75D9B007F3693 /* sid.cc in Sources */,
 				55467C9128F75D99007F3693 /* interface-serial.c in Sources */,
-				554680F128F75D9B007F3693 /* voice.cc in Sources */,
-				5546821128F75D9C007F3693 /* viciidtv-color.c in Sources */,
-				55467C7F28F75D99007F3693 /* ps2mouse.c in Sources */,
 				55467EF828F75D9A007F3693 /* westermann.c in Sources */,
 				55467D0528F75D99007F3693 /* memcmp.c in Sources */,
 				55C6552228F6716E00D11E28 /* vicefilepanel.m in Sources */,
 				55467D1228F75D99007F3693 /* cbmfile.c in Sources */,
 				55467CBD28F75D99007F3693 /* serial-iec.c in Sources */,
-				554681AF28F75D9C007F3693 /* cbm2cia1.c in Sources */,
 				83E49A660DE4CCA9001DE90F /* vicemachinenotifier.m in Sources */,
 				5546822328F75D9C007F3693 /* soundiff.c in Sources */,
-				55467A6328F75D99007F3693 /* crtc-draw.c in Sources */,
 				55467E3228F75D9A007F3693 /* mon_util.c in Sources */,
 				83E49A670DE4CCA9001DE90F /* video.m in Sources */,
-				5546818F28F75D9B007F3693 /* cbm2iec.c in Sources */,
 				55467E3328F75D9A007F3693 /* monitor.c in Sources */,
-				554681A828F75D9C007F3693 /* cbm2printer.c in Sources */,
 				55467AA828F75D99007F3693 /* fsdevice-read.c in Sources */,
-				554681F728F75D9C007F3693 /* viciidtv-draw.c in Sources */,
 				55467EF228F75D9A007F3693 /* atomicpower.c in Sources */,
 				55467B7D28F75D99007F3693 /* driveimage.c in Sources */,
 				55467EB428F75D9A007F3693 /* superexplode5.c in Sources */,
 				83E49A680DE4CCA9001DE90F /* consolewindow.m in Sources */,
 				5546809628F75D9B007F3693 /* kbdbuf.c in Sources */,
 				83E49A690DE4CCA9001DE90F /* driveview.m in Sources */,
-				55467A5828F75D99007F3693 /* crtc.c in Sources */,
 				55467ED128F75D9A007F3693 /* easyflash.c in Sources */,
 				554680C328F75D9B007F3693 /* raster.c in Sources */,
-				5546817128F75D9B007F3693 /* cbm2-resources.c in Sources */,
 				55467AAC28F75D99007F3693 /* fsdevice-write.c in Sources */,
-				554680E228F75D9B007F3693 /* envelope.cc in Sources */,
 				55467E7128F75D9A007F3693 /* c64pla.c in Sources */,
 				5546809D28F75D9B007F3693 /* raster-line-changes.c in Sources */,
 				55467EAD28F75D9A007F3693 /* supersnapshot.c in Sources */,
@@ -4238,12 +4070,10 @@
 				554681D628F75D9C007F3693 /* attach.c in Sources */,
 				55467C5B28F75D99007F3693 /* sound.c in Sources */,
 				55467EE128F75D9A007F3693 /* kingsoft.c in Sources */,
-				554681F228F75D9C007F3693 /* vicii-fetch.c in Sources */,
 				83E49A6A0DE4CCA9001DE90F /* fullscreenwindow.m in Sources */,
 				5546825728F75D9C007F3693 /* soundmp3.c in Sources */,
 				55467B4028F75D99007F3693 /* iec.c in Sources */,
 				55467D0228F75D99007F3693 /* doodledrv.c in Sources */,
-				5546829628F75D9C007F3693 /* c64dtv.c in Sources */,
 				83E49A6B0DE4CCA9001DE90F /* joystickview.m in Sources */,
 				55467B4428F75D99007F3693 /* plus4exp-resources.c in Sources */,
 				55467EBA28F75D9A007F3693 /* supersnapshot4.c in Sources */,
@@ -4251,7 +4081,6 @@
 				55467C9328F75D99007F3693 /* driver-select.c in Sources */,
 				55C6553C28F67CB200D11E28 /* iotreeitem.m in Sources */,
 				55467F2228F75D9A007F3693 /* mmcreplay.c in Sources */,
-				5546818D28F75D9B007F3693 /* cbm2embedded.c in Sources */,
 				55467EC628F75D9A007F3693 /* funplay.c in Sources */,
 				5546830F28F76AF6007F3693 /* cbm2machinecontroller.m in Sources */,
 				55C6552E28F67A6300D11E28 /* controlwindow.m in Sources */,
@@ -4264,24 +4093,19 @@
 				55467CB928F75D99007F3693 /* drv-mps803.c in Sources */,
 				55467CB728F75D99007F3693 /* printer-serial.c in Sources */,
 				5546832E28F76C17007F3693 /* pcxdrv.c in Sources */,
-				5546816F28F75D9B007F3693 /* cbm2tpi2.c in Sources */,
 				55467FE228F75D9B007F3693 /* dac.cc in Sources */,
 				55467C8328F75D99007F3693 /* midi.c in Sources */,
 				554680A528F75D9B007F3693 /* raster-line-changes-sprite.c in Sources */,
 				83E49A6D0DE4CCA9001DE90F /* logview.m in Sources */,
-				554682CE28F76453007F3693 /* joy.c in Sources */,
 				554682F628F766E5007F3693 /* archdep.c in Sources */,
-				55467ACA28F75D99007F3693 /* mem1551.c in Sources */,
 				55467D7528F75D9A007F3693 /* fsimage-probe.c in Sources */,
-				5546827728F75D9C007F3693 /* hummeradc.c in Sources */,
 				5546832028F76B69007F3693 /* plus4machinecontroller.m in Sources */,
 				55467F0328F75D9A007F3693 /* comal80.c in Sources */,
+				5546833F28F92AFF007F3693 /* vicii-fetch.c in Sources */,
 				55467EB928F75D9A007F3693 /* c64acia1.c in Sources */,
-				554681A928F75D9C007F3693 /* cbm2cpu.c in Sources */,
 				5546811028F75D9B007F3693 /* opencbmlib.c in Sources */,
 				83E49A710DE4CCA9001DE90F /* tapeview.m in Sources */,
 				55467D9028F75D9A007F3693 /* sid-cmdline-options.c in Sources */,
-				5546811828F75D9B007F3693 /* userport_joystick.c in Sources */,
 				55467F1928F75D9A007F3693 /* ramcart.c in Sources */,
 				5546831528F76B32007F3693 /* vicewindowcontroller.m in Sources */,
 				55467B1928F75D99007F3693 /* ieee-cmdline-options.c in Sources */,
@@ -4289,6 +4113,7 @@
 				55467B0E28F75D99007F3693 /* ieeerom.c in Sources */,
 				55467FFD28F75D9B007F3693 /* extfilt.cc in Sources */,
 				55467B2828F75D99007F3693 /* drivemem.c in Sources */,
+				5546834828F92AFF007F3693 /* vicii-draw.c in Sources */,
 				554680A228F75D9B007F3693 /* raster-sprite.c in Sources */,
 				55467F8528F75D9A007F3693 /* c64_256k.c in Sources */,
 				55467E7A28F75D9A007F3693 /* psid.c in Sources */,
@@ -4299,16 +4124,18 @@
 				554682F528F766E5007F3693 /* rs232.c in Sources */,
 				55467D3F28F75D99007F3693 /* vdc-resources.c in Sources */,
 				55467C8C28F75D99007F3693 /* rawfile.c in Sources */,
+				5546834F28F92CCA007F3693 /* userport_joystick.c in Sources */,
 				83E49A720DE4CCA9001DE90F /* viceglview.m in Sources */,
 				55467FFF28F75D9B007F3693 /* wave.cc in Sources */,
 				55467D1F28F75D99007F3693 /* tap.c in Sources */,
 				55467EC128F75D9A007F3693 /* finalplus.c in Sources */,
 				55467B0428F75D99007F3693 /* drive-snapshot.c in Sources */,
+				5546835028F92D15007F3693 /* joystick.c in Sources */,
 				5546808628F75D9B007F3693 /* video-cmdline-options.c in Sources */,
 				55467E4728F75D9A007F3693 /* mon_parse.c in Sources */,
 				55467D5928F75D99007F3693 /* main.c in Sources */,
-				5546817828F75D9B007F3693 /* cbm2video.c in Sources */,
 				55467F8228F75D9A007F3693 /* c64sound.c in Sources */,
+				5546833A28F92ABB007F3693 /* vicii-cycle.c in Sources */,
 				55467AEF28F75D99007F3693 /* driverom.c in Sources */,
 				55467D6028F75D9A007F3693 /* alarm.c in Sources */,
 				554680CA28F75D9B007F3693 /* rtc.c in Sources */,
@@ -4318,11 +4145,9 @@
 				83E49A740DE4CCA9001DE90F /* vsidui.m in Sources */,
 				55467C8528F75D99007F3693 /* ioutil.c in Sources */,
 				554681C428F75D9C007F3693 /* t6721.c in Sources */,
-				5546818A28F75D9B007F3693 /* cbm2mem.c in Sources */,
 				554680DE28F75D9B007F3693 /* info.c in Sources */,
 				83E49A830DE6B688001DE90F /* recordmediawindowcontroller.m in Sources */,
 				5546804428F75D9B007F3693 /* video-resources-pal.c in Sources */,
-				554681E428F75D9C007F3693 /* vicii-color.c in Sources */,
 				554681BA28F75D9C007F3693 /* ser-eeprom.c in Sources */,
 				55467D2528F75D99007F3693 /* tapeimage.c in Sources */,
 				55467F1B28F75D9A007F3693 /* sfx_soundexpander.c in Sources */,
@@ -4332,14 +4157,13 @@
 				55467D6528F75D9A007F3693 /* iecbus.c in Sources */,
 				55467EB228F75D9A007F3693 /* kcs.c in Sources */,
 				55467F0428F75D9A007F3693 /* georam.c in Sources */,
-				5546830328F76A06007F3693 /* joystick.c in Sources */,
 				5546801928F75D9B007F3693 /* voice.cc in Sources */,
 				55467E2F28F75D9A007F3693 /* mon_assemble6502.c in Sources */,
-				554681AE28F75D9C007F3693 /* cbm2drive.c in Sources */,
 				55467CCA28F75D99007F3693 /* serial-trap.c in Sources */,
 				5546808928F75D9B007F3693 /* video-color.c in Sources */,
 				55467B6528F75D99007F3693 /* via1d1541.c in Sources */,
-				55467A7E28F75D99007F3693 /* vicii-color.c in Sources */,
+				5546834528F92AFF007F3693 /* vicii-irq.c in Sources */,
+				5546833328F9280A007F3693 /* c64scui.m in Sources */,
 				554681B128F75D9C007F3693 /* cs8900.c in Sources */,
 				55467E3728F75D9A007F3693 /* mon_command.c in Sources */,
 				55467C7028F75D99007F3693 /* tapecontents.c in Sources */,

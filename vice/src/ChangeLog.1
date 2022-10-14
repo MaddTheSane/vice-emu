@@ -6,7 +6,7 @@
 	compressed files.
 	(attach_tape_callback): Likewise.
 
-1998-04-24  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-24  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* rsuser.h (rsuser_enabled): make the variable prototype "extern"...
 
@@ -239,7 +239,7 @@
 	* arch/msdos/menudefs.c, arch/msdos/menudefs.h,
 	arch/msdos/c64ui.c: Some ROM set stuff.
 
-1998-04-19  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-19  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* pet/petsound.c (petsnd_reset): call sound_reset
 	(sound_machine_reset): new function
@@ -282,7 +282,7 @@
 
 	* maincpu.c (clk_overflow_callback): Removed debugging output.
 
-1998-04-15  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-15  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c64/c64tpi.def (READ_PA, READ_PB): add "clk" parameter to 
 	drive*_cpu_execute
@@ -315,7 +315,7 @@
 	  Changed file extensions from .r to .rc . Chaged inclusion of
 	  'res.r' to 'res.rc'.
 
-1998-04-13  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-13  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* drive/drivecpu0.c (MYCPU_NAME): new define to "DRIVECPU0"
 	* drive/drivecpu1.c (MYCPU_NAME): new define to "DRIVECPU1"
@@ -337,12 +337,12 @@
 	debugging code.
 	* maincpu.c (clk_overflow_callback): Likewise.
 
-1998-04-12  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-12  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* palette.c (palette_load): do not call get_line() within the
 	while condition. Seems to be a bug in DEC cc.
 
-1998-04-12  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-12  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* data/PET/*.vkm: allow space being unshifted _and_ shifted
 	* data/CBM-II/busi_uk.vkm: likewise
@@ -373,7 +373,7 @@
 	* drive/drivecpucore.c (mydrive_cpu_init): Moved initialization
 	of the VIA, CIA and WD1770 to `mydrive_cpu_early_init'.
 
-1998-04-10  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-10  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciacore.c (clk_overflow_callback): assume myclk has already 
 	been updated to the new value
@@ -382,7 +382,7 @@
 	* maincpu.c (maincpu_reset): set clk to new value _before_ calling
 	machine_reset().
 
-1998-04-09  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-09  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* interrupt.c (cpu_int_status_time_warp): check whether subsctracting
 	"sub" gives an underflow on irq_clk and nmi_clk and handle that.
@@ -394,7 +394,7 @@
 	* clkguard.c (clk_guard_prevent_overflow): Fixed calculation of
 	the `sub' value.
 
-1998-04-08  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-08  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/kbd.c (kbd_event_handler): Ignore key events when 
 	keymap is not loaded.
@@ -410,11 +410,11 @@
 	* pruser.c, rsuser.c, rs232.h, print.h: removed remaining occurrances
 	  of file_desc_t and ILLEGAL_FILE_DESC.
 
-1998-04-07  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-07  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/kmap.c (set_keymap_file): fix "brown paper bag" type typo
 
-1998-04-06  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-06  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* data/PET/Makefile.am: add chargen.de and busi_de.vkm to file lists
 
@@ -455,7 +455,7 @@
 	initialization as this is already done in
 	`mydrive_cpu_early_init'.
 
-1998-04-05  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-05  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciatimer.h (ciat_reset): remove timer alarm on reset.
 
@@ -594,7 +594,7 @@
 
 	* arch/msdos/kbd.c: Added flip list short-cuts.
 
-1998-04-03  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-03  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/riscos/print.c (print_open): return int value
 	(fd): new array to hold file descriptors for
@@ -628,7 +628,7 @@
 
 	* Version 0.16.1.50.
 
-1998-04-02  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-02  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* aciacore.c (fd): change type from file_desc_t to int, because
 	it simply is _no_ File descriptor, but an index in a table in 
@@ -649,7 +649,7 @@
 
 	* rs232.h (rs232_open): return type is int.
 
-1998-04-01  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-01  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* doc/vice.texi: add section "Printer problems"
 	update default printer settings
@@ -672,7 +672,7 @@
 	* pruser.c (set_up_enabled): do not check for ILLEGAL_FILE_DESC,
 	because print_open return value is not an fd.
 
-1998-04-01  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-04-01  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* doc/vice.texi: updated snapshot docs for PETMEM and CIA modules
 
@@ -706,7 +706,7 @@
 	* imagecontents.c (open_image): Use fake drive instead of drive
 	#8.
 
-1998-03-31  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-31  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c128/c128.c: include ciatimer.h
 	(machine_init): call ciat_init_table to init CIA tables.
@@ -825,7 +825,7 @@
 
 	* Makefile.am: Added `clkguard.h' and `clkguard.c'.
 
-1998-03-26  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-26  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciatimer.h (ciat_t): add lastz, the clock of the last underflow.
 	(ciat_update): set value of lastz
@@ -840,7 +840,7 @@
 	When force loading+start a timer, handle underflow at this
 	cycle
 	
-1998-03-26  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-26  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciacore.c: all occurances of ciat_set_alarm: add clk parameter
 	(cia_strobe_ta, cia_strobe_tb): new functions to be 
@@ -916,7 +916,7 @@
 
 	* alarm.c (alarm_context_time_warp): New function.
 
-1998-03-24  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-24  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciacore.c (my_set_int): do not automatically set ICR bit 7
 	when activating the int line
@@ -933,7 +933,7 @@
 	(ciat_single_step): delay underflow one cycle by issuing
 	and alarm via nextz
 
-1998-03-24  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-24  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciatimer.h (CIAT_STACKLEN): make state stack length configurable
 	(ciat_state_t, ciat_t, ciat_init, ciat_reset, ciat_update, 
@@ -981,7 +981,7 @@
 
 	* c64/c64mem.c: Removed useless includes.
 
-1998-03-20  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-20  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* Makefile.am: add ciatimer.h
 
@@ -1010,7 +1010,7 @@
 	(store_bank_io, read_bank_io, peek_bank_io, initialize_memory):
 	Changed to new memory banking.
 
-1998-03-19  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-19  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/joystick.c: remove C++-style comments from behind
 	cpp directives.
@@ -1033,7 +1033,7 @@
 	* tap.c (tap_header_read): cast argument for strncmp from BYTE*
 	to char*
 
-1998-03-19  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-19  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* autostart.c (autostart_prg): if fname_split gave a "NULL" directory,
 	use "." instead.
@@ -1042,7 +1042,7 @@
 	set_fsdevice_10_dir, set_fsdevice_11_dir): do not accept NULL
 	paths. Replace them with "" instead.
 
-1998-03-19  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-19  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* cbm2/crtc.c (do_update_memory_ptrs): make non-inline and 
 	move to end of file, because video_mode is defined in crtccore.c
@@ -1051,7 +1051,7 @@
 
 	* pet/petmem.c (petmem_2001_buf_ef): fix declaration.
 
-1998-03-18  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-18  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciatimer.c (ciat_update): return a new flag that is set when the 
 	last underflow is at the current clock cycle.
@@ -1082,7 +1082,7 @@
 	(read_d0xx, read_d4xx, read_d5xx, read_d6xx, read_d7xx, read_d8xx,
 	read_dcxx, read_ddxx): Fix up the `chargen_rom' address.
 
-1998-03-16  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-16  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciacore.c (cia_update_tb): check whether we count TA underflows
 	If so, issue any delayed alarm function calls to update timers
@@ -1161,7 +1161,7 @@
 
 	* c1541.c (drive_read_block): Stub.
 
-1998-03-14  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-14  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c64/c64cia1.c, c64/c64cia2.c (CIAT_DEBUG): add definition to 
 	add debug code to cia timers
@@ -1242,13 +1242,13 @@
 
 	* arch/win32/ui.h (handle_wm_command): Added datasette controls.
 
-1998-03-13  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-13  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciatimer.c (ciat_set_ctrl): load timer even when not running
 	when force load bit is set.
 	Also force load the timer when it is already running.
 
-1998-03-11  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-11  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciacore.c (cia_update_ta, cia_update_tb): new wrapper
 	function for ciat_update(). They handle the stuff that has
@@ -1269,7 +1269,7 @@
 
 	* arch/unix/mouse.c: Removed volatile from `_mouse_enabled'.
 
-1998-03-10  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-10  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* src/Makefile.am: add ciatimer.c
 
@@ -1335,7 +1335,7 @@
 	(drive_rotate_disk): Save number of bits in the shift register.
 	(drive_sync_found): Also consider the bits in the shift register.
 
-1998-03-07  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-07  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/msdos/kbd.h, arch/msdos/petkbd.c, arch/win32/kbd.h, 
 	arch/win32/petkbd.c (pet_kbd_init_resources, 
@@ -1386,7 +1386,7 @@
 
 	* main.c: Use `HAVE_MOUSE' instead of testing the OS type.
 
-1998-03-05  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-05  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/msdos/archdep.c, arch/msdos/archdep.h,
 	arch/riscos/archdep.c, arch/riscos/archdep.h,
@@ -1421,7 +1421,7 @@
 	* log.c (log_helper): if log_file is not yet set and log
 	is default log, then use archdep_default_logger()
 
-1998-03-05  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-05  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* resources.c (resources_read_item_from_file): return new 
 	error code -2 when item was parsed correctly, but the resource
@@ -1439,7 +1439,7 @@
 	* mon.c (mon_save_file, mon_load_file): Handle different memory
 	spaces.
 
-1998-03-03  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-03  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c64/c64cia1.c, cbm2/c610cia1.c, drive/cia1571drive0.c,
 	drive/cia1571drive1.c, drive/cia1581drive0.c, drive/cia1581drive1.c
@@ -1467,7 +1467,7 @@
 	(peek_mycia): when peeking PB, use same code as read_mycia, but
 	do _not_ call pulse_ciapc
 
-1998-03-03  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-03-03  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* ciacore.c (reset_mycia, int_ciatod, mycia_write_snapshot_module,
 	mycia_read_snapshot_module): when setting the TOD alarm,
@@ -1528,7 +1528,7 @@
 
 	* cia-tmpl.c: Removed.
 
-1998-02-23  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-23  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c128/Makefile.am: removed c128cia1.def and build rules for
 	c128cia1.c
@@ -1546,7 +1546,7 @@
 	* cbm2/c610cia1.c: basically a copy of the old c610cia1.def
 	with some renaming
 
-1998-02-23  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-23  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c64/Makefile.am [libc64_a_SOURCES, libc64c128_a_SOURCES]: remove
 	c64cia2.def
@@ -1633,7 +1633,7 @@
 
 	* alarm.h, alarm.c (alarm_set): Made inline.
 
-1998-02-20  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-20  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* Makefile.am [noinst_HEADERS]: add ciacore.h
 	[EXTRA_DIST]: add ciacore.c
@@ -1707,18 +1707,18 @@
 	* c128/c128mem.c (initialize_memory): Use fast opcode fetch for
 	RAM $0200-$3fff of bank 0 too.
 
-1998-02-15  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-15  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* data/PET/posg_de.vkm: add KP_Enter to emulate "=" char in
 	positional mapping.
 
-1998-02-15  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-15  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* sysfile.c (set_system_path): when expanding the path, make 
 	relative paths absolute by prepending the current directory.
 	Include <string.h> for strstr().
 
-1998-02-15  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-15  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/xaw/ui.c (ui_select_file): save current directory
 	and restore it after selecting a file. Save the fileselector 
@@ -1766,14 +1766,14 @@
 	* c128/c128mem.c (mem_read_snapshot_module): Only load ACIA
 	snapshot when `HAVE_RS232' is defined.
 
-1998-02-12  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-12  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c128/c128mem.c (mem_load_kernal): before loading the ROM, deinstall
 	all traps - serial _and_ tape - and install them afterwards.
 	* c64/c64mem.c: likewise
 	* vic20/vic20mem.c: likewise
 
-1998-02-12  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-12  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* data/C64/Makefile.am: add default.vrs
         
@@ -1810,7 +1810,7 @@
 	the ROMs and install them afterwards.
 	Also get ROM checksums. 
 
-1998-02-12  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-12  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* Makefile.am: rename crtc-tmpl.c to crtccore.c
 
@@ -1827,7 +1827,7 @@
 
 	* crtccore.c: renamed from crtc-tmpl.c
 
-1998-02-12  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-12  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* Makefile.am: replace acia-tmpl.c with aciacore.c
 
@@ -1871,7 +1871,7 @@
 	from *.def, added definitions for the transformation of 
 	myacia -> acia1
 
-1998-02-12  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-12  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* acia-tmpl.c (int_myacia): made static
 
@@ -1979,7 +1979,7 @@
 	arch/riscos/ui.c, arch/riscos/ui.h (ui_enable_drive_status):
 	Added parameter for drive active LED color.
 
-1998-02-11  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-11  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* BUGS: remove the 8x96 video bug description - fixed
 
@@ -2061,13 +2061,13 @@
 
 	* sysfile.c: general cleanup of the RISC OS bits.
 
-1998-02-09  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-09  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* pet/petmem.c (set_editor_rom_name): load ROM even if the 
 	name is the same as the old one - the kernal can overwrite it,
 	thus we have to make it sure that it's there.
 
-1998-02-09  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-09  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* doc/vice.texi: add mapping of RUN/STOP key to docs.
 
@@ -2283,7 +2283,7 @@
 
 	* drive/drivecpu-tmpl.c (JUMP): Added support for bank limits.
 
-1998-02-07  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-07  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* pet/petmem.c (pet_set_conf_info): new function to set all 
 	PET resources _except_ the ROM-related ones. Used by 
@@ -2376,7 +2376,7 @@
 
 	* Version 0.16.1.21.
 
-1998-02-05  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-05  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* data/C128/Makefile.am [c128_DATA]: added file default.vrs
 
@@ -2415,7 +2415,7 @@
 	* TODO: Added a wishlist for future development (not in the works,
 	no promises, after 1.0 anyway.)
 
-1998-02-04  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-04  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/msdos/menudefs.c (quit_callback): change serial_remove to
 	serial_remove_file.
@@ -2440,7 +2440,7 @@
 	* romset.c (rosmet_dump): change s to const char, removing some
 	compile warnings.
 
-1998-02-04  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-04  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/xaw/vic20ui.c (vic20_romset_submenu): new entries to
 	load system ROMs
@@ -2490,7 +2490,7 @@
 	  only update menu entries if it does.
 	  (handle_wm_command): Add handlers for SidModel selection menu entries.
 
-1998-02-04  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-04  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* pet/petmem.c (petres): default startup with sensible values
 	(set_video): allow cols=0 again for autodetection from ROM.
@@ -2510,7 +2510,7 @@
 
 	* pet/pets.h (PetInfo): add rompatch to struct.
 
-1998-02-03  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-03  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/xaw/c610ui.c (cbm2_romset_submenu): new entries to
 	unload Basic and Cartridge ROMs.
@@ -2577,7 +2577,7 @@
 
 	* Version 0.16.1.19.
 
-1998-02-02  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-02  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/xaw/c610ui.c (cbm2_romset_submenu): add entries to
 	load single ROM files
@@ -2611,7 +2611,7 @@
 
 	* sounddrv/soundacorn.c: some restructuring for more stability.
 
-1998-02-01  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-02-01  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* doc/vice.texi: Add a romset file description; Fix that the
 	path contains the $HOME/.vice/EMU directory; Move the .vicerc
@@ -2643,7 +2643,7 @@
 	* drive/via2drive0.c, drive/via2drive1.c (read_pra): Fixed long-
 	standing and stupid bug with drive data port and attach clock.
 
-1998-01-31  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-31  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/xaw/video.c (cmdline_options):
 	change wrong "XSync" resource name to "UseXSync", i.e.
@@ -2656,7 +2656,7 @@
 	* romset.c (romset_load, romset_dump): call log_message
 	instead of log()...
 
-1998-01-31  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-31  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* data/CBM-II/Makefile.am (cbm2_DATA): add .vrs files
 
@@ -2727,7 +2727,7 @@
 	a disk image is attached and an existing one is automatically
 	detached.
 
-1998-01-31  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-31  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* data/PET/Makefile.am (romsets): new list of romset files
 
@@ -2766,7 +2766,7 @@
 	lines and then calls mem_load().
 	(romset_dump): writes out a file with the given resources in it.
 
-1998-01-30  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-30  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/print.c (resources): set default for PrDevice2 to
 	"|petlp -F PS|lpr" instead of without the "-F PS". This option
@@ -2844,7 +2844,7 @@
 
 	* res.r (IDD_SNAPSHOT_SAVE_DIALOG): Added name.
 
-1998-01-29  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-29  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* cbm2/c610cpu.def (JUMP,FETCH_OPCODE,p0,p1,p2,opcode_t,PRE_CPU_LOOP): 
 	add handling of bank_limit if INSTRUCTION_FETCH_HACK is defined.
@@ -2909,7 +2909,7 @@
 	* vic20/vic20mem.c: New variables `mem_read_limit_tab' and
 	`mem_read_limit_tab_ptr'.  Set all limits to `-1' for now.
 
-1998-01-28  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-28  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* pet/petmem.c (_mem_read_limit_tab, _mem_read_limit_tab_ptr):
 	new variables to hold/point to the bank_limit tables.
@@ -2917,7 +2917,7 @@
 	in all places where _mem_read_base_tab is set, set _mem_read_limit_tab
 	as well.
 
-1998-01-28  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-28  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* 6510core.c (SAX_ZERO): exchange two lines -> make it look
 	similar to STA_ZERO now, and magically fixes the SAX_ZERO bug
@@ -2938,7 +2938,7 @@
 
 	* Version 0.16.1.14.
 
-1998-01-28  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-28  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/archdep.c (archdep_home_path): new function, returns
 	the homedirectory.
@@ -3188,7 +3188,7 @@
 
 	* arch/riscos/Makefile.am: New file.
 
-1998-01-18  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-18  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* doc/vice.texi (RS232 usage): new section to explain step by step
 	how to use the RS232 emulation
@@ -3356,7 +3356,7 @@
 
 	* Version 0.16.1.
 
-1998-01-13  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-13  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c610/c610.c, pet/pet.c (machine_init): set external variable
 	cbm2_init_ok resp. pet_init_ok to 1, to allow *_set_model to
@@ -3385,7 +3385,7 @@
 
 	* info.c: Added Oliver to list of contributors.
 
-1998-01-13  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-13  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c1541.c (DiskFormats): Changed struct part from "char ImageFormat"
 	to "signed char ImageFormat" to allow comparision <0.
@@ -3443,7 +3443,7 @@
 
 	* main.c (MAIN_PROGRAM): Added some more `HAS_JOYSTICK'.
 
-1998-01-13  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-13  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* main.c (MAIN_PROGRAM,exit64): embrace calls to joystick_init
 	and joystick_close with #ifdef HAS_JOYSTICK
@@ -3533,7 +3533,7 @@
 	* arch/win32/uiattach.c (dialog_proc): Disks were always
 	attached to device 8. Fixed.
 
-1998-01-07  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-01-07  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* configure.in: Only check for `sys/audio.h' when compiling on
 	HP-UX.
@@ -3723,7 +3723,7 @@
 	substrings into the corresponding hex codes.
 	(MAIN_PROGRAM): Replace hex codes in the program name, if any.
 
-	* c64/c64mem.c (pla_config_changed): Applied AndrÈ's patch to fix
+	* c64/c64mem.c (pla_config_changed): Applied Andr√©'s patch to fix
 	the MMUFETCH test of Wolfgang's test suite.  Somebody should check
 	this on a real C64.
 
@@ -5401,7 +5401,7 @@
 	* arch/unix/xaw/ui.c (ui_open_canvas_window): XtVaSetValues for
  	visual and depth for the new shell.
 	(ui_create_transient_shell): Ditto.
-	[Adapted from a patch by Mattias EngdegÂrd <f91-men@nada.kth.se>
+	[Adapted from a patch by Mattias Engdeg√•rd <f91-men@nada.kth.se>
 	to make non-default display depths actually work.]
 
 1998-10-30  Andreas Boose  <boose@linux.rz.fh-hannover.de>
@@ -5431,7 +5431,7 @@
 
 	* Version 0.15.0.23.
 
-1998-10-27  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-27  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* via-tmpl.c (store_myvia): for port A and port B only call 
 	update_myviairq() when the changed flags are set in the IER
@@ -5546,7 +5546,7 @@
 
 	* vic20/vic20.c: Added Win32 support for keyboard init.
 
-1998-10-26  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-26  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* /drive/via1drive0.def, drive/via1drive1.def,
  	drive/via2drive0.def, drive/via2drive1.def, vic20/vic20via1.def,
@@ -5586,7 +5586,7 @@
 
 	* mon.c (mon): If `readline()' returns zero, exit monitor.
 
-1998-10-21  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-21  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* via-tmpl.c (myvia_read_snapshot_module,
  	myvia_write_snapshot_module): fix latch handling, esp. restoring
@@ -5596,7 +5596,7 @@
 
 	* Version 0.15.0.22.
 
-1998-10-19  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-19  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c64/patchrom.c (patch_rom): fix detection of non-numeric
 	kernal revisions. Set i to 0 before using it as index in the 
@@ -5624,10 +5624,10 @@
  	"congratulations! you have found a bug in VICE!" hack.
 
 	* crtc-tmpl.c (crtc_set_screen_mode): Fixed parse error from
- 	AndrÈ's latest change; use parameter `num_cols' instead of
+ 	Andr√©'s latest change; use parameter `num_cols' instead of
 	`crtc_cols', which is no longer defined.
 
-1998-10-18  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-18  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* crtc-tmpl.c (DOUBLE_SIZE_ENABLED): new define to replace
 	double_size_enabled in the double-size checks. Defined to 
@@ -5637,7 +5637,7 @@
 	(video_resize, crtc_update_timing): replace double_size_enabled
 	variable with define.
 
-1998-10-16  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-16  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* autostart.c: include machine.h and snapshot.h
 	(autostartmode): new enum entry AUTOSTART_HASSNAPSHOT
@@ -5765,7 +5765,7 @@
 	* vic20/vic.c (vic_read_snapshot_module): Call `sound_close()'
 	before restoring the snapshot.
 
-1998-10-14  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-10-14  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* vic20/vic.c (vic_write_snapshot_module): exchange writing
 	of color RAM and memptr.
@@ -5811,7 +5811,7 @@
 
 	* drive/drive.c (cmdline_options): Fixed some typos.
 
-1998-10-12  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-12  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/xaw/petui.c (set_KeyboardType): fix typo
 
@@ -5864,7 +5864,7 @@
 	_rom_ functions are new, and new original functions call both,
 	_ram_ and _rom_ functions.
 
-1998-10-09  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-09  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c128/c128.c, c128/c128mem.c, c64/c64.c, c64/c64mem.c, cbm2/c610.c,
 	mem.h, pet/pet.c, /pet/petmem.c, /vic20/vic20.c, vic20/vic20mem.c 
@@ -5892,7 +5892,7 @@
 	new functions to read/write variable-sized, malloc-ed strings
 	from/to a snapshot.
 
-1998-10-09  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-09  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* crtc-tmpl.c (new_screen_charheight, new_crtc_screen_textlines,
 	new_crtc_cycles_per_line, new_crtc_vertical_total, 
@@ -5916,7 +5916,7 @@
 	CRTC_SCREEN_YPIX]: redefine to variables, not an arithmetic
 	expression with up to 3 variables.
 
-1998-10-08  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-08  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* doc/vice.texi: fix C610 -> CBM-II
 
@@ -5932,7 +5932,7 @@
 	* crtc.h (CRTC_SCREEN_HEIGHT): use crtc_vertical_total
 	and crtc_vertical_adjust instead of crtc[].
 
-1998-10-08  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-08  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* cbm2/c610.c (cbm2_rfsh_per_sec, cbm2_cycles_per_rfsh): new
 	variables that are set with the default values from the header file.
@@ -5973,7 +5973,7 @@
 	* pet/petmem.c (set_screen): if PET does not have CRTC, set
 	video to sane values.
 
-1998-10-07  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-10-07  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* Makefile.am, cbm2/Makefile.am, data/Makefile.am,
 	arch/unix/xaw/Makefile.am, cbm2/Makefile.am (x610, c610, xcbm2, cbm2):
@@ -6199,7 +6199,7 @@
 
 	* c64/Makefile.am (INCLUDES): Do not include `RESID_INCLUDES'.
 
-1998-10-04  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-10-04  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* configure.in: add data/DRIVES to list of subdirectories
 
@@ -6388,7 +6388,7 @@
 	* sid/sid.c (sound_machine_open): Ooops, sid initialization routines
 	called at wrong	order (fixes armalyte intro).
 
-1998-10-01  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-10-01  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* Makefile.am (INCLUDES): add drive subdirectory
 	(xpet_LDADD, xpet_DEPENDENCIES, xpet-all, x610_LDADD,
@@ -6531,7 +6531,7 @@
 	* arch/unix/xaw/uisnapshot.c (ui_snapshot_dialog): New file, new
  	function.
 
-1998-09-30  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-30  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* mon.c (mon_cmd_array): add entries for bload and bsave
 	(mon_bload_file, mon_bsave_file): new functions
@@ -6566,7 +6566,7 @@
 
 	* c64/vicii.c (vic_ii_prepare_for_snapshot): New function.
 
-1998-09-29  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-29  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* c128/c128.c (c64rsuser.h): include to avoid a warning.
 
@@ -6676,7 +6676,7 @@
 	* via-tmpl.c (myvia_read_snapshot_module): Use `UNDUMP_PCR'
 	instead of `STORE_PCR'.
 
-1998-09-29  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-29  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/c610ui.c (set_joystick_device1, set_joystick_device2,
  	swap_joystick_ports, set_joystick_device_1_submenu,
@@ -6711,7 +6711,7 @@
 	* drive/viad.h: Added some missing `int's to VIA snapshot function
  	prototypes.
 
-1998-09-27  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-27  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* drive/drive.c (drive_read_snapshot_modules,
 	drive_write_snapshot_modules): move read/write of CPU state
@@ -6758,7 +6758,7 @@
 	* vic20/vic20iec.c: #include "ciad.h".
 	(iec_pa_read, iec_pa_write): Added support for two drives.
 
-1998-09-27  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-27  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* c610mem.c (mem_load): change load of charrom to keep original
 	16 bytes/char mapping
@@ -6995,7 +6995,7 @@
 	* c64/vicii.c (store_vbank): Store the new value before
 	dispatching the fetch event if necessary.
 
-1998-09-22  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-22  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* pet/crtc.def, pet/petmem.c: include petpia.h instead of pia.h
 
@@ -7064,7 +7064,7 @@
 	(machine_read_snapshot): Call `tpi_read_snapshot_module()' and
 	`acia1_read_snapshot_module()' inconditionally.
 
-1998-09-20  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-20  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* acia-tmpl.c (myacia_read_snapshot_module): fix module name
 	handling for snapshot.
@@ -7207,7 +7207,7 @@
 
 	* c64/reu.c: Snapshot module name changed to `REU1764'.
 
-1998-09-18  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-18  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* acia-tmpl.c (myacia_read_snapshot_module):
 	use set_int_noclk() instead of mycpu_set_int()
@@ -7282,7 +7282,7 @@
 
 	* op.h: Removed.
 
-1998-09-17  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-17  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* c610/c610mem.c (cbm2_set_model): trigger power-up reset to make
  	kernal recognize new RAM size.
@@ -7390,7 +7390,7 @@
 	* vic20/vic20rsuser.h: New file.
 	(vic20_rsuser_init): Prototype.
 
-1998-09-16  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-09-16  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* arch/unix/xaw/c610ui.c (set_KeyboardType, c610_keybd_submenu):
  	outcomented
@@ -7477,7 +7477,7 @@
 	* configure.in: Disable reSID configuration if no C++ compiler is
 	found on the system.
 
-1998-09-15  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-09-15  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* acia-tmpl.c (myacia_write_snapshot_module,
 	myacia_read_snapshot_module): implemented snapshot code.
@@ -7553,7 +7553,7 @@
 	(ui_open_canvas_window): Call `enable_drive_status()'.
 	(ui_init): Initialize `enabled_drives'.
 
-1998-09-14  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-09-14  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* acia-tmpl.c (myacia_write_snapshot_module,
 	myacia_read_snapshot_module): new snapshot functions, work in
@@ -7741,7 +7741,7 @@
 	* arch/unix/xaw/c64ui.c: Fixed `CheckSsColl' -> `CheckSbColl'
  	typo.
 
-1998-09-11  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-11  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* Makefile.am (cpucore_sources): define for dependencies of
 	6510core.c
@@ -7882,7 +7882,7 @@
 	(READ_CIAPB): Use `oldpa' as in `c64cia1.def'.
 	(READ_CIAPA): Use `oldpa' and `oldpb' as in `c64cia1.def'.
 
-1998-09-10  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-10  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* c64/c64rsuser.c (c64_rsuser_init): call rsuser with the number of
 	cycles for the CPU.
@@ -7912,7 +7912,7 @@
 	* c128/c128mem.c (store_mmu): Argh.  When calculating the VIC-II
  	RAM base, shift bits 7 & 6 in RCR by 10 positions, not 2!
 
-1998-09-09  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-09  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* data/C128/default.vkm: move alternate keyboard joystick one col
  	to the right, to fit german keyboards
@@ -8111,7 +8111,7 @@
 	* iecdrive.h: New prototypes `iec_fast_drive_write' and
 	`iec_fast_cpu_write'.
 
-1998-09-0  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-09-0  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* cia-tmpl.c (mycia_undump): instead of STORE_* use UNDUMP_* for
 	the port values.
@@ -8127,7 +8127,7 @@
  	UNDUMP_CIAPB): new definitions to be used when undumping an I/O
  	port.
 
-1998-09-08  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-09-08  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* via-tmpl.c (oldpa, oldpb, READ_PRA, READ_PRB, STORE_PRA,
  	STORE_PRB): now both READ_* set the value "byte" to the value from
@@ -8241,7 +8241,7 @@
 	* arch/win32/winmain.c: New file.
 	* arch/win32/winmain.h: New file.
 
-1998-09-07  AndrÈ Fachat  <fachat@physik.tu-chemnitz.de>
+1998-09-07  Andr√© Fachat  <fachat@physik.tu-chemnitz.de>
 
 	* cia-tmpl.c (mycia_dump): replace "clk" with "myclk"
 	(mycia_undump): ditto
@@ -8461,7 +8461,7 @@
 
 	* cartridge.h: New define `CARTRIDGE_SUPER_SNAPSHOT'.
 
-1998-09-03  AndrÈ Fachat  <a.fachat@physik.tu-chemnitz.de>
+1998-09-03  Andr√© Fachat  <a.fachat@physik.tu-chemnitz.de>
 
 	* c128/c128mem.c (store_bank_io, read_bank_io, peek_bank_io): remove
 	bogus "=" in switch.

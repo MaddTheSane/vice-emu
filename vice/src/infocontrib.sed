@@ -24,7 +24,7 @@ s/@b{David Hansel}/David Hansel <david@hansels.net>/g
 s/@b{Markus Brenner}/Markus Brenner <markus@brenner.de>/g
 s/@b{Thomas Bretz}/Thomas Bretz <tbretz@ph.tum.de>/g
 s/@b{Daniel Sladic}/Daniel Sladic <sladic@eecg.toronto.edu>/g
-s/@b{André Fachat}/André Fachat <fachat@physik.tu-chemnitz.de>/g
+s/@b{AndrÃ© Fachat}/AndrÃ© Fachat <fachat@physik.tu-chemnitz.de>/g
 s/@b{Ettore Perazzoli}/Ettore Perazzoli <ettore@comm2000.it>/g
 s/@b{Teemu Rantanen}/Teemu Rantanen <tvr@cs.hut.fi>/g
 s/@b{Jouko Valta}/Jouko Valta <jopi@stekt.oulu.fi>/g
@@ -35,13 +35,13 @@ s/@b{Czirkos Zoltan}/Czirkos Zoltan <cirix@fw.hu>/g
 s/@b{Karai Csaba}/Karai Csaba <cskarai@freemail.hu>/g
 s/@b{Emir Akaydin}/Emir Akaydin (aka: Skate) <emir@akaydin.com>/g
 s/@b{Mikkel Holm Olsen}/Mikkel Holm Olsen <vice-dk@symlink.dk>/g
-s/@b{Paul Dubé}/Paul Dubé /g
+s/@b{Paul DubÃ©}/Paul DubÃ© /g
 s/@b{Flooder}/Flooder <flooder@gower.pl>/g
 s/@b{Michael Schwendt}/Michael Schwendt <sidplay@geocities.com>/g
 s/@b{Christian Bauer}/Christian Bauer <bauec002@goofy.zdv.uni-mainz.de>/g
 s/@b{Wolfgang Lorenz}/Wolfgang Lorenz/g
 s/@b{Giuliano Procida}/Giuliano Procida <gpp10@cam.ac.uk>/g
-s/@b{Marko Mäkelä}/Marko Mäkelä <msmakela@gmail.com>/g
+s/@b{Marko MÃ¤kelÃ¤}/Marko MÃ¤kelÃ¤ <msmakela@gmail.com>/g
 s/@b{Chris Sharp}/Chris Sharp <sharpc@hurlsey.ibm.com>/g
 s/@b{Krister Walfridsson}/Krister Walfridsson <cato@df.lth.se>/g
 s/@b{Peter Andrew Felvegi aka Petschy}/Peter Andrew Felvegi aka Petschy <petschy@derceto.sch.bme.hu>/g
@@ -76,8 +76,8 @@ s/@b{Dirk Farin}/Dirk Farin <farin@ti.uni-mannheim.de>/g
 s/@b{Manfred Spraul}/Manfred Spraul <manfreds@colorfullife.com>/g
 s/@b{Michael Klein}/Michael Klein <nip@c64.org>/g
 s/@b{David Holz}/David Holz <whiteflame52@yahoo.com>/g
-s/@b{Lasse Öörni}/Lasse Öörni <loorni@mail.student.oulu.fi>/g
-s/@b{Frank König}/Frank König <frank_koenig@t-online.de>/g
+s/@b{Lasse Ã–Ã¶rni}/Lasse Ã–Ã¶rni <loorni@mail.student.oulu.fi>/g
+s/@b{Frank KÃ¶nig}/Frank KÃ¶nig <frank_koenig@t-online.de>/g
 s/@b{Philip Timmermann}/Philip Timmermann <pepto@pepto.de>/g
 s/@b{John Selck}/John Selck <graham@cruise.de>/g
 s/@b{webulator}/webulator <webulator@mailandnews.com>/g
@@ -110,7 +110,7 @@ s/@b{Mustafa \"GnoStiC\" Tufan}/Mustafa \\\"GnoStiC\\\" Tufan <mtufan@gmail.com>
 s/@b{Ville-Matias Heikkila}/Ville-Matias Heikkila <viznut@iki.fi>/g
 s/@b{Peter Edwards}/Peter Edwards <sweetlilmre@users.sourceforge.net>/g
 s/@b{Samuli Suominen}/Samuli Suominen/g
-s/@b{Pablo Roldán}/Pablo Roldán <pdroldan@yahoo.com>/g
+s/@b{Pablo RoldÃ¡n}/Pablo RoldÃ¡n <pdroldan@yahoo.com>/g
 s/@b{David Roden}/David Roden/g
 s/@b{hedning}/hedning/g
 s/@b{Jason Compton}/Jason Compton/g

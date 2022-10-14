@@ -2,7 +2,7 @@
  * vic20sound.c - Implementation of VIC20 sound code.
  *
  * Written by
- *  Rami R‰s‰nen <raipsu@users.sf.net>
+ *  Rami R√§s√§nen <raipsu@users.sf.net>
  *  Ville-Matias Heikkila <viznut@iki.fi>
  *
  * This file is part of VICE, the Versatile Commodore Emulator.

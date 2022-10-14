@@ -599,7 +599,7 @@ COPYRIGHT
 
   Copyright C 1997-2001 Daniel Sladic
   Copyright C 1996-1999 Ettore Perazzoli
-  Copyright C 1996-1999 André Fachat
+  Copyright C 1996-1999 AndrÃ© Fachat
   Copyright C 1993-1994, 1997-1999 Teemu Rantanen
   Copyright C 1993-1996 Jouko Valta
   Copyright C 1993-1994 Jarkko Sonninen

@@ -4,7 +4,7 @@
  *
  * Written by
  *  Ettore Perazzoli <ettore@comm2000.it>
- *  André Fachat <fachat@physik.tu-chemnitz.de>
+ *  AndrÃ© Fachat <fachat@physik.tu-chemnitz.de>
  *  Andreas Boose <viceteam@t-online.de>
  *
  * Support for multiple visuals and depths by
@@ -855,7 +855,7 @@ int ui_open_canvas_window(video_canvas_t *c, const char *title, int width, int h
 
     XtAddEventHandler(shell, EnterWindowMask, False, (XtEventHandler)enter_window_callback_shell, (XtPointer)c);
 
-    /* XVideo must be refreshed when the shell window is moved. */
+    /*Â XVideo must be refreshed when the shell window is moved. */
     if (!vsid_mode) {
         XtAddEventHandler(shell, StructureNotifyMask, False, (XtEventHandler)exposure_callback_shell, (XtPointer)c);
 
@@ -2479,7 +2479,7 @@ UI_CALLBACK(exposure_callback_shell)
 #ifdef HAVE_XVIDEO
     video_canvas_t *canvas = (video_canvas_t *)client_data;
 
-    /* XVideo must be refreshed when the shell window is moved. */
+    /*Â XVideo must be refreshed when the shell window is moved. */
     if (canvas->videoconfig->hwscale && canvas->xv_image) {
         video_canvas_refresh_all(canvas);
     }

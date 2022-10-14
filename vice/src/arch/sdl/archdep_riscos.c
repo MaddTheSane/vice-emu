@@ -227,7 +227,7 @@ int archdep_spawn(const char *name, char **argv, char **pstdout_redir, const cha
     return 0;
 }
 
-/* return malloc´d version of full pathname of orig_name */
+/* return mallocÂ´d version of full pathname of orig_name */
 int archdep_expand_path(char **return_path, const char *orig_name)
 {
     /* Always treat it as the full pathname... */

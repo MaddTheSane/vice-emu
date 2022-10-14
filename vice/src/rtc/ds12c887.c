@@ -153,7 +153,7 @@
  *                     when set to a 1, permits the Alarm Flag (AF) bit in register 12
  *                     to assert IRQ. An alarm interrupt occurs for each second that
  *                     the 3 time bytes equal the 3 alarm bytes including a
- *                     ìdonít careî alarm code of binary 11XXXXXX. When the AIE bit is
+ *                     ‚Äúdon‚Äôt care‚Äù alarm code of binary 11XXXXXX. When the AIE bit is
  *                     set to 0, the AF bit does not initiate the IRQ signal. The
  *                     internal functions of the DS12C887 not affect the AIE bit.
  *               bit 4 The Update Ended Interrupt Enable (UIE) bit is a read/write bit

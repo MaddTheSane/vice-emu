@@ -1007,7 +1007,7 @@ int vice_network_select_poll_one(vice_network_socket_t * readsockfd)
   \return
      the error code
 
-´ \remark
+Â´ \remark
       It does not distinguish between
       different sockets, thus, make sure to call it directly
       after an erroneous socket operation. Furthermore,

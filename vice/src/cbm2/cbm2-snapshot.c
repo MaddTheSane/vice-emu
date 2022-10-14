@@ -2,7 +2,7 @@
  * cbm2-snapshot.c - CBM-II snapshot handling.
  *
  * Written by
- *  André Fachat <fachat@physik.tu-chemnitz.de>
+ *  AndrÃ© Fachat <fachat@physik.tu-chemnitz.de>
  *  Andreas Boose <viceteam@t-online.de>
  *
  * This file is part of VICE, the Versatile Commodore Emulator.

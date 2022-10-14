@@ -44,7 +44,7 @@
  *   Spiro Trikaliotis <spiro.trikaliotis@gmx.de>
  *
  * Support for Final Cartridge III extensions to c64 2.0 basic
- *   Matti 'ccr' H‰m‰l‰inen <ccr@tnsp.org>
+ *   Matti 'ccr' H√§m√§l√§inen <ccr@tnsp.org>
  *
  * Support for many of the other extensions by
  *   Marco van den Heuvel <blackystardust68@yahoo.com>
@@ -574,7 +574,7 @@ const char *warsawkwdb[] = {
 };
 
 
-/* @Basic (Atbasic) Keywords (Tokens CC - F6) -- AndrÈ Fachat */
+/* @Basic (Atbasic) Keywords (Tokens CC - F6) -- Andr√© Fachat */
 
 const char *atbasickwcc[] = {
     "trace",  "delete",  "auto",      "old",     "dump",    "find",    "renumber", "dload",
@@ -762,7 +762,7 @@ const char *simonskw[] = {
 };
 
 
-/* Final Cartridge III Keywords -- Matti 'ccr' H‰m‰l‰inen */
+/* Final Cartridge III Keywords -- Matti 'ccr' H√§m√§l√§inen */
 
 const char *fc3kw[] = {
     "off",     "auto",  "del",     "renum",   "?ERROR?", "find", "old",   "dload",

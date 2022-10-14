@@ -86,13 +86,9 @@
     [registerTable reloadData];
 }
 
-@end
-
-@implementation RegisterWindowController (NSTableViewDataSource)
-
 - (id)tableView:(NSTableView *)aTableView
-    objectValueForTableColumn:(NSTableColumn *)aTableColumn
-    row:(int)rowIndex
+objectValueForTableColumn:(NSTableColumn *)aTableColumn
+            row:(NSInteger)rowIndex
 {
     id theRecord;
 
@@ -122,7 +118,7 @@
         }
         
         // format value
-        if(flags & 1 == 1)  {
+        if((flags & 1) == 1)  {
             // requested binary output
             theValue = [DebuggerWindowController toBinaryString:value width:8];
         } else {
@@ -135,7 +131,7 @@
         
         // make bold if value changed
         if(!same) {
-            theValue = [[NSMutableAttributedString alloc] initWithString:theValue];
+            theValue = [[[NSMutableAttributedString alloc] initWithString:theValue] autorelease];
             [theValue addAttribute:NSForegroundColorAttributeName
                         value:[NSColor blueColor]
                         range:NSMakeRange(0, [theValue length])];
@@ -146,10 +142,10 @@
 
 }
 
-- (int)numberOfRowsInTableView:(NSTableView *)aTableView
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView
 {
     if(registers) {
-        int num = [registers count];
+        NSInteger num = [registers count];
         return num;
     } else {
         return 0;

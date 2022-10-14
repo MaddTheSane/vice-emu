@@ -1702,7 +1702,6 @@
 		5546832B28F76BBE007F3693 /* vic20machinecontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vic20machinecontroller.h; sourceTree = "<group>"; };
 		5546833028F76D82007F3693 /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
 		5546833228F9280A007F3693 /* c64scui.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = c64scui.m; sourceTree = "<group>"; };
-		5546835128F92D84007F3693 /* joy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = joy.h; sourceTree = "<group>"; };
 		5546835228F92D84007F3693 /* joy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = joy.c; sourceTree = "<group>"; };
 		55C654AD28F6601F00D11E28 /* tape.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = tape.icns; sourceTree = "<group>"; };
 		55C654AE28F6601F00D11E28 /* VICE.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = VICE.icns; sourceTree = "<group>"; };
@@ -3274,7 +3273,6 @@
 			isa = PBXGroup;
 			children = (
 				5546835228F92D84007F3693 /* joy.c */,
-				5546835128F92D84007F3693 /* joy.h */,
 				554682D828F766E4007F3693 /* archdep.c */,
 				554682DF28F766E4007F3693 /* archdep.h */,
 				554682DC28F766E4007F3693 /* blockdev.c */,

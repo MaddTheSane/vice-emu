@@ -25,6 +25,8 @@
  *
  */
 
+#import <Cocoa/Cocoa.h>
+
 #include "drive.h"
 
 #import "driveview.h"

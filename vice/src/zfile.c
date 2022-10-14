@@ -449,7 +449,7 @@ static char *try_uncompress_archive(const char *name, int write_mode,
         while (l > 0) {
             tmp[--l] = 0;
             if (((nameoffset < 0) || (nameoffset > 1024)) && l >= len &&
-                !strcasecmp(tmp + l - len, search) != 0) {
+                !(strcasecmp(tmp + l - len, search) != 0)) {
                 nameoffset = l - 4;
             }
             if (nameoffset >= 0 && nameoffset <= 1024 && is_valid_extension(tmp, l, nameoffset)) {

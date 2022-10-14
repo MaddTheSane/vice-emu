@@ -76,7 +76,7 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *prefPath = [NSString stringWithCString:archdep_pref_path encoding:NSUTF8StringEncoding];
     if (![fileManager fileExistsAtPath:prefPath]) {
-        if (![fileManager createDirectoryAtPath:prefPath attributes:nil]) {
+        if (![fileManager createDirectoryAtPath:prefPath attributes:@{}]) {
             [[theVICEMachine app] runErrorMessage:@"Error creating Preferences Dir"];
             return nil;
         }
@@ -276,7 +276,7 @@
     }
     
     return [NSDictionary dictionaryWithObjectsAndKeys:
-        lines, @"lines",
+        [lines autorelease], @"lines",
         [NSNumber numberWithInt:dp.navigate.StartAddress], @"start",
         [NSNumber numberWithInt:dp.navigate.EndAddress], @"end",
         nil
@@ -582,6 +582,8 @@ static void saveSnapshotTrap(WORD unusedWord, void *unusedData)
         }
 
         [a addObject:[NSArray arrayWithObjects:fname,video,audio,nil]];
+        [video release];
+        [audio release];
     }
 
     return [a autorelease];
@@ -739,7 +741,7 @@ static void saveSnapshotTrap(WORD unusedWord, void *unusedData)
 {
     const char *cstr = [string cStringUsingEncoding:NSUTF8StringEncoding];
     if (convert) {
-        int len = [string length];
+        NSInteger len = [string length];
         char *pstr = (char *)malloc(len + 1);
         memcpy(pstr,cstr,len+1);
         charset_petconvstring(pstr,0);

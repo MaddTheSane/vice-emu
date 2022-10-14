@@ -55,26 +55,26 @@ static const char *maxVolStr = "{\\rtf1\\ansi\\ansicpg1252\\cocoartf949\\cocoasu
     float h = NSHeight(frame);
     float bw = h;
 
-    NSFont *font = [NSFont labelFontOfSize:10];
+//    NSFont *font = [NSFont labelFontOfSize:10];
 
     // min volume
     minVolume = [[NSTextField alloc] initWithFrame:NSMakeRect(0,-4,bw,h)];
     NSData *rtfMinVolString = [NSData dataWithBytes:minVolStr length:strlen(minVolStr)];
-    [minVolume setStringValue:[[NSAttributedString alloc] initWithRTF:rtfMinVolString documentAttributes:NULL]];
+    [minVolume setAttributedStringValue:[[[NSAttributedString alloc] initWithRTF:rtfMinVolString documentAttributes:NULL] autorelease]];
     [minVolume setDrawsBackground:NO];
     [minVolume setEditable:NO];
     [minVolume setBordered:NO];
-    [minVolume setAlignment:NSCenterTextAlignment];
+    [minVolume setAlignment:NSTextAlignmentCenter];
     [self addSubview:minVolume];
     
     // max volume
     maxVolume = [[NSTextField alloc] initWithFrame:NSMakeRect(w-1*bw,-4,bw,h)];
     NSData *rtfMaxVolString = [NSData dataWithBytes:maxVolStr length:strlen(maxVolStr)];
-    [maxVolume setStringValue:[[NSAttributedString alloc] initWithRTF:rtfMaxVolString documentAttributes:NULL]];
+    [maxVolume setAttributedStringValue:[[[NSAttributedString alloc] initWithRTF:rtfMaxVolString documentAttributes:NULL] autorelease]];
     [maxVolume setDrawsBackground:NO];
     [maxVolume setEditable:NO];
     [maxVolume setBordered:NO];
-    [maxVolume setAlignment:NSCenterTextAlignment];
+    [maxVolume setAlignment:NSTextAlignmentCenter];
     [self addSubview:maxVolume];
 
     // volume slider

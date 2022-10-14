@@ -33,4 +33,6 @@
     IBOutlet NSOutlineView *treeView;
 }
 
+-(id)initWithMemSpace:(int)space;
+
 @end

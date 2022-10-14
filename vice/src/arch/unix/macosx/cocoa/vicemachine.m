@@ -263,15 +263,7 @@ VICEMachine *theVICEMachine = nil;
 
 // ----- Machine Controller -----
 
--(void)setMachineController:(VICEMachineController *)controller
-{
-    machineController = controller;
-}
-
--(VICEMachineController *)getMachineController
-{
-    return machineController;
-}
+@synthesize machineController;
 
 // ----- Machine Notifier -----
 

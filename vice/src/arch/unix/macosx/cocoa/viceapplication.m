@@ -347,7 +347,7 @@ const float control_win_width = 200;
 
 - (VICEMachineController *)machineController
 {
-    return [machine getMachineController];
+    return [machine machineController];
 }
 
 + (VICEMachineController *)theMachineController
@@ -379,7 +379,7 @@ const float control_win_width = 200;
         return NSTerminateNow;
 
     // machine thread is not dead now so terminate it...
-    VICEMachineController *controller = [machine getMachineController];
+    VICEMachineController *controller = [machine machineController];
 
     // ask only if user query is enabled
     NSNumber *confirmOnExit = [controller getIntResource:@"ConfirmOnExit"];
@@ -443,8 +443,8 @@ const float control_win_width = 200;
         }
         return YES;
     } else {
-        return [[machine getMachineController] smartAttachImage:[NSString stringWithString:file]
-                                                    withProgNum:0 andRun:YES];
+        return [[machine machineController] smartAttachImage:[NSString stringWithString:file]
+                                                 withProgNum:0 andRun:YES];
     }
 }
 

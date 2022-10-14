@@ -77,7 +77,6 @@ char *uimon_get_in(char **ppchCommandLine, const char *prompt)
         ret = NULL;
     else {
         ret = lib_stralloc([lineInput cStringUsingEncoding:NSUTF8StringEncoding]);
-        [lineInput release];
     }
     return ret;
 }

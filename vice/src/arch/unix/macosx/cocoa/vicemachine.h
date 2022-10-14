@@ -70,6 +70,8 @@ struct video_canvas_s;
 // machine specific *ui.m sets its machine controller
 -(void)setMachineController:(VICEMachineController *)controller;
 
+@property (assign) VICEMachineController *machineController;
+
 // access the notifier
 -(VICEMachineNotifier *)machineNotifier;
 

@@ -51,7 +51,7 @@
 
 // ----- Controller Invocation -----
 /// access the controller of the machine
--(VICEMachineController *)getMachineController;
+-(VICEMachineController *)machineController;
 
 @end
 

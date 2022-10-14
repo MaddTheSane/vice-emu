@@ -391,7 +391,7 @@ static OSStatus	audio_render(void *inRefCon,
 static int audio_open(AudioStreamBasicDescription *in)
 {
     OSStatus err;
-    ComponentDescription desc;
+    AudioComponentDescription desc;
     AudioStreamBasicDescription out;
     UInt32 size;
 
@@ -402,7 +402,7 @@ static int audio_open(AudioStreamBasicDescription *in)
     desc.componentFlags = 0;
     desc.componentFlagsMask = 0;
     
-    Component comp = FindNextComponent(NULL, &desc);
+    AudioComponent comp = AudioComponentFindNext(NULL, &desc);
     if (comp == NULL) { 
       log_error(LOG_DEFAULT,
                 "sound (coreaudio_init): can't find next component");
@@ -410,7 +410,7 @@ static int audio_open(AudioStreamBasicDescription *in)
     }
     
     /* open audio component */
-    err = OpenAComponent(comp, &outputUnit);
+    err = AudioComponentInstanceNew(comp, &outputUnit);
     if (err) {
       log_error(LOG_DEFAULT,
                 "sound (coreaudio_init): error opening output unit");
@@ -473,7 +473,7 @@ static void audio_close(void)
     }
     
     /* Close component */
-    CloseComponent(outputUnit);
+    AudioComponentInstanceDispose(outputUnit);
 }
 
 static int audio_start(void)

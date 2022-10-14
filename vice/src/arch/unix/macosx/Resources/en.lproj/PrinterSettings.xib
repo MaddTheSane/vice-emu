@@ -127,10 +127,9 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="263">
-                                    <rect key="frame" x="15" y="61" width="49" height="17"/>
+                                    <rect key="frame" x="15" y="62" width="49" height="16"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="45" id="ZgB-Im-UcU"/>
-                                        <constraint firstAttribute="height" constant="17" id="ktB-h6-d58"/>
                                     </constraints>
                                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Driver" id="368">
                                         <font key="font" metaFont="system"/>

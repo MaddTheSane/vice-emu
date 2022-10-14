@@ -57,7 +57,7 @@
                         <tabViewItems>
                             <tabViewItem label="Colors" identifier="1" id="63">
                                 <view key="view" id="66">
-                                    <rect key="frame" x="10" y="33" width="476" height="115"/>
+                                    <rect key="frame" x="10" y="33" width="481" height="115"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="67">
@@ -93,7 +93,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="79">
-                                            <rect key="frame" x="163" y="91" width="150" height="20"/>
+                                            <rect key="frame" x="166" y="91" width="150" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="146" id="TcF-df-cw9"/>
                                             </constraints>
@@ -103,7 +103,7 @@
                                             </connections>
                                         </slider>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="81">
-                                            <rect key="frame" x="319" y="91" width="50" height="21"/>
+                                            <rect key="frame" x="322" y="91" width="50" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="rYR-2B-TnQ"/>
                                             </constraints>
@@ -117,7 +117,7 @@
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="83">
-                                            <rect key="frame" x="319" y="65" width="50" height="21"/>
+                                            <rect key="frame" x="322" y="65" width="50" height="21"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="181">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -128,14 +128,14 @@
                                             </connections>
                                         </textField>
                                         <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="84">
-                                            <rect key="frame" x="163" y="65" width="150" height="20"/>
+                                            <rect key="frame" x="166" y="65" width="150" height="20"/>
                                             <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="2000" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="182"/>
                                             <connections>
                                                 <action selector="slideContrast:" target="-2" id="154"/>
                                             </connections>
                                         </slider>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="87">
-                                            <rect key="frame" x="319" y="39" width="50" height="21"/>
+                                            <rect key="frame" x="322" y="39" width="50" height="21"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="183">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -146,14 +146,14 @@
                                             </connections>
                                         </textField>
                                         <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="88">
-                                            <rect key="frame" x="163" y="39" width="150" height="20"/>
+                                            <rect key="frame" x="166" y="39" width="150" height="20"/>
                                             <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="2000" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="184"/>
                                             <connections>
                                                 <action selector="slideBrightness:" target="-2" id="171"/>
                                             </connections>
                                         </slider>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="91">
-                                            <rect key="frame" x="319" y="13" width="50" height="21"/>
+                                            <rect key="frame" x="322" y="13" width="50" height="21"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="185">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -164,7 +164,7 @@
                                             </connections>
                                         </textField>
                                         <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="92">
-                                            <rect key="frame" x="163" y="13" width="150" height="20"/>
+                                            <rect key="frame" x="166" y="13" width="150" height="20"/>
                                             <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="4000" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="186"/>
                                             <connections>
                                                 <action selector="slideGamma:" target="-2" id="157"/>

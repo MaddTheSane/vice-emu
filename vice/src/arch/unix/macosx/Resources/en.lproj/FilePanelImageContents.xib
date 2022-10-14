@@ -21,9 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="270" height="280"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2">
+                <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2">
                     <rect key="frame" x="0.0" y="45" width="270" height="210"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <clipView key="contentView" id="kdg-T8-P41">
                         <rect key="frame" x="1" y="1" width="268" height="208"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,33 +74,52 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </tableHeaderView>
                 </scrollView>
-                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25">
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="25">
                     <rect key="frame" x="-3" y="255" width="276" height="17"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="cKC-VK-Ecp"/>
+                    </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="HEADER" id="26">
                         <font key="font" metaFont="system" size="8"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="27">
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="27">
                     <rect key="frame" x="0.0" y="20" width="273" height="17"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="FOOTER" id="28">
                         <font key="font" metaFont="system" size="8"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="31">
-                    <rect key="frame" x="18" y="7" width="81" height="18"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="31">
+                    <rect key="frame" x="18" y="7" width="83" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="ejV-qO-aeb"/>
+                    </constraints>
                     <buttonCell key="cell" type="check" title="Autostart" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="32">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                 </button>
             </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="00t-2Q-i1R"/>
+                <constraint firstItem="31" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="3OV-MZ-U0P"/>
+                <constraint firstItem="27" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="2" id="570-QK-6ev"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="31" secondAttribute="trailing" constant="20" symbolic="YES" id="FMq-ak-v2U"/>
+                <constraint firstAttribute="bottom" secondItem="31" secondAttribute="bottom" constant="8" id="ImV-c7-j5y"/>
+                <constraint firstItem="25" firstAttribute="top" secondItem="1" secondAttribute="top" constant="8" id="Mon-Pm-x4j"/>
+                <constraint firstAttribute="bottom" secondItem="27" secondAttribute="bottom" constant="20" symbolic="YES" id="OpK-nL-ypc"/>
+                <constraint firstItem="27" firstAttribute="top" secondItem="2" secondAttribute="bottom" constant="8" symbolic="YES" id="VcG-kI-3Q9"/>
+                <constraint firstItem="2" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Xfq-Fc-Jfw"/>
+                <constraint firstItem="25" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="-1" id="bSf-pE-3gO"/>
+                <constraint firstItem="25" firstAttribute="trailing" secondItem="27" secondAttribute="trailing" id="fAt-zJ-R9p"/>
+                <constraint firstItem="31" firstAttribute="top" secondItem="2" secondAttribute="bottom" constant="21" id="fBA-8g-2Dr"/>
+                <constraint firstItem="25" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="gso-PP-c1n"/>
+                <constraint firstItem="2" firstAttribute="top" secondItem="25" secondAttribute="bottom" id="mMm-Vu-nys"/>
+            </constraints>
             <point key="canvasLocation" x="14" y="142"/>
         </customView>
         <arrayController objectClassName="ImgContentsEntry" editable="NO" avoidsEmptySelection="NO" id="11" userLabel="ImageContentsController">

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -35,11 +35,11 @@
                     <box borderType="line" title="Printer Output Files and Commands" translatesAutoresizingMaskIntoConstraints="NO" id="10">
                         <rect key="frame" x="17" y="16" width="250" height="118"/>
                         <view key="contentView" id="GVZ-Ls-WxE">
-                            <rect key="frame" x="3" y="3" width="244" height="100"/>
+                            <rect key="frame" x="4" y="5" width="242" height="98"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="47">
-                                    <rect key="frame" x="15" y="69" width="45" height="16"/>
+                                    <rect key="frame" x="15" y="67" width="45" height="16"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="File #1" id="357">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -47,7 +47,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <textField verticalHuggingPriority="749" verticalCompressionResistancePriority="749" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="49">
-                                    <rect key="frame" x="65" y="66" width="161" height="22"/>
+                                    <rect key="frame" x="65" y="64" width="159" height="22"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" tag="1" drawsBackground="YES" id="358">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -58,7 +58,7 @@
                                     </connections>
                                 </textField>
                                 <textField verticalHuggingPriority="749" verticalCompressionResistancePriority="749" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="51">
-                                    <rect key="frame" x="65" y="38" width="161" height="22"/>
+                                    <rect key="frame" x="65" y="36" width="159" height="22"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="359">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -69,7 +69,7 @@
                                     </connections>
                                 </textField>
                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="52">
-                                    <rect key="frame" x="15" y="41" width="45" height="16"/>
+                                    <rect key="frame" x="15" y="39" width="45" height="16"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="File #2" id="360">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -77,7 +77,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <textField verticalHuggingPriority="749" verticalCompressionResistancePriority="749" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="55">
-                                    <rect key="frame" x="65" y="11" width="161" height="21"/>
+                                    <rect key="frame" x="65" y="9" width="159" height="21"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="361">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -88,7 +88,7 @@
                                     </connections>
                                 </textField>
                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="56">
-                                    <rect key="frame" x="15" y="14" width="45" height="16"/>
+                                    <rect key="frame" x="15" y="12" width="45" height="16"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="File #3" id="362">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -123,11 +123,11 @@
                     <box borderType="line" title="File Output Options" translatesAutoresizingMaskIntoConstraints="NO" id="245">
                         <rect key="frame" x="17" y="138" width="250" height="108"/>
                         <view key="contentView" id="m5y-vp-RKe">
-                            <rect key="frame" x="3" y="3" width="244" height="90"/>
+                            <rect key="frame" x="4" y="5" width="242" height="88"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="263">
-                                    <rect key="frame" x="15" y="62" width="49" height="16"/>
+                                    <rect key="frame" x="15" y="60" width="49" height="16"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="45" id="ZgB-Im-UcU"/>
                                     </constraints>
@@ -138,7 +138,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <popUpButton verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="262">
-                                    <rect key="frame" x="67" y="60" width="166" height="20"/>
+                                    <rect key="frame" x="67" y="59" width="164" height="19"/>
                                     <popUpButtonCell key="cell" type="push" title="ASCII" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" selectedItem="269" id="367">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="menu"/>
@@ -156,7 +156,7 @@
                                     </connections>
                                 </popUpButton>
                                 <popUpButton verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="261">
-                                    <rect key="frame" x="67" y="30" width="166" height="25"/>
+                                    <rect key="frame" x="67" y="29" width="164" height="25"/>
                                     <popUpButtonCell key="cell" type="push" title="Graphics" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" selectedItem="273" id="366">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="menu"/>
@@ -172,7 +172,7 @@
                                     </connections>
                                 </popUpButton>
                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="260">
-                                    <rect key="frame" x="15" y="37" width="49" height="16"/>
+                                    <rect key="frame" x="15" y="36" width="49" height="16"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Output" id="365">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -180,7 +180,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <popUpButton verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="259">
-                                    <rect key="frame" x="67" y="0.0" width="166" height="25"/>
+                                    <rect key="frame" x="67" y="-1" width="164" height="25"/>
                                     <popUpButtonCell key="cell" type="push" title="#3" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" selectedItem="279" id="364">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="menu"/>
@@ -197,7 +197,7 @@
                                     </connections>
                                 </popUpButton>
                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="258">
-                                    <rect key="frame" x="15" y="7" width="49" height="16"/>
+                                    <rect key="frame" x="15" y="6" width="49" height="16"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Device" id="363">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>

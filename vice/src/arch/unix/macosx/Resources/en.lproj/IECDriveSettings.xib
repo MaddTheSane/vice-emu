@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -54,9 +54,9 @@
                         </connections>
                     </segmentedControl>
                     <box verticalHuggingPriority="249" borderType="line" title="Disk Image" translatesAutoresizingMaskIntoConstraints="NO" id="440">
-                        <rect key="frame" x="17" y="281" width="289" height="88"/>
+                        <rect key="frame" x="17" y="279" width="289" height="90"/>
                         <view key="contentView" id="khc-eW-pXw">
-                            <rect key="frame" x="3" y="3" width="283" height="70"/>
+                            <rect key="frame" x="4" y="5" width="281" height="70"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <button tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="463">
@@ -70,7 +70,7 @@
                                     </connections>
                                 </button>
                                 <button tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="462">
-                                    <rect key="frame" x="200" y="6" width="69" height="25"/>
+                                    <rect key="frame" x="198" y="6" width="69" height="25"/>
                                     <buttonCell key="cell" type="squareTextured" title="Autostart" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="530">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -80,7 +80,7 @@
                                     </connections>
                                 </button>
                                 <button tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="461">
-                                    <rect key="frame" x="200" y="33" width="69" height="25"/>
+                                    <rect key="frame" x="198" y="33" width="69" height="25"/>
                                     <buttonCell key="cell" type="squareTextured" title="Attach" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="529">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -90,7 +90,7 @@
                                     </connections>
                                 </button>
                                 <textField verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="460">
-                                    <rect key="frame" x="20" y="34" width="173" height="21"/>
+                                    <rect key="frame" x="20" y="34" width="171" height="21"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="528">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -116,13 +116,13 @@
                         </view>
                     </box>
                     <box verticalHuggingPriority="248" borderType="line" title="File System Directory" translatesAutoresizingMaskIntoConstraints="NO" id="441">
-                        <rect key="frame" x="17" y="137" width="289" height="140"/>
+                        <rect key="frame" x="17" y="137" width="289" height="138"/>
                         <view key="contentView" id="WlV-Cv-M2P">
-                            <rect key="frame" x="3" y="3" width="283" height="122"/>
+                            <rect key="frame" x="4" y="5" width="281" height="118"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="454">
-                                    <rect key="frame" x="20" y="93" width="192" height="21"/>
+                                    <rect key="frame" x="20" y="89" width="190" height="21"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="536">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -130,7 +130,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <button tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="453">
-                                    <rect key="frame" x="18" y="69" width="116" height="18"/>
+                                    <rect key="frame" x="18" y="65" width="116" height="18"/>
                                     <buttonCell key="cell" type="check" title="Read P00 Files" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="535">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -140,7 +140,7 @@
                                     </connections>
                                 </button>
                                 <button tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="452">
-                                    <rect key="frame" x="18" y="49" width="118" height="18"/>
+                                    <rect key="frame" x="18" y="45" width="118" height="18"/>
                                     <buttonCell key="cell" type="check" title="Write P00 Files" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="534">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -150,7 +150,7 @@
                                     </connections>
                                 </button>
                                 <button tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="451">
-                                    <rect key="frame" x="18" y="29" width="143" height="18"/>
+                                    <rect key="frame" x="18" y="25" width="143" height="18"/>
                                     <buttonCell key="cell" type="check" title="Hide non-P00 Files" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="533">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -160,7 +160,7 @@
                                     </connections>
                                 </button>
                                 <button horizontalHuggingPriority="750" tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="450">
-                                    <rect key="frame" x="219" y="92" width="51" height="25"/>
+                                    <rect key="frame" x="217" y="88" width="51" height="25"/>
                                     <buttonCell key="cell" type="squareTextured" title="Mount" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="532">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -202,11 +202,11 @@
                     <box borderType="line" title="Real Device" translatesAutoresizingMaskIntoConstraints="NO" id="470">
                         <rect key="frame" x="17" y="40" width="289" height="93"/>
                         <view key="contentView" id="unh-SR-Lya">
-                            <rect key="frame" x="3" y="3" width="283" height="75"/>
+                            <rect key="frame" x="4" y="5" width="281" height="73"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <button tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="471">
-                                    <rect key="frame" x="18" y="39" width="146" height="25"/>
+                                    <rect key="frame" x="18" y="37" width="146" height="25"/>
                                     <buttonCell key="cell" type="squareTextured" title="Use OpenCBM Device" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="538">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -216,7 +216,7 @@
                                     </connections>
                                 </button>
                                 <button tag="3" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="473">
-                                    <rect key="frame" x="18" y="8" width="146" height="25"/>
+                                    <rect key="frame" x="18" y="6" width="146" height="25"/>
                                     <buttonCell key="cell" type="squareTextured" title="Use Raw Floppy" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="539">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>

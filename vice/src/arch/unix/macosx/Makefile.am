@@ -27,7 +27,7 @@ libarchmacosx_a_SOURCES = \
 	joy.c \
 	joy.h \
 	mididrv.c \
-	platform_macosx.c \
+	platform_macosx.m \
 	platform_macosx.h \
 	vsyncarch.c
 
@@ -37,4 +37,5 @@ EXTRA_DIST = \
 	make-bindist.sh \
 	x11-launcher.sh \
 	vice-launcher.sh \
+	VICE-Info.plist \
 	VICE.xcodeproj/project.pbxproj

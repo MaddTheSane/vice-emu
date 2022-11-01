@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +19,9 @@
                 <outlet property="idleBox" destination="455" id="536"/>
                 <outlet property="idleMethod" destination="480" id="498"/>
                 <outlet property="parallelCable" destination="453" id="505"/>
-                <outlet property="trackHandling" destination="475" id="499"/>
+                <outlet property="trackHandlingAlways" destination="EH7-Ua-z65" id="OFZ-kd-iz3"/>
+                <outlet property="trackHandlingAsk" destination="nNZ-8B-53J" id="AQM-I9-YVG"/>
+                <outlet property="trackHandlingNever" destination="S7G-Hm-iwe" id="f2H-ga-dex"/>
                 <outlet property="window" destination="5" id="172"/>
             </connections>
         </customObject>
@@ -52,7 +54,7 @@
                         </connections>
                     </segmentedControl>
                     <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="453">
-                        <rect key="frame" x="119" y="18" width="109" height="18"/>
+                        <rect key="frame" x="117" y="10" width="109" height="18"/>
                         <buttonCell key="cell" type="check" title="Parallel Cable" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="526">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -62,9 +64,9 @@
                         </connections>
                     </button>
                     <box title="Drive Expansion" translatesAutoresizingMaskIntoConstraints="NO" id="454">
-                        <rect key="frame" x="118" y="38" width="188" height="134"/>
+                        <rect key="frame" x="116" y="30" width="190" height="136"/>
                         <view key="contentView" id="7xu-gc-NHE">
-                            <rect key="frame" x="3" y="3" width="182" height="116"/>
+                            <rect key="frame" x="4" y="5" width="182" height="116"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="489">
@@ -138,100 +140,65 @@
                             </constraints>
                         </view>
                     </box>
-                    <box title="Idle Method" translatesAutoresizingMaskIntoConstraints="NO" id="455">
-                        <rect key="frame" x="118" y="176" width="188" height="94"/>
-                        <view key="contentView" id="K0X-3F-Abx">
-                            <rect key="frame" x="3" y="3" width="182" height="76"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="480">
-                                    <rect key="frame" x="14" y="9" width="93" height="58"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="cellSize" width="93" height="18"/>
-                                    <size key="intercellSpacing" width="4" height="2"/>
-                                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="leading" alignment="left" inset="2" id="532">
-                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                        <font key="font" metaFont="system"/>
-                                    </buttonCell>
-                                    <cells>
-                                        <column>
-                                            <buttonCell type="radio" title="None" imagePosition="leading" alignment="left" inset="2" id="481">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <buttonCell type="radio" title="Trap idle" imagePosition="leading" alignment="left" state="on" tag="1" inset="2" id="482">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <buttonCell type="radio" title="Skip Cycles" imagePosition="leading" alignment="left" tag="2" inset="2" id="483">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </column>
-                                    </cells>
-                                    <connections>
-                                        <action selector="changedIdleMethod:" target="-2" id="518"/>
-                                    </connections>
-                                </matrix>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="480" firstAttribute="top" secondItem="K0X-3F-Abx" secondAttribute="top" constant="9" id="HTh-jk-Fk4"/>
-                                <constraint firstItem="480" firstAttribute="leading" secondItem="K0X-3F-Abx" secondAttribute="leading" constant="14" id="YB2-ng-aUX"/>
-                                <constraint firstItem="480" firstAttribute="centerY" secondItem="K0X-3F-Abx" secondAttribute="centerY" id="laK-L7-F1r"/>
-                            </constraints>
-                        </view>
-                    </box>
                     <box title="40 Track Handling" translatesAutoresizingMaskIntoConstraints="NO" id="456">
-                        <rect key="frame" x="118" y="274" width="188" height="94"/>
+                        <rect key="frame" x="116" y="270" width="190" height="98"/>
                         <view key="contentView" id="Jdk-2H-tgl">
-                            <rect key="frame" x="3" y="3" width="182" height="76"/>
+                            <rect key="frame" x="4" y="5" width="182" height="78"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="475">
-                                    <rect key="frame" x="14" y="9" width="131" height="58"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="cellSize" width="131" height="18"/>
-                                    <size key="intercellSpacing" width="4" height="2"/>
-                                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="leading" alignment="left" inset="2" id="533">
+                                <button tag="-1" translatesAutoresizingMaskIntoConstraints="NO" id="S7G-Hm-iwe">
+                                    <rect key="frame" x="12" y="52" width="107" height="18"/>
+                                    <buttonCell key="cell" type="radio" title="Never extend" imagePosition="leading" alignment="left" state="on" inset="2" id="477">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
-                                    <cells>
-                                        <column>
-                                            <buttonCell type="radio" title="Never extend" imagePosition="leading" alignment="left" state="on" inset="2" id="477">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <buttonCell type="radio" title="Ask on extend" imagePosition="leading" alignment="left" tag="1" inset="2" id="476">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <buttonCell type="radio" title="Extend on access" imagePosition="leading" alignment="left" tag="2" inset="2" id="478">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </column>
-                                    </cells>
                                     <connections>
-                                        <action selector="changedTrackHandling:" target="-2" id="510"/>
+                                        <action selector="changedTrackHandling:" target="-2" id="3WT-DW-yHq"/>
                                     </connections>
-                                </matrix>
+                                </button>
+                                <button tag="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nNZ-8B-53J">
+                                    <rect key="frame" x="12" y="30" width="112" height="18"/>
+                                    <buttonCell key="cell" type="radio" title="Ask on extend" imagePosition="leading" alignment="left" tag="1" inset="2" id="476">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="changedTrackHandling:" target="-2" id="GK4-gN-UX2"/>
+                                    </connections>
+                                </button>
+                                <button tag="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EH7-Ua-z65">
+                                    <rect key="frame" x="12" y="8" width="133" height="18"/>
+                                    <buttonCell key="cell" type="radio" title="Extend on access" imagePosition="leading" alignment="left" tag="2" inset="2" id="478">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="changedTrackHandling:" target="-2" id="2mQ-wQ-Yf5"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="475" firstAttribute="leading" secondItem="Jdk-2H-tgl" secondAttribute="leading" constant="14" id="Cvq-pZ-3B6"/>
-                                <constraint firstItem="475" firstAttribute="centerY" secondItem="Jdk-2H-tgl" secondAttribute="centerY" id="bfn-rG-Zj0"/>
-                                <constraint firstItem="475" firstAttribute="top" secondItem="Jdk-2H-tgl" secondAttribute="top" constant="9" id="xxk-hm-Ep3"/>
+                                <constraint firstAttribute="bottom" secondItem="EH7-Ua-z65" secondAttribute="bottom" constant="9" id="1oD-HX-dcS"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nNZ-8B-53J" secondAttribute="trailing" constant="20" symbolic="YES" id="B75-pw-Z3N"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S7G-Hm-iwe" secondAttribute="trailing" constant="20" symbolic="YES" id="BbE-oy-6ih"/>
+                                <constraint firstItem="S7G-Hm-iwe" firstAttribute="leading" secondItem="Jdk-2H-tgl" secondAttribute="leading" constant="14" id="LiA-7z-CtB"/>
+                                <constraint firstItem="EH7-Ua-z65" firstAttribute="leading" secondItem="S7G-Hm-iwe" secondAttribute="leading" id="M25-bI-qCl"/>
+                                <constraint firstItem="S7G-Hm-iwe" firstAttribute="top" secondItem="Jdk-2H-tgl" secondAttribute="top" constant="9" id="QDO-7F-bw1"/>
+                                <constraint firstItem="EH7-Ua-z65" firstAttribute="top" secondItem="nNZ-8B-53J" secondAttribute="bottom" constant="8" symbolic="YES" id="WZM-h9-fLa"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EH7-Ua-z65" secondAttribute="trailing" constant="20" symbolic="YES" id="XsQ-ZQ-2aC"/>
+                                <constraint firstItem="nNZ-8B-53J" firstAttribute="top" secondItem="S7G-Hm-iwe" secondAttribute="bottom" constant="8" symbolic="YES" id="fcR-15-LiJ"/>
+                                <constraint firstItem="nNZ-8B-53J" firstAttribute="leading" secondItem="S7G-Hm-iwe" secondAttribute="leading" id="wsD-YF-Eok"/>
                             </constraints>
                         </view>
                     </box>
                     <box title="Drive Type" translatesAutoresizingMaskIntoConstraints="NO" id="457">
-                        <rect key="frame" x="17" y="34" width="99" height="334"/>
+                        <rect key="frame" x="17" y="34" width="97" height="334"/>
                         <view key="contentView" id="aBv-MA-7go">
-                            <rect key="frame" x="3" y="3" width="93" height="316"/>
+                            <rect key="frame" x="4" y="5" width="89" height="314"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="458">
-                                    <rect key="frame" x="14" y="9" width="70" height="298"/>
+                                    <rect key="frame" x="14" y="8" width="70" height="298"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     <size key="cellSize" width="70" height="18"/>
                                     <size key="intercellSpacing" width="4" height="2"/>
@@ -314,6 +281,49 @@
                             </constraints>
                         </view>
                     </box>
+                    <box title="Idle Method" translatesAutoresizingMaskIntoConstraints="NO" id="455">
+                        <rect key="frame" x="116" y="170" width="190" height="96"/>
+                        <view key="contentView" id="K0X-3F-Abx">
+                            <rect key="frame" x="4" y="5" width="182" height="76"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="480">
+                                    <rect key="frame" x="14" y="9" width="93" height="58"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="cellSize" width="93" height="18"/>
+                                    <size key="intercellSpacing" width="4" height="2"/>
+                                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="leading" alignment="left" inset="2" id="532">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <cells>
+                                        <column>
+                                            <buttonCell type="radio" title="None" imagePosition="leading" alignment="left" inset="2" id="481">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <buttonCell type="radio" title="Trap idle" imagePosition="leading" alignment="left" state="on" tag="1" inset="2" id="482">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <buttonCell type="radio" title="Skip Cycles" imagePosition="leading" alignment="left" tag="2" inset="2" id="483">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </column>
+                                    </cells>
+                                    <connections>
+                                        <action selector="changedIdleMethod:" target="-2" id="518"/>
+                                    </connections>
+                                </matrix>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="480" firstAttribute="top" secondItem="K0X-3F-Abx" secondAttribute="top" constant="9" id="HTh-jk-Fk4"/>
+                                <constraint firstItem="480" firstAttribute="leading" secondItem="K0X-3F-Abx" secondAttribute="leading" constant="14" id="YB2-ng-aUX"/>
+                                <constraint firstItem="480" firstAttribute="centerY" secondItem="K0X-3F-Abx" secondAttribute="centerY" id="laK-L7-F1r"/>
+                            </constraints>
+                        </view>
+                    </box>
                 </subviews>
                 <constraints>
                     <constraint firstItem="457" firstAttribute="top" secondItem="451" secondAttribute="bottom" constant="6" id="BK6-Iq-L0Z"/>
@@ -337,7 +347,7 @@
                     <constraint firstItem="457" firstAttribute="top" secondItem="456" secondAttribute="top" id="z9O-Kk-OtX"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="14" y="137"/>
+            <point key="canvasLocation" x="13.5" y="137"/>
         </window>
     </objects>
 </document>

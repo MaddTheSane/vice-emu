@@ -30,7 +30,8 @@
 #include <string.h>
 #include <sys/types.h>
 #include <sys/sysctl.h>
-#include "CoreServices/CoreServices.h"
+#include <CoreServices/CoreServices.h>
+#include <AppKit/AppKit.h>
 #include "platform_macosx.h"
 
 #define MAX_OS_CPU_STR 64
@@ -44,6 +45,15 @@ static char os_version_str[MAX_OS_VERSION_STR];
 */
 static void get_os_version(unsigned *major, unsigned *minor, unsigned *bugFix)
 {
+    if (@available(macOS 10.10, *)) {
+        @autoreleasepool {
+            NSOperatingSystemVersion osSystem = [NSProcessInfo.processInfo operatingSystemVersion];
+            if (major) *major = (unsigned)osSystem.majorVersion;
+            if (minor) *minor = (unsigned)osSystem.minorVersion;
+            if (bugFix) *bugFix = (unsigned)osSystem.patchVersion;
+            return;
+        }
+    }
     OSErr err;
     SInt32 systemVersion, versionMajor, versionMinor, versionBugFix;
     if ((err = Gestalt(gestaltSystemVersion, &systemVersion)) != noErr) goto fail;

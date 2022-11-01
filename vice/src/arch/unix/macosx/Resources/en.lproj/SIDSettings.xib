@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -32,11 +32,11 @@
                     <box autoresizesSubviews="NO" borderType="line" title="General" translatesAutoresizingMaskIntoConstraints="NO" id="86">
                         <rect key="frame" x="17" y="108" width="374" height="116"/>
                         <view key="contentView" id="FEZ-Jt-0cq">
-                            <rect key="frame" x="3" y="3" width="368" height="98"/>
+                            <rect key="frame" x="4" y="5" width="366" height="96"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField verticalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="87">
-                                    <rect key="frame" x="15" y="68" width="111" height="18"/>
+                                    <rect key="frame" x="15" y="66" width="111" height="18"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SID Engine/Model" id="97">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -44,7 +44,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <popUpButton verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="88">
-                                    <rect key="frame" x="155" y="63" width="202" height="25"/>
+                                    <rect key="frame" x="153" y="61" width="202" height="25"/>
                                     <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" id="89">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="menu"/>
@@ -55,7 +55,7 @@
                                     </connections>
                                 </popUpButton>
                                 <popUpButton verticalHuggingPriority="249" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="103">
-                                    <rect key="frame" x="155" y="30" width="106" height="29"/>
+                                    <rect key="frame" x="153" y="28" width="106" height="29"/>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="g22-R4-WAc"/>
                                     </constraints>
@@ -69,7 +69,7 @@
                                     </connections>
                                 </popUpButton>
                                 <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99">
-                                    <rect key="frame" x="16" y="37" width="91" height="18"/>
+                                    <rect key="frame" x="16" y="35" width="89" height="18"/>
                                     <buttonCell key="cell" type="check" title="Stereo SID" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="100">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -79,7 +79,7 @@
                                     </connections>
                                 </button>
                                 <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="101">
-                                    <rect key="frame" x="16" y="8" width="91" height="18"/>
+                                    <rect key="frame" x="16" y="6" width="89" height="18"/>
                                     <buttonCell key="cell" type="check" title="SID Filters" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="102">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -112,11 +112,11 @@
                     <box autoresizesSubviews="NO" borderType="line" title="reSID / reSID-fp" translatesAutoresizingMaskIntoConstraints="NO" id="113">
                         <rect key="frame" x="17" y="16" width="374" height="88"/>
                         <view key="contentView" id="U1Q-Q0-lUn">
-                            <rect key="frame" x="3" y="3" width="368" height="70"/>
+                            <rect key="frame" x="4" y="5" width="366" height="68"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="114">
-                                    <rect key="frame" x="15" y="42" width="99" height="16"/>
+                                    <rect key="frame" x="15" y="40" width="99" height="16"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sample Method" id="124">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -124,7 +124,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="128">
-                                    <rect key="frame" x="15" y="12" width="119" height="16"/>
+                                    <rect key="frame" x="15" y="10" width="119" height="16"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Passband (0-90%)" id="129">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -132,7 +132,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <popUpButton verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="115">
-                                    <rect key="frame" x="224" y="35" width="133" height="25"/>
+                                    <rect key="frame" x="222" y="33" width="133" height="25"/>
                                     <popUpButtonCell key="cell" type="push" title="fast resampling" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="3" inset="2" selectedItem="120" id="116">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="menu"/>
@@ -150,14 +150,14 @@
                                     </connections>
                                 </popUpButton>
                                 <slider verticalHuggingPriority="750" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="130">
-                                    <rect key="frame" x="165" y="4" width="151" height="28"/>
+                                    <rect key="frame" x="165" y="2" width="149" height="28"/>
                                     <sliderCell key="cell" state="on" alignment="left" maxValue="90" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="131"/>
                                     <connections>
                                         <action selector="slideResidPasspand:" target="-2" id="140"/>
                                     </connections>
                                 </slider>
                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="134">
-                                    <rect key="frame" x="322" y="9" width="32" height="21"/>
+                                    <rect key="frame" x="320" y="7" width="32" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="32" id="0jL-9J-xsT"/>
                                     </constraints>

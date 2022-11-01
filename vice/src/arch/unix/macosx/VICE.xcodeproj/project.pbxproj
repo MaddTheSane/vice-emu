@@ -10,6 +10,7 @@
 		05204E3F13D2AC73008F2D7E /* VideoSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05204E3D13D2AC73008F2D7E /* VideoSettings.xib */; };
 		05204E4313D2ACE2008F2D7E /* videosettingswindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 05204E4213D2ACE2008F2D7E /* videosettingswindowcontroller.m */; };
 		05204E4C13D2BA42008F2D7E /* ResourceTree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05204E4A13D2BA42008F2D7E /* ResourceTree.plist */; };
+		55101B2229110152003CED21 /* x64.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654BB28F6602000D11E28 /* x64.icns */; };
 		55467AA428F75D99007F3693 /* fsdevice-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F7F28F75D8C007F3693 /* fsdevice-resources.c */; };
 		55467AA628F75D99007F3693 /* fsdevice.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F8228F75D8C007F3693 /* fsdevice.c */; };
 		55467AA828F75D99007F3693 /* fsdevice-read.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F8528F75D8C007F3693 /* fsdevice-read.c */; };
@@ -414,7 +415,7 @@
 		554682CA28F76453007F3693 /* joy-hidutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C028F76453007F3693 /* joy-hidutil.c */; };
 		554682CB28F76453007F3693 /* mididrv.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C228F76453007F3693 /* mididrv.c */; };
 		554682CC28F76453007F3693 /* vsyncarch.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C328F76453007F3693 /* vsyncarch.c */; };
-		554682CD28F76453007F3693 /* platform_macosx.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C428F76453007F3693 /* platform_macosx.c */; };
+		554682CD28F76453007F3693 /* platform_macosx.m in Sources */ = {isa = PBXBuildFile; fileRef = 554682C428F76453007F3693 /* platform_macosx.m */; };
 		554682CF28F76453007F3693 /* joy-hid.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C728F76453007F3693 /* joy-hid.c */; };
 		554682F228F766E5007F3693 /* rawnetarch.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682D228F766E4007F3693 /* rawnetarch.c */; };
 		554682F328F766E5007F3693 /* vsyncarch.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682D428F766E4007F3693 /* vsyncarch.c */; };
@@ -468,17 +469,10 @@
 		5546835428F92D9B007F3693 /* joy.c in Sources */ = {isa = PBXBuildFile; fileRef = 554682C628F76453007F3693 /* joy.c */; };
 		55C654C928F6602000D11E28 /* tape.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654AD28F6601F00D11E28 /* tape.icns */; };
 		55C654CA28F6602000D11E28 /* VICE.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654AE28F6601F00D11E28 /* VICE.icns */; };
-		55C654CB28F6602000D11E28 /* xplus4.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654AF28F6601F00D11E28 /* xplus4.icns */; };
-		55C654CD28F6602000D11E28 /* x64sc.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654B128F6601F00D11E28 /* x64sc.icns */; };
-		55C654CE28F6602000D11E28 /* x65.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654B228F6601F00D11E28 /* x65.icns */; };
-		55C654D528F6602000D11E28 /* x128.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654B928F6602000D11E28 /* x128.icns */; };
-		55C654D728F6602000D11E28 /* x64.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654BB28F6602000D11E28 /* x64.icns */; };
 		55C654D828F6602000D11E28 /* VICEFile.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654BC28F6602000D11E28 /* VICEFile.icns */; };
-		55C654DA28F6602000D11E28 /* x64dtv.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654BE28F6602000D11E28 /* x64dtv.icns */; };
 		55C654DB28F6602000D11E28 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 55C654BF28F6602000D11E28 /* Credits.html */; };
 		55C654DC28F6602000D11E28 /* cartridge.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654C028F6602000D11E28 /* cartridge.icns */; };
 		55C654DD28F6602000D11E28 /* floppy525.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654C128F6602000D11E28 /* floppy525.icns */; };
-		55C654DE28F6602000D11E28 /* xcbm2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654C228F6602000D11E28 /* xcbm2.icns */; };
 		55C6551028F66E9300D11E28 /* FilePanelImageContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654EF28F66E9300D11E28 /* FilePanelImageContents.xib */; };
 		55C6551228F66E9300D11E28 /* MemoryWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F328F66E9300D11E28 /* MemoryWindow.xib */; };
 		55C6551328F66E9300D11E28 /* RegisterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C654F528F66E9300D11E28 /* RegisterWindow.xib */; };
@@ -562,6 +556,7 @@
 		05204E4213D2ACE2008F2D7E /* videosettingswindowcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videosettingswindowcontroller.m; sourceTree = "<group>"; };
 		05204E4813D2B56D008F2D7E /* videoparam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoparam.h; sourceTree = "<group>"; };
 		05204E4B13D2BA42008F2D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/ResourceTree.plist; sourceTree = "<group>"; };
+		55101B2329110930003CED21 /* VICE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VICE-Info.plist"; sourceTree = "<group>"; };
 		55466F1028F75D8B007F3693 /* crtc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crtc.c; sourceTree = "<group>"; };
 		55466F1228F75D8B007F3693 /* crtc-draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "crtc-draw.h"; sourceTree = "<group>"; };
 		55466F1428F75D8B007F3693 /* crtc-color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "crtc-color.h"; sourceTree = "<group>"; };
@@ -1638,7 +1633,7 @@
 		554682C128F76453007F3693 /* joy-hidlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "joy-hidlib.h"; sourceTree = "<group>"; };
 		554682C228F76453007F3693 /* mididrv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mididrv.c; sourceTree = "<group>"; };
 		554682C328F76453007F3693 /* vsyncarch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vsyncarch.c; sourceTree = "<group>"; };
-		554682C428F76453007F3693 /* platform_macosx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platform_macosx.c; sourceTree = "<group>"; };
+		554682C428F76453007F3693 /* platform_macosx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = platform_macosx.m; sourceTree = "<group>"; };
 		554682C528F76453007F3693 /* platform_macosx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform_macosx.h; sourceTree = "<group>"; };
 		554682C628F76453007F3693 /* joy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = joy.c; sourceTree = "<group>"; };
 		554682C728F76453007F3693 /* joy-hid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "joy-hid.c"; sourceTree = "<group>"; };
@@ -3308,6 +3303,7 @@
 		554682BD28F763FF007F3693 /* macosx */ = {
 			isa = PBXGroup;
 			children = (
+				55101B2329110930003CED21 /* VICE-Info.plist */,
 				554682C728F76453007F3693 /* joy-hid.c */,
 				554682BF28F76453007F3693 /* joy-hid.h */,
 				554682C128F76453007F3693 /* joy-hidlib.h */,
@@ -3316,8 +3312,8 @@
 				554682C628F76453007F3693 /* joy.c */,
 				554682C828F76453007F3693 /* joy.h */,
 				554682C228F76453007F3693 /* mididrv.c */,
-				554682C428F76453007F3693 /* platform_macosx.c */,
 				554682C528F76453007F3693 /* platform_macosx.h */,
+				554682C428F76453007F3693 /* platform_macosx.m */,
 				554682C328F76453007F3693 /* vsyncarch.c */,
 			);
 			path = macosx;
@@ -3625,17 +3621,11 @@
 				83E499D50DE4CA54001DE90F /* x64.xib in Resources */,
 				83E499D60DE4CA54001DE90F /* JoystickSettings.xib in Resources */,
 				83E49A880DE6B6AA001DE90F /* RecordMedia.xib in Resources */,
-				55C654DE28F6602000D11E28 /* xcbm2.icns in Resources */,
-				55C654DA28F6602000D11E28 /* x64dtv.icns in Resources */,
-				55C654D728F6602000D11E28 /* x64.icns in Resources */,
 				55C654C928F6602000D11E28 /* tape.icns in Resources */,
-				55C654CD28F6602000D11E28 /* x64sc.icns in Resources */,
 				55C6551828F66E9300D11E28 /* RecordHistory.xib in Resources */,
-				55C654CB28F6602000D11E28 /* xplus4.icns in Resources */,
 				55C6551F28F66E9300D11E28 /* IOTree.plist in Resources */,
 				55C6551028F66E9300D11E28 /* FilePanelImageContents.xib in Resources */,
 				55C6551328F66E9300D11E28 /* RegisterWindow.xib in Resources */,
-				55C654D528F6602000D11E28 /* x128.icns in Resources */,
 				55C654DB28F6602000D11E28 /* Credits.html in Resources */,
 				55C6551428F66E9300D11E28 /* DisassemblyWindow.xib in Resources */,
 				55C6551E28F66E9300D11E28 /* SIDSettings.xib in Resources */,
@@ -3643,9 +3633,9 @@
 				55C6551528F66E9300D11E28 /* IOTreeWindow.xib in Resources */,
 				55C654CA28F6602000D11E28 /* VICE.icns in Resources */,
 				55C6551D28F66E9300D11E28 /* NetplayControl.xib in Resources */,
-				55C654CE28F6602000D11E28 /* x65.icns in Resources */,
 				55C654DC28F6602000D11E28 /* cartridge.icns in Resources */,
 				55C654D828F6602000D11E28 /* VICEFile.icns in Resources */,
+				55101B2229110152003CED21 /* x64.icns in Resources */,
 				55C6551228F66E9300D11E28 /* MemoryWindow.xib in Resources */,
 				55467FF028F75D9B007F3693 /* samp2src.pl in Resources */,
 				05204E3F13D2AC73008F2D7E /* VideoSettings.xib in Resources */,
@@ -3891,7 +3881,7 @@
 				55467F0628F75D9A007F3693 /* c64tpi.c in Sources */,
 				55467F7728F75D9A007F3693 /* c64carthooks.c in Sources */,
 				55467EB828F75D9A007F3693 /* mach5.c in Sources */,
-				554682CD28F76453007F3693 /* platform_macosx.c in Sources */,
+				554682CD28F76453007F3693 /* platform_macosx.m in Sources */,
 				83E49A570DE4CCA9001DE90F /* cbm2ui.m in Sources */,
 				55467FB828F75D9B007F3693 /* c64export.c in Sources */,
 				55467ACE28F75D99007F3693 /* tcbmrom.c in Sources */,
@@ -4490,6 +4480,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../",
 					"$(SRCROOT)/../../../c64",
@@ -4497,14 +4488,17 @@
 					"$(SRCROOT)/../../../drive",
 				);
 				INFOPLIST_FILE = "VICE-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 2.5;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.viceteam.x64;
 				PRODUCT_NAME = VICE;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -4521,6 +4515,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
+				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../",
 					"$(SRCROOT)/../../../c64",
@@ -4528,14 +4523,17 @@
 					"$(SRCROOT)/../../../drive",
 				);
 				INFOPLIST_FILE = "VICE-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 2.5;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.viceteam.x64;
 				PRODUCT_NAME = VICE;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;

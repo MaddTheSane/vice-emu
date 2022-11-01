@@ -70,12 +70,14 @@
 /* detrmine compile-time CPU */ 
 #ifdef __POWERPC__
 #   define PLATFORM_CPU "ppc"
-#else
-#   ifdef __x86_64
-#       define PLATFORM_CPU "x86_64"
-#   else
-#       define PLATFORM_CPU "i386"
-#   endif
+#elif defined(__POWERPC64__)
+#   define PLATFORM_CPU "ppc64"
+#elif defined(__x86_64__)
+#   define PLATFORM_CPU "x86_64"
+#elif defined(__i386__)
+#   define PLATFORM_CPU "i386"
+#elif defined(__aarch64__)
+#   define PLATFORM_CPU "Arm64"
 #endif
 
 #define PLATFORM_GET_RUNTIME_OS_DECLARED

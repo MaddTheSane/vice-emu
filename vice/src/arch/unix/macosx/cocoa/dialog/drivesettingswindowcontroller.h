@@ -36,7 +36,9 @@
     IBOutlet NSBox *expansionBox;
 
     IBOutlet NSMatrix *driveType;
-    IBOutlet NSMatrix *trackHandling;
+    __unsafe_unretained NSButton *trackHandlingNever;
+    __unsafe_unretained NSButton *trackHandlingAsk;
+    __unsafe_unretained NSButton *trackHandlingAlways;
     IBOutlet NSMatrix *idleMethod;
     IBOutlet NSButton *parallelCable;
     IBOutlet NSButton *driveExpansion_2000;
@@ -55,6 +57,10 @@
     BOOL hasExpansion;
     BOOL hasIdle;
 }
+
+@property (assign) IBOutlet NSButton *trackHandlingNever;
+@property (assign) IBOutlet NSButton *trackHandlingAsk;
+@property (assign) IBOutlet NSButton *trackHandlingAlways;
 
 -(void)updateResources:(NSNotification *)notification;
 

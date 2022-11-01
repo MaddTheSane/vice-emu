@@ -33,6 +33,9 @@
 #import "vicenotifications.h"
 
 @implementation DriveSettingsWindowController
+@synthesize trackHandlingNever;
+@synthesize trackHandlingAsk;
+@synthesize trackHandlingAlways;
 
 -(id)init
 {
@@ -136,9 +139,32 @@
 
         // extend track policy
         int canExtendPolicy = drive_check_extend_policy(driveTypeVal);
-        [trackHandling setEnabled:canExtendPolicy];
+        trackHandlingNever.enabled = canExtendPolicy;
+        trackHandlingAsk.enabled = canExtendPolicy;
+        trackHandlingAlways.enabled = canExtendPolicy;
         int extendPolicyVal = [self getIntResource:@"Drive%dExtendImagePolicy" withNumber:driveNum];
-        [trackHandling selectCellAtRow:extendPolicyVal column:0];
+        switch (extendPolicyVal) {
+            case 0:
+                trackHandlingNever.state = NSControlStateValueOn;
+                trackHandlingAsk.state = NSControlStateValueOff;
+                trackHandlingAlways.state = NSControlStateValueOff;
+                break;
+                
+            case 1:
+                trackHandlingNever.state = NSControlStateValueOff;
+                trackHandlingAsk.state = NSControlStateValueOn;
+                trackHandlingAlways.state = NSControlStateValueOff;
+                break;
+                
+            case 2:
+                trackHandlingNever.state = NSControlStateValueOff;
+                trackHandlingAsk.state = NSControlStateValueOff;
+                trackHandlingAlways.state = NSControlStateValueOn;
+                break;
+                
+            default:
+                break;
+        }
 
         // idle method
         if(hasIdle) {
@@ -188,7 +214,9 @@
     } else {
         // disable all controls
         [driveType setEnabled:false];
-        [trackHandling setEnabled:false];
+        trackHandlingNever.enabled = NO;
+        trackHandlingAsk.enabled = NO;
+        trackHandlingAlways.enabled = NO;
         if(hasIdle) {
             [idleMethod setEnabled:false];
         }
@@ -247,8 +275,7 @@
 -(void)changedTrackHandling:(id)sender
 {
     int driveNum = (int)([driveChooser selectedSegment] + driveOffset);
-    id cell = [sender selectedCell];
-    int type = (int)[cell tag];
+    int type = (int)[(NSButton*)sender tag];
     
     [self setIntResource:@"Drive%dExtendImagePolicy" 
               withNumber:driveNum 

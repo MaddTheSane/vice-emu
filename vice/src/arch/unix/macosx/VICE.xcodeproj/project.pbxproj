@@ -11,6 +11,12 @@
 		05204E4313D2ACE2008F2D7E /* videosettingswindowcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 05204E4213D2ACE2008F2D7E /* videosettingswindowcontroller.m */; };
 		05204E4C13D2BA42008F2D7E /* ResourceTree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05204E4A13D2BA42008F2D7E /* ResourceTree.plist */; };
 		55101B2229110152003CED21 /* x64.icns in Resources */ = {isa = PBXBuildFile; fileRef = 55C654BB28F6602000D11E28 /* x64.icns */; };
+		55101B2A29111C9D003CED21 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101B2429111C9D003CED21 /* CoreAudio.framework */; };
+		55101B2B29111C9D003CED21 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101B2529111C9D003CED21 /* AppKit.framework */; };
+		55101B2C29111C9D003CED21 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101B2629111C9D003CED21 /* CoreFoundation.framework */; };
+		55101B2D29111C9D003CED21 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101B2729111C9D003CED21 /* CoreGraphics.framework */; };
+		55101B2E29111C9D003CED21 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101B2829111C9D003CED21 /* CoreServices.framework */; };
+		55101B2F29111C9D003CED21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101B2929111C9D003CED21 /* Foundation.framework */; };
 		55467AA428F75D99007F3693 /* fsdevice-resources.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F7F28F75D8C007F3693 /* fsdevice-resources.c */; };
 		55467AA628F75D99007F3693 /* fsdevice.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F8228F75D8C007F3693 /* fsdevice.c */; };
 		55467AA828F75D99007F3693 /* fsdevice-read.c in Sources */ = {isa = PBXBuildFile; fileRef = 55466F8528F75D8C007F3693 /* fsdevice-read.c */; };
@@ -557,6 +563,12 @@
 		05204E4813D2B56D008F2D7E /* videoparam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoparam.h; sourceTree = "<group>"; };
 		05204E4B13D2BA42008F2D7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/ResourceTree.plist; sourceTree = "<group>"; };
 		55101B2329110930003CED21 /* VICE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VICE-Info.plist"; sourceTree = "<group>"; };
+		55101B2429111C9D003CED21 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		55101B2529111C9D003CED21 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		55101B2629111C9D003CED21 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		55101B2729111C9D003CED21 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		55101B2829111C9D003CED21 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		55101B2929111C9D003CED21 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55466F1028F75D8B007F3693 /* crtc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crtc.c; sourceTree = "<group>"; };
 		55466F1228F75D8B007F3693 /* crtc-draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "crtc-draw.h"; sourceTree = "<group>"; };
 		55466F1428F75D8B007F3693 /* crtc-color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "crtc-color.h"; sourceTree = "<group>"; };
@@ -1848,6 +1860,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55101B2A29111C9D003CED21 /* CoreAudio.framework in Frameworks */,
+				55101B2B29111C9D003CED21 /* AppKit.framework in Frameworks */,
+				55101B2C29111C9D003CED21 /* CoreFoundation.framework in Frameworks */,
+				55101B2D29111C9D003CED21 /* CoreGraphics.framework in Frameworks */,
+				55101B2E29111C9D003CED21 /* CoreServices.framework in Frameworks */,
+				55101B2F29111C9D003CED21 /* Foundation.framework in Frameworks */,
 				5546833128F76D82007F3693 /* libreadline.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2108,17 +2126,17 @@
 			isa = PBXGroup;
 			children = (
 				55466F2D28F75D8B007F3693 /* crtc-cmdline-options.c */,
+				55466F1C28F75D8B007F3693 /* crtc-cmdline-options.h */,
 				55466F2128F75D8B007F3693 /* crtc-color.c */,
+				55466F1428F75D8B007F3693 /* crtc-color.h */,
 				55466F2228F75D8B007F3693 /* crtc-draw.c */,
+				55466F1228F75D8B007F3693 /* crtc-draw.h */,
 				55466F3028F75D8B007F3693 /* crtc-mem.c */,
+				55466F1A28F75D8B007F3693 /* crtc-mem.h */,
 				55466F2328F75D8B007F3693 /* crtc-resources.c */,
+				55466F1628F75D8B007F3693 /* crtc-resources.h */,
 				55466F1828F75D8B007F3693 /* crtc-snapshot.c */,
 				55466F1028F75D8B007F3693 /* crtc.c */,
-				55466F1C28F75D8B007F3693 /* crtc-cmdline-options.h */,
-				55466F1428F75D8B007F3693 /* crtc-color.h */,
-				55466F1228F75D8B007F3693 /* crtc-draw.h */,
-				55466F1A28F75D8B007F3693 /* crtc-mem.h */,
-				55466F1628F75D8B007F3693 /* crtc-resources.h */,
 				55466F1F28F75D8B007F3693 /* crtc.h */,
 				55466F1E28F75D8B007F3693 /* crtctypes.h */,
 			);
@@ -2129,34 +2147,34 @@
 			isa = PBXGroup;
 			children = (
 				55466F5E28F75D8C007F3693 /* vicii-chip-model.c */,
-				55466F4928F75D8B007F3693 /* vicii-cmdline-options.c */,
-				55466F4C28F75D8B007F3693 /* vicii-color.c */,
-				55466F4A28F75D8B007F3693 /* vicii-cycle.c */,
-				55466F5F28F75D8C007F3693 /* vicii-draw-cycle.c */,
-				55466F5C28F75D8C007F3693 /* vicii-draw.c */,
-				55466F5B28F75D8C007F3693 /* vicii-fetch.c */,
-				55466F3D28F75D8B007F3693 /* vicii-irq.c */,
-				55466F3E28F75D8B007F3693 /* vicii-lightpen.c */,
-				55466F5328F75D8C007F3693 /* vicii-mem.c */,
-				55466F7A28F75D8C007F3693 /* vicii-phi1.c */,
-				55466F7B28F75D8C007F3693 /* vicii-resources.c */,
-				55466F6028F75D8C007F3693 /* vicii-snapshot.c */,
-				55466F5D28F75D8C007F3693 /* vicii-timing.c */,
-				55466F3B28F75D8B007F3693 /* vicii.c */,
 				55466F4228F75D8B007F3693 /* vicii-chip-model.h */,
+				55466F4928F75D8B007F3693 /* vicii-cmdline-options.c */,
 				55466F6328F75D8C007F3693 /* vicii-cmdline-options.h */,
+				55466F4C28F75D8B007F3693 /* vicii-color.c */,
 				55466F6228F75D8C007F3693 /* vicii-color.h */,
+				55466F4A28F75D8B007F3693 /* vicii-cycle.c */,
 				55466F6528F75D8C007F3693 /* vicii-cycle.h */,
+				55466F5F28F75D8C007F3693 /* vicii-draw-cycle.c */,
 				55466F3F28F75D8B007F3693 /* vicii-draw-cycle.h */,
+				55466F5C28F75D8C007F3693 /* vicii-draw.c */,
 				55466F4528F75D8B007F3693 /* vicii-draw.h */,
+				55466F5B28F75D8C007F3693 /* vicii-fetch.c */,
 				55466F4728F75D8B007F3693 /* vicii-fetch.h */,
+				55466F3D28F75D8B007F3693 /* vicii-irq.c */,
 				55466F5628F75D8C007F3693 /* vicii-irq.h */,
+				55466F3E28F75D8B007F3693 /* vicii-lightpen.c */,
 				55466F5828F75D8C007F3693 /* vicii-lightpen.h */,
+				55466F5328F75D8C007F3693 /* vicii-mem.c */,
 				55466F7928F75D8C007F3693 /* vicii-mem.h */,
+				55466F7A28F75D8C007F3693 /* vicii-phi1.c */,
 				55466F5228F75D8C007F3693 /* vicii-phi1.h */,
+				55466F7B28F75D8C007F3693 /* vicii-resources.c */,
 				55466F4F28F75D8B007F3693 /* vicii-resources.h */,
+				55466F6028F75D8C007F3693 /* vicii-snapshot.c */,
 				55466F4D28F75D8B007F3693 /* vicii-snapshot.h */,
+				55466F5D28F75D8C007F3693 /* vicii-timing.c */,
 				55466F4328F75D8B007F3693 /* vicii-timing.h */,
+				55466F3B28F75D8B007F3693 /* vicii.c */,
 				55466F5928F75D8C007F3693 /* viciitypes.h */,
 			);
 			path = viciisc;
@@ -3017,21 +3035,21 @@
 		5546780B28F75D96007F3693 /* resid-dtv */ = {
 			isa = PBXGroup;
 			children = (
-				5546780F28F75D96007F3693 /* envelope.cc */,
-				5546784128F75D96007F3693 /* extfilt.cc */,
-				5546782228F75D96007F3693 /* filter.cc */,
-				5546782128F75D96007F3693 /* sid.cc */,
-				5546784528F75D96007F3693 /* version.cc */,
-				5546782028F75D96007F3693 /* voice.cc */,
-				5546784328F75D96007F3693 /* wave.cc */,
 				5546782B28F75D96007F3693 /* bittrain.h */,
+				5546780F28F75D96007F3693 /* envelope.cc */,
 				5546783028F75D96007F3693 /* envelope.h */,
+				5546784128F75D96007F3693 /* extfilt.cc */,
 				5546780D28F75D96007F3693 /* extfilt.h */,
+				5546782228F75D96007F3693 /* filter.cc */,
 				5546783F28F75D96007F3693 /* filter.h */,
 				5546781F28F75D96007F3693 /* residdtv-config.h */,
+				5546782128F75D96007F3693 /* sid.cc */,
 				5546783328F75D96007F3693 /* sid.h */,
 				5546782828F75D96007F3693 /* siddtvdefs.h */,
+				5546784528F75D96007F3693 /* version.cc */,
+				5546782028F75D96007F3693 /* voice.cc */,
 				5546782E28F75D96007F3693 /* voice.h */,
+				5546784328F75D96007F3693 /* wave.cc */,
 				5546783228F75D96007F3693 /* wave.h */,
 			);
 			path = "resid-dtv";
@@ -3095,21 +3113,21 @@
 			children = (
 				5546791A28F75D97007F3693 /* ciacore.c */,
 				5546791C28F75D97007F3693 /* ciatimer.c */,
+				5546793028F75D97007F3693 /* ciatimer.h */,
 				5546791728F75D97007F3693 /* cs8900.c */,
+				5546792C28F75D97007F3693 /* cs8900.h */,
 				5546794228F75D98007F3693 /* flash040core.c */,
 				5546791828F75D97007F3693 /* fmopl.c */,
+				5546792928F75D97007F3693 /* fmopl.h */,
 				5546791B28F75D97007F3693 /* riotcore.c */,
 				5546792228F75D97007F3693 /* ser-eeprom.c */,
+				5546792D28F75D97007F3693 /* ser-eeprom.h */,
 				5546793228F75D97007F3693 /* spi-sdcard.c */,
+				5546791F28F75D97007F3693 /* spi-sdcard.h */,
 				5546792F28F75D97007F3693 /* t6721.c */,
+				5546792028F75D97007F3693 /* t6721.h */,
 				5546791E28F75D97007F3693 /* tpicore.c */,
 				5546791928F75D97007F3693 /* viacore.c */,
-				5546793028F75D97007F3693 /* ciatimer.h */,
-				5546792C28F75D97007F3693 /* cs8900.h */,
-				5546792928F75D97007F3693 /* fmopl.h */,
-				5546792D28F75D97007F3693 /* ser-eeprom.h */,
-				5546791F28F75D97007F3693 /* spi-sdcard.h */,
-				5546792028F75D97007F3693 /* t6721.h */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -3118,35 +3136,35 @@
 			isa = PBXGroup;
 			children = (
 				5546794D28F75D98007F3693 /* vicii-badline.c */,
+				5546796E28F75D98007F3693 /* vicii-badline.h */,
 				5546795828F75D98007F3693 /* vicii-clock-stretch.c */,
 				5546795528F75D98007F3693 /* vicii-cmdline-options.c */,
+				5546797628F75D98007F3693 /* vicii-cmdline-options.h */,
 				5546795728F75D98007F3693 /* vicii-color.c */,
+				5546797528F75D98007F3693 /* vicii-color.h */,
 				5546796B28F75D98007F3693 /* vicii-draw.c */,
+				5546795128F75D98007F3693 /* vicii-draw.h */,
 				5546796A28F75D98007F3693 /* vicii-fetch.c */,
+				5546795328F75D98007F3693 /* vicii-fetch.h */,
 				5546794A28F75D98007F3693 /* vicii-irq.c */,
+				5546796628F75D98007F3693 /* vicii-irq.h */,
 				5546796128F75D98007F3693 /* vicii-mem.c */,
+				5546798D28F75D98007F3693 /* vicii-mem.h */,
 				5546798F28F75D98007F3693 /* vicii-phi1.c */,
+				5546796028F75D98007F3693 /* vicii-phi1.h */,
 				5546799028F75D98007F3693 /* vicii-resources.c */,
+				5546795D28F75D98007F3693 /* vicii-resources.h */,
 				5546797128F75D98007F3693 /* vicii-snapshot.c */,
+				5546795A28F75D98007F3693 /* vicii-snapshot.h */,
 				5546796328F75D98007F3693 /* vicii-sprites.c */,
+				5546794C28F75D98007F3693 /* vicii-sprites.h */,
 				5546796728F75D98007F3693 /* vicii-stubs.c */,
 				5546796D28F75D98007F3693 /* vicii-timing.c */,
+				5546794F28F75D98007F3693 /* vicii-timing.h */,
 				5546794828F75D98007F3693 /* vicii.c */,
 				5546798E28F75D98007F3693 /* viciidtv-color.c */,
 				5546797028F75D98007F3693 /* viciidtv-draw.c */,
 				5546796C28F75D98007F3693 /* viciidtv-snapshot.c */,
-				5546796E28F75D98007F3693 /* vicii-badline.h */,
-				5546797628F75D98007F3693 /* vicii-cmdline-options.h */,
-				5546797528F75D98007F3693 /* vicii-color.h */,
-				5546795128F75D98007F3693 /* vicii-draw.h */,
-				5546795328F75D98007F3693 /* vicii-fetch.h */,
-				5546796628F75D98007F3693 /* vicii-irq.h */,
-				5546798D28F75D98007F3693 /* vicii-mem.h */,
-				5546796028F75D98007F3693 /* vicii-phi1.h */,
-				5546795D28F75D98007F3693 /* vicii-resources.h */,
-				5546795A28F75D98007F3693 /* vicii-snapshot.h */,
-				5546794C28F75D98007F3693 /* vicii-sprites.h */,
-				5546794F28F75D98007F3693 /* vicii-timing.h */,
 				5546796828F75D98007F3693 /* viciitypes.h */,
 			);
 			path = vicii;
@@ -3267,7 +3285,6 @@
 		554682BC28F763E7007F3693 /* unix */ = {
 			isa = PBXGroup;
 			children = (
-				5546835228F92D84007F3693 /* joy.c */,
 				554682D828F766E4007F3693 /* archdep.c */,
 				554682DF28F766E4007F3693 /* archdep.h */,
 				554682DC28F766E4007F3693 /* blockdev.c */,
@@ -3279,6 +3296,7 @@
 				554682EA28F766E5007F3693 /* fullscreenarch.h */,
 				554682E328F766E5007F3693 /* hardsid.c */,
 				554682E128F766E4007F3693 /* icon.h */,
+				5546835228F92D84007F3693 /* joy.c */,
 				554682E528F766E5007F3693 /* kbd.h */,
 				554682BD28F763FF007F3693 /* macosx */,
 				554682F128F766E5007F3693 /* mousedrv.c */,
@@ -3303,7 +3321,6 @@
 		554682BD28F763FF007F3693 /* macosx */ = {
 			isa = PBXGroup;
 			children = (
-				55101B2329110930003CED21 /* VICE-Info.plist */,
 				554682C728F76453007F3693 /* joy-hid.c */,
 				554682BF28F76453007F3693 /* joy-hid.h */,
 				554682C128F76453007F3693 /* joy-hidlib.h */,
@@ -3314,6 +3331,7 @@
 				554682C228F76453007F3693 /* mididrv.c */,
 				554682C528F76453007F3693 /* platform_macosx.h */,
 				554682C428F76453007F3693 /* platform_macosx.m */,
+				55101B2329110930003CED21 /* VICE-Info.plist */,
 				554682C328F76453007F3693 /* vsyncarch.c */,
 			);
 			path = macosx;
@@ -3322,6 +3340,12 @@
 		5546832F28F76D82007F3693 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55101B2529111C9D003CED21 /* AppKit.framework */,
+				55101B2429111C9D003CED21 /* CoreAudio.framework */,
+				55101B2629111C9D003CED21 /* CoreFoundation.framework */,
+				55101B2729111C9D003CED21 /* CoreGraphics.framework */,
+				55101B2829111C9D003CED21 /* CoreServices.framework */,
+				55101B2929111C9D003CED21 /* Foundation.framework */,
 				5546833028F76D82007F3693 /* libreadline.tbd */,
 			);
 			name = Frameworks;
@@ -3421,9 +3445,9 @@
 				83E49A220DE4CCA9001DE90F /* vicemachinenotifier.m */,
 				83E49A230DE4CCA9001DE90F /* vicemachineprotocol.h */,
 				83E49A240DE4CCA9001DE90F /* vicenotifications.h */,
-				05204E4813D2B56D008F2D7E /* videoparam.h */,
 				83E49A250DE4CCA9001DE90F /* video.m */,
 				83E49A260DE4CCA9001DE90F /* videoarch.h */,
+				05204E4813D2B56D008F2D7E /* videoparam.h */,
 				83E49A270DE4CCA9001DE90F /* view */,
 				83E49A3E0DE4CCA9001DE90F /* vsidui.m */,
 			);
@@ -3484,11 +3508,6 @@
 		83E49A020DE4CCA9001DE90F /* menu */ = {
 			isa = PBXGroup;
 			children = (
-				5546833228F9280A007F3693 /* c64scui.m */,
-				5546832A28F76BBE007F3693 /* vic20controller.h */,
-				5546832828F76BBE007F3693 /* vic20controller.m */,
-				5546832B28F76BBE007F3693 /* vic20machinecontroller.h */,
-				5546832928F76BBE007F3693 /* vic20machinecontroller.m */,
 				5546830528F76A7C007F3693 /* c64commoncontroller.h */,
 				5546830428F76A7C007F3693 /* c64commoncontroller.m */,
 				5546830728F76AA5007F3693 /* c64commonmachinecontroller.h */,
@@ -3497,6 +3516,7 @@
 				83E49A090DE4CCA9001DE90F /* c64controller.m */,
 				83E49A0A0DE4CCA9001DE90F /* c64machinecontroller.h */,
 				83E49A0B0DE4CCA9001DE90F /* c64machinecontroller.m */,
+				5546833228F9280A007F3693 /* c64scui.m */,
 				83E49A0C0DE4CCA9001DE90F /* c64ui.m */,
 				83E49A030DE4CCA9001DE90F /* c128controller.h */,
 				83E49A040DE4CCA9001DE90F /* c128controller.m */,
@@ -3519,6 +3539,10 @@
 				5546831D28F76B68007F3693 /* plus4machinecontroller.h */,
 				5546831C28F76B68007F3693 /* plus4machinecontroller.m */,
 				83E49A110DE4CCA9001DE90F /* plus4ui.m */,
+				5546832A28F76BBE007F3693 /* vic20controller.h */,
+				5546832828F76BBE007F3693 /* vic20controller.m */,
+				5546832B28F76BBE007F3693 /* vic20machinecontroller.h */,
+				5546832928F76BBE007F3693 /* vic20machinecontroller.m */,
 				83E49A120DE4CCA9001DE90F /* vic20ui.m */,
 				83E49A130DE4CCA9001DE90F /* viceappcontroller.h */,
 				83E49A140DE4CCA9001DE90F /* viceappcontroller.m */,
@@ -4492,12 +4516,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 2.5;
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.viceteam.x64;
 				PRODUCT_NAME = VICE;
 				SDKROOT = macosx;
@@ -4527,12 +4545,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 2.5;
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.viceteam.x64;
 				PRODUCT_NAME = VICE;
 				SDKROOT = macosx;

@@ -487,7 +487,7 @@ static void saveSnapshotTrap(WORD unusedWord, void *unusedData)
         return false;
     
     int result = screenshot_save([driver cStringUsingEncoding:NSUTF8StringEncoding],
-                                 [path cStringUsingEncoding:NSUTF8StringEncoding],
+                                 [path fileSystemRepresentation],
                                  canvas);
     return result == 0;
 }

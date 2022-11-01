@@ -84,7 +84,7 @@
 
 - (IBAction)resetDrive:(id)sender
 {
-    [[VICEApplication theMachineController] resetDrive:[sender tag]];
+    [[VICEApplication theMachineController] resetDrive:(int)[sender tag]];
 }
 
 - (IBAction)activateMonitor:(id)sender
@@ -110,8 +110,8 @@
 
 - (IBAction)attachDiskImage:(id)sender
 {
-    int unit = [sender tag];
-    [self attachDiskImageForUnit:unit];
+    NSInteger unit = [sender tag];
+    [self attachDiskImageForUnit:(int)unit];
 }
 
 - (void)attachDiskImageForUnit:(int)unit
@@ -175,8 +175,8 @@
                                name:[name_entry stringValue]]) {
             [VICEApplication runErrorMessage:@"Error creating image!"];
         } else {
-            int unit = [sender tag];
-            if (![[VICEApplication theMachineController] attachDiskImage:unit 
+            NSInteger unit = [sender tag];
+            if (![[VICEApplication theMachineController] attachDiskImage:(int)unit
                                                                    path:path]) {
                 [VICEApplication runErrorMessage:@"Error attaching image!"];
             }
@@ -337,15 +337,15 @@
 
 - (IBAction)pickRefreshRate:(id)sender
 {
-    int rate = [sender tag];
-    [self setIntResource:@"RefreshRate" toValue:rate];
+    NSInteger rate = [sender tag];
+    [self setIntResource:@"RefreshRate" toValue:(int)rate];
     [self updateOptionsResources];
 }
 
 - (IBAction)pickMaximumSpeed:(id)sender
 {
-    int speed = [sender tag];
-    [self setIntResource:@"Speed" toValue:speed];
+    NSInteger speed = [sender tag];
+    [self setIntResource:@"Speed" toValue:(int)speed];
     [self updateOptionsResources];
 }
 
@@ -358,13 +358,13 @@
 
 - (IBAction)toggleWarpMode:(id)sender
 {
-    [self setIntResource:@"WarpMode" toValue:![sender state]];
+    [self setIntResource:@"WarpMode" toValue:[sender state] == NSControlStateValueOff];
     [self updateOptionsResources];
 }
 
 - (IBAction)toggleMachineVideoStandard:(id)sender
 {
-    [self setIntResource:@"MachineVideoStandard" toValue:[sender tag]];
+    [self setIntResource:@"MachineVideoStandard" toValue:(int)[sender tag]];
     [self updateOptionsResources];
 }
 
@@ -376,14 +376,14 @@
 
 - (IBAction)toggleTrueDriveEmulation:(id)sender
 {
-    [self setIntResource:@"DriveTrueEmulation" toValue:![sender state]];
+    [self setIntResource:@"DriveTrueEmulation" toValue:[sender state] == NSControlStateValueOff];
     [self updateOptionsResources];
     [driveSettingsController updateResources:nil];
 }
 
 - (IBAction)toggleVirtualDevices:(id)sender
 {
-    [self setIntResource:@"VirtualDevices" toValue:![sender state]];
+    [self setIntResource:@"VirtualDevices" toValue:[sender state] == NSControlStateValueOff];
     [self updateOptionsResources];
 }
 

@@ -143,8 +143,6 @@
 
 -(NSArray *)disassembleRangeWithLines:(int)myLines start:(int)address
 {
-    int i,j;
-    
     // read dis data at start address
     NSDictionary *disData = [[VICEApplication theMachineController] disassembleMemory:memSpace lines:myLines start:address];
 

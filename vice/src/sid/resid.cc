@@ -168,11 +168,11 @@ static int resid_init(sound_t *psid, int speed, int cycles_per_sec)
         break;
       case 2:
         method = SAMPLE_RESAMPLE;
-        sprintf(method_text, "resampling, pass to %dHz", (int)passband);
+        snprintf(method_text, sizeof(method_text), "resampling, pass to %dHz", (int)passband);
         break;
       case 3:
         method = SAMPLE_RESAMPLE_FASTMEM;
-        sprintf(method_text, "resampling, pass to %dHz", (int)passband);
+        snprintf(method_text, sizeof(method_text), "resampling, pass to %dHz", (int)passband);
         break;
     }
 

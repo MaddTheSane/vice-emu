@@ -133,7 +133,6 @@
 		55467CF128F75D99007F3693 /* gfxoutput.c in Sources */ = {isa = PBXBuildFile; fileRef = 554672BF28F75D8F007F3693 /* gfxoutput.c */; };
 		55467D0228F75D99007F3693 /* doodledrv.c in Sources */ = {isa = PBXBuildFile; fileRef = 554672D328F75D8F007F3693 /* doodledrv.c */; };
 		55467D0428F75D99007F3693 /* event.c in Sources */ = {isa = PBXBuildFile; fileRef = 554672D828F75D90007F3693 /* event.c */; };
-		55467D0528F75D99007F3693 /* memcmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 554672DE28F75D90007F3693 /* memcmp.c */; };
 		55467D0728F75D99007F3693 /* autostart-prg.c in Sources */ = {isa = PBXBuildFile; fileRef = 554672E228F75D90007F3693 /* autostart-prg.c */; };
 		55467D0B28F75D99007F3693 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 554672E628F75D90007F3693 /* init.c */; };
 		55467D0F28F75D99007F3693 /* fileio.c in Sources */ = {isa = PBXBuildFile; fileRef = 554672EF28F75D90007F3693 /* fileio.c */; };
@@ -901,7 +900,6 @@
 		554672DB28F75D90007F3693 /* vsyncapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vsyncapi.h; sourceTree = "<group>"; };
 		554672DC28F75D90007F3693 /* vicesocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vicesocket.h; sourceTree = "<group>"; };
 		554672DD28F75D90007F3693 /* plus4ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plus4ui.h; sourceTree = "<group>"; };
-		554672DE28F75D90007F3693 /* memcmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memcmp.c; sourceTree = "<group>"; };
 		554672E028F75D90007F3693 /* rs232drv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rs232drv.h; sourceTree = "<group>"; };
 		554672E128F75D90007F3693 /* joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = joystick.h; sourceTree = "<group>"; };
 		554672E228F75D90007F3693 /* autostart-prg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "autostart-prg.c"; sourceTree = "<group>"; };
@@ -2011,7 +2009,6 @@
 				5546736828F75D91007F3693 /* mainviccpu.c */,
 				55466F3228F75D8B007F3693 /* mc6821.h */,
 				554672D728F75D8F007F3693 /* mem.h */,
-				554672DE28F75D90007F3693 /* memcmp.c */,
 				5546722128F75D8E007F3693 /* midi.c */,
 				554671E528F75D8E007F3693 /* midi.h */,
 				554671F028F75D8E007F3693 /* mididrv.h */,
@@ -4054,7 +4051,6 @@
 				55467D3728F75D99007F3693 /* network.c in Sources */,
 				55467C9128F75D99007F3693 /* interface-serial.c in Sources */,
 				55467EF828F75D9A007F3693 /* westermann.c in Sources */,
-				55467D0528F75D99007F3693 /* memcmp.c in Sources */,
 				55C6552228F6716E00D11E28 /* vicefilepanel.m in Sources */,
 				55467D1228F75D99007F3693 /* cbmfile.c in Sources */,
 				55467CBD28F75D99007F3693 /* serial-iec.c in Sources */,
@@ -4446,6 +4442,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -4504,6 +4501,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					OSATOMIC_USE_INLINED,
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../",
@@ -4533,6 +4534,10 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					OSATOMIC_USE_INLINED,
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../",

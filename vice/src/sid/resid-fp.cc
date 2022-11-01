@@ -175,7 +175,7 @@ static int residfp_init(sound_t *psid, int speed, int cycles_per_sec)
       case 2:
       case 3:
         method = SAMPLE_RESAMPLE_INTERPOLATE;
-        sprintf(method_text, "%sresampling, cutoff %d Hz",
+        snprintf(method_text, sizeof(method_text), "%sresampling, cutoff %d Hz",
                              (psid->sid->sse_enabled() ? "SSE " : ""),
                              (int) (passband > 20000.f ? 20000.f : passband));
         break;

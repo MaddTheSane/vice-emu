@@ -233,7 +233,7 @@ char* ui_get_file(const char *format,...)
 
     NSString * path = [[theVICEMachine app] getOpenFileName:string types:nil];
     if (path != nil) {
-        return strdup([path cStringUsingEncoding:NSUTF8StringEncoding]);
+        return strdup([path fileSystemRepresentation]);
     } else {
         return NULL;
     }

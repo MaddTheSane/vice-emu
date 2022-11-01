@@ -64,30 +64,30 @@
 
 -(IBAction)changeSampleRate:(id)sender
 {
-    int sampleRate = [[sampleRateButton selectedItem] tag];
+    NSInteger sampleRate = [[sampleRateButton selectedItem] tag];
     [self setIntResource:@"SoundSampleRate" 
-                 toValue:sampleRate];
+                 toValue:(int)sampleRate];
 }
 
 -(IBAction)changeBufferSize:(id)sender
 {
-    int bufferSize = [[bufferSizeButton selectedItem] tag];
+    NSInteger bufferSize = [[bufferSizeButton selectedItem] tag];
     [self setIntResource:@"SoundBufferSize" 
-                 toValue:bufferSize];
+                 toValue:(int)bufferSize];
 }
 
 -(IBAction)changeSpeedAdjustment:(id)sender
 {
-    int speedAdjustment = [[speedAdjustmentButton selectedItem] tag];
+    NSInteger speedAdjustment = [[speedAdjustmentButton selectedItem] tag];
     [self setIntResource:@"SoundSpeedAdjustment" 
-                 toValue:speedAdjustment];
+                 toValue:(int)speedAdjustment];
 }
 
 -(IBAction)changeFragmentSize:(id)sender
 {
-    int fragmentSize = [[fragmentSizeButton selectedItem] tag];
+    NSInteger fragmentSize = [[fragmentSizeButton selectedItem] tag];
     [self setIntResource:@"SoundFragmentSize" 
-                 toValue:fragmentSize];
+                 toValue:(int)fragmentSize];
 }
 
 @end

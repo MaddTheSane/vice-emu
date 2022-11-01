@@ -32,7 +32,7 @@
 
  - (BOOL)attachCartridge:(int)type image:(NSString *)imageFile
  {
-     return cartridge_attach_image(type,[imageFile cStringUsingEncoding:NSUTF8StringEncoding]) == 0;
+     return cartridge_attach_image(type,[imageFile fileSystemRepresentation]) == 0;
  }
 
  - (void)detachCartridge:(int)type

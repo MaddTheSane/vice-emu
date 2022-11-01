@@ -78,12 +78,12 @@ static const char *tag[3] = { "Userport", "4", "5" };
 
 -(void)updateResources:(NSNotification *)notification
 {
-    int printerId = [printerChooser selectedSegment];
+    NSInteger printerId = [printerChooser selectedSegment];
 
     // IEC Device
     [useIECDevice setHidden:(printerId == 0)];
     if (printerId>0) {
-        int doUse = [self getIntResource:@"IECDevice%d" withNumber:printerId+3];
+        int doUse = [self getIntResource:@"IECDevice%d" withNumber:(int)(printerId+3)];
         [useIECDevice setState:doUse];
     }
 
@@ -132,28 +132,28 @@ static const char *tag[3] = { "Userport", "4", "5" };
 
 -(IBAction)changedIECDevice:(id)sender
 {
-    int curPrinter = [printerChooser selectedSegment] + 3;
-    int on = [sender state];
+    NSInteger curPrinter = [printerChooser selectedSegment] + 3;
+    NSInteger on = [sender state];
     [self setIntResource:@"IECDevice%d"
-              withNumber:curPrinter
-                 toValue:on];
+              withNumber:(int)curPrinter
+                 toValue:(int)on];
 
     [self updateResources:nil];
 }
 
 -(IBAction)changedPrinterEmulation:(id)sender
 {
-    int curPrinter = [printerChooser selectedSegment];
-    int emu = [sender indexOfSelectedItem];
+    NSInteger curPrinter = [printerChooser selectedSegment];
+    NSInteger emu = [sender indexOfSelectedItem];
     [self setIntResource:[NSString stringWithFormat:@"Printer%s",tag[curPrinter]]
-                 toValue:emu];
+                 toValue:(int)emu];
 
     [self updateResources:nil];
 }
 
 -(IBAction)doSendFormFeed:(id)sender
 {
-    int curPrinter = [printerChooser selectedSegment];
+    NSInteger curPrinter = [printerChooser selectedSegment];
     static const int map[3] = { 2, 0, 1 };
 
     [[VICEApplication theMachineController] printerFormFeed:map[curPrinter]];
@@ -161,7 +161,7 @@ static const char *tag[3] = { "Userport", "4", "5" };
 
 -(IBAction)changedDriver:(id)sender
 {
-    int curPrinter = [printerChooser selectedSegment];
+    NSInteger curPrinter = [printerChooser selectedSegment];
     NSMenuItem *cell = [sender selectedItem];
     [self setStringResource:[NSString stringWithFormat:@"Printer%sDriver", tag[curPrinter]]
                     toValue:[[cell title] lowercaseString]];
@@ -169,7 +169,7 @@ static const char *tag[3] = { "Userport", "4", "5" };
 
 -(IBAction)changedOutput:(id)sender
 {
-    int curPrinter = [printerChooser selectedSegment];
+    NSInteger curPrinter = [printerChooser selectedSegment];
     NSMenuItem *cell = [sender selectedItem];
     [self setStringResource:[NSString stringWithFormat:@"Printer%sOutput", tag[curPrinter]]
                     toValue:[[cell title] lowercaseString]];
@@ -177,17 +177,17 @@ static const char *tag[3] = { "Userport", "4", "5" };
 
 -(IBAction)changedTextDevice:(id)sender
 {
-    int curPrinter = [printerChooser selectedSegment];
-    int emu = [sender indexOfSelectedItem];
+    NSInteger curPrinter = [printerChooser selectedSegment];
+    NSInteger emu = [sender indexOfSelectedItem];
     [self setIntResource:[NSString stringWithFormat:@"Printer%sTextDevice", tag[curPrinter]]
-                 toValue:emu];
+                 toValue:(int)emu];
 }
 
 -(IBAction)changedPrinterTextDevice:(id)sender
 {
-    int id = [sender tag];
+    NSInteger ident = [sender tag];
     NSString *value = [sender stringValue];
-    [self setStringResource:@"PrinterTextDevice%d" withNumber:id toValue:value];
+    [self setStringResource:@"PrinterTextDevice%d" withNumber:(int)ident toValue:value];
 }
 
 @end

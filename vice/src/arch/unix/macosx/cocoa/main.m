@@ -48,7 +48,7 @@ int main(int argc, char **argv)
     NSString *basePath = @"~/Library/Preferences/";
     NSString *prefPath = [basePath stringByAppendingString:bundleId];
     prefPath = [prefPath stringByExpandingTildeInPath];
-    archdep_pref_path = [prefPath cStringUsingEncoding:NSUTF8StringEncoding];
+    archdep_pref_path = strdup([prefPath fileSystemRepresentation]);
     
     // fetch instance
     [VICEApplication sharedApplication];

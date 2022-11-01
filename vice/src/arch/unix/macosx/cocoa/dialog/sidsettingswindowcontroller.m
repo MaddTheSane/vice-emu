@@ -225,7 +225,7 @@ static const int engine_model_values[] = {
 
 -(IBAction)popupEngineModel:(id)sender
 {
-    int modelIndex = modelOffset + [engineModelButton indexOfSelectedItem];
+    NSInteger modelIndex = modelOffset + [engineModelButton indexOfSelectedItem];
     int pair = engine_model_values[modelIndex];
     int engine = pair >> 8;
     int model  = pair & 0xff;
@@ -257,7 +257,7 @@ static const int engine_model_values[] = {
 
 -(IBAction)popupResidSampleMethod:(id)sender
 {
-    [self setIntResource:@"SidResidSampling" toValue:[sender tag]];
+    [self setIntResource:@"SidResidSampling" toValue:(int)[sender tag]];
 }
 
 -(IBAction)slideResidPasspand:(id)sender

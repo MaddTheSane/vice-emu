@@ -163,11 +163,11 @@ static char *keyNames[KEYSET_SIZE] = {
 -(void)updateKeysetDisplay
 {
     // key set setup
-    int keySetNum = [keySetSelect indexOfSelectedItem];
+    NSInteger keySetNum = [keySetSelect indexOfSelectedItem];
     int i;
     for (i = 0; i < KEYSET_SIZE; i++) {
         NSString *res1 = [NSString stringWithFormat:@"KeySet%d%s",
-                          keySetNum + 1, keyNames[i]];
+                          (int)(keySetNum + 1), keyNames[i]];
         int keyCode1 = [self getIntResource:res1];
         NSString *val1;
         if (keyCode1 == ARCHDEP_KEYBOARD_SYM_NONE) {
@@ -181,9 +181,9 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(void)updateHidName
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
     NSString *device = [self getStringResource:
-         [NSString stringWithFormat:@"Joy%cDevice", 'A' + hidDeviceNum]];
+         [NSString stringWithFormat:@"Joy%cDevice", (int)('A' + hidDeviceNum)]];
 
     if ([device length]==0) {
         // select "automatic"
@@ -204,48 +204,48 @@ static char *keyNames[KEYSET_SIZE] = {
             // reset to automatic
             [hidName selectItemAtIndex:0];
             [self setStringResource:
-                 [NSString stringWithFormat:@"Joy%cDevice",'A'+hidDeviceNum] toValue:@""];
+                 [NSString stringWithFormat:@"Joy%cDevice",(int)('A'+hidDeviceNum)] toValue:@""];
         }
     }
 }
 
 -(void)updateHidXAxis
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
 
     NSString *axisName = [self getStringResource:
-        [NSString stringWithFormat:@"Joy%cXAxis", 'A' + hidDeviceNum]];
+        [NSString stringWithFormat:@"Joy%cXAxis", (int)('A' + hidDeviceNum)]];
     [hidXAxis selectItemWithTitle:axisName];
     if ([hidXAxis selectedItem] == nil) {
         [hidXAxis selectItem:[hidXAxis lastItem]];
     }
 
     int threshold = [self getIntResource:
-        [NSString stringWithFormat:@"Joy%cXThreshold", 'A' + hidDeviceNum]];
+        [NSString stringWithFormat:@"Joy%cXThreshold", (int)('A' + hidDeviceNum)]];
     [hidXThreshold setIntValue:threshold];
 }
 
 -(void)updateHidYAxis
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
 
     NSString *axisName = [self getStringResource:
-        [NSString stringWithFormat:@"Joy%cYAxis", 'A' + hidDeviceNum]];
+        [NSString stringWithFormat:@"Joy%cYAxis", (int)('A' + hidDeviceNum)]];
     [hidYAxis selectItemWithTitle:axisName];
     if ([hidYAxis selectedItem] == nil) {
         [hidYAxis selectItem:[hidYAxis lastItem]];
     }
 
     int threshold = [self getIntResource:
-        [NSString stringWithFormat:@"Joy%cYThreshold", 'A' + hidDeviceNum]];
+        [NSString stringWithFormat:@"Joy%cYThreshold", (int)('A' + hidDeviceNum)]];
     [hidYThreshold setIntValue:threshold];
 }
 
 -(void)getHidButtons:(int *)ids
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
     NSString *buttons = [self getStringResource:
-         [NSString stringWithFormat:@"Joy%cButtons", 'A' + hidDeviceNum]];
+         [NSString stringWithFormat:@"Joy%cButtons", (int)('A' + hidDeviceNum)]];
     const char *buttonsStr = [buttons cStringUsingEncoding:NSUTF8StringEncoding];
     sscanf(buttonsStr,"%d:%d:%d:%d:%d:%d", &ids[0], &ids[1], &ids[2], &ids[3], &ids[4], &ids[5]);
 }
@@ -268,20 +268,20 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(void)getHidAutoButtons:(int *)ids
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
     NSString *buttons = [self getStringResource:
-         [NSString stringWithFormat:@"Joy%cAutoButtons", 'A' + hidDeviceNum]];
+         [NSString stringWithFormat:@"Joy%cAutoButtons", (int)('A' + hidDeviceNum)]];
     const char *buttonsStr = [buttons cStringUsingEncoding:NSUTF8StringEncoding];
     sscanf(buttonsStr,"%d:%d:%d:%d:%d:%d", &ids[0], &ids[1], &ids[2], &ids[3], &ids[4], &ids[5]);    
 }
 
 -(void)setHidAutoButtons:(int *)ids
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
     NSString *value = [NSString stringWithFormat:@"%d:%d:%d:%d:%d:%d",
         ids[0], ids[1], ids[2], ids[3], ids[4], ids[5]];
     [self setStringResource:
-         [NSString stringWithFormat:@"Joy%cAutoButtons", 'A' + hidDeviceNum]
+         [NSString stringWithFormat:@"Joy%cAutoButtons", (int)('A' + hidDeviceNum)]
          toValue:value];
 }
 
@@ -310,10 +310,10 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(void)updateHidHat
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
 
     int hat = [self getIntResource:
-        [NSString stringWithFormat:@"Joy%cHatSwitch", 'A' + hidDeviceNum]];
+        [NSString stringWithFormat:@"Joy%cHatSwitch", (int)('A' + hidDeviceNum)]];
     if(hat != 0) {
         [hidHat selectItemAtIndex:hat - 1];
     } else {
@@ -336,26 +336,26 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(IBAction)changeJoystick1Mode:(id)sender
 {
-    int joy1Mode = [joystick1Mode indexOfSelectedItem];
-    [self setIntResource:@"JoyDevice1" toValue:joy1Mode];
+    NSInteger joy1Mode = [joystick1Mode indexOfSelectedItem];
+    [self setIntResource:@"JoyDevice1" toValue:(int)joy1Mode];
 }
 
 -(IBAction)changeJoystick2Mode:(id)sender
 {
-    int joy2Mode = [joystick2Mode indexOfSelectedItem];
-    [self setIntResource:@"JoyDevice2" toValue:joy2Mode];
+    NSInteger joy2Mode = [joystick2Mode indexOfSelectedItem];
+    [self setIntResource:@"JoyDevice2" toValue:(int)joy2Mode];
 }
 
 -(IBAction)changeJoystickExtra1Mode:(id)sender
 {
-    int joy3Mode = [joystickExtra1Mode indexOfSelectedItem];
-    [self setIntResource:@"JoyDevice3" toValue:joy3Mode];
+    NSInteger joy3Mode = [joystickExtra1Mode indexOfSelectedItem];
+    [self setIntResource:@"JoyDevice3" toValue:(int)joy3Mode];
 }
 
 -(IBAction)changeJoystickExtra2Mode:(id)sender
 {
-    int joy4Mode = [joystickExtra2Mode indexOfSelectedItem];
-    [self setIntResource:@"JoyDevice4" toValue:joy4Mode];
+    NSInteger joy4Mode = [joystickExtra2Mode indexOfSelectedItem];
+    [self setIntResource:@"JoyDevice4" toValue:(int)joy4Mode];
 }
 
 -(IBAction)toggleKeyset:(id)sender
@@ -365,11 +365,11 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(IBAction)clearKeyset:(id)sender
 {
-    int keySetNum = [keySetSelect indexOfSelectedItem];
+    NSInteger keySetNum = [keySetSelect indexOfSelectedItem];
 
     int i;
     for (i = 0; i < KEYSET_SIZE; i++) {
-        NSString *res = [NSString stringWithFormat:@"KeySet%d%s", keySetNum + 1, keyNames[i]];
+        NSString *res = [NSString stringWithFormat:@"KeySet%ld%s", keySetNum + 1, keyNames[i]];
         [self setIntResource:res toValue:ARCHDEP_KEYBOARD_SYM_NONE];
     }
     
@@ -389,9 +389,9 @@ static char *keyNames[KEYSET_SIZE] = {
     }
 
     int keyCode = [keyPressView keyCode];
-    int keySetNum = [keySetSelect indexOfSelectedItem];
+    NSInteger keySetNum = [keySetSelect indexOfSelectedItem];
 
-    NSString *res = [NSString stringWithFormat:@"KeySet%d%s", keySetNum + 1, keyNames[i]];
+    NSString *res = [NSString stringWithFormat:@"KeySet%d%s", (int)(keySetNum + 1), keyNames[i]];
     [self setIntResource:res toValue:keyCode];
     
     NSString *val = [NSString stringWithFormat:@"%04x", keyCode];
@@ -433,8 +433,8 @@ static char *keyNames[KEYSET_SIZE] = {
         joyDevice = (NSString *)[components objectAtIndex:0];
     }
     
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
-    NSString *tag = [NSString stringWithFormat:@"Joy%cDevice", 'A' + hidDeviceNum];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSString *tag = [NSString stringWithFormat:@"Joy%cDevice", (int)('A' + hidDeviceNum)];
     [self setStringResource:tag toValue:joyDevice];
 
     // update display
@@ -450,8 +450,8 @@ static char *keyNames[KEYSET_SIZE] = {
         axisValue = [hidXAxis titleOfSelectedItem];
     }
 
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];        
-    [self setStringResource:[NSString stringWithFormat:@"Joy%cXAxis", 'A' + hidDeviceNum]
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    [self setStringResource:[NSString stringWithFormat:@"Joy%cXAxis", (int)('A' + hidDeviceNum)]
          toValue:axisValue];
 
     [self updateHidXAxis];
@@ -466,8 +466,8 @@ static char *keyNames[KEYSET_SIZE] = {
         axisValue = [hidYAxis titleOfSelectedItem];
     }
 
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];        
-    [self setStringResource:[NSString stringWithFormat:@"Joy%cYAxis", 'A' + hidDeviceNum]
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    [self setStringResource:[NSString stringWithFormat:@"Joy%cYAxis", (int)('A' + hidDeviceNum)]
          toValue:axisValue];
 
     [self updateHidYAxis];
@@ -475,7 +475,7 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(IBAction)detectXAxis:(id)sender
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
     NSString *axisName = @"";
 #ifdef HAS_JOYSTICK
     int usage = joy_hid_detect_axis(hidDeviceNum ? &joy_b : &joy_a, HID_X_AXIS);
@@ -487,7 +487,7 @@ static char *keyNames[KEYSET_SIZE] = {
     }
 #endif
 
-    [self setStringResource:[NSString stringWithFormat:@"Joy%cXAxis", 'A' + hidDeviceNum]
+    [self setStringResource:[NSString stringWithFormat:@"Joy%cXAxis", (int)('A' + hidDeviceNum)]
         toValue:axisName];
 
     [self updateHidXAxis];
@@ -495,7 +495,7 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(IBAction)detectYAxis:(id)sender
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
     NSString *axisName = @"";
 #ifdef HAS_JOYSTICK
     int usage = joy_hid_detect_axis(hidDeviceNum ? &joy_b : &joy_a, HID_Y_AXIS);
@@ -507,7 +507,7 @@ static char *keyNames[KEYSET_SIZE] = {
     }
 #endif
 
-    [self setStringResource:[NSString stringWithFormat:@"Joy%cYAxis", 'A' + hidDeviceNum]
+    [self setStringResource:[NSString stringWithFormat:@"Joy%cYAxis", (int)('A' + hidDeviceNum)]
         toValue:axisName];
 
     [self updateHidYAxis];
@@ -515,10 +515,10 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(IBAction)setXThreshold:(id)sender
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
     int threshold = [hidXThreshold intValue];
     if ((threshold>0)&&(threshold<100)) {
-      [self setIntResource:[NSString stringWithFormat:@"Joy%cXThreshold", 'A' + hidDeviceNum]
+      [self setIntResource:[NSString stringWithFormat:@"Joy%cXThreshold", (int)('A' + hidDeviceNum)]
           toValue:threshold];
     }
     [self updateHidXAxis];
@@ -526,10 +526,10 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(IBAction)setYThreshold:(id)sender
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
     int threshold = [hidYThreshold intValue];
     if ((threshold > 0) && (threshold < 100)) {
-      [self setIntResource:[NSString stringWithFormat:@"Joy%cYThreshold", 'A' + hidDeviceNum]
+      [self setIntResource:[NSString stringWithFormat:@"Joy%cYThreshold", (int)('A' + hidDeviceNum)]
           toValue:threshold];
     }
     [self updateHidYAxis];
@@ -537,8 +537,8 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(IBAction)defineHidButton:(id)sender
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
-    int buttonId  = [sender tag];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger buttonId  = [sender tag];
     int buttonVal = 0;
 
 #ifdef HAS_JOYSTICK
@@ -551,7 +551,7 @@ static char *keyNames[KEYSET_SIZE] = {
     [self getHidButtons:ids];
     ids[buttonId] = buttonVal;
     
-    [self setStringResource:[NSString stringWithFormat:@"Joy%cButtons", 'A' + hidDeviceNum]
+    [self setStringResource:[NSString stringWithFormat:@"Joy%cButtons", (int)('A' + hidDeviceNum)]
         toValue:[NSString stringWithFormat:@"%d:%d:%d:%d:%d:%d",
             ids[0], ids[1], ids[2], ids[3], ids[4], ids[5]]];
     
@@ -560,23 +560,23 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(IBAction)pickHat:(id)sender
 {
-    int hat;
+    NSInteger hat;
     if ([hidHat selectedItem] == [hidHat lastItem]) {
         hat = 0;
     } else {
         hat = [hidHat indexOfSelectedItem] + 1;
     }
 
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];        
-    [self setIntResource:[NSString stringWithFormat:@"Joy%cHatSwitch", 'A' + hidDeviceNum]
-         toValue:hat];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    [self setIntResource:[NSString stringWithFormat:@"Joy%cHatSwitch", (int)('A' + hidDeviceNum)]
+         toValue:(int)(hat)];
 
     [self updateHidHat];
 }
 
 -(IBAction)detectHat:(id)sender
 {
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
     int hat = 0;
 #ifdef HAS_JOYSTICK
     hat = joy_hid_detect_hat_switch(hidDeviceNum ? &joy_b : &joy_a);
@@ -584,7 +584,7 @@ static char *keyNames[KEYSET_SIZE] = {
         hat = 0;
 #endif
 
-    [self setIntResource:[NSString stringWithFormat:@"Joy%cHatSwitch", 'A' + hidDeviceNum]
+    [self setIntResource:[NSString stringWithFormat:@"Joy%cHatSwitch", (int)('A' + hidDeviceNum)]
         toValue:hat];
 
     [self updateHidHat];
@@ -592,9 +592,9 @@ static char *keyNames[KEYSET_SIZE] = {
 
 -(IBAction)defineAFButton:(id)sender
 {
-    int tag = [sender tag];
+    NSInteger tag = [sender tag];
  
-    int hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
+    NSInteger hidDeviceNum = [hidDeviceSelect indexOfSelectedItem];
     int button = 0;
 #ifdef HAS_JOYSTICK
     button = joy_hid_detect_button(hidDeviceNum ? &joy_b : &joy_a);
@@ -613,7 +613,7 @@ static char *keyNames[KEYSET_SIZE] = {
 -(IBAction)setAFParam:(id)sender
 {
     int value = [sender intValue];
-    int pos = [sender tag] + HID_NUM_AUTO_BUTTONS;
+    NSInteger pos = [sender tag] + HID_NUM_AUTO_BUTTONS;
     
     int ids[6];
     [self getHidAutoButtons:ids];

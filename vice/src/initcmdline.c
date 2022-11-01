@@ -314,7 +314,7 @@ int initcmdline_check_args(int argc, char **argv)
     /* The last orphan option is the same as `-autostart'.  */
     if (argc >= 1 && autostart_string == NULL) {
         autostart_string = lib_stralloc(argv[1]);
-        argc--, argv++;
+        argc--; argv++;
     }
 
     if (argc > 1) {

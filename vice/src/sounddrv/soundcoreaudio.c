@@ -108,7 +108,7 @@ static inline void atomic_decrement(atomic_int_t * addr)
                           :"m" (*addr));
 }
 
-#elif (__ppc__)
+#elif defined(__ppc__) || defined(__ppc64__)
 /* PowerPC Mac Implementation */
 
 static inline void atomic_add(atomic_int_t * addr, int val)

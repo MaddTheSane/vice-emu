@@ -190,8 +190,8 @@
 
 -(IBAction)pickStartRecord:(id)sender
 {
-    int mode = [[sender selectedItem] tag];
-    [self setIntResource:@"EventStartMode" toValue:mode];
+    NSInteger mode = [[sender selectedItem] tag];
+    [self setIntResource:@"EventStartMode" toValue:(int)mode];
     [self updateResources:nil];
 }
 

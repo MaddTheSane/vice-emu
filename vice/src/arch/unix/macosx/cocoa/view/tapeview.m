@@ -292,7 +292,7 @@ static NSString *help_texts[] = {
     } 
     // datasette command 0..6
     else {
-        [[VICEApplication theMachineController] controlDatasette:command];
+        [[VICEApplication theMachineController] controlDatasette:(int)command];
     }
 }
 
